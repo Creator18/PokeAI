@@ -2,6 +2,7 @@
 -- CONFIG
 -------------------------------------------------
 BASE_PATH = "C:/Users/HP/Documents/cogai/"
+BASE_PATH_MAW = "C:/Users/natmaw/Documents/Boston Stuff/CS 5100 Foundations of AI/cogai/"
 ACTION_FILE = BASE_PATH .. "action.json"
 STATE_FILE  = BASE_PATH .. "game_state.json"
 
