@@ -1,7 +1,7 @@
 -------------------------------------------------
 -- CONFIG
 -------------------------------------------------
-BASE_PATH = "C:/Users/natmaw/Documents/Boston Stuff/CS 5100 Foundations of AI/PokeAI/"
+BASE_PATH = "C:/Users/HP/Documents/cogai/"
 STATE_FILE = BASE_PATH .. "game_state.json"
 INPUT_FILE = BASE_PATH .. "input_cache.txt"
 TRANSITIONS_FILE = BASE_PATH .. "taught_transitions.json"

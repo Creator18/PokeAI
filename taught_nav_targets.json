@@ -8,46 +8,22 @@
         ],
         "direction": 2,
         "order": 1,
-        "progress_type": "map_transition",
-        "forward_progress_score": 1.0,
-        "destination_map": 17,
-        "frame_index": 393
-      },
-      {
-        "position": [
-          11,
-          17
-        ],
-        "direction": 0,
-        "order": 3,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 657
-      },
-      {
-        "position": [
-          15,
-          16
-        ],
-        "direction": 2,
-        "order": 4,
-        "progress_type": "new_area",
-        "forward_progress_score": 0.95,
-        "destination_map": null,
-        "frame_index": 1029
+        "frame_index": 211
       },
       {
         "position": [
           13,
-          19
+          18
         ],
-        "direction": 0,
-        "order": 5,
-        "progress_type": "map_transition",
+        "direction": 1,
+        "order": 3,
+        "progress_type": "new_area",
         "forward_progress_score": 1.0,
-        "destination_map": 23,
-        "frame_index": 1310
+        "destination_map": null,
+        "frame_index": 791
       }
     ],
     "17": [
@@ -61,45 +37,57 @@
         "progress_type": "map_transition",
         "forward_progress_score": 1.0,
         "destination_map": 13,
-        "frame_index": 616
+        "frame_index": 437
       }
     ],
     "23": [
       {
         "position": [
-          18,
-          21
+          22,
+          14
         ],
         "direction": 1,
-        "order": 6,
-        "progress_type": "new_area",
+        "order": 4,
+        "progress_type": "map_transition",
         "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 1937
+        "destination_map": 11,
+        "frame_index": 1368
       },
       {
         "position": [
-          18,
-          18
+          19,
+          19
         ],
         "direction": 1,
         "order": 7,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 1941
+        "frame_index": 2079
       },
       {
         "position": [
-          18,
-          15
+          19,
+          13
         ],
         "direction": 1,
         "order": 8,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 1945
+        "frame_index": 2086
+      },
+      {
+        "position": [
+          19,
+          10
+        ],
+        "direction": 1,
+        "order": 9,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2090
       },
       {
         "position": [
@@ -107,63 +95,51 @@
           7
         ],
         "direction": 1,
-        "order": 9,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 1969
-      },
-      {
-        "position": [
-          16,
-          34
-        ],
-        "direction": 3,
         "order": 10,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2081
+        "frame_index": 2093
       },
       {
         "position": [
-          19,
-          34
+          21,
+          42
         ],
-        "direction": 3,
+        "direction": 2,
         "order": 11,
         "progress_type": "new_area",
-        "forward_progress_score": 1.0,
+        "forward_progress_score": 0.909,
         "destination_map": null,
-        "frame_index": 2085
+        "frame_index": 2218
       },
       {
         "position": [
-          13,
-          25
+          18,
+          42
         ],
-        "direction": 3,
+        "direction": 2,
         "order": 12,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2186
+        "frame_index": 2222
       },
       {
         "position": [
-          16,
-          25
+          15,
+          42
         ],
-        "direction": 3,
+        "direction": 2,
         "order": 13,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2190
+        "frame_index": 2225
       },
       {
         "position": [
-          22,
+          20,
           25
         ],
         "direction": 3,
@@ -171,91 +147,95 @@
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2199
+        "frame_index": 2547
       },
       {
         "position": [
-          23,
-          17
+          27,
+          19
         ],
         "direction": 1,
         "order": 15,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2311
+        "frame_index": 2642
       },
       {
         "position": [
-          25,
-          11
+          27,
+          16
         ],
-        "direction": 2,
+        "direction": 1,
         "order": 16,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2380
+        "frame_index": 2646
       },
       {
         "position": [
-          19,
-          46
+          27,
+          13
         ],
         "direction": 1,
-        "order": 38,
+        "order": 17,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 3012
+        "frame_index": 2650
       },
       {
         "position": [
-          19,
-          26
+          25,
+          9
         ],
-        "direction": 3,
-        "order": 39,
+        "direction": 2,
+        "order": 18,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 3170
+        "frame_index": 2663
       },
       {
         "position": [
-          26,
-          24
+          22,
+          9
         ],
-        "direction": 1,
-        "order": 40,
+        "direction": 2,
+        "order": 19,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 3187
-      },
+        "frame_index": 2667
+      }
+    ],
+    "11": [
       {
         "position": [
-          26,
-          17
+          11,
+          15
         ],
-        "direction": 1,
-        "order": 41,
+        "direction": 0,
+        "order": 5,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 3256
-      },
+        "frame_index": 1519
+      }
+    ],
+    "22": [
       {
         "position": [
-          26,
-          14
+          20,
+          9
         ],
-        "direction": 1,
-        "order": 42,
-        "progress_type": "new_area",
+        "direction": 0,
+        "order": 6,
+        "progress_type": "interaction",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 3260
+        "frame_index": 1622
       }
     ],
     "35": [
@@ -265,35 +245,11 @@
           34
         ],
         "direction": 1,
-        "order": 17,
+        "order": 20,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2444
-      },
-      {
-        "position": [
-          30,
-          45
-        ],
-        "direction": 1,
-        "order": 43,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3293
-      },
-      {
-        "position": [
-          30,
-          42
-        ],
-        "direction": 1,
-        "order": 44,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3297
+        "frame_index": 2756
       }
     ],
     "14": [
@@ -303,25 +259,25 @@
           15
         ],
         "direction": 0,
-        "order": 18,
-        "progress_type": "new_area",
+        "order": 21,
+        "progress_type": "map_transition",
         "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 2482
+        "destination_map": 33,
+        "frame_index": 2814
       }
     ],
     "33": [
       {
         "position": [
-          39,
-          31
+          38,
+          30
         ],
-        "direction": 1,
-        "order": 19,
+        "direction": 3,
+        "order": 22,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2509
+        "frame_index": 2840
       },
       {
         "position": [
@@ -329,209 +285,147 @@
           26
         ],
         "direction": 1,
-        "order": 20,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 2532
-      }
-    ],
-    "11": [
-      {
-        "position": [
-          11,
-          14
-        ],
-        "direction": 0,
-        "order": 21,
+        "order": 23,
         "progress_type": "map_transition",
         "forward_progress_score": 1.0,
-        "destination_map": 43,
-        "frame_index": 2561
+        "destination_map": 11,
+        "frame_index": 2870
       }
     ],
     "43": [
       {
         "position": [
-          42,
-          30
+          31,
+          44
         ],
-        "direction": 2,
-        "order": 22,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 2571
-      },
-      {
-        "position": [
-          35,
-          35
-        ],
-        "direction": 2,
-        "order": 23,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 2597
-      },
-      {
-        "position": [
-          32,
-          35
-        ],
-        "direction": 2,
+        "direction": 0,
         "order": 24,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2601
-      },
+        "frame_index": 3064
+      }
+    ],
+    "31": [
       {
         "position": [
-          31,
-          43
+          12,
+          12
         ],
         "direction": 0,
         "order": 25,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2636
+        "frame_index": 3108
       },
       {
         "position": [
-          31,
-          46
+          12,
+          15
         ],
         "direction": 0,
         "order": 26,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2640
-      }
-    ],
-    "31": [
+        "frame_index": 3112
+      },
       {
         "position": [
-          13,
-          13
+          16,
+          29
         ],
-        "direction": 0,
+        "direction": 3,
         "order": 27,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2677
+        "frame_index": 3181
       },
       {
         "position": [
-          13,
-          16
+          19,
+          29
         ],
-        "direction": 0,
+        "direction": 3,
         "order": 28,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2681
+        "frame_index": 3185
       },
       {
         "position": [
-          13,
-          19
+          19,
+          41
         ],
         "direction": 0,
         "order": 29,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2685
+        "frame_index": 3234
       },
       {
         "position": [
-          13,
-          22
+          19,
+          44
         ],
         "direction": 0,
         "order": 30,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2689
+        "frame_index": 3238
       },
       {
         "position": [
-          13,
-          25
+          19,
+          7
         ],
         "direction": 0,
         "order": 31,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2693
+        "frame_index": 3242
       },
       {
         "position": [
-          16,
-          31
+          19,
+          10
         ],
-        "direction": 3,
+        "direction": 0,
         "order": 32,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2710
+        "frame_index": 3246
       },
       {
         "position": [
           19,
-          31
+          13
         ],
-        "direction": 3,
+        "direction": 0,
         "order": 33,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2714
+        "frame_index": 3250
       },
       {
         "position": [
           19,
-          40
+          16
         ],
         "direction": 0,
         "order": 34,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 2815
-      },
-      {
-        "position": [
-          19,
-          43
-        ],
-        "direction": 0,
-        "order": 35,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 2819
-      },
-      {
-        "position": [
-          19,
-          46
-        ],
-        "direction": 0,
-        "order": 36,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 2823
+        "frame_index": 3254
       },
       {
         "position": [
@@ -539,11 +433,11 @@
           20
         ],
         "direction": 1,
-        "order": 37,
+        "order": 35,
         "progress_type": "map_transition",
         "forward_progress_score": 1.0,
         "destination_map": 13,
-        "frame_index": 2862
+        "frame_index": 3281
       }
     ]
   },
@@ -567,48 +461,48 @@
     {
       "map_id": 13,
       "position": [
-        11,
-        17
+        13,
+        18
       ],
       "order": 3
     },
     {
-      "map_id": 13,
+      "map_id": 23,
       "position": [
-        15,
-        16
+        22,
+        14
       ],
       "order": 4
     },
     {
-      "map_id": 13,
+      "map_id": 11,
       "position": [
-        13,
-        19
+        11,
+        15
       ],
       "order": 5
     },
     {
-      "map_id": 23,
+      "map_id": 22,
       "position": [
-        18,
-        21
+        20,
+        9
       ],
       "order": 6
     },
     {
       "map_id": 23,
       "position": [
-        18,
-        18
+        19,
+        19
       ],
       "order": 7
     },
     {
       "map_id": 23,
       "position": [
-        18,
-        15
+        19,
+        13
       ],
       "order": 8
     },
@@ -616,46 +510,46 @@
       "map_id": 23,
       "position": [
         19,
-        7
+        10
       ],
       "order": 9
     },
     {
       "map_id": 23,
       "position": [
-        16,
-        34
+        19,
+        7
       ],
       "order": 10
     },
     {
       "map_id": 23,
       "position": [
-        19,
-        34
+        21,
+        42
       ],
       "order": 11
     },
     {
       "map_id": 23,
       "position": [
-        13,
-        25
+        18,
+        42
       ],
       "order": 12
     },
     {
       "map_id": 23,
       "position": [
-        16,
-        25
+        15,
+        42
       ],
       "order": 13
     },
     {
       "map_id": 23,
       "position": [
-        22,
+        20,
         25
       ],
       "order": 14
@@ -663,18 +557,42 @@
     {
       "map_id": 23,
       "position": [
-        23,
-        17
+        27,
+        19
       ],
       "order": 15
     },
     {
       "map_id": 23,
       "position": [
-        25,
-        11
+        27,
+        16
       ],
       "order": 16
+    },
+    {
+      "map_id": 23,
+      "position": [
+        27,
+        13
+      ],
+      "order": 17
+    },
+    {
+      "map_id": 23,
+      "position": [
+        25,
+        9
+      ],
+      "order": 18
+    },
+    {
+      "map_id": 23,
+      "position": [
+        22,
+        9
+      ],
+      "order": 19
     },
     {
       "map_id": 35,
@@ -682,7 +600,7 @@
         33,
         34
       ],
-      "order": 17
+      "order": 20
     },
     {
       "map_id": 14,
@@ -690,15 +608,15 @@
         14,
         15
       ],
-      "order": 18
+      "order": 21
     },
     {
       "map_id": 33,
       "position": [
-        39,
-        31
+        38,
+        30
       ],
-      "order": 19
+      "order": 22
     },
     {
       "map_id": 33,
@@ -706,101 +624,77 @@
         43,
         26
       ],
-      "order": 20
-    },
-    {
-      "map_id": 11,
-      "position": [
-        11,
-        14
-      ],
-      "order": 21
-    },
-    {
-      "map_id": 43,
-      "position": [
-        42,
-        30
-      ],
-      "order": 22
-    },
-    {
-      "map_id": 43,
-      "position": [
-        35,
-        35
-      ],
       "order": 23
     },
     {
       "map_id": 43,
       "position": [
-        32,
-        35
+        31,
+        44
       ],
       "order": 24
     },
     {
-      "map_id": 43,
+      "map_id": 31,
       "position": [
-        31,
-        43
+        12,
+        12
       ],
       "order": 25
     },
     {
-      "map_id": 43,
+      "map_id": 31,
       "position": [
-        31,
-        46
+        12,
+        15
       ],
       "order": 26
     },
     {
       "map_id": 31,
       "position": [
-        13,
-        13
+        16,
+        29
       ],
       "order": 27
     },
     {
       "map_id": 31,
       "position": [
-        13,
-        16
+        19,
+        29
       ],
       "order": 28
     },
     {
       "map_id": 31,
       "position": [
-        13,
-        19
+        19,
+        41
       ],
       "order": 29
     },
     {
       "map_id": 31,
       "position": [
-        13,
-        22
+        19,
+        44
       ],
       "order": 30
     },
     {
       "map_id": 31,
       "position": [
-        13,
-        25
+        19,
+        7
       ],
       "order": 31
     },
     {
       "map_id": 31,
       "position": [
-        16,
-        31
+        19,
+        10
       ],
       "order": 32
     },
@@ -808,7 +702,7 @@
       "map_id": 31,
       "position": [
         19,
-        31
+        13
       ],
       "order": 33
     },
@@ -816,25 +710,9 @@
       "map_id": 31,
       "position": [
         19,
-        40
+        16
       ],
       "order": 34
-    },
-    {
-      "map_id": 31,
-      "position": [
-        19,
-        43
-      ],
-      "order": 35
-    },
-    {
-      "map_id": 31,
-      "position": [
-        19,
-        46
-      ],
-      "order": 36
     },
     {
       "map_id": 31,
@@ -842,72 +720,17 @@
         23,
         20
       ],
-      "order": 37
-    },
-    {
-      "map_id": 23,
-      "position": [
-        19,
-        46
-      ],
-      "order": 38
-    },
-    {
-      "map_id": 23,
-      "position": [
-        19,
-        26
-      ],
-      "order": 39
-    },
-    {
-      "map_id": 23,
-      "position": [
-        26,
-        24
-      ],
-      "order": 40
-    },
-    {
-      "map_id": 23,
-      "position": [
-        26,
-        17
-      ],
-      "order": 41
-    },
-    {
-      "map_id": 23,
-      "position": [
-        26,
-        14
-      ],
-      "order": 42
-    },
-    {
-      "map_id": 35,
-      "position": [
-        30,
-        45
-      ],
-      "order": 43
-    },
-    {
-      "map_id": 35,
-      "position": [
-        30,
-        42
-      ],
-      "order": 44
+      "order": 35
     }
   ],
   "metadata": {
-    "total_targets": 44,
+    "total_targets": 35,
     "maps_with_targets": [
       11,
       13,
       14,
       17,
+      22,
       23,
       31,
       33,
@@ -917,6 +740,6 @@
     "analysis_window_after": 40,
     "min_forward_progress": 0.5,
     "dedup_radius": 2,
-    "generated_from_frames": 3372
+    "generated_from_frames": 3512
   }
 }
