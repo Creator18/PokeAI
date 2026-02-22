@@ -8,46 +8,34 @@
         ],
         "direction": 2,
         "order": 1,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 163
-      },
-      {
-        "position": [
-          17,
-          22
-        ],
-        "direction": 3,
-        "order": 4,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 572
-      },
-      {
-        "position": [
-          22,
-          14
-        ],
-        "direction": 1,
-        "order": 5,
         "progress_type": "map_transition",
         "forward_progress_score": 1.0,
-        "destination_map": 11,
-        "frame_index": 788
+        "destination_map": 17,
+        "frame_index": 58
+      },
+      {
+        "position": [
+          13,
+          19
+        ],
+        "direction": 0,
+        "order": 3,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 23,
+        "frame_index": 1148
       },
       {
         "position": [
           14,
-          13
+          14
         ],
-        "direction": 3,
-        "order": 8,
+        "direction": 2,
+        "order": 6,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 1128
+        "frame_index": 1381
       },
       {
         "position": [
@@ -55,175 +43,51 @@
           16
         ],
         "direction": 0,
-        "order": 9,
+        "order": 113,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 1740
-      },
-      {
-        "position": [
-          13,
-          19
-        ],
-        "direction": 0,
-        "order": 10,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 1744
+        "frame_index": 10773
       }
     ],
     "17": [
-      {
-        "position": [
-          15,
-          13
-        ],
-        "direction": 2,
-        "order": 2,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 406
-      },
       {
         "position": [
           11,
           15
         ],
         "direction": 0,
-        "order": 3,
+        "order": 2,
         "progress_type": "map_transition",
         "forward_progress_score": 1.0,
         "destination_map": 13,
-        "frame_index": 438
-      }
-    ],
-    "11": [
-      {
-        "position": [
-          11,
-          13
-        ],
-        "direction": 0,
-        "order": 6,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 980
-      }
-    ],
-    "22": [
-      {
-        "position": [
-          19,
-          10
-        ],
-        "direction": 0,
-        "order": 7,
-        "progress_type": "interaction",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 1031
-      },
-      {
-        "position": [
-          19,
-          24
-        ],
-        "direction": 2,
-        "order": 146,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 15776
-      },
-      {
-        "position": [
-          14,
-          20
-        ],
-        "direction": 1,
-        "order": 147,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 15791
-      },
-      {
-        "position": [
-          29,
-          19
-        ],
-        "direction": 0,
-        "order": 148,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 15833
-      },
-      {
-        "position": [
-          29,
-          23
-        ],
-        "direction": 0,
-        "order": 149,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 15837
-      },
-      {
-        "position": [
-          29,
-          26
-        ],
-        "direction": 0,
-        "order": 150,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 15841
-      },
-      {
-        "position": [
-          24,
-          32
-        ],
-        "direction": 1,
-        "order": 151,
-        "progress_type": "map_transition",
-        "forward_progress_score": 1.0,
-        "destination_map": 14,
-        "frame_index": 15910
+        "frame_index": 309
       }
     ],
     "23": [
       {
         "position": [
-          19,
-          20
-        ],
-        "direction": 1,
-        "order": 11,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 1766
-      },
-      {
-        "position": [
-          19,
+          18,
           17
         ],
         "direction": 1,
-        "order": 12,
+        "order": 4,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 1770
+        "frame_index": 1170
+      },
+      {
+        "position": [
+          20,
+          9
+        ],
+        "direction": 0,
+        "order": 5,
+        "progress_type": "interaction",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1231
       },
       {
         "position": [
@@ -231,23 +95,11 @@
           13
         ],
         "direction": 1,
-        "order": 13,
+        "order": 7,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 1774
-      },
-      {
-        "position": [
-          19,
-          10
-        ],
-        "direction": 1,
-        "order": 14,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 1778
+        "frame_index": 1798
       },
       {
         "position": [
@@ -255,197 +107,75 @@
           7
         ],
         "direction": 1,
-        "order": 15,
+        "order": 8,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 1782
-      },
-      {
-        "position": [
-          23,
-          39
-        ],
-        "direction": 3,
-        "order": 16,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 1860
-      },
-      {
-        "position": [
-          24,
-          42
-        ],
-        "direction": 2,
-        "order": 17,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 1999
-      },
-      {
-        "position": [
-          21,
-          42
-        ],
-        "direction": 2,
-        "order": 18,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 2003
+        "frame_index": 1805
       },
       {
         "position": [
           18,
-          42
-        ],
-        "direction": 2,
-        "order": 19,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 2007
-      },
-      {
-        "position": [
-          25,
-          19
-        ],
-        "direction": 1,
-        "order": 20,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 2582
-      },
-      {
-        "position": [
-          25,
-          15
-        ],
-        "direction": 2,
-        "order": 21,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 2813
-      },
-      {
-        "position": [
-          27,
-          13
-        ],
-        "direction": 1,
-        "order": 22,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3363
-      },
-      {
-        "position": [
-          25,
-          9
-        ],
-        "direction": 2,
-        "order": 23,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3375
-      },
-      {
-        "position": [
-          11,
-          13
-        ],
-        "direction": 0,
-        "order": 24,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3422
-      },
-      {
-        "position": [
-          14,
-          19
+          36
         ],
         "direction": 3,
-        "order": 25,
+        "order": 9,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 3439
+        "frame_index": 1934
       },
       {
         "position": [
           17,
-          19
-        ],
-        "direction": 3,
-        "order": 26,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3443
-      },
-      {
-        "position": [
-          28,
-          16
+          29
         ],
         "direction": 1,
-        "order": 27,
+        "order": 10,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 3541
+        "frame_index": 1989
       },
       {
         "position": [
           20,
-          46
+          24
         ],
-        "direction": 1,
-        "order": 70,
+        "direction": 2,
+        "order": 11,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 5512
+        "frame_index": 2111
       },
       {
         "position": [
-          20,
-          25
+          16,
+          26
         ],
-        "direction": 3,
-        "order": 71,
+        "direction": 0,
+        "order": 12,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 5805
+        "frame_index": 2124
       },
       {
         "position": [
           23,
-          25
+          20
         ],
-        "direction": 3,
-        "order": 72,
+        "direction": 1,
+        "order": 13,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 5809
-      }
-    ],
-    "35": [
+        "frame_index": 2558
+      },
       {
         "position": [
-          30,
+          19,
           46
         ],
         "direction": 1,
@@ -453,7 +183,33 @@
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 3578
+        "frame_index": 3630
+      },
+      {
+        "position": [
+          19,
+          26
+        ],
+        "direction": 3,
+        "order": 29,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3913
+      }
+    ],
+    "35": [
+      {
+        "position": [
+          31,
+          46
+        ],
+        "direction": 1,
+        "order": 14,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2669
       },
       {
         "position": [
@@ -461,107 +217,23 @@
           33
         ],
         "direction": 1,
-        "order": 29,
+        "order": 15,
         "progress_type": "map_transition",
         "forward_progress_score": 1.0,
         "destination_map": 14,
-        "frame_index": 3673
-      },
-      {
-        "position": [
-          32,
-          45
-        ],
-        "direction": 1,
-        "order": 73,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 6267
-      },
-      {
-        "position": [
-          27,
-          16
-        ],
-        "direction": 2,
-        "order": 139,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 15190
+        "frame_index": 2727
       },
       {
         "position": [
           24,
-          16
-        ],
-        "direction": 2,
-        "order": 140,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 15194
-      },
-      {
-        "position": [
-          21,
-          16
-        ],
-        "direction": 2,
-        "order": 141,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 15198
-      },
-      {
-        "position": [
-          18,
-          16
-        ],
-        "direction": 2,
-        "order": 142,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 15202
-      },
-      {
-        "position": [
-          14,
-          18
-        ],
-        "direction": 0,
-        "order": 143,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 15215
-      },
-      {
-        "position": [
-          16,
-          25
-        ],
-        "direction": 3,
-        "order": 144,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 15231
-      },
-      {
-        "position": [
-          22,
-          24
+          32
         ],
         "direction": 1,
-        "order": 145,
+        "order": 117,
         "progress_type": "map_transition",
         "forward_progress_score": 1.0,
-        "destination_map": 13,
-        "frame_index": 15247
+        "destination_map": 14,
+        "frame_index": 11406
       }
     ],
     "14": [
@@ -571,23 +243,11 @@
           15
         ],
         "direction": 0,
-        "order": 30,
+        "order": 16,
         "progress_type": "map_transition",
         "forward_progress_score": 1.0,
         "destination_map": 33,
-        "frame_index": 3735
-      },
-      {
-        "position": [
-          14,
-          12
-        ],
-        "direction": 1,
-        "order": 96,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 8883
+        "frame_index": 2789
       },
       {
         "position": [
@@ -595,145 +255,493 @@
           8
         ],
         "direction": 1,
-        "order": 97,
+        "order": 63,
         "progress_type": "map_transition",
         "forward_progress_score": 1.0,
         "destination_map": 36,
-        "frame_index": 8896
+        "frame_index": 6264
+      },
+      {
+        "position": [
+          14,
+          12
+        ],
+        "direction": 1,
+        "order": 89,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8615
       }
     ],
     "33": [
       {
         "position": [
-          27,
-          33
+          43,
+          27
         ],
         "direction": 1,
+        "order": 17,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 11,
+        "frame_index": 2835
+      },
+      {
+        "position": [
+          26,
+          32
+        ],
+        "direction": 1,
+        "order": 30,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4386
+      },
+      {
+        "position": [
+          7,
+          24
+        ],
+        "direction": 2,
         "order": 31,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 3752
+        "frame_index": 4436
+      },
+      {
+        "position": [
+          25,
+          26
+        ],
+        "direction": 2,
+        "order": 54,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5776
+      },
+      {
+        "position": [
+          22,
+          26
+        ],
+        "direction": 2,
+        "order": 55,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5780
+      },
+      {
+        "position": [
+          19,
+          26
+        ],
+        "direction": 2,
+        "order": 56,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5784
+      },
+      {
+        "position": [
+          29,
+          9
+        ],
+        "direction": 1,
+        "order": 57,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5956
+      }
+    ],
+    "11": [
+      {
+        "position": [
+          11,
+          14
+        ],
+        "direction": 0,
+        "order": 18,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 43,
+        "frame_index": 2878
+      }
+    ],
+    "43": [
+      {
+        "position": [
+          29,
+          37
+        ],
+        "direction": 0,
+        "order": 19,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2930
+      },
+      {
+        "position": [
+          31,
+          44
+        ],
+        "direction": 0,
+        "order": 20,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2952
+      }
+    ],
+    "31": [
+      {
+        "position": [
+          19,
+          7
+        ],
+        "direction": 0,
+        "order": 21,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2957
+      },
+      {
+        "position": [
+          19,
+          10
+        ],
+        "direction": 0,
+        "order": 22,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2961
       },
       {
         "position": [
           23,
-          27
+          17
+        ],
+        "direction": 0,
+        "order": 23,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3037
+      },
+      {
+        "position": [
+          23,
+          20
+        ],
+        "direction": 0,
+        "order": 24,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3041
+      },
+      {
+        "position": [
+          20,
+          45
+        ],
+        "direction": 0,
+        "order": 25,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3293
+      },
+      {
+        "position": [
+          19,
+          15
+        ],
+        "direction": 0,
+        "order": 26,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3319
+      },
+      {
+        "position": [
+          19,
+          18
+        ],
+        "direction": 0,
+        "order": 27,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3323
+      }
+    ],
+    "81": [
+      {
+        "position": [
+          37,
+          12
         ],
         "direction": 2,
         "order": 32,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 3771
+        "frame_index": 5113
       },
       {
         "position": [
-          7,
-          25
+          34,
+          12
         ],
         "direction": 2,
         "order": 33,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 3805
+        "frame_index": 5117
       },
       {
         "position": [
-          34,
-          28
+          31,
+          12
         ],
         "direction": 2,
-        "order": 74,
+        "order": 34,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 6540
+        "frame_index": 5121
       },
       {
         "position": [
-          28,
-          25
+          26,
+          13
+        ],
+        "direction": 0,
+        "order": 35,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5132
+      },
+      {
+        "position": [
+          22,
+          20
+        ],
+        "direction": 2,
+        "order": 36,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5233
+      },
+      {
+        "position": [
+          19,
+          20
+        ],
+        "direction": 2,
+        "order": 37,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5237
+      },
+      {
+        "position": [
+          15,
+          12
         ],
         "direction": 1,
-        "order": 75,
-        "progress_type": "new_area",
+        "order": 38,
+        "progress_type": "map_transition",
         "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 6556
-      },
-      {
-        "position": [
-          28,
-          22
-        ],
-        "direction": 1,
-        "order": 76,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 6560
-      },
-      {
-        "position": [
-          11,
-          26
-        ],
-        "direction": 3,
-        "order": 79,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 8393
-      },
-      {
-        "position": [
-          14,
-          26
-        ],
-        "direction": 3,
-        "order": 80,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 8397
-      },
+        "destination_map": 14,
+        "frame_index": 5306
+      }
+    ],
+    "15": [
       {
         "position": [
           17,
-          26
+          24
         ],
         "direction": 3,
-        "order": 81,
+        "order": 39,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 8401
+        "frame_index": 5406
       },
       {
         "position": [
           20,
-          26
+          24
         ],
         "direction": 3,
-        "order": 82,
+        "order": 40,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 8404
+        "frame_index": 5410
       },
       {
         "position": [
-          27,
-          28
+          23,
+          24
         ],
-        "direction": 0,
-        "order": 83,
+        "direction": 3,
+        "order": 41,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 8420
+        "frame_index": 5414
+      },
+      {
+        "position": [
+          26,
+          24
+        ],
+        "direction": 3,
+        "order": 42,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5418
+      },
+      {
+        "position": [
+          29,
+          24
+        ],
+        "direction": 3,
+        "order": 43,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5422
+      },
+      {
+        "position": [
+          32,
+          24
+        ],
+        "direction": 3,
+        "order": 44,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5426
+      },
+      {
+        "position": [
+          35,
+          24
+        ],
+        "direction": 3,
+        "order": 45,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5430
+      },
+      {
+        "position": [
+          53,
+          15
+        ],
+        "direction": 3,
+        "order": 46,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5488
+      }
+    ],
+    "223": [
+      {
+        "position": [
+          14,
+          25
+        ],
+        "direction": 3,
+        "order": 47,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5501
+      },
+      {
+        "position": [
+          17,
+          25
+        ],
+        "direction": 3,
+        "order": 48,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5505
+      },
+      {
+        "position": [
+          20,
+          25
+        ],
+        "direction": 3,
+        "order": 49,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5509
+      },
+      {
+        "position": [
+          23,
+          25
+        ],
+        "direction": 3,
+        "order": 50,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5513
+      },
+      {
+        "position": [
+          29,
+          28
+        ],
+        "direction": 0,
+        "order": 51,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5530
+      },
+      {
+        "position": [
+          29,
+          31
+        ],
+        "direction": 0,
+        "order": 52,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5534
       },
       {
         "position": [
@@ -741,539 +749,37 @@
           33
         ],
         "direction": 1,
-        "order": 84,
+        "order": 53,
         "progress_type": "map_transition",
         "forward_progress_score": 1.0,
         "destination_map": 14,
-        "frame_index": 8453
-      },
-      {
-        "position": [
-          30,
-          34
-        ],
-        "direction": 2,
-        "order": 85,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 8561
-      },
-      {
-        "position": [
-          29,
-          11
-        ],
-        "direction": 1,
-        "order": 86,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 8695
-      },
-      {
-        "position": [
-          29,
-          8
-        ],
-        "direction": 1,
-        "order": 87,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 8698
-      }
-    ],
-    "81": [
-      {
-        "position": [
-          51,
-          19
-        ],
-        "direction": 0,
-        "order": 34,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3821
-      },
-      {
-        "position": [
-          48,
-          23
-        ],
-        "direction": 2,
-        "order": 35,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3833
-      },
-      {
-        "position": [
-          44,
-          23
-        ],
-        "direction": 2,
-        "order": 36,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3837
-      },
-      {
-        "position": [
-          41,
-          23
-        ],
-        "direction": 2,
-        "order": 37,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3841
-      },
-      {
-        "position": [
-          38,
-          23
-        ],
-        "direction": 2,
-        "order": 38,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3845
-      },
-      {
-        "position": [
-          35,
-          23
-        ],
-        "direction": 2,
-        "order": 39,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3849
-      },
-      {
-        "position": [
-          32,
-          23
-        ],
-        "direction": 2,
-        "order": 40,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 3853
-      },
-      {
-        "position": [
-          31,
-          12
-        ],
-        "direction": 2,
-        "order": 41,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4056
-      },
-      {
-        "position": [
-          25,
-          15
-        ],
-        "direction": 0,
-        "order": 42,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4073
-      },
-      {
-        "position": [
-          21,
-          21
-        ],
-        "direction": 2,
-        "order": 43,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4189
-      },
-      {
-        "position": [
-          15,
-          13
-        ],
-        "direction": 1,
-        "order": 44,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4275
-      },
-      {
-        "position": [
-          43,
-          17
-        ],
-        "direction": 0,
-        "order": 77,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 8326
-      },
-      {
-        "position": [
-          55,
-          16
-        ],
-        "direction": 3,
-        "order": 78,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 8387
-      }
-    ],
-    "15": [
-      {
-        "position": [
-          15,
-          12
-        ],
-        "direction": 0,
-        "order": 45,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4339
-      },
-      {
-        "position": [
-          40,
-          23
-        ],
-        "direction": 3,
-        "order": 46,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4417
-      },
-      {
-        "position": [
-          54,
-          13
-        ],
-        "direction": 3,
-        "order": 47,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4472
-      }
-    ],
-    "223": [
-      {
-        "position": [
-          7,
-          23
-        ],
-        "direction": 3,
-        "order": 48,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4474
-      },
-      {
-        "position": [
-          10,
-          23
-        ],
-        "direction": 3,
-        "order": 49,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4478
-      },
-      {
-        "position": [
-          18,
-          27
-        ],
-        "direction": 3,
-        "order": 50,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4597
-      },
-      {
-        "position": [
-          21,
-          27
-        ],
-        "direction": 3,
-        "order": 51,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4601
-      },
-      {
-        "position": [
-          24,
-          27
-        ],
-        "direction": 3,
-        "order": 52,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4604
-      },
-      {
-        "position": [
-          31,
-          29
-        ],
-        "direction": 3,
-        "order": 53,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4626
-      },
-      {
-        "position": [
-          34,
-          29
-        ],
-        "direction": 3,
-        "order": 54,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4630
-      },
-      {
-        "position": [
-          37,
-          29
-        ],
-        "direction": 3,
-        "order": 55,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4634
-      },
-      {
-        "position": [
-          43,
-          26
-        ],
-        "direction": 1,
-        "order": 56,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4672
-      }
-    ],
-    "43": [
-      {
-        "position": [
-          43,
-          28
-        ],
-        "direction": 0,
-        "order": 57,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4721
-      },
-      {
-        "position": [
-          28,
-          37
-        ],
-        "direction": 0,
-        "order": 58,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4775
-      },
-      {
-        "position": [
-          31,
-          46
-        ],
-        "direction": 0,
-        "order": 59,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4801
-      }
-    ],
-    "31": [
-      {
-        "position": [
-          15,
-          9
-        ],
-        "direction": 2,
-        "order": 60,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4826
-      },
-      {
-        "position": [
-          11,
-          11
-        ],
-        "direction": 0,
-        "order": 61,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4839
-      },
-      {
-        "position": [
-          14,
-          23
-        ],
-        "direction": 0,
-        "order": 62,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 4870
-      },
-      {
-        "position": [
-          14,
-          37
-        ],
-        "direction": 0,
-        "order": 63,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 5072
-      },
-      {
-        "position": [
-          20,
-          44
-        ],
-        "direction": 0,
-        "order": 64,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 5164
-      },
-      {
-        "position": [
-          20,
-          47
-        ],
-        "direction": 0,
-        "order": 65,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 5168
-      },
-      {
-        "position": [
-          20,
-          7
-        ],
-        "direction": 0,
-        "order": 66,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 5169
-      },
-      {
-        "position": [
-          18,
-          14
-        ],
-        "direction": 0,
-        "order": 67,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 5192
-      },
-      {
-        "position": [
-          18,
-          17
-        ],
-        "direction": 0,
-        "order": 68,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 5196
-      },
-      {
-        "position": [
-          23,
-          20
-        ],
-        "direction": 1,
-        "order": 69,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 5240
+        "frame_index": 5583
       }
     ],
     "21": [
       {
         "position": [
           17,
-          85
+          86
         ],
         "direction": 1,
-        "order": 88,
+        "order": 58,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 8702
+        "frame_index": 5961
       },
       {
         "position": [
           17,
-          82
+          83
         ],
         "direction": 1,
-        "order": 89,
+        "order": 59,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 8706
+        "frame_index": 5964
       },
       {
         "position": [
@@ -1281,59 +787,23 @@
           79
         ],
         "direction": 1,
-        "order": 90,
+        "order": 60,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 8710
+        "frame_index": 5968
       },
       {
         "position": [
-          15,
-          75
+          13,
+          74
         ],
         "direction": 2,
-        "order": 91,
+        "order": 61,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 8723
-      },
-      {
-        "position": [
-          11,
-          73
-        ],
-        "direction": 1,
-        "order": 92,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 8736
-      },
-      {
-        "position": [
-          11,
-          70
-        ],
-        "direction": 1,
-        "order": 93,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 8740
-      },
-      {
-        "position": [
-          17,
-          60
-        ],
-        "direction": 2,
-        "order": 94,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 8858
+        "frame_index": 5986
       },
       {
         "position": [
@@ -1341,229 +811,241 @@
           58
         ],
         "direction": 1,
-        "order": 95,
+        "order": 62,
         "progress_type": "map_transition",
         "forward_progress_score": 1.0,
         "destination_map": 14,
-        "frame_index": 8878
+        "frame_index": 6246
       }
     ],
     "36": [
       {
         "position": [
-          35,
-          50
+          38,
+          55
         ],
-        "direction": 2,
-        "order": 98,
+        "direction": 1,
+        "order": 64,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 9052
+        "frame_index": 6499
       },
       {
         "position": [
-          32,
-          50
-        ],
-        "direction": 2,
-        "order": 99,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 9056
-      },
-      {
-        "position": [
-          27,
-          51
-        ],
-        "direction": 3,
-        "order": 100,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 9652
-      },
-      {
-        "position": [
-          30,
-          51
-        ],
-        "direction": 3,
-        "order": 101,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 9656
-      },
-      {
-        "position": [
-          42,
+          43,
           64
         ],
         "direction": 3,
-        "order": 102,
+        "order": 65,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 9778
+        "frame_index": 6769
+      },
+      {
+        "position": [
+          54,
+          63
+        ],
+        "direction": 2,
+        "order": 66,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7060
+      },
+      {
+        "position": [
+          56,
+          47
+        ],
+        "direction": 1,
+        "order": 67,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7362
+      },
+      {
+        "position": [
+          56,
+          44
+        ],
+        "direction": 1,
+        "order": 68,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7366
+      },
+      {
+        "position": [
+          56,
+          41
+        ],
+        "direction": 1,
+        "order": 69,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7370
       },
       {
         "position": [
           49,
-          61
+          24
         ],
-        "direction": 1,
-        "order": 103,
+        "direction": 3,
+        "order": 70,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 10215
+        "frame_index": 7702
       },
       {
         "position": [
-          46,
-          51
+          47,
+          12
         ],
-        "direction": 1,
-        "order": 104,
+        "direction": 2,
+        "order": 71,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 10241
+        "frame_index": 7905
       },
       {
         "position": [
-          50,
-          43
+          44,
+          12
         ],
-        "direction": 1,
-        "order": 105,
+        "direction": 2,
+        "order": 72,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 10630
+        "frame_index": 7909
       },
       {
         "position": [
-          50,
-          40
+          41,
+          12
         ],
-        "direction": 1,
-        "order": 106,
+        "direction": 2,
+        "order": 73,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 10634
+        "frame_index": 7913
       },
       {
         "position": [
-          55,
-          17
-        ],
-        "direction": 1,
-        "order": 107,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 11087
-      },
-      {
-        "position": [
-          37,
+          36,
           16
         ],
         "direction": 0,
-        "order": 108,
+        "order": 74,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 11424
+        "frame_index": 7931
       },
       {
         "position": [
-          37,
-          22
-        ],
-        "direction": 0,
-        "order": 109,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 11431
-      },
-      {
-        "position": [
-          20,
+          36,
           19
         ],
         "direction": 0,
-        "order": 110,
+        "order": 75,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 12182
+        "frame_index": 7934
       },
       {
         "position": [
-          20,
+          36,
           22
         ],
         "direction": 0,
-        "order": 111,
+        "order": 76,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 12186
+        "frame_index": 7938
       },
       {
         "position": [
-          20,
+          36,
           25
         ],
         "direction": 0,
-        "order": 112,
+        "order": 77,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 12190
+        "frame_index": 7942
       },
       {
         "position": [
-          20,
-          28
+          28,
+          23
         ],
-        "direction": 0,
-        "order": 113,
+        "direction": 1,
+        "order": 78,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 12194
+        "frame_index": 8034
+      },
+      {
+        "position": [
+          28,
+          20
+        ],
+        "direction": 1,
+        "order": 79,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8038
       },
       {
         "position": [
           21,
-          40
+          17
         ],
-        "direction": 3,
-        "order": 114,
+        "direction": 0,
+        "order": 80,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 12340
+        "frame_index": 8238
       },
       {
         "position": [
-          27,
-          38
+          21,
+          20
         ],
-        "direction": 2,
-        "order": 115,
+        "direction": 0,
+        "order": 81,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 12413
+        "frame_index": 8242
+      },
+      {
+        "position": [
+          21,
+          23
+        ],
+        "direction": 0,
+        "order": 82,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8246
       },
       {
         "position": [
@@ -1571,11 +1053,23 @@
           38
         ],
         "direction": 2,
-        "order": 116,
+        "order": 83,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 12417
+        "frame_index": 8451
+      },
+      {
+        "position": [
+          21,
+          38
+        ],
+        "direction": 2,
+        "order": 84,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8455
       },
       {
         "position": [
@@ -1583,11 +1077,11 @@
           38
         ],
         "direction": 2,
-        "order": 117,
+        "order": 85,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 12425
+        "frame_index": 8459
       },
       {
         "position": [
@@ -1595,99 +1089,111 @@
           34
         ],
         "direction": 1,
-        "order": 118,
+        "order": 86,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 12442
+        "frame_index": 8477
       },
       {
         "position": [
-          13,
-          16
+          11,
+          22
         ],
         "direction": 1,
-        "order": 119,
+        "order": 87,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 12849
+        "frame_index": 8599
+      },
+      {
+        "position": [
+          11,
+          16
+        ],
+        "direction": 1,
+        "order": 88,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8606
       }
     ],
     "12": [
       {
         "position": [
-          10,
-          16
+          12,
+          19
         ],
         "direction": 1,
-        "order": 120,
+        "order": 90,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 12912
+        "frame_index": 8624
       },
       {
         "position": [
-          10,
-          13
+          9,
+          15
         ],
-        "direction": 1,
-        "order": 121,
+        "direction": 0,
+        "order": 91,
         "progress_type": "new_area",
-        "forward_progress_score": 1.0,
+        "forward_progress_score": 0.975,
         "destination_map": null,
-        "frame_index": 12916
-      },
-      {
-        "position": [
-          16,
-          10
-        ],
-        "direction": 1,
-        "order": 122,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 13085
+        "frame_index": 8751
       },
       {
         "position": [
           16,
-          7
+          15
         ],
         "direction": 1,
-        "order": 123,
+        "order": 92,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 13089
+        "frame_index": 8782
+      },
+      {
+        "position": [
+          16,
+          12
+        ],
+        "direction": 1,
+        "order": 93,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8786
+      },
+      {
+        "position": [
+          16,
+          9
+        ],
+        "direction": 1,
+        "order": 94,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8790
       }
     ],
     "24": [
       {
         "position": [
           28,
-          46
+          33
         ],
-        "direction": 1,
-        "order": 124,
+        "direction": 2,
+        "order": 95,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 13091
-      },
-      {
-        "position": [
-          28,
-          43
-        ],
-        "direction": 1,
-        "order": 125,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 13095
+        "frame_index": 8834
       },
       {
         "position": [
@@ -1695,83 +1201,119 @@
           32
         ],
         "direction": 1,
-        "order": 126,
-        "progress_type": "new_area",
+        "order": 96,
+        "progress_type": "map_transition",
         "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 13198
+        "destination_map": 14,
+        "frame_index": 8855
       },
       {
         "position": [
-          23,
-          34
+          25,
+          35
         ],
-        "direction": 3,
-        "order": 127,
+        "direction": 2,
+        "order": 97,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 13486
+        "frame_index": 9010
       },
       {
         "position": [
-          26,
-          34
-        ],
-        "direction": 3,
-        "order": 128,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 13490
-      },
-      {
-        "position": [
-          29,
-          26
+          16,
+          37
         ],
         "direction": 1,
-        "order": 129,
-        "progress_type": "new_area",
+        "order": 98,
+        "progress_type": "map_transition",
         "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 13526
+        "destination_map": 11,
+        "frame_index": 9063
       },
       {
         "position": [
-          29,
-          23
+          31,
+          30
         ],
         "direction": 1,
-        "order": 130,
+        "order": 105,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 13529
+        "frame_index": 10156
       },
       {
         "position": [
-          29,
-          20
+          31,
+          27
         ],
         "direction": 1,
-        "order": 131,
+        "order": 106,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 13533
+        "frame_index": 10160
       },
       {
         "position": [
-          14,
-          21
+          31,
+          24
         ],
-        "direction": 0,
-        "order": 132,
+        "direction": 1,
+        "order": 107,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 13732
+        "frame_index": 10164
+      },
+      {
+        "position": [
+          28,
+          18
+        ],
+        "direction": 2,
+        "order": 108,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10180
+      },
+      {
+        "position": [
+          25,
+          18
+        ],
+        "direction": 2,
+        "order": 109,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10184
+      },
+      {
+        "position": [
+          22,
+          18
+        ],
+        "direction": 2,
+        "order": 110,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10188
+      },
+      {
+        "position": [
+          19,
+          18
+        ],
+        "direction": 2,
+        "order": 111,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10192
       },
       {
         "position": [
@@ -1779,547 +1321,123 @@
           23
         ],
         "direction": 1,
-        "order": 133,
-        "progress_type": "map_transition",
-        "forward_progress_score": 1.0,
-        "destination_map": 13,
-        "frame_index": 13824
-      },
-      {
-        "position": [
-          27,
-          17
-        ],
-        "direction": 2,
-        "order": 134,
+        "order": 112,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 14835
-      },
-      {
-        "position": [
-          24,
-          17
-        ],
-        "direction": 2,
-        "order": 135,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 14839
-      },
-      {
-        "position": [
-          21,
-          17
-        ],
-        "direction": 2,
-        "order": 136,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 14843
-      },
-      {
-        "position": [
-          18,
-          17
-        ],
-        "direction": 2,
-        "order": 137,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 14847
+        "frame_index": 10260
       },
       {
         "position": [
           35,
-          25
+          26
         ],
         "direction": 1,
-        "order": 138,
-        "progress_type": "map_transition",
-        "forward_progress_score": 1.0,
-        "destination_map": 11,
-        "frame_index": 15036
-      },
-      {
-        "position": [
-          46,
-          30
-        ],
-        "direction": 3,
-        "order": 152,
+        "order": 116,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 16077
-      },
+        "frame_index": 11180
+      }
+    ],
+    "16": [
       {
         "position": [
-          54,
-          28
+          30,
+          31
         ],
-        "direction": 3,
-        "order": 153,
-        "progress_type": "map_transition",
-        "forward_progress_score": 1.0,
-        "destination_map": 232,
-        "frame_index": 16184
-      },
-      {
-        "position": [
-          49,
-          28
-        ],
-        "direction": 2,
-        "order": 155,
+        "direction": 1,
+        "order": 99,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 16261
-      },
-      {
-        "position": [
-          41,
-          26
-        ],
-        "direction": 2,
-        "order": 156,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 16301
-      },
-      {
-        "position": [
-          38,
-          26
-        ],
-        "direction": 2,
-        "order": 157,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 16305
+        "frame_index": 9203
       },
       {
         "position": [
           30,
-          30
-        ],
-        "direction": 0,
-        "order": 158,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 16326
-      },
-      {
-        "position": [
-          32,
-          31
+          28
         ],
         "direction": 1,
-        "order": 159,
+        "order": 100,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 16458
+        "frame_index": 9207
       },
       {
         "position": [
-          51,
-          29
+          30,
+          25
+        ],
+        "direction": 1,
+        "order": 101,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9211
+      },
+      {
+        "position": [
+          14,
+          20
+        ],
+        "direction": 0,
+        "order": 102,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9285
+      },
+      {
+        "position": [
+          18,
+          25
         ],
         "direction": 3,
-        "order": 160,
+        "order": 103,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 16509
+        "frame_index": 9302
       },
       {
         "position": [
-          45,
-          28
+          22,
+          23
         ],
-        "direction": 2,
-        "order": 166,
+        "direction": 1,
+        "order": 104,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 18509
-      },
-      {
-        "position": [
-          42,
-          28
-        ],
-        "direction": 2,
-        "order": 167,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 18512
-      },
-      {
-        "position": [
-          39,
-          28
-        ],
-        "direction": 2,
-        "order": 168,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 18516
-      },
-      {
-        "position": [
-          35,
-          28
-        ],
-        "direction": 2,
-        "order": 169,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 18520
+        "frame_index": 9318
       }
     ],
-    "232": [
+    "22": [
       {
         "position": [
-          9,
-          18
+          20,
+          24
         ],
         "direction": 2,
-        "order": 154,
-        "progress_type": "new_area",
-        "forward_progress_score": 0.9,
-        "destination_map": null,
-        "frame_index": 16250
-      },
-      {
-        "position": [
-          17,
-          16
-        ],
-        "direction": 3,
-        "order": 161,
+        "order": 114,
         "progress_type": "new_area",
         "forward_progress_score": 1.0,
         "destination_map": null,
-        "frame_index": 16674
+        "frame_index": 10797
       },
       {
         "position": [
-          29,
-          12
-        ],
-        "direction": 2,
-        "order": 162,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 18418
-      },
-      {
-        "position": [
-          26,
-          12
-        ],
-        "direction": 2,
-        "order": 163,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 18422
-      },
-      {
-        "position": [
-          12,
-          16
-        ],
-        "direction": 2,
-        "order": 164,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 18468
-      },
-      {
-        "position": [
-          6,
-          18
-        ],
-        "direction": 2,
-        "order": 165,
-        "progress_type": "map_transition",
-        "forward_progress_score": 1.0,
-        "destination_map": 24,
-        "frame_index": 18496
-      },
-      {
-        "position": [
-          32,
-          12
-        ],
-        "direction": 3,
-        "order": 170,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 18796
-      },
-      {
-        "position": [
-          43,
-          16
-        ],
-        "direction": 0,
-        "order": 171,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 19328
-      },
-      {
-        "position": [
-          46,
-          22
-        ],
-        "direction": 3,
-        "order": 172,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 19345
-      },
-      {
-        "position": [
-          58,
-          12
-        ],
-        "direction": 3,
-        "order": 173,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 20182
-      },
-      {
-        "position": [
-          64,
-          15
-        ],
-        "direction": 0,
-        "order": 174,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 20198
-      },
-      {
-        "position": [
-          79,
-          15
+          24,
+          32
         ],
         "direction": 1,
-        "order": 175,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 20443
-      },
-      {
-        "position": [
-          79,
-          12
-        ],
-        "direction": 1,
-        "order": 176,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 20447
-      },
-      {
-        "position": [
-          79,
-          9
-        ],
-        "direction": 1,
-        "order": 177,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 20450
-      }
-    ],
-    "172": [
-      {
-        "position": [
-          19,
-          22
-        ],
-        "direction": 1,
-        "order": 178,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 20460
-      },
-      {
-        "position": [
-          19,
-          19
-        ],
-        "direction": 1,
-        "order": 179,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 20463
-      },
-      {
-        "position": [
-          19,
-          12
-        ],
-        "direction": 1,
-        "order": 180,
+        "order": 115,
         "progress_type": "map_transition",
         "forward_progress_score": 1.0,
         "destination_map": 14,
-        "frame_index": 20477
-      }
-    ],
-    "19": [
-      {
-        "position": [
-          21,
-          15
-        ],
-        "direction": 3,
-        "order": 181,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 20846
-      },
-      {
-        "position": [
-          26,
-          12
-        ],
-        "direction": 1,
-        "order": 182,
-        "progress_type": "map_transition",
-        "forward_progress_score": 1.0,
-        "destination_map": 25,
-        "frame_index": 20866
-      }
-    ],
-    "25": [
-      {
-        "position": [
-          25,
-          43
-        ],
-        "direction": 1,
-        "order": 183,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 20867
-      },
-      {
-        "position": [
-          19,
-          37
-        ],
-        "direction": 1,
-        "order": 184,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 21088
-      },
-      {
-        "position": [
-          21,
-          33
-        ],
-        "direction": 3,
-        "order": 185,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 21101
-      },
-      {
-        "position": [
-          32,
-          30
-        ],
-        "direction": 1,
-        "order": 186,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 21467
-      },
-      {
-        "position": [
-          32,
-          27
-        ],
-        "direction": 1,
-        "order": 187,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 21471
-      },
-      {
-        "position": [
-          40,
-          25
-        ],
-        "direction": 0,
-        "order": 188,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 21659
-      },
-      {
-        "position": [
-          40,
-          29
-        ],
-        "direction": 0,
-        "order": 189,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 21663
-      },
-      {
-        "position": [
-          39,
-          41
-        ],
-        "direction": 0,
-        "order": 190,
-        "progress_type": "new_area",
-        "forward_progress_score": 1.0,
-        "destination_map": null,
-        "frame_index": 22062
+        "frame_index": 11032
       }
     ]
   },
@@ -2335,66 +1453,10 @@
     {
       "map_id": 17,
       "position": [
-        15,
-        13
-      ],
-      "order": 2
-    },
-    {
-      "map_id": 17,
-      "position": [
         11,
         15
       ],
-      "order": 3
-    },
-    {
-      "map_id": 13,
-      "position": [
-        17,
-        22
-      ],
-      "order": 4
-    },
-    {
-      "map_id": 13,
-      "position": [
-        22,
-        14
-      ],
-      "order": 5
-    },
-    {
-      "map_id": 11,
-      "position": [
-        11,
-        13
-      ],
-      "order": 6
-    },
-    {
-      "map_id": 22,
-      "position": [
-        19,
-        10
-      ],
-      "order": 7
-    },
-    {
-      "map_id": 13,
-      "position": [
-        14,
-        13
-      ],
-      "order": 8
-    },
-    {
-      "map_id": 13,
-      "position": [
-        13,
-        16
-      ],
-      "order": 9
+      "order": 2
     },
     {
       "map_id": 13,
@@ -2402,23 +1464,31 @@
         13,
         19
       ],
-      "order": 10
+      "order": 3
     },
     {
       "map_id": 23,
       "position": [
-        19,
-        20
-      ],
-      "order": 11
-    },
-    {
-      "map_id": 23,
-      "position": [
-        19,
+        18,
         17
       ],
-      "order": 12
+      "order": 4
+    },
+    {
+      "map_id": 23,
+      "position": [
+        20,
+        9
+      ],
+      "order": 5
+    },
+    {
+      "map_id": 13,
+      "position": [
+        14,
+        14
+      ],
+      "order": 6
     },
     {
       "map_id": 23,
@@ -2426,15 +1496,7 @@
         19,
         13
       ],
-      "order": 13
-    },
-    {
-      "map_id": 23,
-      "position": [
-        19,
-        10
-      ],
-      "order": 14
+      "order": 7
     },
     {
       "map_id": 23,
@@ -2442,111 +1504,55 @@
         19,
         7
       ],
-      "order": 15
-    },
-    {
-      "map_id": 23,
-      "position": [
-        23,
-        39
-      ],
-      "order": 16
-    },
-    {
-      "map_id": 23,
-      "position": [
-        24,
-        42
-      ],
-      "order": 17
-    },
-    {
-      "map_id": 23,
-      "position": [
-        21,
-        42
-      ],
-      "order": 18
+      "order": 8
     },
     {
       "map_id": 23,
       "position": [
         18,
-        42
+        36
       ],
-      "order": 19
-    },
-    {
-      "map_id": 23,
-      "position": [
-        25,
-        19
-      ],
-      "order": 20
-    },
-    {
-      "map_id": 23,
-      "position": [
-        25,
-        15
-      ],
-      "order": 21
-    },
-    {
-      "map_id": 23,
-      "position": [
-        27,
-        13
-      ],
-      "order": 22
-    },
-    {
-      "map_id": 23,
-      "position": [
-        25,
-        9
-      ],
-      "order": 23
-    },
-    {
-      "map_id": 23,
-      "position": [
-        11,
-        13
-      ],
-      "order": 24
-    },
-    {
-      "map_id": 23,
-      "position": [
-        14,
-        19
-      ],
-      "order": 25
+      "order": 9
     },
     {
       "map_id": 23,
       "position": [
         17,
-        19
+        29
       ],
-      "order": 26
+      "order": 10
     },
     {
       "map_id": 23,
       "position": [
-        28,
-        16
+        20,
+        24
       ],
-      "order": 27
+      "order": 11
+    },
+    {
+      "map_id": 23,
+      "position": [
+        16,
+        26
+      ],
+      "order": 12
+    },
+    {
+      "map_id": 23,
+      "position": [
+        23,
+        20
+      ],
+      "order": 13
     },
     {
       "map_id": 35,
       "position": [
-        30,
+        31,
         46
       ],
-      "order": 28
+      "order": 14
     },
     {
       "map_id": 35,
@@ -2554,7 +1560,7 @@
         33,
         33
       ],
-      "order": 29
+      "order": 15
     },
     {
       "map_id": 14,
@@ -2562,311 +1568,63 @@
         14,
         15
       ],
-      "order": 30
+      "order": 16
     },
     {
       "map_id": 33,
-      "position": [
-        27,
-        33
-      ],
-      "order": 31
-    },
-    {
-      "map_id": 33,
-      "position": [
-        23,
-        27
-      ],
-      "order": 32
-    },
-    {
-      "map_id": 33,
-      "position": [
-        7,
-        25
-      ],
-      "order": 33
-    },
-    {
-      "map_id": 81,
-      "position": [
-        51,
-        19
-      ],
-      "order": 34
-    },
-    {
-      "map_id": 81,
-      "position": [
-        48,
-        23
-      ],
-      "order": 35
-    },
-    {
-      "map_id": 81,
-      "position": [
-        44,
-        23
-      ],
-      "order": 36
-    },
-    {
-      "map_id": 81,
-      "position": [
-        41,
-        23
-      ],
-      "order": 37
-    },
-    {
-      "map_id": 81,
-      "position": [
-        38,
-        23
-      ],
-      "order": 38
-    },
-    {
-      "map_id": 81,
-      "position": [
-        35,
-        23
-      ],
-      "order": 39
-    },
-    {
-      "map_id": 81,
-      "position": [
-        32,
-        23
-      ],
-      "order": 40
-    },
-    {
-      "map_id": 81,
-      "position": [
-        31,
-        12
-      ],
-      "order": 41
-    },
-    {
-      "map_id": 81,
-      "position": [
-        25,
-        15
-      ],
-      "order": 42
-    },
-    {
-      "map_id": 81,
-      "position": [
-        21,
-        21
-      ],
-      "order": 43
-    },
-    {
-      "map_id": 81,
-      "position": [
-        15,
-        13
-      ],
-      "order": 44
-    },
-    {
-      "map_id": 15,
-      "position": [
-        15,
-        12
-      ],
-      "order": 45
-    },
-    {
-      "map_id": 15,
-      "position": [
-        40,
-        23
-      ],
-      "order": 46
-    },
-    {
-      "map_id": 15,
-      "position": [
-        54,
-        13
-      ],
-      "order": 47
-    },
-    {
-      "map_id": 223,
-      "position": [
-        7,
-        23
-      ],
-      "order": 48
-    },
-    {
-      "map_id": 223,
-      "position": [
-        10,
-        23
-      ],
-      "order": 49
-    },
-    {
-      "map_id": 223,
-      "position": [
-        18,
-        27
-      ],
-      "order": 50
-    },
-    {
-      "map_id": 223,
-      "position": [
-        21,
-        27
-      ],
-      "order": 51
-    },
-    {
-      "map_id": 223,
-      "position": [
-        24,
-        27
-      ],
-      "order": 52
-    },
-    {
-      "map_id": 223,
-      "position": [
-        31,
-        29
-      ],
-      "order": 53
-    },
-    {
-      "map_id": 223,
-      "position": [
-        34,
-        29
-      ],
-      "order": 54
-    },
-    {
-      "map_id": 223,
-      "position": [
-        37,
-        29
-      ],
-      "order": 55
-    },
-    {
-      "map_id": 223,
       "position": [
         43,
-        26
+        27
       ],
-      "order": 56
+      "order": 17
     },
     {
-      "map_id": 43,
-      "position": [
-        43,
-        28
-      ],
-      "order": 57
-    },
-    {
-      "map_id": 43,
-      "position": [
-        28,
-        37
-      ],
-      "order": 58
-    },
-    {
-      "map_id": 43,
-      "position": [
-        31,
-        46
-      ],
-      "order": 59
-    },
-    {
-      "map_id": 31,
-      "position": [
-        15,
-        9
-      ],
-      "order": 60
-    },
-    {
-      "map_id": 31,
+      "map_id": 11,
       "position": [
         11,
-        11
-      ],
-      "order": 61
-    },
-    {
-      "map_id": 31,
-      "position": [
-        14,
-        23
-      ],
-      "order": 62
-    },
-    {
-      "map_id": 31,
-      "position": [
-        14,
-        37
-      ],
-      "order": 63
-    },
-    {
-      "map_id": 31,
-      "position": [
-        20,
-        44
-      ],
-      "order": 64
-    },
-    {
-      "map_id": 31,
-      "position": [
-        20,
-        47
-      ],
-      "order": 65
-    },
-    {
-      "map_id": 31,
-      "position": [
-        20,
-        7
-      ],
-      "order": 66
-    },
-    {
-      "map_id": 31,
-      "position": [
-        18,
         14
       ],
-      "order": 67
+      "order": 18
+    },
+    {
+      "map_id": 43,
+      "position": [
+        29,
+        37
+      ],
+      "order": 19
+    },
+    {
+      "map_id": 43,
+      "position": [
+        31,
+        44
+      ],
+      "order": 20
     },
     {
       "map_id": 31,
       "position": [
-        18,
+        19,
+        7
+      ],
+      "order": 21
+    },
+    {
+      "map_id": 31,
+      "position": [
+        19,
+        10
+      ],
+      "order": 22
+    },
+    {
+      "map_id": 31,
+      "position": [
+        23,
         17
       ],
-      "order": 68
+      "order": 23
     },
     {
       "map_id": 31,
@@ -2874,167 +1632,287 @@
         23,
         20
       ],
-      "order": 69
+      "order": 24
+    },
+    {
+      "map_id": 31,
+      "position": [
+        20,
+        45
+      ],
+      "order": 25
+    },
+    {
+      "map_id": 31,
+      "position": [
+        19,
+        15
+      ],
+      "order": 26
+    },
+    {
+      "map_id": 31,
+      "position": [
+        19,
+        18
+      ],
+      "order": 27
     },
     {
       "map_id": 23,
       "position": [
-        20,
+        19,
         46
       ],
-      "order": 70
+      "order": 28
     },
     {
       "map_id": 23,
+      "position": [
+        19,
+        26
+      ],
+      "order": 29
+    },
+    {
+      "map_id": 33,
+      "position": [
+        26,
+        32
+      ],
+      "order": 30
+    },
+    {
+      "map_id": 33,
+      "position": [
+        7,
+        24
+      ],
+      "order": 31
+    },
+    {
+      "map_id": 81,
+      "position": [
+        37,
+        12
+      ],
+      "order": 32
+    },
+    {
+      "map_id": 81,
+      "position": [
+        34,
+        12
+      ],
+      "order": 33
+    },
+    {
+      "map_id": 81,
+      "position": [
+        31,
+        12
+      ],
+      "order": 34
+    },
+    {
+      "map_id": 81,
+      "position": [
+        26,
+        13
+      ],
+      "order": 35
+    },
+    {
+      "map_id": 81,
+      "position": [
+        22,
+        20
+      ],
+      "order": 36
+    },
+    {
+      "map_id": 81,
+      "position": [
+        19,
+        20
+      ],
+      "order": 37
+    },
+    {
+      "map_id": 81,
+      "position": [
+        15,
+        12
+      ],
+      "order": 38
+    },
+    {
+      "map_id": 15,
+      "position": [
+        17,
+        24
+      ],
+      "order": 39
+    },
+    {
+      "map_id": 15,
+      "position": [
+        20,
+        24
+      ],
+      "order": 40
+    },
+    {
+      "map_id": 15,
+      "position": [
+        23,
+        24
+      ],
+      "order": 41
+    },
+    {
+      "map_id": 15,
+      "position": [
+        26,
+        24
+      ],
+      "order": 42
+    },
+    {
+      "map_id": 15,
+      "position": [
+        29,
+        24
+      ],
+      "order": 43
+    },
+    {
+      "map_id": 15,
+      "position": [
+        32,
+        24
+      ],
+      "order": 44
+    },
+    {
+      "map_id": 15,
+      "position": [
+        35,
+        24
+      ],
+      "order": 45
+    },
+    {
+      "map_id": 15,
+      "position": [
+        53,
+        15
+      ],
+      "order": 46
+    },
+    {
+      "map_id": 223,
+      "position": [
+        14,
+        25
+      ],
+      "order": 47
+    },
+    {
+      "map_id": 223,
+      "position": [
+        17,
+        25
+      ],
+      "order": 48
+    },
+    {
+      "map_id": 223,
       "position": [
         20,
         25
       ],
-      "order": 71
+      "order": 49
     },
     {
-      "map_id": 23,
+      "map_id": 223,
       "position": [
         23,
         25
       ],
-      "order": 72
+      "order": 50
     },
     {
-      "map_id": 35,
+      "map_id": 223,
       "position": [
-        32,
-        45
-      ],
-      "order": 73
-    },
-    {
-      "map_id": 33,
-      "position": [
-        34,
+        29,
         28
       ],
-      "order": 74
+      "order": 51
     },
     {
-      "map_id": 33,
+      "map_id": 223,
       "position": [
-        28,
-        25
+        29,
+        31
       ],
-      "order": 75
+      "order": 52
     },
     {
-      "map_id": 33,
-      "position": [
-        28,
-        22
-      ],
-      "order": 76
-    },
-    {
-      "map_id": 81,
-      "position": [
-        43,
-        17
-      ],
-      "order": 77
-    },
-    {
-      "map_id": 81,
-      "position": [
-        55,
-        16
-      ],
-      "order": 78
-    },
-    {
-      "map_id": 33,
-      "position": [
-        11,
-        26
-      ],
-      "order": 79
-    },
-    {
-      "map_id": 33,
-      "position": [
-        14,
-        26
-      ],
-      "order": 80
-    },
-    {
-      "map_id": 33,
-      "position": [
-        17,
-        26
-      ],
-      "order": 81
-    },
-    {
-      "map_id": 33,
-      "position": [
-        20,
-        26
-      ],
-      "order": 82
-    },
-    {
-      "map_id": 33,
-      "position": [
-        27,
-        28
-      ],
-      "order": 83
-    },
-    {
-      "map_id": 33,
+      "map_id": 223,
       "position": [
         33,
         33
       ],
-      "order": 84
+      "order": 53
     },
     {
       "map_id": 33,
       "position": [
-        30,
-        34
+        25,
+        26
       ],
-      "order": 85
+      "order": 54
+    },
+    {
+      "map_id": 33,
+      "position": [
+        22,
+        26
+      ],
+      "order": 55
+    },
+    {
+      "map_id": 33,
+      "position": [
+        19,
+        26
+      ],
+      "order": 56
     },
     {
       "map_id": 33,
       "position": [
         29,
-        11
+        9
       ],
-      "order": 86
-    },
-    {
-      "map_id": 33,
-      "position": [
-        29,
-        8
-      ],
-      "order": 87
+      "order": 57
     },
     {
       "map_id": 21,
       "position": [
         17,
-        85
+        86
       ],
-      "order": 88
+      "order": 58
     },
     {
       "map_id": 21,
       "position": [
         17,
-        82
+        83
       ],
-      "order": 89
+      "order": 59
     },
     {
       "map_id": 21,
@@ -3042,39 +1920,15 @@
         17,
         79
       ],
-      "order": 90
+      "order": 60
     },
     {
       "map_id": 21,
       "position": [
-        15,
-        75
+        13,
+        74
       ],
-      "order": 91
-    },
-    {
-      "map_id": 21,
-      "position": [
-        11,
-        73
-      ],
-      "order": 92
-    },
-    {
-      "map_id": 21,
-      "position": [
-        11,
-        70
-      ],
-      "order": 93
-    },
-    {
-      "map_id": 21,
-      "position": [
-        17,
-        60
-      ],
-      "order": 94
+      "order": 61
     },
     {
       "map_id": 21,
@@ -3082,15 +1936,7 @@
         12,
         58
       ],
-      "order": 95
-    },
-    {
-      "map_id": 14,
-      "position": [
-        14,
-        12
-      ],
-      "order": 96
+      "order": 62
     },
     {
       "map_id": 14,
@@ -3098,781 +1944,466 @@
         14,
         8
       ],
-      "order": 97
+      "order": 63
     },
     {
       "map_id": 36,
       "position": [
-        35,
-        50
+        38,
+        55
+      ],
+      "order": 64
+    },
+    {
+      "map_id": 36,
+      "position": [
+        43,
+        64
+      ],
+      "order": 65
+    },
+    {
+      "map_id": 36,
+      "position": [
+        54,
+        63
+      ],
+      "order": 66
+    },
+    {
+      "map_id": 36,
+      "position": [
+        56,
+        47
+      ],
+      "order": 67
+    },
+    {
+      "map_id": 36,
+      "position": [
+        56,
+        44
+      ],
+      "order": 68
+    },
+    {
+      "map_id": 36,
+      "position": [
+        56,
+        41
+      ],
+      "order": 69
+    },
+    {
+      "map_id": 36,
+      "position": [
+        49,
+        24
+      ],
+      "order": 70
+    },
+    {
+      "map_id": 36,
+      "position": [
+        47,
+        12
+      ],
+      "order": 71
+    },
+    {
+      "map_id": 36,
+      "position": [
+        44,
+        12
+      ],
+      "order": 72
+    },
+    {
+      "map_id": 36,
+      "position": [
+        41,
+        12
+      ],
+      "order": 73
+    },
+    {
+      "map_id": 36,
+      "position": [
+        36,
+        16
+      ],
+      "order": 74
+    },
+    {
+      "map_id": 36,
+      "position": [
+        36,
+        19
+      ],
+      "order": 75
+    },
+    {
+      "map_id": 36,
+      "position": [
+        36,
+        22
+      ],
+      "order": 76
+    },
+    {
+      "map_id": 36,
+      "position": [
+        36,
+        25
+      ],
+      "order": 77
+    },
+    {
+      "map_id": 36,
+      "position": [
+        28,
+        23
+      ],
+      "order": 78
+    },
+    {
+      "map_id": 36,
+      "position": [
+        28,
+        20
+      ],
+      "order": 79
+    },
+    {
+      "map_id": 36,
+      "position": [
+        21,
+        17
+      ],
+      "order": 80
+    },
+    {
+      "map_id": 36,
+      "position": [
+        21,
+        20
+      ],
+      "order": 81
+    },
+    {
+      "map_id": 36,
+      "position": [
+        21,
+        23
+      ],
+      "order": 82
+    },
+    {
+      "map_id": 36,
+      "position": [
+        24,
+        38
+      ],
+      "order": 83
+    },
+    {
+      "map_id": 36,
+      "position": [
+        21,
+        38
+      ],
+      "order": 84
+    },
+    {
+      "map_id": 36,
+      "position": [
+        18,
+        38
+      ],
+      "order": 85
+    },
+    {
+      "map_id": 36,
+      "position": [
+        13,
+        34
+      ],
+      "order": 86
+    },
+    {
+      "map_id": 36,
+      "position": [
+        11,
+        22
+      ],
+      "order": 87
+    },
+    {
+      "map_id": 36,
+      "position": [
+        11,
+        16
+      ],
+      "order": 88
+    },
+    {
+      "map_id": 14,
+      "position": [
+        14,
+        12
+      ],
+      "order": 89
+    },
+    {
+      "map_id": 12,
+      "position": [
+        12,
+        19
+      ],
+      "order": 90
+    },
+    {
+      "map_id": 12,
+      "position": [
+        9,
+        15
+      ],
+      "order": 91
+    },
+    {
+      "map_id": 12,
+      "position": [
+        16,
+        15
+      ],
+      "order": 92
+    },
+    {
+      "map_id": 12,
+      "position": [
+        16,
+        12
+      ],
+      "order": 93
+    },
+    {
+      "map_id": 12,
+      "position": [
+        16,
+        9
+      ],
+      "order": 94
+    },
+    {
+      "map_id": 24,
+      "position": [
+        28,
+        33
+      ],
+      "order": 95
+    },
+    {
+      "map_id": 24,
+      "position": [
+        24,
+        32
+      ],
+      "order": 96
+    },
+    {
+      "map_id": 24,
+      "position": [
+        25,
+        35
+      ],
+      "order": 97
+    },
+    {
+      "map_id": 24,
+      "position": [
+        16,
+        37
       ],
       "order": 98
     },
     {
-      "map_id": 36,
+      "map_id": 16,
       "position": [
-        32,
-        50
+        30,
+        31
       ],
       "order": 99
     },
     {
-      "map_id": 36,
+      "map_id": 16,
       "position": [
-        27,
-        51
+        30,
+        28
       ],
       "order": 100
     },
     {
-      "map_id": 36,
+      "map_id": 16,
       "position": [
         30,
-        51
+        25
       ],
       "order": 101
     },
     {
-      "map_id": 36,
+      "map_id": 16,
       "position": [
-        42,
-        64
+        14,
+        20
       ],
       "order": 102
     },
     {
-      "map_id": 36,
+      "map_id": 16,
       "position": [
-        49,
-        61
+        18,
+        25
       ],
       "order": 103
     },
     {
-      "map_id": 36,
+      "map_id": 16,
       "position": [
-        46,
-        51
+        22,
+        23
       ],
       "order": 104
     },
     {
-      "map_id": 36,
+      "map_id": 24,
       "position": [
-        50,
-        43
+        31,
+        30
       ],
       "order": 105
     },
     {
-      "map_id": 36,
+      "map_id": 24,
       "position": [
-        50,
-        40
+        31,
+        27
       ],
       "order": 106
     },
     {
-      "map_id": 36,
+      "map_id": 24,
       "position": [
-        55,
-        17
+        31,
+        24
       ],
       "order": 107
     },
     {
-      "map_id": 36,
+      "map_id": 24,
       "position": [
-        37,
-        16
+        28,
+        18
       ],
       "order": 108
     },
     {
-      "map_id": 36,
+      "map_id": 24,
       "position": [
-        37,
-        22
+        25,
+        18
       ],
       "order": 109
     },
     {
-      "map_id": 36,
+      "map_id": 24,
       "position": [
-        20,
-        19
+        22,
+        18
       ],
       "order": 110
     },
     {
-      "map_id": 36,
+      "map_id": 24,
       "position": [
-        20,
-        22
+        19,
+        18
       ],
       "order": 111
     },
     {
-      "map_id": 36,
+      "map_id": 24,
       "position": [
-        20,
-        25
+        22,
+        23
       ],
       "order": 112
     },
     {
-      "map_id": 36,
+      "map_id": 13,
       "position": [
-        20,
-        28
+        13,
+        16
       ],
       "order": 113
     },
     {
-      "map_id": 36,
+      "map_id": 22,
       "position": [
-        21,
-        40
+        20,
+        24
       ],
       "order": 114
     },
     {
-      "map_id": 36,
+      "map_id": 22,
       "position": [
-        27,
-        38
+        24,
+        32
       ],
       "order": 115
     },
     {
-      "map_id": 36,
+      "map_id": 24,
       "position": [
-        24,
-        38
+        35,
+        26
       ],
       "order": 116
     },
     {
-      "map_id": 36,
+      "map_id": 35,
       "position": [
-        18,
-        38
+        24,
+        32
       ],
       "order": 117
-    },
-    {
-      "map_id": 36,
-      "position": [
-        13,
-        34
-      ],
-      "order": 118
-    },
-    {
-      "map_id": 36,
-      "position": [
-        13,
-        16
-      ],
-      "order": 119
-    },
-    {
-      "map_id": 12,
-      "position": [
-        10,
-        16
-      ],
-      "order": 120
-    },
-    {
-      "map_id": 12,
-      "position": [
-        10,
-        13
-      ],
-      "order": 121
-    },
-    {
-      "map_id": 12,
-      "position": [
-        16,
-        10
-      ],
-      "order": 122
-    },
-    {
-      "map_id": 12,
-      "position": [
-        16,
-        7
-      ],
-      "order": 123
-    },
-    {
-      "map_id": 24,
-      "position": [
-        28,
-        46
-      ],
-      "order": 124
-    },
-    {
-      "map_id": 24,
-      "position": [
-        28,
-        43
-      ],
-      "order": 125
-    },
-    {
-      "map_id": 24,
-      "position": [
-        24,
-        32
-      ],
-      "order": 126
-    },
-    {
-      "map_id": 24,
-      "position": [
-        23,
-        34
-      ],
-      "order": 127
-    },
-    {
-      "map_id": 24,
-      "position": [
-        26,
-        34
-      ],
-      "order": 128
-    },
-    {
-      "map_id": 24,
-      "position": [
-        29,
-        26
-      ],
-      "order": 129
-    },
-    {
-      "map_id": 24,
-      "position": [
-        29,
-        23
-      ],
-      "order": 130
-    },
-    {
-      "map_id": 24,
-      "position": [
-        29,
-        20
-      ],
-      "order": 131
-    },
-    {
-      "map_id": 24,
-      "position": [
-        14,
-        21
-      ],
-      "order": 132
-    },
-    {
-      "map_id": 24,
-      "position": [
-        22,
-        23
-      ],
-      "order": 133
-    },
-    {
-      "map_id": 24,
-      "position": [
-        27,
-        17
-      ],
-      "order": 134
-    },
-    {
-      "map_id": 24,
-      "position": [
-        24,
-        17
-      ],
-      "order": 135
-    },
-    {
-      "map_id": 24,
-      "position": [
-        21,
-        17
-      ],
-      "order": 136
-    },
-    {
-      "map_id": 24,
-      "position": [
-        18,
-        17
-      ],
-      "order": 137
-    },
-    {
-      "map_id": 24,
-      "position": [
-        35,
-        25
-      ],
-      "order": 138
-    },
-    {
-      "map_id": 35,
-      "position": [
-        27,
-        16
-      ],
-      "order": 139
-    },
-    {
-      "map_id": 35,
-      "position": [
-        24,
-        16
-      ],
-      "order": 140
-    },
-    {
-      "map_id": 35,
-      "position": [
-        21,
-        16
-      ],
-      "order": 141
-    },
-    {
-      "map_id": 35,
-      "position": [
-        18,
-        16
-      ],
-      "order": 142
-    },
-    {
-      "map_id": 35,
-      "position": [
-        14,
-        18
-      ],
-      "order": 143
-    },
-    {
-      "map_id": 35,
-      "position": [
-        16,
-        25
-      ],
-      "order": 144
-    },
-    {
-      "map_id": 35,
-      "position": [
-        22,
-        24
-      ],
-      "order": 145
-    },
-    {
-      "map_id": 22,
-      "position": [
-        19,
-        24
-      ],
-      "order": 146
-    },
-    {
-      "map_id": 22,
-      "position": [
-        14,
-        20
-      ],
-      "order": 147
-    },
-    {
-      "map_id": 22,
-      "position": [
-        29,
-        19
-      ],
-      "order": 148
-    },
-    {
-      "map_id": 22,
-      "position": [
-        29,
-        23
-      ],
-      "order": 149
-    },
-    {
-      "map_id": 22,
-      "position": [
-        29,
-        26
-      ],
-      "order": 150
-    },
-    {
-      "map_id": 22,
-      "position": [
-        24,
-        32
-      ],
-      "order": 151
-    },
-    {
-      "map_id": 24,
-      "position": [
-        46,
-        30
-      ],
-      "order": 152
-    },
-    {
-      "map_id": 24,
-      "position": [
-        54,
-        28
-      ],
-      "order": 153
-    },
-    {
-      "map_id": 232,
-      "position": [
-        9,
-        18
-      ],
-      "order": 154
-    },
-    {
-      "map_id": 24,
-      "position": [
-        49,
-        28
-      ],
-      "order": 155
-    },
-    {
-      "map_id": 24,
-      "position": [
-        41,
-        26
-      ],
-      "order": 156
-    },
-    {
-      "map_id": 24,
-      "position": [
-        38,
-        26
-      ],
-      "order": 157
-    },
-    {
-      "map_id": 24,
-      "position": [
-        30,
-        30
-      ],
-      "order": 158
-    },
-    {
-      "map_id": 24,
-      "position": [
-        32,
-        31
-      ],
-      "order": 159
-    },
-    {
-      "map_id": 24,
-      "position": [
-        51,
-        29
-      ],
-      "order": 160
-    },
-    {
-      "map_id": 232,
-      "position": [
-        17,
-        16
-      ],
-      "order": 161
-    },
-    {
-      "map_id": 232,
-      "position": [
-        29,
-        12
-      ],
-      "order": 162
-    },
-    {
-      "map_id": 232,
-      "position": [
-        26,
-        12
-      ],
-      "order": 163
-    },
-    {
-      "map_id": 232,
-      "position": [
-        12,
-        16
-      ],
-      "order": 164
-    },
-    {
-      "map_id": 232,
-      "position": [
-        6,
-        18
-      ],
-      "order": 165
-    },
-    {
-      "map_id": 24,
-      "position": [
-        45,
-        28
-      ],
-      "order": 166
-    },
-    {
-      "map_id": 24,
-      "position": [
-        42,
-        28
-      ],
-      "order": 167
-    },
-    {
-      "map_id": 24,
-      "position": [
-        39,
-        28
-      ],
-      "order": 168
-    },
-    {
-      "map_id": 24,
-      "position": [
-        35,
-        28
-      ],
-      "order": 169
-    },
-    {
-      "map_id": 232,
-      "position": [
-        32,
-        12
-      ],
-      "order": 170
-    },
-    {
-      "map_id": 232,
-      "position": [
-        43,
-        16
-      ],
-      "order": 171
-    },
-    {
-      "map_id": 232,
-      "position": [
-        46,
-        22
-      ],
-      "order": 172
-    },
-    {
-      "map_id": 232,
-      "position": [
-        58,
-        12
-      ],
-      "order": 173
-    },
-    {
-      "map_id": 232,
-      "position": [
-        64,
-        15
-      ],
-      "order": 174
-    },
-    {
-      "map_id": 232,
-      "position": [
-        79,
-        15
-      ],
-      "order": 175
-    },
-    {
-      "map_id": 232,
-      "position": [
-        79,
-        12
-      ],
-      "order": 176
-    },
-    {
-      "map_id": 232,
-      "position": [
-        79,
-        9
-      ],
-      "order": 177
-    },
-    {
-      "map_id": 172,
-      "position": [
-        19,
-        22
-      ],
-      "order": 178
-    },
-    {
-      "map_id": 172,
-      "position": [
-        19,
-        19
-      ],
-      "order": 179
-    },
-    {
-      "map_id": 172,
-      "position": [
-        19,
-        12
-      ],
-      "order": 180
-    },
-    {
-      "map_id": 19,
-      "position": [
-        21,
-        15
-      ],
-      "order": 181
-    },
-    {
-      "map_id": 19,
-      "position": [
-        26,
-        12
-      ],
-      "order": 182
-    },
-    {
-      "map_id": 25,
-      "position": [
-        25,
-        43
-      ],
-      "order": 183
-    },
-    {
-      "map_id": 25,
-      "position": [
-        19,
-        37
-      ],
-      "order": 184
-    },
-    {
-      "map_id": 25,
-      "position": [
-        21,
-        33
-      ],
-      "order": 185
-    },
-    {
-      "map_id": 25,
-      "position": [
-        32,
-        30
-      ],
-      "order": 186
-    },
-    {
-      "map_id": 25,
-      "position": [
-        32,
-        27
-      ],
-      "order": 187
-    },
-    {
-      "map_id": 25,
-      "position": [
-        40,
-        25
-      ],
-      "order": 188
-    },
-    {
-      "map_id": 25,
-      "position": [
-        40,
-        29
-      ],
-      "order": 189
-    },
-    {
-      "map_id": 25,
-      "position": [
-        39,
-        41
-      ],
-      "order": 190
     }
   ],
   "metadata": {
-    "total_targets": 190,
+    "total_targets": 117,
     "maps_with_targets": [
       11,
       12,
       13,
       14,
       15,
+      16,
       17,
-      19,
       21,
       22,
       23,
       24,
-      25,
       31,
       33,
       35,
       36,
       43,
       81,
-      172,
-      223,
-      232
+      223
     ],
     "analysis_window_after": 40,
     "min_forward_progress": 0.5,
     "dedup_radius": 2,
-    "generated_from_frames": 22065
+    "generated_from_frames": 11437
   }
 }
