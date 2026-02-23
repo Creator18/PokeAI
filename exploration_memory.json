@@ -383,6 +383,17 @@
         "destination_map": 13,
         "use_count": 1,
         "last_used": 141002
+      },
+      {
+        "position": [
+          14,
+          8
+        ],
+        "direction": 0,
+        "action": "walk",
+        "destination_map": 12,
+        "use_count": 1,
+        "last_used": 34000
       }
     ],
     "temp_debt": 15.0,
@@ -2201,10 +2212,6 @@
       ],
       [
         19,
-        7
-      ],
-      [
-        19,
         45
       ],
       [
@@ -2876,6 +2883,10 @@
         27
       ],
       [
+        19,
+        7
+      ],
+      [
         17,
         10
       ],
@@ -3031,6 +3042,28 @@
         "destination_map": 15,
         "use_count": 1,
         "last_used": 73931
+      },
+      {
+        "position": [
+          20,
+          8
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 34,
+        "use_count": 1,
+        "last_used": 14463
+      },
+      {
+        "position": [
+          18,
+          9
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 34,
+        "use_count": 1,
+        "last_used": 14776
       }
     ],
     "temp_debt": 15.0,
@@ -7241,6 +7274,10 @@
         12
       ],
       [
+        18,
+        12
+      ],
+      [
         9,
         12
       ],
@@ -7523,6 +7560,10 @@
         13
       ],
       [
+        17,
+        12
+      ],
+      [
         8,
         9
       ],
@@ -7661,6 +7702,10 @@
       [
         16,
         10
+      ],
+      [
+        18,
+        16
       ],
       [
         20,
@@ -7939,6 +7984,10 @@
         15
       ],
       [
+        18,
+        15
+      ],
+      [
         12,
         11
       ],
@@ -7961,6 +8010,10 @@
       [
         13,
         15
+      ],
+      [
+        15,
+        12
       ],
       [
         6,
@@ -7972,7 +8025,7 @@
       ]
     ],
     "interactable_objects": [],
-    "last_visited_timestep": 75412,
+    "last_visited_timestep": 8262,
     "transitions": [
       {
         "position": [
@@ -8138,6 +8191,17 @@
         "destination_map": 17,
         "use_count": 1,
         "last_used": 75413
+      },
+      {
+        "position": [
+          11,
+          15
+        ],
+        "direction": 0,
+        "action": "walk",
+        "destination_map": 13,
+        "use_count": 3,
+        "last_used": 8263
       }
     ],
     "temp_debt": 15.0,
@@ -8384,7 +8448,7 @@
         ],
         "direction_attempts": {
           "0": 2,
-          "1": 2,
+          "1": 4,
           "2": 0,
           "3": 1
         },
@@ -8404,7 +8468,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 6,
+          "1": 8,
           "2": 1,
           "3": 1
         },
@@ -8516,7 +8580,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 1,
+          "1": 2,
           "2": 0,
           "3": 1
         },
@@ -8761,13 +8825,15 @@
       },
       "13_13": {
         "directions_tried": [
-          1
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 0,
           "1": 6,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -9627,6 +9693,22 @@
           "3": 0
         },
         "exhausted": false
+      },
+      "18_12": {
+        "directions_tried": [],
+        "direction_attempts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": false
       }
     }
   },
@@ -9678,6 +9760,61 @@
         "destination_map": 24,
         "use_count": 1,
         "last_used": 164535
+      },
+      {
+        "position": [
+          18,
+          8
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 24,
+        "use_count": 1,
+        "last_used": 30859
+      },
+      {
+        "position": [
+          13,
+          58
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 14,
+        "use_count": 1,
+        "last_used": 24850
+      },
+      {
+        "position": [
+          12,
+          16
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 14,
+        "use_count": 2,
+        "last_used": 34133
+      },
+      {
+        "position": [
+          12,
+          20
+        ],
+        "direction": 0,
+        "action": "walk",
+        "destination_map": 14,
+        "use_count": 1,
+        "last_used": 34082
+      },
+      {
+        "position": [
+          18,
+          9
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 24,
+        "use_count": 1,
+        "last_used": 34365
       }
     ],
     "temp_debt": 0.0,
@@ -9816,6 +9953,28 @@
         "destination_map": 14,
         "use_count": 1,
         "last_used": 164067
+      },
+      {
+        "position": [
+          12,
+          16
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 14,
+        "use_count": 1,
+        "last_used": 30627
+      },
+      {
+        "position": [
+          36,
+          69
+        ],
+        "direction": 0,
+        "action": "walk",
+        "destination_map": 14,
+        "use_count": 1,
+        "last_used": 24654
       }
     ],
     "temp_debt": 0.0,
@@ -10595,7 +10754,7 @@
       ]
     ],
     "interactable_objects": [],
-    "last_visited_timestep": 7661,
+    "last_visited_timestep": 7168,
     "transitions": [
       {
         "position": [
@@ -10717,6 +10876,28 @@
         "destination_map": 17,
         "use_count": 1,
         "last_used": 7662
+      },
+      {
+        "position": [
+          52,
+          13
+        ],
+        "direction": 3,
+        "action": "walk",
+        "destination_map": 223,
+        "use_count": 1,
+        "last_used": 22307
+      },
+      {
+        "position": [
+          11,
+          15
+        ],
+        "direction": 0,
+        "action": "walk",
+        "destination_map": 13,
+        "use_count": 1,
+        "last_used": 7169
       }
     ],
     "temp_debt": 15.0,
@@ -11921,12 +12102,13 @@
       },
       "10_10": {
         "directions_tried": [
+          1,
           2,
           3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 0,
+          "1": 1,
           "2": 1,
           "3": 1
         },
@@ -11940,13 +12122,16 @@
       },
       "10_11": {
         "directions_tried": [
-          0
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 2,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "1": 1,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -11954,7 +12139,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "9_11": {
         "directions_tried": [
@@ -12133,10 +12318,11 @@
       },
       "9_12": {
         "directions_tried": [
+          0,
           1
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 2,
           "2": 0,
           "3": 0
@@ -14689,6 +14875,10 @@
       ],
       [
         21,
+        14
+      ],
+      [
+        21,
         23
       ],
       [
@@ -15165,7 +15355,7 @@
       ]
     ],
     "interactable_objects": [],
-    "last_visited_timestep": 5822,
+    "last_visited_timestep": 11908,
     "transitions": [
       {
         "position": [
@@ -15650,6 +15840,61 @@
         "destination_map": 23,
         "use_count": 1,
         "last_used": 5823
+      },
+      {
+        "position": [
+          17,
+          9
+        ],
+        "direction": 2,
+        "action": "walk",
+        "destination_map": 17,
+        "use_count": 1,
+        "last_used": 4310
+      },
+      {
+        "position": [
+          18,
+          9
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 25,
+        "use_count": 1,
+        "last_used": 11629
+      },
+      {
+        "position": [
+          17,
+          9
+        ],
+        "direction": 2,
+        "action": "walk",
+        "destination_map": 17,
+        "use_count": 1,
+        "last_used": 540
+      },
+      {
+        "position": [
+          13,
+          14
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 11,
+        "use_count": 3,
+        "last_used": 8071
+      },
+      {
+        "position": [
+          13,
+          19
+        ],
+        "direction": 0,
+        "action": "walk",
+        "destination_map": 23,
+        "use_count": 1,
+        "last_used": 5663
       }
     ],
     "temp_debt": 15.0,
@@ -15657,13 +15902,15 @@
       "13_14": {
         "directions_tried": [
           0,
-          1
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 1,
           "1": 2,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -15671,18 +15918,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "13_15": {
         "directions_tried": [
           0,
-          1
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 2,
           "1": 8,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -15690,7 +15939,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "13_17": {
         "directions_tried": [],
@@ -15752,7 +16001,7 @@
         "direction_attempts": {
           "0": 0,
           "1": 0,
-          "2": 10,
+          "2": 12,
           "3": 0
         },
         "direction_successes": {
@@ -15765,14 +16014,16 @@
       },
       "10_15": {
         "directions_tried": [
+          0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 2,
           "2": 3,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -15780,16 +16031,18 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "10_14": {
         "directions_tried": [
+          0,
+          1,
           2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
+          "0": 1,
+          "1": 1,
           "2": 12,
           "3": 19
         },
@@ -15799,16 +16052,18 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "10_13": {
         "directions_tried": [
+          0,
+          1,
           2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
+          "0": 1,
+          "1": 1,
           "2": 14,
           "3": 10
         },
@@ -15818,7 +16073,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "10_12": {
         "directions_tried": [
@@ -15843,13 +16098,15 @@
       },
       "10_11": {
         "directions_tried": [
+          0,
           1,
+          2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 1,
-          "2": 0,
+          "2": 1,
           "3": 2
         },
         "direction_successes": {
@@ -15858,17 +16115,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "10_10": {
         "directions_tried": [
+          0,
           1,
+          2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 7,
-          "2": 0,
+          "2": 1,
           "3": 8
         },
         "direction_successes": {
@@ -15877,18 +16136,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "10_9": {
         "directions_tried": [
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 29,
-          "2": 12,
-          "3": 0
+          "1": 30,
+          "2": 13,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -15899,11 +16159,14 @@
         "exhausted": false
       },
       "9_11": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          2
+        ],
         "direction_attempts": {
-          "0": 0,
+          "0": 2,
           "1": 0,
-          "2": 0,
+          "2": 1,
           "3": 0
         },
         "direction_successes": {
@@ -15916,14 +16179,16 @@
       },
       "9_12": {
         "directions_tried": [
+          0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 1,
           "2": 1,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -15931,7 +16196,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "9_13": {
         "directions_tried": [
@@ -15940,8 +16205,8 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 4,
-          "2": 3,
+          "1": 5,
+          "2": 4,
           "3": 0
         },
         "direction_successes": {
@@ -15954,14 +16219,16 @@
       },
       "9_15": {
         "directions_tried": [
+          0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 1,
           "2": 1,
-          "3": 0
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -15969,7 +16236,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "9_16": {
         "directions_tried": [
@@ -16048,12 +16315,13 @@
       },
       "11_12": {
         "directions_tried": [
+          0,
           1,
           2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 2,
           "2": 7,
           "3": 3
@@ -16064,18 +16332,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "11_11": {
         "directions_tried": [
+          0,
           1,
           2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 1,
-          "2": 1,
+          "2": 2,
           "3": 2
         },
         "direction_successes": {
@@ -16084,15 +16353,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "9_10": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -16100,18 +16374,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "9_9": {
         "directions_tried": [
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 7,
-          "2": 1,
-          "3": 0
+          "1": 13,
+          "2": 8,
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -16129,8 +16404,8 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 20,
-          "2": 1,
+          "1": 32,
+          "2": 4,
           "3": 3
         },
         "direction_successes": {
@@ -16148,7 +16423,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 7,
+          "1": 11,
           "2": 8,
           "3": 0
         },
@@ -16204,7 +16479,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 7,
+          "1": 11,
           "2": 0,
           "3": 0
         },
@@ -16218,12 +16493,13 @@
       },
       "17_9": {
         "directions_tried": [
-          1
+          1,
+          2
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 22,
-          "2": 0,
+          "1": 30,
+          "2": 1,
           "3": 0
         },
         "direction_successes": {
@@ -16260,7 +16536,7 @@
         ],
         "direction_attempts": {
           "0": 2,
-          "1": 3,
+          "1": 7,
           "2": 0,
           "3": 0
         },
@@ -16273,10 +16549,12 @@
         "exhausted": false
       },
       "19_12": {
-        "directions_tried": [],
+        "directions_tried": [
+          1
+        ],
         "direction_attempts": {
           "0": 0,
-          "1": 0,
+          "1": 2,
           "2": 0,
           "3": 0
         },
@@ -16324,13 +16602,14 @@
       },
       "18_14": {
         "directions_tried": [
-          0
+          0,
+          3
         ],
         "direction_attempts": {
           "0": 3,
           "1": 0,
           "2": 0,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -16342,13 +16621,14 @@
       },
       "17_14": {
         "directions_tried": [
-          1
+          1,
+          3
         ],
         "direction_attempts": {
           "0": 0,
           "1": 3,
           "2": 0,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -16360,11 +16640,13 @@
       },
       "17_13": {
         "directions_tried": [
+          0,
+          1,
           3
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
+          "0": 1,
+          "1": 2,
           "2": 0,
           "3": 1
         },
@@ -16383,7 +16665,7 @@
         ],
         "direction_attempts": {
           "0": 3,
-          "1": 10,
+          "1": 19,
           "2": 0,
           "3": 0
         },
@@ -16396,12 +16678,16 @@
         "exhausted": false
       },
       "17_11": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
+          "0": 1,
+          "1": 1,
           "2": 0,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -16419,7 +16705,7 @@
         ],
         "direction_attempts": {
           "0": 15,
-          "1": 4,
+          "1": 6,
           "2": 0,
           "3": 7
         },
@@ -16433,13 +16719,14 @@
       },
       "18_10": {
         "directions_tried": [
-          1
+          1,
+          3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 16,
+          "1": 19,
           "2": 0,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -16469,10 +16756,11 @@
       },
       "21_10": {
         "directions_tried": [
+          0,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 0,
           "2": 0,
           "3": 3
@@ -16582,7 +16870,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 59,
+          "1": 67,
           "2": 0,
           "3": 14
         },
@@ -16602,7 +16890,7 @@
         ],
         "direction_attempts": {
           "0": 1,
-          "1": 29,
+          "1": 30,
           "2": 0,
           "3": 13
         },
@@ -16713,13 +17001,14 @@
         "directions_tried": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 23,
           "1": 2,
           "2": 1,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -16727,17 +17016,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "18_12": {
         "directions_tried": [
-          0
+          0,
+          1,
+          3
         ],
         "direction_attempts": {
           "0": 2,
-          "1": 0,
+          "1": 11,
           "2": 0,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -16748,12 +17039,14 @@
         "exhausted": false
       },
       "18_13": {
-        "directions_tried": [],
+        "directions_tried": [
+          3
+        ],
         "direction_attempts": {
           "0": 0,
           "1": 0,
           "2": 0,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -16790,7 +17083,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 2,
+          "1": 7,
           "2": 2,
           "3": 2
         },
@@ -16809,7 +17102,7 @@
         "direction_attempts": {
           "0": 0,
           "1": 0,
-          "2": 2,
+          "2": 3,
           "3": 0
         },
         "direction_successes": {
@@ -16822,13 +17115,15 @@
       },
       "11_10": {
         "directions_tried": [
+          0,
           1,
+          2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 7,
-          "2": 0,
+          "2": 1,
           "3": 1
         },
         "direction_successes": {
@@ -16837,18 +17132,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "11_13": {
         "directions_tried": [
+          0,
           1,
           2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 1,
-          "2": 7,
+          "2": 8,
           "3": 8
         },
         "direction_successes": {
@@ -16857,7 +17153,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "10_17": {
         "directions_tried": [
@@ -16867,7 +17163,7 @@
         "direction_attempts": {
           "0": 2,
           "1": 0,
-          "2": 1,
+          "2": 4,
           "3": 0
         },
         "direction_successes": {
@@ -16882,13 +17178,14 @@
         "directions_tried": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 4,
           "1": 4,
-          "2": 5,
-          "3": 0
+          "2": 6,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -16896,18 +17193,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "12_15": {
         "directions_tried": [
           0,
-          1
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 8,
           "1": 8,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -16915,19 +17214,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "14_15": {
         "directions_tried": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 32,
           "1": 2,
           "2": 1,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -16935,17 +17235,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "15_15": {
         "directions_tried": [
-          0
+          0,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 3,
+          "0": 4,
           "1": 0,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -16957,12 +17259,13 @@
       },
       "16_15": {
         "directions_tried": [
+          0,
           1,
           2
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 1,
+          "0": 1,
+          "1": 5,
           "2": 1,
           "3": 0
         },
@@ -17428,11 +17731,12 @@
       },
       "17_17": {
         "directions_tried": [
+          1,
           3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 0,
+          "1": 4,
           "2": 0,
           "3": 2
         },
@@ -17581,7 +17885,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 1,
+          "1": 11,
           "2": 0,
           "3": 3
         },
@@ -17595,12 +17899,13 @@
       },
       "16_18": {
         "directions_tried": [
+          1,
           2,
           3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 0,
+          "1": 1,
           "2": 3,
           "3": 2
         },
@@ -18385,10 +18690,11 @@
       },
       "17_15": {
         "directions_tried": [
+          0,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 0,
           "2": 0,
           "3": 4
@@ -18894,13 +19200,14 @@
       "9_14": {
         "directions_tried": [
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 4,
-          "2": 1,
-          "3": 0
+          "1": 6,
+          "2": 3,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -18917,7 +19224,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 3,
+          "1": 4,
           "2": 1,
           "3": 0
         },
@@ -19017,11 +19324,12 @@
       },
       "18_16": {
         "directions_tried": [
+          1,
           3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 0,
+          "1": 1,
           "2": 0,
           "3": 2
         },
@@ -19054,13 +19362,15 @@
       },
       "13_13": {
         "directions_tried": [
-          1
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 56,
-          "2": 0,
-          "3": 0
+          "1": 57,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -19072,13 +19382,16 @@
       },
       "14_13": {
         "directions_tried": [
-          1
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 11,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -19086,16 +19399,18 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "15_13": {
         "directions_tried": [
-          1
+          0,
+          1,
+          2
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 14,
-          "2": 0,
+          "2": 1,
           "3": 0
         },
         "direction_successes": {
@@ -19107,12 +19422,15 @@
         "exhausted": false
       },
       "16_14": {
-        "directions_tried": [],
+        "directions_tried": [
+          1,
+          3
+        ],
         "direction_attempts": {
           "0": 0,
-          "1": 0,
+          "1": 2,
           "2": 0,
-          "3": 0
+          "3": 3
         },
         "direction_successes": {
           "0": 0,
@@ -19124,11 +19442,12 @@
       },
       "14_12": {
         "directions_tried": [
+          0,
           1
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 13,
+          "0": 1,
+          "1": 14,
           "2": 0,
           "3": 0
         },
@@ -19142,12 +19461,13 @@
       },
       "14_11": {
         "directions_tried": [
+          0,
           1,
           2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 1,
           "2": 3,
           "3": 3
@@ -19158,18 +19478,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "15_11": {
         "directions_tried": [
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 8,
+          "1": 9,
           "2": 1,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -19181,12 +19502,13 @@
       },
       "16_11": {
         "directions_tried": [
-          1
+          1,
+          2
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 1,
-          "2": 0,
+          "1": 4,
+          "2": 1,
           "3": 0
         },
         "direction_successes": {
@@ -19199,12 +19521,14 @@
       },
       "15_12": {
         "directions_tried": [
-          1
+          0,
+          1,
+          2
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 13,
-          "2": 0,
+          "0": 1,
+          "1": 22,
+          "2": 1,
           "3": 0
         },
         "direction_successes": {
@@ -19218,13 +19542,14 @@
       "16_12": {
         "directions_tried": [
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 2,
+          "1": 13,
           "2": 1,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -20024,14 +20349,16 @@
       },
       "12_14": {
         "directions_tried": [
+          0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 5,
           "2": 2,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -20039,7 +20366,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "8_19": {
         "directions_tried": [],
@@ -20059,13 +20386,16 @@
       },
       "11_14": {
         "directions_tried": [
-          2
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
+          "0": 1,
+          "1": 1,
           "2": 2,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -20073,17 +20403,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "12_12": {
         "directions_tried": [
-          1
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 15,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 16,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -20091,18 +20424,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "12_13": {
         "directions_tried": [
+          0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 8,
           "2": 2,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -20110,18 +20445,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "14_14": {
         "directions_tried": [
           0,
-          1
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 3,
           "1": 15,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -20129,7 +20466,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "8_17": {
         "directions_tried": [],
@@ -20256,7 +20593,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 15,
+          "1": 18,
           "2": 1,
           "3": 0
         },
@@ -20270,11 +20607,12 @@
       },
       "8_13": {
         "directions_tried": [
+          0,
           1,
           2
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 27,
           "2": 3,
           "3": 0
@@ -20314,7 +20652,7 @@
         "direction_attempts": {
           "0": 0,
           "1": 14,
-          "2": 1,
+          "2": 4,
           "3": 0
         },
         "direction_successes": {
@@ -20345,13 +20683,14 @@
       },
       "8_14": {
         "directions_tried": [
+          0,
           1,
           2
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 7,
-          "2": 3,
+          "2": 4,
           "3": 0
         },
         "direction_successes": {
@@ -20364,13 +20703,16 @@
       },
       "15_14": {
         "directions_tried": [
-          1
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 7,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -20378,15 +20720,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "16_13": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
+          "0": 1,
+          "1": 2,
           "2": 0,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -20404,7 +20750,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 12,
+          "1": 13,
           "2": 2,
           "3": 2
         },
@@ -20424,7 +20770,7 @@
         "direction_attempts": {
           "0": 0,
           "1": 33,
-          "2": 25,
+          "2": 27,
           "3": 0
         },
         "direction_successes": {
@@ -20455,12 +20801,16 @@
         "exhausted": false
       },
       "12_11": {
-        "directions_tried": [],
+        "directions_tried": [
+          1,
+          2,
+          3
+        ],
         "direction_attempts": {
           "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "1": 1,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -20472,13 +20822,15 @@
       },
       "8_15": {
         "directions_tried": [
-          2
+          0,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 2,
           "1": 0,
           "2": 1,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -20490,11 +20842,13 @@
       },
       "8_12": {
         "directions_tried": [
+          0,
+          1,
           2
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
+          "0": 1,
+          "1": 2,
           "2": 2,
           "3": 0
         },
@@ -20507,11 +20861,15 @@
         "exhausted": false
       },
       "8_11": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          2
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
+          "0": 1,
+          "1": 1,
+          "2": 1,
           "3": 0
         },
         "direction_successes": {
@@ -20525,12 +20883,13 @@
       "8_10": {
         "directions_tried": [
           0,
+          1,
           2
         ],
         "direction_attempts": {
           "0": 13,
-          "1": 0,
-          "2": 17,
+          "1": 1,
+          "2": 18,
           "3": 0
         },
         "direction_successes": {
@@ -21731,6 +22090,10 @@
       ],
       [
         28,
+        10
+      ],
+      [
+        28,
         19
       ],
       [
@@ -21891,6 +22254,10 @@
       ],
       [
         17,
+        9
+      ],
+      [
+        28,
         9
       ],
       [
@@ -23344,6 +23711,10 @@
         25
       ],
       [
+        17,
+        34
+      ],
+      [
         18,
         11
       ],
@@ -23524,6 +23895,10 @@
         22
       ],
       [
+        16,
+        18
+      ],
+      [
         24,
         31
       ],
@@ -23636,6 +24011,10 @@
         14
       ],
       [
+        28,
+        14
+      ],
+      [
         17,
         23
       ],
@@ -23705,6 +24084,10 @@
       ],
       [
         17,
+        9
+      ],
+      [
+        28,
         9
       ],
       [
@@ -23880,6 +24263,10 @@
         34
       ],
       [
+        27,
+        12
+      ],
+      [
         18,
         43
       ],
@@ -23962,6 +24349,10 @@
       [
         18,
         38
+      ],
+      [
+        27,
+        16
       ],
       [
         19,
@@ -24197,6 +24588,10 @@
       ],
       [
         25,
+        13
+      ],
+      [
+        25,
         31
       ],
       [
@@ -24269,6 +24664,10 @@
       ],
       [
         17,
+        18
+      ],
+      [
+        17,
         27
       ],
       [
@@ -24278,6 +24677,10 @@
       [
         17,
         36
+      ],
+      [
+        29,
+        10
       ],
       [
         9,
@@ -24302,6 +24705,10 @@
       [
         20,
         46
+      ],
+      [
+        25,
+        12
       ],
       [
         10,
@@ -24937,7 +25344,7 @@
       ]
     ],
     "interactable_objects": [],
-    "last_visited_timestep": 7387,
+    "last_visited_timestep": 6774,
     "transitions": [
       {
         "position": [
@@ -25169,6 +25576,28 @@
         "destination_map": 15,
         "use_count": 1,
         "last_used": 7388
+      },
+      {
+        "position": [
+          18,
+          9
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 35,
+        "use_count": 1,
+        "last_used": 16281
+      },
+      {
+        "position": [
+          20,
+          34
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 15,
+        "use_count": 1,
+        "last_used": 6775
       }
     ],
     "temp_debt": 15.0,
@@ -29419,9 +29848,11 @@
         "exhausted": false
       },
       "26_16": {
-        "directions_tried": [],
+        "directions_tried": [
+          0
+        ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 0,
           "2": 0,
           "3": 0
@@ -29713,11 +30144,13 @@
         "exhausted": false
       },
       "20_34": {
-        "directions_tried": [],
+        "directions_tried": [
+          2
+        ],
         "direction_attempts": {
           "0": 0,
           "1": 0,
-          "2": 0,
+          "2": 1,
           "3": 0
         },
         "direction_successes": {
@@ -32219,6 +32652,22 @@
           "3": 0
         },
         "exhausted": false
+      },
+      "28_10": {
+        "directions_tried": [],
+        "direction_attempts": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": false
       }
     }
   },
@@ -33087,7 +33536,7 @@
       ]
     ],
     "interactable_objects": [],
-    "last_visited_timestep": 8873,
+    "last_visited_timestep": 600,
     "transitions": [
       {
         "position": [
@@ -33275,19 +33724,32 @@
         "destination_map": 13,
         "use_count": 1,
         "last_used": 623
+      },
+      {
+        "position": [
+          11,
+          15
+        ],
+        "direction": 0,
+        "action": "walk",
+        "destination_map": 13,
+        "use_count": 1,
+        "last_used": 601
       }
     ],
     "temp_debt": 15.0,
     "tile_interactions": {
       "18_9": {
         "directions_tried": [
-          1
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 8,
-          "2": 0,
-          "3": 0
+          "1": 10,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33299,13 +33761,16 @@
       },
       "18_11": {
         "directions_tried": [
-          0
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 1,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "1": 1,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33313,17 +33778,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "18_12": {
         "directions_tried": [
-          0
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 1,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 3,
+          "1": 1,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33331,19 +33799,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "18_13": {
         "directions_tried": [
           0,
           1,
+          2,
           3
         ],
         "direction_attempts": {
           "0": 2,
           "1": 1,
-          "2": 0,
-          "3": 2
+          "2": 1,
+          "3": 3
         },
         "direction_successes": {
           "0": 0,
@@ -33351,7 +33820,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "18_14": {
         "directions_tried": [
@@ -33396,48 +33865,56 @@
         "exhausted": true
       },
       "16_14": {
-        "directions_tried": [],
-        "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "15_15": {
         "directions_tried": [
           0,
-          2
-        ],
-        "direction_attempts": {
-          "0": 2,
-          "1": 0,
-          "2": 184,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "16_15": {
-        "directions_tried": [
           1,
           2,
           3
         ],
         "direction_attempts": {
+          "0": 1,
+          "1": 1,
+          "2": 2,
+          "3": 1
+        },
+        "direction_successes": {
           "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "15_15": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 2,
+          "1": 1,
+          "2": 184,
+          "3": 1
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "16_15": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 1,
           "1": 1,
           "2": 9,
           "3": 4
@@ -33448,9 +33925,30 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "17_15": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 1,
+          "1": 1,
+          "2": 8,
+          "3": 3
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "14_15": {
         "directions_tried": [
           0,
           2,
@@ -33459,24 +33957,8 @@
         "direction_attempts": {
           "0": 1,
           "1": 0,
-          "2": 8,
-          "3": 2
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "14_15": {
-        "directions_tried": [],
-        "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33487,12 +33969,17 @@
         "exhausted": false
       },
       "12_15": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 1,
+          "2": 2,
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -33500,15 +33987,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "11_15": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 0,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33519,12 +34010,16 @@
         "exhausted": false
       },
       "10_15": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 0,
-          "2": 0,
-          "3": 0
+          "2": 2,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33535,12 +34030,17 @@
         "exhausted": false
       },
       "12_13": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33548,18 +34048,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "12_12": {
         "directions_tried": [
           0,
-          1
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 35,
-          "1": 3,
-          "2": 0,
-          "3": 0
+          "0": 36,
+          "1": 5,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33567,18 +34069,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "12_11": {
         "directions_tried": [
           0,
-          1
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 1,
           "1": 10,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33586,17 +34090,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "12_10": {
         "directions_tried": [
-          1
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 12,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -33604,15 +34111,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "12_14": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33620,17 +34132,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "13_14": {
         "directions_tried": [
-          1
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 1,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33638,18 +34153,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "13_13": {
         "directions_tried": [
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 27,
+          "1": 29,
           "2": 3,
-          "3": 0
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -33663,13 +34179,14 @@
         "directions_tried": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 2,
           "1": 1,
           "2": 16,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33677,110 +34194,122 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "16_13": {
         "directions_tried": [
-          1,
-          2
-        ],
-        "direction_attempts": {
-          "0": 0,
-          "1": 2,
-          "2": 87,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "17_13": {
-        "directions_tried": [
-          0
-        ],
-        "direction_attempts": {
-          "0": 3,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "15_14": {
-        "directions_tried": [
-          1,
-          2
-        ],
-        "direction_attempts": {
-          "0": 0,
-          "1": 1,
-          "2": 4,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "14_14": {
-        "directions_tried": [
           0,
-          1,
-          2
-        ],
-        "direction_attempts": {
-          "0": 19,
-          "1": 1,
-          "2": 54,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "10_14": {
-        "directions_tried": [
-          1
-        ],
-        "direction_attempts": {
-          "0": 0,
-          "1": 1,
-          "2": 0,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "8_13": {
-        "directions_tried": [
           1,
           2,
           3
         ],
         "direction_attempts": {
+          "0": 1,
+          "1": 2,
+          "2": 87,
+          "3": 1
+        },
+        "direction_successes": {
           "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "17_13": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 5,
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "15_14": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 1,
+          "1": 1,
+          "2": 5,
+          "3": 1
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "14_14": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 19,
+          "1": 1,
+          "2": 54,
+          "3": 1
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "10_14": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 1,
+          "1": 1,
+          "2": 2,
+          "3": 1
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "8_13": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 1,
           "1": 9,
           "2": 2,
           "3": 1
@@ -33791,16 +34320,17 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "8_14": {
         "directions_tried": [
+          0,
           1,
           2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 4,
           "2": 5,
           "3": 1
@@ -33811,17 +34341,18 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "8_15": {
         "directions_tried": [
+          0,
           1,
           2
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 1,
-          "2": 5,
+          "2": 8,
           "3": 0
         },
         "direction_successes": {
@@ -33834,12 +34365,13 @@
       },
       "9_14": {
         "directions_tried": [
+          0,
           1,
           2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 10,
           "2": 5,
           "3": 3
@@ -33850,16 +34382,17 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "10_13": {
         "directions_tried": [
+          0,
           1,
           2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 10,
           "2": 1,
           "3": 1
@@ -33870,15 +34403,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "9_15": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 0,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 3
         },
         "direction_successes": {
           "0": 0,
@@ -33889,12 +34426,17 @@
         "exhausted": false
       },
       "11_14": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -33902,17 +34444,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "11_13": {
         "directions_tried": [
-          1
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 2,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33920,15 +34465,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "13_15": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 1,
+          "2": 2,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33936,19 +34486,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "14_13": {
         "directions_tried": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 1,
           "1": 2,
           "2": 4,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33956,17 +34507,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "13_9": {
         "directions_tried": [
+          0,
           1,
+          2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 4,
-          "2": 0,
+          "2": 5,
           "3": 21
         },
         "direction_successes": {
@@ -33975,17 +34528,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "14_9": {
         "directions_tried": [
-          1
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 41,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 42,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -33993,17 +34549,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "12_9": {
         "directions_tried": [
-          1
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 44,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 45,
+          "2": 2,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34011,18 +34570,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "14_10": {
         "directions_tried": [
           0,
-          1
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 2,
+          "0": 3,
           "1": 14,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34030,17 +34591,18 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "14_11": {
         "directions_tried": [
           0,
+          1,
           2
         ],
         "direction_attempts": {
           "0": 30,
-          "1": 0,
-          "2": 104,
+          "1": 1,
+          "2": 105,
           "3": 0
         },
         "direction_successes": {
@@ -34060,7 +34622,7 @@
         "direction_attempts": {
           "0": 10,
           "1": 1,
-          "2": 49,
+          "2": 51,
           "3": 0
         },
         "direction_successes": {
@@ -34075,13 +34637,14 @@
         "directions_tried": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 4,
+          "0": 6,
           "1": 8,
           "2": 2,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34089,7 +34652,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "8_10": {
         "directions_tried": [
@@ -34115,13 +34678,14 @@
       "8_9": {
         "directions_tried": [
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 10,
+          "1": 12,
           "2": 2,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34134,13 +34698,14 @@
       "9_9": {
         "directions_tried": [
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 0,
           "1": 5,
-          "2": 1,
-          "3": 0
+          "2": 5,
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -34152,49 +34717,55 @@
       },
       "10_9": {
         "directions_tried": [
-          1,
-          2
-        ],
-        "direction_attempts": {
-          "0": 0,
-          "1": 16,
-          "2": 2,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "11_9": {
-        "directions_tried": [
-          1
-        ],
-        "direction_attempts": {
-          "0": 0,
-          "1": 33,
-          "2": 0,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "10_12": {
-        "directions_tried": [
+          0,
           1,
           2,
           3
         ],
         "direction_attempts": {
+          "0": 1,
+          "1": 17,
+          "2": 2,
+          "3": 1
+        },
+        "direction_successes": {
           "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "11_9": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 1,
+          "1": 33,
+          "2": 1,
+          "3": 1
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "10_12": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 1,
           "1": 4,
           "2": 1,
           "3": 3
@@ -34205,18 +34776,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "10_11": {
         "directions_tried": [
+          0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 1,
           "2": 1,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34224,19 +34797,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "10_10": {
         "directions_tried": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 18,
           "1": 2,
           "2": 1,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34244,18 +34818,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "9_10": {
         "directions_tried": [
           0,
-          2
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 1,
-          "1": 0,
+          "1": 1,
           "2": 1,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34263,17 +34839,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "13_10": {
         "directions_tried": [
-          0
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 28,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 30,
+          "1": 1,
+          "2": 2,
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -34281,7 +34860,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "8_12": {
         "directions_tried": [
@@ -34306,12 +34885,13 @@
       },
       "9_12": {
         "directions_tried": [
+          0,
           1,
           2,
           3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 1,
           "2": 1,
           "3": 2
@@ -34322,17 +34902,18 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "9_11": {
         "directions_tried": [
           0,
+          1,
           2,
           3
         ],
         "direction_attempts": {
           "0": 1,
-          "1": 0,
+          "1": 1,
           "2": 2,
           "3": 3
         },
@@ -34342,75 +34923,60 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "11_11": {
         "directions_tried": [
           0,
           1,
-          2
-        ],
-        "direction_attempts": {
-          "0": 21,
-          "1": 2,
-          "2": 2,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "11_12": {
-        "directions_tried": [
-          1,
-          2
-        ],
-        "direction_attempts": {
-          "0": 0,
-          "1": 1,
-          "2": 2,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "11_10": {
-        "directions_tried": [
-          1,
-          2
-        ],
-        "direction_attempts": {
-          "0": 0,
-          "1": 10,
-          "2": 1,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "18_15": {
-        "directions_tried": [
-          0,
           2,
           3
         ],
         "direction_attempts": {
-          "0": 3,
+          "0": 21,
+          "1": 2,
+          "2": 3,
+          "3": 1
+        },
+        "direction_successes": {
+          "0": 0,
           "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "11_12": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 1,
+          "1": 1,
+          "2": 2,
+          "3": 1
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "11_10": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 1,
+          "1": 10,
           "2": 1,
           "3": 1
         },
@@ -34420,17 +34986,41 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
+      },
+      "18_15": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 4,
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
       },
       "16_12": {
         "directions_tried": [
-          2
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 3,
-          "3": 0
+          "0": 1,
+          "1": 1,
+          "2": 4,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34438,15 +35028,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "17_12": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -34454,18 +35049,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "15_11": {
         "directions_tried": [
+          0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 2,
-          "2": 25,
-          "3": 0
+          "2": 26,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34473,18 +35070,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "16_11": {
         "directions_tried": [
+          0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
+          "0": 1,
           "1": 39,
           "2": 71,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34492,15 +35091,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "17_11": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34508,15 +35112,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "18_10": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 2,
+          "2": 2,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34524,19 +35133,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "15_12": {
         "directions_tried": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 2,
           "1": 1,
           "2": 59,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34544,17 +35154,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "17_9": {
         "directions_tried": [
-          1
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 1,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 3,
+          "2": 2,
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -34562,17 +35175,20 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "16_9": {
         "directions_tried": [
-          2
+          0,
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
+          "0": 1,
+          "1": 1,
           "2": 2,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34580,17 +35196,19 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "15_9": {
         "directions_tried": [
-          1
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 0,
           "1": 3,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34603,13 +35221,14 @@
       "15_10": {
         "directions_tried": [
           0,
-          2
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 3,
           "1": 0,
           "2": 3,
-          "3": 0
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34622,13 +35241,15 @@
       "17_10": {
         "directions_tried": [
           0,
-          1
+          1,
+          2,
+          3
         ],
         "direction_attempts": {
           "0": 3,
           "1": 2,
-          "2": 0,
-          "3": 0
+          "2": 1,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34636,7 +35257,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "19_15": {
         "directions_tried": [
@@ -34646,6 +35267,46 @@
         ],
         "direction_attempts": {
           "0": 1,
+          "1": 1,
+          "2": 0,
+          "3": 2
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": false
+      },
+      "16_10": {
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "direction_attempts": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "direction_successes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "exhausted": true
+      },
+      "19_10": {
+        "directions_tried": [
+          1,
+          3
+        ],
+        "direction_attempts": {
+          "0": 0,
           "1": 1,
           "2": 0,
           "3": 1
@@ -34658,45 +35319,18 @@
         },
         "exhausted": false
       },
-      "16_10": {
-        "directions_tried": [],
-        "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
-      "19_10": {
-        "directions_tried": [],
-        "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "direction_successes": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
-        },
-        "exhausted": false
-      },
       "19_11": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 2,
+          "1": 1,
+          "2": 1,
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -34704,7 +35338,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       },
       "19_12": {
         "directions_tried": [
@@ -34729,13 +35363,14 @@
       "19_13": {
         "directions_tried": [
           0,
+          1,
           3
         ],
         "direction_attempts": {
-          "0": 1,
-          "1": 0,
+          "0": 2,
+          "1": 1,
           "2": 0,
-          "3": 1
+          "3": 2
         },
         "direction_successes": {
           "0": 0,
@@ -34746,12 +35381,17 @@
         "exhausted": false
       },
       "9_13": {
-        "directions_tried": [],
+        "directions_tried": [
+          0,
+          1,
+          2,
+          3
+        ],
         "direction_attempts": {
-          "0": 0,
-          "1": 0,
-          "2": 0,
-          "3": 0
+          "0": 1,
+          "1": 1,
+          "2": 2,
+          "3": 1
         },
         "direction_successes": {
           "0": 0,
@@ -34759,7 +35399,7 @@
           "2": 0,
           "3": 0
         },
-        "exhausted": false
+        "exhausted": true
       }
     }
   },
@@ -34953,6 +35593,17 @@
         "destination_map": 14,
         "use_count": 1,
         "last_used": 174000
+      },
+      {
+        "position": [
+          8,
+          25
+        ],
+        "direction": 2,
+        "action": "walk",
+        "destination_map": 83,
+        "use_count": 1,
+        "last_used": 8366
       }
     ],
     "temp_debt": 15.0,
@@ -37036,6 +37687,28 @@
         "destination_map": 21,
         "use_count": 1,
         "last_used": 156244
+      },
+      {
+        "position": [
+          32,
+          45
+        ],
+        "direction": 0,
+        "action": "walk",
+        "destination_map": 21,
+        "use_count": 1,
+        "last_used": 12034
+      },
+      {
+        "position": [
+          29,
+          10
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 21,
+        "use_count": 1,
+        "last_used": 24225
       }
     ],
     "temp_debt": 15.0,
@@ -40476,6 +41149,28 @@
         "destination_map": 14,
         "use_count": 1,
         "last_used": 26847
+      },
+      {
+        "position": [
+          29,
+          43
+        ],
+        "direction": 0,
+        "action": "walk",
+        "destination_map": 31,
+        "use_count": 1,
+        "last_used": 12425
+      },
+      {
+        "position": [
+          9,
+          26
+        ],
+        "direction": 2,
+        "action": "walk",
+        "destination_map": 91,
+        "use_count": 1,
+        "last_used": 18700
       }
     ],
     "temp_debt": 15.0,
@@ -42726,6 +43421,17 @@
         "destination_map": 14,
         "use_count": 1,
         "last_used": 156811
+      },
+      {
+        "position": [
+          13,
+          58
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 14,
+        "use_count": 1,
+        "last_used": 24602
       }
     ],
     "temp_debt": 2.5,
@@ -42755,7 +43461,19 @@
     "obstructions": [],
     "interactable_objects": [],
     "last_visited_timestep": 67373,
-    "transitions": [],
+    "transitions": [
+      {
+        "position": [
+          33,
+          33
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 14,
+        "use_count": 1,
+        "last_used": 11791
+      }
+    ],
     "temp_debt": 0.0,
     "tile_interactions": {}
   },
@@ -42775,6 +43493,28 @@
         "destination_map": 25,
         "use_count": 1,
         "last_used": 105340
+      },
+      {
+        "position": [
+          22,
+          23
+        ],
+        "direction": 0,
+        "action": "walk",
+        "destination_map": 79,
+        "use_count": 1,
+        "last_used": 49816
+      },
+      {
+        "position": [
+          19,
+          12
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 14,
+        "use_count": 1,
+        "last_used": 50312
       }
     ],
     "temp_debt": 0.0,
@@ -42839,6 +43579,17 @@
         "destination_map": 172,
         "use_count": 1,
         "last_used": 103643
+      },
+      {
+        "position": [
+          79,
+          8
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 172,
+        "use_count": 1,
+        "last_used": 49210
       }
     ],
     "temp_debt": 0.0,
@@ -42926,6 +43677,17 @@
         "destination_map": 11,
         "use_count": 1,
         "last_used": 165025
+      },
+      {
+        "position": [
+          53,
+          28
+        ],
+        "direction": 3,
+        "action": "walk",
+        "destination_map": 232,
+        "use_count": 1,
+        "last_used": 42984
       }
     ],
     "temp_debt": 0.0,
@@ -42968,6 +43730,48 @@
         "destination_map": 13,
         "use_count": 1,
         "last_used": 165523
+      }
+    ],
+    "temp_debt": 0.0,
+    "tile_interactions": {}
+  },
+  "map_79": {
+    "visited_tiles": [],
+    "obstructions": [],
+    "interactable_objects": [],
+    "last_visited_timestep": 0,
+    "transitions": [
+      {
+        "position": [
+          78,
+          8
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 19,
+        "use_count": 1,
+        "last_used": 50242
+      }
+    ],
+    "temp_debt": 0.0,
+    "tile_interactions": {}
+  },
+  "map_91": {
+    "visited_tiles": [],
+    "obstructions": [],
+    "interactable_objects": [],
+    "last_visited_timestep": 0,
+    "transitions": [
+      {
+        "position": [
+          15,
+          13
+        ],
+        "direction": 1,
+        "action": "walk",
+        "destination_map": 14,
+        "use_count": 1,
+        "last_used": 22000
       }
     ],
     "temp_debt": 0.0,
