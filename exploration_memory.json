@@ -15355,7 +15355,7 @@
       ]
     ],
     "interactable_objects": [],
-    "last_visited_timestep": 11908,
+    "last_visited_timestep": 5210,
     "transitions": [
       {
         "position": [
@@ -15895,6 +15895,17 @@
         "destination_map": 23,
         "use_count": 1,
         "last_used": 5663
+      },
+      {
+        "position": [
+          17,
+          9
+        ],
+        "direction": 2,
+        "action": "walk",
+        "destination_map": 17,
+        "use_count": 1,
+        "last_used": 240
       }
     ],
     "temp_debt": 15.0,
@@ -16385,7 +16396,7 @@
         "direction_attempts": {
           "0": 0,
           "1": 13,
-          "2": 8,
+          "2": 9,
           "3": 2
         },
         "direction_successes": {
@@ -16479,7 +16490,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 11,
+          "1": 12,
           "2": 0,
           "3": 0
         },
@@ -16498,7 +16509,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 30,
+          "1": 31,
           "2": 1,
           "3": 0
         },
@@ -16516,7 +16527,7 @@
           1
         ],
         "direction_attempts": {
-          "0": 12,
+          "0": 13,
           "1": 8,
           "2": 0,
           "3": 0
@@ -16536,7 +16547,7 @@
         ],
         "direction_attempts": {
           "0": 2,
-          "1": 7,
+          "1": 8,
           "2": 0,
           "3": 0
         },
@@ -16554,7 +16565,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 2,
+          "1": 3,
           "2": 0,
           "3": 0
         },
@@ -16646,7 +16657,7 @@
         ],
         "direction_attempts": {
           "0": 1,
-          "1": 2,
+          "1": 3,
           "2": 0,
           "3": 1
         },
@@ -16665,7 +16676,7 @@
         ],
         "direction_attempts": {
           "0": 3,
-          "1": 19,
+          "1": 20,
           "2": 0,
           "3": 0
         },
@@ -16685,7 +16696,7 @@
         ],
         "direction_attempts": {
           "0": 1,
-          "1": 1,
+          "1": 3,
           "2": 0,
           "3": 1
         },
@@ -16724,7 +16735,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 19,
+          "1": 21,
           "2": 0,
           "3": 1
         },
@@ -16870,7 +16881,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 67,
+          "1": 71,
           "2": 0,
           "3": 14
         },
@@ -17026,7 +17037,7 @@
         ],
         "direction_attempts": {
           "0": 2,
-          "1": 11,
+          "1": 13,
           "2": 0,
           "3": 1
         },
@@ -17264,8 +17275,8 @@
           2
         ],
         "direction_attempts": {
-          "0": 1,
-          "1": 5,
+          "0": 2,
+          "1": 6,
           "2": 1,
           "3": 0
         },
@@ -17885,7 +17896,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 11,
+          "1": 12,
           "2": 0,
           "3": 3
         },
@@ -19206,7 +19217,7 @@
         "direction_attempts": {
           "0": 0,
           "1": 6,
-          "2": 3,
+          "2": 4,
           "3": 1
         },
         "direction_successes": {
@@ -19329,7 +19340,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 1,
+          "1": 2,
           "2": 0,
           "3": 2
         },
@@ -19488,7 +19499,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 9,
+          "1": 11,
           "2": 1,
           "3": 1
         },
@@ -19507,7 +19518,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 4,
+          "1": 8,
           "2": 1,
           "3": 0
         },
@@ -19527,7 +19538,7 @@
         ],
         "direction_attempts": {
           "0": 1,
-          "1": 22,
+          "1": 24,
           "2": 1,
           "3": 0
         },
@@ -19547,7 +19558,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 13,
+          "1": 15,
           "2": 1,
           "3": 1
         },
@@ -20593,7 +20604,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 18,
+          "1": 19,
           "2": 1,
           "3": 0
         },
@@ -20690,7 +20701,7 @@
         "direction_attempts": {
           "0": 1,
           "1": 7,
-          "2": 4,
+          "2": 5,
           "3": 0
         },
         "direction_successes": {
@@ -21650,7 +21661,7 @@
         ],
         "direction_attempts": {
           "0": 0,
-          "1": 3,
+          "1": 4,
           "2": 0,
           "3": 0
         },
@@ -33536,7 +33547,7 @@
       ]
     ],
     "interactable_objects": [],
-    "last_visited_timestep": 600,
+    "last_visited_timestep": 382,
     "transitions": [
       {
         "position": [
@@ -33735,6 +33746,17 @@
         "destination_map": 13,
         "use_count": 1,
         "last_used": 601
+      },
+      {
+        "position": [
+          11,
+          15
+        ],
+        "direction": 0,
+        "action": "walk",
+        "destination_map": 13,
+        "use_count": 1,
+        "last_used": 383
       }
     ],
     "temp_debt": 15.0,
