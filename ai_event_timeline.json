@@ -1,0 +1,222 @@
+{
+  "events": [
+    {
+      "type": "map_transition",
+      "timestep": 29,
+      "time": 1772164221.723034,
+      "map_id": 13,
+      "data": {
+        "from_map": 13,
+        "to_map": 17,
+        "position": [
+          17,
+          9
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 1214,
+      "time": 1772164280.534992,
+      "map_id": 17,
+      "data": {
+        "from_map": 17,
+        "to_map": 13,
+        "position": [
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 4279,
+      "time": 1772164453.1570024,
+      "map_id": 13,
+      "data": {
+        "battle_id": 1,
+        "outcome": "unknown",
+        "turns": 0,
+        "enemy_species": 4,
+        "enemy_level": 5,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 6,
+        "party_snapshot": [
+          {
+            "hp": 6,
+            "max_hp": 22
+          }
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 7389,
+      "time": 1772164638.7988098,
+      "map_id": 13,
+      "data": {
+        "from_map": 13,
+        "to_map": 23,
+        "position": [
+          23,
+          20
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 7575,
+      "time": 1772164649.8974545,
+      "map_id": 23,
+      "data": {
+        "from_map": 23,
+        "to_map": 11,
+        "position": [
+          11,
+          15
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 7665,
+      "time": 1772164654.4252863,
+      "map_id": 11,
+      "data": {
+        "from_map": 11,
+        "to_map": 22,
+        "position": [
+          22,
+          14
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 8317,
+      "time": 1772164689.470384,
+      "map_id": 22,
+      "data": {
+        "battle_id": 2,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 16,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 16,
+        "party_snapshot": [
+          {
+            "hp": 16,
+            "max_hp": 22
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 8586,
+      "time": 1772164704.10695,
+      "map_id": 22,
+      "data": {
+        "battle_id": 3,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 16,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 15,
+        "party_snapshot": [
+          {
+            "hp": 15,
+            "max_hp": 24
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 8817,
+      "time": 1772164716.5583334,
+      "map_id": 22,
+      "data": {
+        "battle_id": 4,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 2,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 15,
+        "party_snapshot": [
+          {
+            "hp": 15,
+            "max_hp": 24
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 9010,
+      "time": 1772164727.6449823,
+      "map_id": 22,
+      "data": {
+        "battle_id": 5,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 16,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 9,
+        "party_snapshot": [
+          {
+            "hp": 9,
+            "max_hp": 24
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 9205,
+      "time": 1772164737.8154416,
+      "map_id": 22,
+      "data": {
+        "battle_id": 6,
+        "outcome": "run",
+        "turns": 0,
+        "enemy_species": 16,
+        "enemy_level": 2,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 2,
+        "party_snapshot": [
+          {
+            "hp": 2,
+            "max_hp": 24
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "total_events": 11,
+    "battle_events": 6,
+    "bag_events": 0,
+    "map_events": 5,
+    "levelup_events": 0,
+    "first_timestep": 29,
+    "last_timestep": 9205,
+    "maps_visited": [
+      11,
+      13,
+      17,
+      22,
+      23
+    ]
+  }
+}

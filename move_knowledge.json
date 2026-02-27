@@ -1,0 +1,50 @@
+{
+  "player_moves": {
+    "33": {
+      "total_uses": 14,
+      "total_damage": 18,
+      "avg_damage": 1.2857142857142858,
+      "misses": 10,
+      "vs_species": {
+        "16": {
+          "uses": 10,
+          "damage": 6,
+          "avg": 0.6,
+          "misses": 9,
+          "stat_changes_self": 0,
+          "stat_changes_enemy": 0,
+          "status_inflicted": 0
+        },
+        "19": {
+          "uses": 4,
+          "damage": 12,
+          "avg": 3.0,
+          "misses": 1,
+          "stat_changes_self": 3,
+          "stat_changes_enemy": 0,
+          "status_inflicted": 0
+        }
+      }
+    }
+  },
+  "enemy_moves": {
+    "10": {
+      "observed_uses": 4,
+      "damage_to_us": 16,
+      "status_inflicted": 0,
+      "stat_changes": 0
+    },
+    "33": {
+      "observed_uses": 8,
+      "damage_to_us": 22,
+      "status_inflicted": 0,
+      "stat_changes": 0
+    },
+    "39": {
+      "observed_uses": 2,
+      "damage_to_us": 0,
+      "status_inflicted": 0,
+      "stat_changes": 0
+    }
+  }
+}

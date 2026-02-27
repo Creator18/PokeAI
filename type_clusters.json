@@ -1,0 +1,9 @@
+{
+  "move_type_clusters": {},
+  "species_type_clusters": {},
+  "cluster_effectiveness": {},
+  "move_to_cluster": {},
+  "species_to_cluster": {},
+  "clustering_run_count": 0,
+  "last_clustering_timestep": 0
+}
