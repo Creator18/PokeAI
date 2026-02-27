@@ -31,6 +31,9 @@ ADDR_DIRECTION  = 0x02036E50   -- u8 (raw: 17/34/51/68)
 ADDR_BATTLE     = 0x0202000A   -- u8 (1=in battle)
 ADDR_GAME_STATE = 0x020204C2   -- u8 (0=OW, 1=menu/party, 14=bag)
 
+-- === TEXT/DIALOGUE DETECTION ===
+ADDR_DIALOGUE   = 0x0202004F   -- u8: 0=no text, 1=text box active (overworld + battle)
+
 -- === MENU SYSTEM (universal, reused across all menus) ===
 ADDR_MENU_CURSOR = 0x0203ADE6  -- u8: current menu/submenu cursor
 ADDR_MENU_MAX    = 0x0203ADE8  -- u8: max cursor index for current menu
@@ -574,14 +577,14 @@ end
 
 -------------------------------------------------
 -- STATE WRITERS
--- Now include: gs, mu, bg, pa, b fields
+-- Now include: gs, mu, bg, pa, b, tf fields
 -------------------------------------------------
-function write_minimal_state(x, y, map, in_battle, menu_flag, direction, game_state)
+function write_minimal_state(x, y, map, in_battle, menu_flag, direction, game_state, text_flag)
     local f = io.open(STATE_FILE, "w")
     if not f then return end
     f:write('{"s":[' .. x .. ',' .. y .. ',' .. map .. ',' ..
             in_battle .. ',' .. menu_flag .. ',' .. direction ..
-            '],"gs":' .. game_state .. ',"dead":false,' ..
+            '],"gs":' .. game_state .. ',"tf":' .. text_flag .. ',"dead":false,' ..
             get_battle_string(in_battle) .. ',' ..
             get_party_string() .. ',' ..
             get_menu_string() ..
@@ -589,7 +592,7 @@ function write_minimal_state(x, y, map, in_battle, menu_flag, direction, game_st
     f:close()
 end
 
-function write_full_state(x, y, map, in_battle, menu_flag, direction, game_state)
+function write_full_state(x, y, map, in_battle, menu_flag, direction, game_state, text_flag)
     local f = io.open(STATE_FILE, "w")
     if not f then return end
 
@@ -597,7 +600,7 @@ function write_full_state(x, y, map, in_battle, menu_flag, direction, game_state
 
     f:write('{"s":[' .. x .. ',' .. y .. ',' .. map .. ',' ..
             in_battle .. ',' .. menu_flag .. ',' .. direction ..
-            '],"gs":' .. game_state .. ',"dead":false,' ..
+            '],"gs":' .. game_state .. ',"tf":' .. text_flag .. ',"dead":false,' ..
             get_battle_string(in_battle) .. ',' ..
             get_party_string() .. ',' ..
             get_menu_string() .. ',' ..
@@ -619,13 +622,15 @@ end
 local frame_counter = 0
 
 print("==========================================")
-print("Pokemon AI v3 — TEACHING MODE")
+print("Pokemon AI v3.1 — TEACHING MODE")
 print("==========================================")
 print("OVERWORLD:")
 print("  X: 0x02036E48  Y: 0x02036E4A")
 print("  Map: 0x02036E44  Dir: 0x02036E50")
 print("  Battle: 0x0202000A")
 print("  GameState: 0x020204C2 (0=OW,1=menu,14=bag)")
+print("DIALOGUE:")
+print("  TextFlag: 0x0202004F (0=no text, 1=text active)")
 print("MENU SYSTEM:")
 print("  MenuCursor: 0x0203ADE6 (universal)")
 print("  MenuMaxIdx: 0x0203ADE8")
@@ -658,6 +663,7 @@ while true do
     local direction = normalize_direction(r8(ADDR_DIRECTION))
     local battle_flag = r8(ADDR_BATTLE)
     local game_state = r8(ADDR_GAME_STATE)
+    local text_flag = r8(ADDR_DIALOGUE)
     local in_battle = (battle_flag == 1) and 1 or 0
     local menu_flag = (game_state > 0 and in_battle == 0) and 1 or 0
 
@@ -693,7 +699,7 @@ while true do
     if frame_counter % 30 == 0 then update_bag_caches() end  -- refresh bag key periodically
 
     if frame_counter % STATE_WRITE_INTERVAL == 0 then
-        write_full_state(x, y, map, in_battle, menu_flag, direction, game_state)
+        write_full_state(x, y, map, in_battle, menu_flag, direction, game_state, text_flag)
     end
     if (frame_counter % CACHE_FLUSH_INTERVAL == 0 and frame_counter > 0) or
        (input_count >= MAX_INPUT_BUFFER) then
@@ -708,6 +714,7 @@ while true do
         local pc = r8(ADDR_PARTY_CURSOR)
         local bp = r8(ADDR_BAG_POCKET)
         local bcur = r8(ADDR_BAG_CURSOR)
+        local tf_str = text_flag == 1 and " TXT" or ""
 
         if in_battle == 1 then
             local bc = r8(ADDR_BATTLE_CURSOR)
@@ -720,9 +727,9 @@ while true do
             local bt_str = (bt % 16 >= 8) and "TRAINER" or "WILD"
             local mem = collectgarbage("count")
             print(string.format(
-                "F:%d | %s bc:%d mc:%d | P:%d hp:%d E:%d hp:%d | Menu:%d/%d PC:%d | Buf:%d | Mem:%.1fKB",
+                "F:%d | %s bc:%d mc:%d | P:%d hp:%d E:%d hp:%d | Menu:%d/%d PC:%d%s | Buf:%d | Mem:%.1fKB",
                 frame_counter, bt_str, bc, moc, ps, ph, es, eh,
-                mc, mm, pc, input_count, mem))
+                mc, mm, pc, tf_str, input_count, mem))
         else
             local gs_names = {[0]="OW", [1]="MENU", [14]="BAG"}
             local gs_str = gs_names[game_state] or string.format("GS%d", game_state)
@@ -740,9 +747,9 @@ while true do
             end
 
             print(string.format(
-                "F:%d | %s (%d,%d) Map:%d Dir:%d | Party:%d HP:%d/%d%s | Buf:%d Bat:%d Fr:%d | Mem:%.1fKB",
+                "F:%d | %s (%d,%d) Map:%d Dir:%d | Party:%d HP:%d/%d%s%s | Buf:%d Bat:%d Fr:%d | Mem:%.1fKB",
                 frame_counter, gs_str, x, y, map, direction,
-                party_count, hp, mhp, extra,
+                party_count, hp, mhp, extra, tf_str,
                 input_count, #all_batches, total_frames_logged, mem))
         end
     end

@@ -1,0 +1,24 @@
+DIALOGUE STATE SCAN RESULTS
+Pokemon FireRed US v1.0
+==========================
+
+
+========== SCAN 14:41:11 ==========
+Differences: 9
+
+★ BEST CANDIDATES (0 → non-zero):
+  ★ 0x0202004F [text_printers   ] 0 → 1
+  ★ 0x02020050 [text_printers   ] 0 → 2
+
+ALL CHANGES:
+ADDRESS          REGION            BEFORE  AFTER   DIFF
+-------          ------            ------  -----   ----
+0x02020008    text_printers      96     144     +48
+0x02020009    text_printers      49      75     +26
+0x0202000C    text_printers     112      96     -16
+0x0202000D    text_printers      53      94     +41
+0x02020034    text_printers     131      70     -61
+0x0202003C    text_printers     167      63     -104
+0x02020049    text_printers     135     160     +25
+0x0202004F    text_printers       0       1     +1
+0x02020050    text_printers       0       2     +2
