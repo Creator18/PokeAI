@@ -1,5 +1,5 @@
 -------------------------------------------------
--- CONFIG - AI MODE v3
+-- CONFIG - AI MODE v3.1
 -------------------------------------------------
 BASE_PATH = "C:/Users/HP/Documents/cogai/"
 ACTION_FILE = BASE_PATH .. "action.json"
@@ -16,6 +16,9 @@ ADDR_MAP_ID     = 0x02036E44   -- u8
 ADDR_DIRECTION  = 0x02036E50   -- u8 (raw: 17/34/51/68)
 ADDR_BATTLE     = 0x0202000A   -- u8 (1=in battle)
 ADDR_GAME_STATE = 0x020204C2   -- u8 (0=OW, 1=menu/party, 14=bag)
+
+-- === TEXT/DIALOGUE DETECTION ===
+ADDR_DIALOGUE   = 0x0202004F   -- u8: 0=no text, 1=text box active (overworld + battle)
 
 -- === MENU SYSTEM (universal, reused across all menus) ===
 ADDR_MENU_CURSOR = 0x0203ADE6  -- u8: current menu/submenu cursor
@@ -223,10 +226,6 @@ end
 
 -------------------------------------------------
 -- BAG DATA EXTRACTION
--- Reads current pocket items with decryption
--- Short keys: pk=pocket, bc=bag cursor
---   items array: id=item id, q=quantity
--- Only reads when bag-relevant state is active
 -------------------------------------------------
 local cached_bag_str = ""
 local bag_key_cache = 0
@@ -239,26 +238,21 @@ function update_bag_caches()
 end
 
 function decode_qty(raw_qty)
-    -- XOR with encryption key from SaveBlock2
     local result = raw_qty ~ bag_key_cache
-    -- Clamp to sane range
     if result < 0 or result > 999 then return 0 end
     return result
 end
 
 function get_bag_string(game_state, in_battle, battle_cursor)
-    -- Determine if bag is relevant right now
     local bag_active = (game_state == 14) or (in_battle == 1 and battle_cursor == 1)
 
     local pocket = r8(ADDR_BAG_POCKET)
     local cursor = r8(ADDR_BAG_CURSOR)
 
     if not bag_active then
-        -- Minimal bag state — just pocket and cursor (useful for context)
         return string.format('"bg":{"pk":%d,"bc":%d,"a":0,"it":[]}', pocket, cursor)
     end
 
-    -- Bag is active — read current pocket items
     local info = BAG_POCKET_INFO[pocket]
     if not info then
         return string.format('"bg":{"pk":%d,"bc":%d,"a":1,"it":[]}', pocket, cursor)
@@ -266,7 +260,7 @@ function get_bag_string(game_state, in_battle, battle_cursor)
 
     local base = sb1_cache + info.offset
     local items = {}
-    local max_read = math.min(info.slots, 20) -- cap at 20 for JSON size
+    local max_read = math.min(info.slots, 20)
 
     for i = 0, max_read - 1 do
         local addr = base + i * 4
@@ -274,7 +268,7 @@ function get_bag_string(game_state, in_battle, battle_cursor)
         local raw_qty = r16(addr + 2)
 
         if item_id == 0 then
-            break -- empty slot = end of items in pocket
+            break
         end
 
         local qty = decode_qty(raw_qty)
@@ -287,8 +281,6 @@ end
 
 -------------------------------------------------
 -- MENU DATA EXTRACTION
--- Short keys: mc=menu cursor, mm=menu max
---   pc=party cursor, sc=swap cursor
 -------------------------------------------------
 function get_menu_string()
     local mc = r8(ADDR_MENU_CURSOR)
@@ -373,12 +365,13 @@ end
 -------------------------------------------------
 -- FILE WRITER
 -- Keys: s=state, p=palette, t=tiles, b=battle,
---   pa=party, mu=menu, bg=bag
+--   pa=party, mu=menu, bg=bag, gs=game_state,
+--   tf=text_flag (0=no dialogue, 1=text active)
 -------------------------------------------------
 local cached_palette_str = ""
 local cached_tiles_str = ""
 
-function write_state(x, y, map, in_battle, game_state, direction, include_visual, include_bag)
+function write_state(x, y, map, in_battle, game_state, direction, text_flag, include_visual, include_bag)
     local f = io.open(STATE_FILE, "w")
     if not f then return end
 
@@ -387,7 +380,7 @@ function write_state(x, y, map, in_battle, game_state, direction, include_visual
 
     f:write('{"s":[')
     f:write(string.format('%d,%d,%d,%d,%d,%d', x, y, map, in_battle, menu_flag, direction))
-    f:write(string.format('],"gs":%d,"dead":false', game_state))
+    f:write(string.format('],"gs":%d,"tf":%d,"dead":false', game_state, text_flag))
 
     -- Battle data
     f:write(',' .. get_battle_string(in_battle))
@@ -424,13 +417,15 @@ end
 local frame_counter = 0
 
 print("==========================================")
-print("Pokemon AI v3 — Full Menu + Bag + Battle")
+print("Pokemon AI v3.1 — Full Menu + Bag + Battle + Dialogue")
 print("==========================================")
 print("OVERWORLD:")
 print("  X: 0x02036E48  Y: 0x02036E4A")
 print("  Map: 0x02036E44  Dir: 0x02036E50")
 print("  Battle: 0x0202000A")
 print("  GameState: 0x020204C2 (0=OW,1=menu,14=bag)")
+print("DIALOGUE:")
+print("  TextFlag: 0x0202004F (0=no text, 1=text active)")
 print("MENU SYSTEM:")
 print("  MenuCursor: 0x0203ADE6 (universal)")
 print("  MenuMaxIdx: 0x0203ADE8")
@@ -488,6 +483,7 @@ while true do
     local direction = normalize_direction(raw_dir)
     local battle_flag = r8(ADDR_BATTLE)
     local game_state = r8(ADDR_GAME_STATE)
+    local text_flag = r8(ADDR_DIALOGUE)
     local in_battle = (battle_flag == 1) and 1 or 0
 
     -- Visual cache update
@@ -511,7 +507,7 @@ while true do
     end
 
     -- Write state
-    write_state(x, y, map, in_battle, game_state, direction,
+    write_state(x, y, map, in_battle, game_state, direction, text_flag,
                 include_visual or (frame_counter % 5 == 0), include_bag)
 
     -- Debug output
@@ -522,6 +518,7 @@ while true do
         local sc = r8(ADDR_SWAP_CURSOR)
         local bp = r8(ADDR_BAG_POCKET)
         local bcur = r8(ADDR_BAG_CURSOR)
+        local tf_str = text_flag == 1 and " TXT" or ""
 
         if in_battle == 1 then
             local bc = r8(ADDR_BATTLE_CURSOR)
@@ -538,11 +535,11 @@ while true do
             local bt_str = (bt % 16 >= 8) and "TRAINER" or "WILD"
 
             print(string.format(
-                "F:%d | %s bc:%d mc:%d | P:%d Lv%d %d/%d st:%d | E:%d Lv%d %d/%d st:%d | Menu:%d/%d PC:%d | %s",
+                "F:%d | %s bc:%d mc:%d | P:%d Lv%d %d/%d st:%d | E:%d Lv%d %d/%d st:%d | Menu:%d/%d PC:%d%s | %s",
                 frame_counter, bt_str, bc, moc,
                 ps, pl, ph, r16(ADDR_P_MAXHP), pst,
                 es, el, eh, r16(ADDR_E_MAXHP), est,
-                mc, mm, pc,
+                mc, mm, pc, tf_str,
                 action or "nil"
             ))
         else
@@ -562,9 +559,9 @@ while true do
             end
 
             print(string.format(
-                "F:%d | %s (%d,%d) Map:%d Dir:%d | Party:%d HP:%d/%d%s | %s",
+                "F:%d | %s (%d,%d) Map:%d Dir:%d | Party:%d HP:%d/%d%s%s | %s",
                 frame_counter, gs_str, x, y, map, direction,
-                party_count, hp, mhp, extra,
+                party_count, hp, mhp, extra, tf_str,
                 action or "nil"
             ))
         end
