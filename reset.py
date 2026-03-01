@@ -1,4 +1,4 @@
-# Reset all JSON files for AI Agent v17.2 + Teaching Code
+# Reset all JSON files for AI Agent (Multi-Pool Pipeline) + Teaching Code
 # Creates files if they don't exist, resets to empty if they do
 # Update BASE_PATH to match your device
 
@@ -9,7 +9,7 @@ BASE_PATH = Path(r"C:\Users\HP\Documents\cogai")
 BASE_PATH.mkdir(parents=True, exist_ok=True)
 
 count = 0
-total = 16
+total = 19
 
 # ============================================================================
 # TAUGHT FILES (produced by teaching code, consumed by AI agent)
@@ -63,7 +63,56 @@ with open(BASE_PATH / "taught_model_checkpoint.json", 'w') as f:
             "move_to_cluster": {},
             "species_to_cluster": {},
             "clustering_run_count": 0
-        }
+        },
+        "pipelines": {
+            "battle": {
+                "pipeline_id": "battle",
+                "name": "Battle Pipeline",
+                "credit_decay": 0.7,
+                "pools": [
+                    {"pool_id": "battle_L0_identification", "name": "identification", "output_width": 8, "max_perceptrons": 15, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "battle_L1_threat_assessment", "name": "threat_assessment", "output_width": 8, "max_perceptrons": 20, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "battle_L2_stay_or_bail", "name": "stay_or_bail", "output_width": 8, "max_perceptrons": 15, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "battle_L3_action_selection", "name": "action_selection", "output_width": 8, "max_perceptrons": 20, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "battle_L4_execution", "name": "execution", "output_width": 8, "max_perceptrons": 10, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "battle_L5_outcome_observation", "name": "outcome_observation", "output_width": 8, "max_perceptrons": 10, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}}
+                ]
+            },
+            "overworld": {
+                "pipeline_id": "overworld",
+                "name": "Overworld Pipeline",
+                "credit_decay": 0.7,
+                "pools": [
+                    {"pool_id": "overworld_L0_spatial_awareness", "name": "spatial_awareness", "output_width": 8, "max_perceptrons": 15, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "overworld_L1_area_classification", "name": "area_classification", "output_width": 8, "max_perceptrons": 10, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "overworld_L2_frontier_detection", "name": "frontier_detection", "output_width": 8, "max_perceptrons": 15, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "overworld_L3_objective_management", "name": "objective_management", "output_width": 8, "max_perceptrons": 15, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "overworld_L4_pathfinding", "name": "pathfinding", "output_width": 8, "max_perceptrons": 10, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "overworld_L5_execution", "name": "execution", "output_width": 8, "max_perceptrons": 10, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "overworld_L6_outcome_observation", "name": "outcome_observation", "output_width": 8, "max_perceptrons": 10, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}}
+                ]
+            },
+            "bag": {
+                "pipeline_id": "bag",
+                "name": "Bag Pipeline",
+                "credit_decay": 0.7,
+                "pools": [
+                    {"pool_id": "bag_L0_inventory_awareness", "name": "inventory_awareness", "output_width": 8, "max_perceptrons": 10, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "bag_L1_item_selection", "name": "item_selection", "output_width": 8, "max_perceptrons": 10, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "bag_L2_execution", "name": "execution", "output_width": 8, "max_perceptrons": 8, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}}
+                ]
+            },
+            "party": {
+                "pipeline_id": "party",
+                "name": "Party Pipeline",
+                "credit_decay": 0.7,
+                "pools": [
+                    {"pool_id": "party_L0_assessment", "name": "assessment", "output_width": 8, "max_perceptrons": 10, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}},
+                    {"pool_id": "party_L1_execution", "name": "execution", "output_width": 8, "max_perceptrons": 8, "spawn_threshold": 0.0005, "spawn_count": 0, "authority": 0.0, "residual": {}}
+                ]
+            }
+        },
+        "revenge_targets": {}
     }, f, indent=2)
 print(f"✅ {count}/{total} taught_model_checkpoint.json")
 
@@ -136,7 +185,7 @@ with open(BASE_PATH / "taught_bag_transitions.json", 'w') as f:
     }, f, indent=2)
 print(f"✅ {count}/{total} taught_bag_transitions.json")
 
-# 7. taught_start_menu_transitions.json (NEW v17.2)
+# 7. taught_start_menu_transitions.json
 count += 1
 with open(BASE_PATH / "taught_start_menu_transitions.json", 'w') as f:
     json.dump({
@@ -201,7 +250,7 @@ with open(BASE_PATH / "item_knowledge.json", 'w') as f:
     json.dump({}, f)
 print(f"✅ {count}/{total} item_knowledge.json")
 
-# 14. type_clusters.json (NEW v17.2)
+# 14. type_clusters.json
 count += 1
 with open(BASE_PATH / "type_clusters.json", 'w') as f:
     json.dump({
@@ -215,7 +264,7 @@ with open(BASE_PATH / "type_clusters.json", 'w') as f:
     }, f, indent=2)
 print(f"✅ {count}/{total} type_clusters.json")
 
-# 15. ai_event_timeline.json (NEW v17.2)
+# 15. ai_event_timeline.json
 count += 1
 with open(BASE_PATH / "ai_event_timeline.json", 'w') as f:
     json.dump({
@@ -233,39 +282,67 @@ with open(BASE_PATH / "ai_event_timeline.json", 'w') as f:
     }, f, indent=2)
 print(f"✅ {count}/{total} ai_event_timeline.json")
 
+# 16. residual_perceptrons.json (NEW — pipeline paged perceptrons)
+count += 1
+with open(BASE_PATH / "residual_perceptrons.json", 'w') as f:
+    json.dump({}, f)
+print(f"✅ {count}/{total} residual_perceptrons.json")
+
 # ============================================================================
 # I/O FILES (Lua ↔ AI communication)
 # ============================================================================
 
-# 16. action.json
+# 17. action.json
 count += 1
 with open(BASE_PATH / "action.json", 'w') as f:
     json.dump({"action": "NONE"}, f)
 print(f"✅ {count}/{total} action.json")
 
+# 18. game_state.json
+count += 1
+with open(BASE_PATH / "game_state.json", 'w') as f:
+    json.dump({
+        "s": [0, 0, 0, 0, 0, 0],
+        "gs": 0,
+        "tf": 0,
+        "dead": False,
+        "b": {"bc": -1, "mc": -1, "ps": -1, "es": -1, "ph": -1, "pm": -1, "eh": -1, "em": -1,
+              "pl": -1, "el": -1, "pst": 0, "est": 0, "bt": 0,
+              "m0": -1, "m1": -1, "m2": -1, "m3": -1,
+              "pp0": -1, "pp1": -1, "pp2": -1, "pp3": -1,
+              "pss": [-1, -1, -1, -1, -1, -1, -1],
+              "em0": -1, "em1": -1, "em2": -1, "em3": -1,
+              "epp0": -1, "epp1": -1, "epp2": -1, "epp3": -1,
+              "ess": [-1, -1, -1, -1, -1, -1, -1],
+              "pc": -1},
+        "pa": {"c": 0, "s": []},
+        "mu": {"mc": -1, "mm": -1, "pc": -1, "sc": -1},
+        "bg": {"pk": -1, "bc": -1, "a": 0, "it": []}
+    }, f, indent=2)
+print(f"✅ {count}/{total} game_state.json")
+
 # ============================================================================
 # OPTIONAL FILES (not reset, just noted)
 # ============================================================================
 
-print(f"\n{'='*60}")
-print("OPTIONAL FILES (not reset by this script):")
-
+# 19. type_data.json — optional Track B ground truth
+count += 1
 opt_type_data = BASE_PATH / "type_data.json"
 if opt_type_data.exists():
-    print(f"  📄 type_data.json EXISTS ({opt_type_data.stat().st_size} bytes)")
+    print(f"✅ {count}/{total} type_data.json EXISTS ({opt_type_data.stat().st_size} bytes) — not reset (optional Track B)")
 else:
-    print(f"  ❌ type_data.json not found (Track B — optional, from Lua verification script)")
+    print(f"⬚  {count}/{total} type_data.json not found (Track B — optional, from Lua verification script)")
 
-opt_game_state = BASE_PATH / "game_state.json"
-if opt_game_state.exists():
-    print(f"  📄 game_state.json EXISTS (produced by Lua — will be overwritten at runtime)")
-else:
-    print(f"  ❌ game_state.json not found (Lua will create it at runtime)")
-
-print(f"{'='*60}")
-print(f"\n🧹 All {total} files reset. Ready for fresh teaching + AI play.")
+print(f"\n{'='*60}")
+print(f"📁 All {total} files handled.")
 print(f"   Path: {BASE_PATH}")
+print(f"\n   File breakdown:")
+print(f"     Taught (human → AI):     8 files (reset to empty)")
+print(f"     AI agent state:          8 files (reset/deleted)")
+print(f"     Lua ↔ AI communication:  2 files (reset)")
+print(f"     Optional (Track B):      1 file  (not touched)")
 print(f"\n   To start fresh:")
 print(f"   1. Run teaching code to record demonstrations")
-print(f"   2. Delete model_checkpoint.json if it exists (already done above)")
-print(f"   3. Run AI agent — it will bootstrap from taught_model_checkpoint.json")
+print(f"   2. Run AI agent — it will bootstrap from taught_model_checkpoint.json")
+print(f"   3. Pipelines start empty, populate through play")
+print(f"   4. Revenge targets start empty, populate on losses")
