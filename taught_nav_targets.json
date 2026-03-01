@@ -1,12 +1,3403 @@
 {
-  "targets_by_map": {},
-  "global_order": [],
+  "targets_by_map": {
+    "13": [
+      {
+        "position": [
+          18,
+          13
+        ],
+        "direction": 1,
+        "order": 1,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 101
+      },
+      {
+        "position": [
+          17,
+          9
+        ],
+        "direction": 2,
+        "order": 2,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 17,
+        "frame_index": 133
+      },
+      {
+        "position": [
+          13,
+          9
+        ],
+        "direction": 3,
+        "order": 4,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 422
+      },
+      {
+        "position": [
+          13,
+          19
+        ],
+        "direction": 0,
+        "order": 5,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 23,
+        "frame_index": 1483
+      },
+      {
+        "position": [
+          13,
+          15
+        ],
+        "direction": 0,
+        "order": 55,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4901
+      }
+    ],
+    "17": [
+      {
+        "position": [
+          11,
+          15
+        ],
+        "direction": 0,
+        "order": 3,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 13,
+        "frame_index": 351
+      }
+    ],
+    "23": [
+      {
+        "position": [
+          19,
+          16
+        ],
+        "direction": 1,
+        "order": 6,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1504
+      },
+      {
+        "position": [
+          19,
+          9
+        ],
+        "direction": 1,
+        "order": 7,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1535
+      },
+      {
+        "position": [
+          19,
+          45
+        ],
+        "direction": 1,
+        "order": 8,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1541
+      },
+      {
+        "position": [
+          21,
+          40
+        ],
+        "direction": 3,
+        "order": 9,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1554
+      },
+      {
+        "position": [
+          23,
+          42
+        ],
+        "direction": 2,
+        "order": 10,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1636
+      },
+      {
+        "position": [
+          16,
+          35
+        ],
+        "direction": 3,
+        "order": 11,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1899
+      },
+      {
+        "position": [
+          22,
+          32
+        ],
+        "direction": 1,
+        "order": 12,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1983
+      },
+      {
+        "position": [
+          19,
+          24
+        ],
+        "direction": 3,
+        "order": 13,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2028
+      },
+      {
+        "position": [
+          25,
+          21
+        ],
+        "direction": 1,
+        "order": 14,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2046
+      },
+      {
+        "position": [
+          18,
+          7
+        ],
+        "direction": 1,
+        "order": 15,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 35,
+        "frame_index": 2165
+      },
+      {
+        "position": [
+          21,
+          21
+        ],
+        "direction": 2,
+        "order": 44,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3842
+      },
+      {
+        "position": [
+          25,
+          17
+        ],
+        "direction": 1,
+        "order": 45,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4133
+      },
+      {
+        "position": [
+          25,
+          14
+        ],
+        "direction": 1,
+        "order": 46,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4137
+      },
+      {
+        "position": [
+          22,
+          15
+        ],
+        "direction": 1,
+        "order": 56,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 11,
+        "frame_index": 5034
+      }
+    ],
+    "35": [
+      {
+        "position": [
+          29,
+          39
+        ],
+        "direction": 1,
+        "order": 16,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2186
+      },
+      {
+        "position": [
+          33,
+          34
+        ],
+        "direction": 1,
+        "order": 17,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2206
+      },
+      {
+        "position": [
+          35,
+          25
+        ],
+        "direction": 1,
+        "order": 155,
+        "progress_type": "map_transition",
+        "forward_progress_score": 0.925,
+        "destination_map": 11,
+        "frame_index": 18157
+      },
+      {
+        "position": [
+          31,
+          27
+        ],
+        "direction": 1,
+        "order": 156,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 18369
+      },
+      {
+        "position": [
+          31,
+          24
+        ],
+        "direction": 1,
+        "order": 157,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 18373
+      },
+      {
+        "position": [
+          31,
+          21
+        ],
+        "direction": 1,
+        "order": 158,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 18377
+      },
+      {
+        "position": [
+          17,
+          24
+        ],
+        "direction": 3,
+        "order": 159,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 18453
+      },
+      {
+        "position": [
+          22,
+          23
+        ],
+        "direction": 1,
+        "order": 160,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 18465
+      }
+    ],
+    "14": [
+      {
+        "position": [
+          14,
+          15
+        ],
+        "direction": 0,
+        "order": 18,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 33,
+        "frame_index": 2257
+      },
+      {
+        "position": [
+          14,
+          8
+        ],
+        "direction": 1,
+        "order": 69,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 36,
+        "frame_index": 6685
+      },
+      {
+        "position": [
+          14,
+          12
+        ],
+        "direction": 1,
+        "order": 104,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10897
+      }
+    ],
+    "33": [
+      {
+        "position": [
+          37,
+          29
+        ],
+        "direction": 2,
+        "order": 19,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2300
+      },
+      {
+        "position": [
+          34,
+          29
+        ],
+        "direction": 2,
+        "order": 20,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2304
+      },
+      {
+        "position": [
+          31,
+          29
+        ],
+        "direction": 2,
+        "order": 21,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2308
+      },
+      {
+        "position": [
+          23,
+          25
+        ],
+        "direction": 2,
+        "order": 22,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2334
+      },
+      {
+        "position": [
+          20,
+          25
+        ],
+        "direction": 2,
+        "order": 23,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2338
+      },
+      {
+        "position": [
+          15,
+          20
+        ],
+        "direction": 1,
+        "order": 24,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2373
+      },
+      {
+        "position": [
+          15,
+          17
+        ],
+        "direction": 1,
+        "order": 25,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2377
+      },
+      {
+        "position": [
+          7,
+          24
+        ],
+        "direction": 2,
+        "order": 26,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2476
+      },
+      {
+        "position": [
+          17,
+          26
+        ],
+        "direction": 3,
+        "order": 36,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2960
+      },
+      {
+        "position": [
+          31,
+          45
+        ],
+        "direction": 0,
+        "order": 37,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3069
+      },
+      {
+        "position": [
+          43,
+          26
+        ],
+        "direction": 1,
+        "order": 47,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 11,
+        "frame_index": 4311
+      },
+      {
+        "position": [
+          28,
+          30
+        ],
+        "direction": 1,
+        "order": 62,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6070
+      },
+      {
+        "position": [
+          28,
+          27
+        ],
+        "direction": 1,
+        "order": 63,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6074
+      },
+      {
+        "position": [
+          28,
+          24
+        ],
+        "direction": 1,
+        "order": 64,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6078
+      },
+      {
+        "position": [
+          29,
+          12
+        ],
+        "direction": 1,
+        "order": 65,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6222
+      },
+      {
+        "position": [
+          29,
+          9
+        ],
+        "direction": 1,
+        "order": 66,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6226
+      }
+    ],
+    "81": [
+      {
+        "position": [
+          49,
+          17
+        ],
+        "direction": 0,
+        "order": 27,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2494
+      },
+      {
+        "position": [
+          39,
+          12
+        ],
+        "direction": 2,
+        "order": 28,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2566
+      },
+      {
+        "position": [
+          36,
+          12
+        ],
+        "direction": 2,
+        "order": 29,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2570
+      },
+      {
+        "position": [
+          33,
+          12
+        ],
+        "direction": 2,
+        "order": 30,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2573
+      },
+      {
+        "position": [
+          30,
+          12
+        ],
+        "direction": 2,
+        "order": 31,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2577
+      },
+      {
+        "position": [
+          36,
+          25
+        ],
+        "direction": 3,
+        "order": 32,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2739
+      },
+      {
+        "position": [
+          39,
+          25
+        ],
+        "direction": 3,
+        "order": 33,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2743
+      },
+      {
+        "position": [
+          42,
+          25
+        ],
+        "direction": 3,
+        "order": 34,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2747
+      },
+      {
+        "position": [
+          52,
+          16
+        ],
+        "direction": 3,
+        "order": 35,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2943
+      }
+    ],
+    "21": [
+      {
+        "position": [
+          25,
+          26
+        ],
+        "direction": 2,
+        "order": 38,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3441
+      },
+      {
+        "position": [
+          22,
+          26
+        ],
+        "direction": 2,
+        "order": 39,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3445
+      },
+      {
+        "position": [
+          15,
+          38
+        ],
+        "direction": 0,
+        "order": 40,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3574
+      },
+      {
+        "position": [
+          19,
+          45
+        ],
+        "direction": 0,
+        "order": 41,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3677
+      },
+      {
+        "position": [
+          18,
+          17
+        ],
+        "direction": 0,
+        "order": 42,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3704
+      },
+      {
+        "position": [
+          23,
+          20
+        ],
+        "direction": 1,
+        "order": 43,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 13,
+        "frame_index": 3746
+      },
+      {
+        "position": [
+          17,
+          81
+        ],
+        "direction": 1,
+        "order": 67,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6235
+      },
+      {
+        "position": [
+          13,
+          58
+        ],
+        "direction": 1,
+        "order": 68,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 14,
+        "frame_index": 6667
+      }
+    ],
+    "11": [
+      {
+        "position": [
+          11,
+          14
+        ],
+        "direction": 0,
+        "order": 48,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 43,
+        "frame_index": 4347
+      }
+    ],
+    "43": [
+      {
+        "position": [
+          38,
+          31
+        ],
+        "direction": 0,
+        "order": 49,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4368
+      },
+      {
+        "position": [
+          31,
+          45
+        ],
+        "direction": 0,
+        "order": 50,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4425
+      }
+    ],
+    "31": [
+      {
+        "position": [
+          25,
+          24
+        ],
+        "direction": 0,
+        "order": 51,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4478
+      },
+      {
+        "position": [
+          19,
+          40
+        ],
+        "direction": 0,
+        "order": 52,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4592
+      },
+      {
+        "position": [
+          19,
+          16
+        ],
+        "direction": 0,
+        "order": 53,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4690
+      },
+      {
+        "position": [
+          23,
+          21
+        ],
+        "direction": 1,
+        "order": 54,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 13,
+        "frame_index": 4719
+      }
+    ],
+    "22": [
+      {
+        "position": [
+          19,
+          7
+        ],
+        "direction": 1,
+        "order": 57,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5185
+      },
+      {
+        "position": [
+          15,
+          35
+        ],
+        "direction": 3,
+        "order": 58,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5404
+      },
+      {
+        "position": [
+          21,
+          25
+        ],
+        "direction": 3,
+        "order": 59,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5457
+      },
+      {
+        "position": [
+          19,
+          24
+        ],
+        "direction": 2,
+        "order": 118,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 11936
+      },
+      {
+        "position": [
+          31,
+          21
+        ],
+        "direction": 0,
+        "order": 119,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 12005
+      },
+      {
+        "position": [
+          31,
+          24
+        ],
+        "direction": 0,
+        "order": 120,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 12009
+      },
+      {
+        "position": [
+          31,
+          28
+        ],
+        "direction": 0,
+        "order": 121,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 12013
+      },
+      {
+        "position": [
+          31,
+          31
+        ],
+        "direction": 0,
+        "order": 122,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 12017
+      },
+      {
+        "position": [
+          24,
+          32
+        ],
+        "direction": 1,
+        "order": 123,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 12080
+      },
+      {
+        "position": [
+          14,
+          20
+        ],
+        "direction": 1,
+        "order": 161,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 19406
+      },
+      {
+        "position": [
+          14,
+          17
+        ],
+        "direction": 1,
+        "order": 162,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 19410
+      },
+      {
+        "position": [
+          21,
+          15
+        ],
+        "direction": 3,
+        "order": 163,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 19450
+      },
+      {
+        "position": [
+          24,
+          15
+        ],
+        "direction": 3,
+        "order": 164,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 19454
+      },
+      {
+        "position": [
+          27,
+          15
+        ],
+        "direction": 3,
+        "order": 165,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 19456
+      }
+    ],
+    "34": [
+      {
+        "position": [
+          31,
+          43
+        ],
+        "direction": 1,
+        "order": 60,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5920
+      },
+      {
+        "position": [
+          33,
+          33
+        ],
+        "direction": 1,
+        "order": 61,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 14,
+        "frame_index": 5992
+      }
+    ],
+    "36": [
+      {
+        "position": [
+          35,
+          50
+        ],
+        "direction": 2,
+        "order": 70,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7023
+      },
+      {
+        "position": [
+          32,
+          50
+        ],
+        "direction": 2,
+        "order": 71,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7027
+      },
+      {
+        "position": [
+          29,
+          50
+        ],
+        "direction": 2,
+        "order": 72,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7031
+      },
+      {
+        "position": [
+          20,
+          50
+        ],
+        "direction": 2,
+        "order": 73,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7042
+      },
+      {
+        "position": [
+          35,
+          53
+        ],
+        "direction": 0,
+        "order": 74,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7599
+      },
+      {
+        "position": [
+          42,
+          67
+        ],
+        "direction": 3,
+        "order": 75,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7660
+      },
+      {
+        "position": [
+          45,
+          67
+        ],
+        "direction": 3,
+        "order": 76,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7664
+      },
+      {
+        "position": [
+          49,
+          65
+        ],
+        "direction": 1,
+        "order": 77,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7677
+      },
+      {
+        "position": [
+          49,
+          62
+        ],
+        "direction": 1,
+        "order": 78,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7681
+      },
+      {
+        "position": [
+          46,
+          49
+        ],
+        "direction": 1,
+        "order": 79,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7894
+      },
+      {
+        "position": [
+          46,
+          41
+        ],
+        "direction": 1,
+        "order": 80,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8049
+      },
+      {
+        "position": [
+          46,
+          38
+        ],
+        "direction": 1,
+        "order": 81,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8052
+      },
+      {
+        "position": [
+          46,
+          35
+        ],
+        "direction": 1,
+        "order": 82,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8055
+      },
+      {
+        "position": [
+          48,
+          32
+        ],
+        "direction": 3,
+        "order": 83,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8305
+      },
+      {
+        "position": [
+          51,
+          32
+        ],
+        "direction": 3,
+        "order": 84,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8308
+      },
+      {
+        "position": [
+          57,
+          35
+        ],
+        "direction": 0,
+        "order": 85,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8325
+      },
+      {
+        "position": [
+          57,
+          38
+        ],
+        "direction": 0,
+        "order": 86,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8329
+      },
+      {
+        "position": [
+          57,
+          41
+        ],
+        "direction": 0,
+        "order": 87,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8333
+      },
+      {
+        "position": [
+          57,
+          44
+        ],
+        "direction": 0,
+        "order": 88,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8335
+      },
+      {
+        "position": [
+          55,
+          49
+        ],
+        "direction": 1,
+        "order": 89,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8664
+      },
+      {
+        "position": [
+          55,
+          46
+        ],
+        "direction": 1,
+        "order": 90,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8667
+      },
+      {
+        "position": [
+          55,
+          43
+        ],
+        "direction": 1,
+        "order": 91,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8671
+      },
+      {
+        "position": [
+          47,
+          26
+        ],
+        "direction": 1,
+        "order": 92,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9204
+      },
+      {
+        "position": [
+          49,
+          22
+        ],
+        "direction": 3,
+        "order": 93,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9217
+      },
+      {
+        "position": [
+          49,
+          12
+        ],
+        "direction": 2,
+        "order": 94,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9567
+      },
+      {
+        "position": [
+          46,
+          12
+        ],
+        "direction": 2,
+        "order": 95,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9571
+      },
+      {
+        "position": [
+          43,
+          12
+        ],
+        "direction": 2,
+        "order": 96,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9575
+      },
+      {
+        "position": [
+          34,
+          21
+        ],
+        "direction": 0,
+        "order": 97,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9615
+      },
+      {
+        "position": [
+          27,
+          19
+        ],
+        "direction": 1,
+        "order": 98,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9804
+      },
+      {
+        "position": [
+          27,
+          16
+        ],
+        "direction": 1,
+        "order": 99,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9808
+      },
+      {
+        "position": [
+          19,
+          27
+        ],
+        "direction": 0,
+        "order": 100,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10503
+      },
+      {
+        "position": [
+          19,
+          30
+        ],
+        "direction": 0,
+        "order": 101,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10507
+      },
+      {
+        "position": [
+          12,
+          37
+        ],
+        "direction": 1,
+        "order": 102,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10555
+      },
+      {
+        "position": [
+          12,
+          16
+        ],
+        "direction": 1,
+        "order": 103,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 14,
+        "frame_index": 10892
+      }
+    ],
+    "12": [
+      {
+        "position": [
+          17,
+          13
+        ],
+        "direction": 1,
+        "order": 105,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10942
+      },
+      {
+        "position": [
+          17,
+          10
+        ],
+        "direction": 1,
+        "order": 106,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10946
+      },
+      {
+        "position": [
+          17,
+          7
+        ],
+        "direction": 1,
+        "order": 107,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10950
+      },
+      {
+        "position": [
+          14,
+          14
+        ],
+        "direction": 1,
+        "order": 112,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 11137
+      },
+      {
+        "position": [
+          12,
+          19
+        ],
+        "direction": 0,
+        "order": 126,
+        "progress_type": "new_area",
+        "forward_progress_score": 0.933,
+        "destination_map": null,
+        "frame_index": 13046
+      },
+      {
+        "position": [
+          12,
+          22
+        ],
+        "direction": 0,
+        "order": 127,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 13050
+      },
+      {
+        "position": [
+          15,
+          39
+        ],
+        "direction": 3,
+        "order": 128,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 13134
+      },
+      {
+        "position": [
+          20,
+          38
+        ],
+        "direction": 1,
+        "order": 129,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 13147
+      },
+      {
+        "position": [
+          20,
+          35
+        ],
+        "direction": 1,
+        "order": 130,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 13151
+      },
+      {
+        "position": [
+          20,
+          32
+        ],
+        "direction": 1,
+        "order": 131,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 13155
+      },
+      {
+        "position": [
+          30,
+          22
+        ],
+        "direction": 0,
+        "order": 132,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 13326
+      },
+      {
+        "position": [
+          30,
+          25
+        ],
+        "direction": 0,
+        "order": 133,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 13330
+      },
+      {
+        "position": [
+          30,
+          28
+        ],
+        "direction": 0,
+        "order": 134,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 13334
+      },
+      {
+        "position": [
+          46,
+          22
+        ],
+        "direction": 3,
+        "order": 135,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 13823
+      },
+      {
+        "position": [
+          38,
+          22
+        ],
+        "direction": 2,
+        "order": 136,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 14209
+      },
+      {
+        "position": [
+          37,
+          26
+        ],
+        "direction": 0,
+        "order": 137,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 14506
+      },
+      {
+        "position": [
+          23,
+          14
+        ],
+        "direction": 2,
+        "order": 138,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 14810
+      },
+      {
+        "position": [
+          19,
+          16
+        ],
+        "direction": 0,
+        "order": 139,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 14823
+      },
+      {
+        "position": [
+          22,
+          28
+        ],
+        "direction": 0,
+        "order": 140,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 14968
+      },
+      {
+        "position": [
+          22,
+          31
+        ],
+        "direction": 0,
+        "order": 141,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 14972
+      },
+      {
+        "position": [
+          12,
+          38
+        ],
+        "direction": 1,
+        "order": 142,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 15023
+      },
+      {
+        "position": [
+          12,
+          31
+        ],
+        "direction": 1,
+        "order": 143,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 15143
+      },
+      {
+        "position": [
+          12,
+          28
+        ],
+        "direction": 1,
+        "order": 144,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 15147
+      },
+      {
+        "position": [
+          12,
+          25
+        ],
+        "direction": 1,
+        "order": 145,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 15151
+      },
+      {
+        "position": [
+          15,
+          17
+        ],
+        "direction": 2,
+        "order": 147,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 15475
+      },
+      {
+        "position": [
+          21,
+          24
+        ],
+        "direction": 1,
+        "order": 148,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 16142
+      },
+      {
+        "position": [
+          21,
+          20
+        ],
+        "direction": 1,
+        "order": 149,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 16146
+      }
+    ],
+    "24": [
+      {
+        "position": [
+          29,
+          44
+        ],
+        "direction": 1,
+        "order": 108,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10954
+      },
+      {
+        "position": [
+          24,
+          32
+        ],
+        "direction": 1,
+        "order": 109,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 14,
+        "frame_index": 11015
+      },
+      {
+        "position": [
+          24,
+          35
+        ],
+        "direction": 0,
+        "order": 110,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 11070
+      },
+      {
+        "position": [
+          29,
+          47
+        ],
+        "direction": 0,
+        "order": 111,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 12,
+        "frame_index": 11104
+      },
+      {
+        "position": [
+          30,
+          25
+        ],
+        "direction": 1,
+        "order": 113,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 11363
+      },
+      {
+        "position": [
+          30,
+          22
+        ],
+        "direction": 1,
+        "order": 114,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 11367
+      },
+      {
+        "position": [
+          20,
+          17
+        ],
+        "direction": 2,
+        "order": 115,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 11391
+      },
+      {
+        "position": [
+          14,
+          20
+        ],
+        "direction": 0,
+        "order": 116,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 11414
+      },
+      {
+        "position": [
+          22,
+          23
+        ],
+        "direction": 1,
+        "order": 117,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 11539
+      },
+      {
+        "position": [
+          26,
+          33
+        ],
+        "direction": 3,
+        "order": 124,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 12145
+      },
+      {
+        "position": [
+          17,
+          25
+        ],
+        "direction": 3,
+        "order": 125,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 12252
+      },
+      {
+        "position": [
+          29,
+          41
+        ],
+        "direction": 0,
+        "order": 146,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 15447
+      },
+      {
+        "position": [
+          27,
+          39
+        ],
+        "direction": 2,
+        "order": 150,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 16964
+      },
+      {
+        "position": [
+          29,
+          20
+        ],
+        "direction": 1,
+        "order": 151,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 17116
+      },
+      {
+        "position": [
+          27,
+          16
+        ],
+        "direction": 2,
+        "order": 152,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 17128
+      },
+      {
+        "position": [
+          24,
+          16
+        ],
+        "direction": 2,
+        "order": 153,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 17132
+      },
+      {
+        "position": [
+          35,
+          25
+        ],
+        "direction": 1,
+        "order": 154,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 18104
+      },
+      {
+        "position": [
+          38,
+          26
+        ],
+        "direction": 3,
+        "order": 166,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 19633
+      },
+      {
+        "position": [
+          41,
+          26
+        ],
+        "direction": 3,
+        "order": 167,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 19636
+      }
+    ]
+  },
+  "global_order": [
+    {
+      "map_id": 13,
+      "position": [
+        18,
+        13
+      ],
+      "order": 1
+    },
+    {
+      "map_id": 13,
+      "position": [
+        17,
+        9
+      ],
+      "order": 2
+    },
+    {
+      "map_id": 17,
+      "position": [
+        11,
+        15
+      ],
+      "order": 3
+    },
+    {
+      "map_id": 13,
+      "position": [
+        13,
+        9
+      ],
+      "order": 4
+    },
+    {
+      "map_id": 13,
+      "position": [
+        13,
+        19
+      ],
+      "order": 5
+    },
+    {
+      "map_id": 23,
+      "position": [
+        19,
+        16
+      ],
+      "order": 6
+    },
+    {
+      "map_id": 23,
+      "position": [
+        19,
+        9
+      ],
+      "order": 7
+    },
+    {
+      "map_id": 23,
+      "position": [
+        19,
+        45
+      ],
+      "order": 8
+    },
+    {
+      "map_id": 23,
+      "position": [
+        21,
+        40
+      ],
+      "order": 9
+    },
+    {
+      "map_id": 23,
+      "position": [
+        23,
+        42
+      ],
+      "order": 10
+    },
+    {
+      "map_id": 23,
+      "position": [
+        16,
+        35
+      ],
+      "order": 11
+    },
+    {
+      "map_id": 23,
+      "position": [
+        22,
+        32
+      ],
+      "order": 12
+    },
+    {
+      "map_id": 23,
+      "position": [
+        19,
+        24
+      ],
+      "order": 13
+    },
+    {
+      "map_id": 23,
+      "position": [
+        25,
+        21
+      ],
+      "order": 14
+    },
+    {
+      "map_id": 23,
+      "position": [
+        18,
+        7
+      ],
+      "order": 15
+    },
+    {
+      "map_id": 35,
+      "position": [
+        29,
+        39
+      ],
+      "order": 16
+    },
+    {
+      "map_id": 35,
+      "position": [
+        33,
+        34
+      ],
+      "order": 17
+    },
+    {
+      "map_id": 14,
+      "position": [
+        14,
+        15
+      ],
+      "order": 18
+    },
+    {
+      "map_id": 33,
+      "position": [
+        37,
+        29
+      ],
+      "order": 19
+    },
+    {
+      "map_id": 33,
+      "position": [
+        34,
+        29
+      ],
+      "order": 20
+    },
+    {
+      "map_id": 33,
+      "position": [
+        31,
+        29
+      ],
+      "order": 21
+    },
+    {
+      "map_id": 33,
+      "position": [
+        23,
+        25
+      ],
+      "order": 22
+    },
+    {
+      "map_id": 33,
+      "position": [
+        20,
+        25
+      ],
+      "order": 23
+    },
+    {
+      "map_id": 33,
+      "position": [
+        15,
+        20
+      ],
+      "order": 24
+    },
+    {
+      "map_id": 33,
+      "position": [
+        15,
+        17
+      ],
+      "order": 25
+    },
+    {
+      "map_id": 33,
+      "position": [
+        7,
+        24
+      ],
+      "order": 26
+    },
+    {
+      "map_id": 81,
+      "position": [
+        49,
+        17
+      ],
+      "order": 27
+    },
+    {
+      "map_id": 81,
+      "position": [
+        39,
+        12
+      ],
+      "order": 28
+    },
+    {
+      "map_id": 81,
+      "position": [
+        36,
+        12
+      ],
+      "order": 29
+    },
+    {
+      "map_id": 81,
+      "position": [
+        33,
+        12
+      ],
+      "order": 30
+    },
+    {
+      "map_id": 81,
+      "position": [
+        30,
+        12
+      ],
+      "order": 31
+    },
+    {
+      "map_id": 81,
+      "position": [
+        36,
+        25
+      ],
+      "order": 32
+    },
+    {
+      "map_id": 81,
+      "position": [
+        39,
+        25
+      ],
+      "order": 33
+    },
+    {
+      "map_id": 81,
+      "position": [
+        42,
+        25
+      ],
+      "order": 34
+    },
+    {
+      "map_id": 81,
+      "position": [
+        52,
+        16
+      ],
+      "order": 35
+    },
+    {
+      "map_id": 33,
+      "position": [
+        17,
+        26
+      ],
+      "order": 36
+    },
+    {
+      "map_id": 33,
+      "position": [
+        31,
+        45
+      ],
+      "order": 37
+    },
+    {
+      "map_id": 21,
+      "position": [
+        25,
+        26
+      ],
+      "order": 38
+    },
+    {
+      "map_id": 21,
+      "position": [
+        22,
+        26
+      ],
+      "order": 39
+    },
+    {
+      "map_id": 21,
+      "position": [
+        15,
+        38
+      ],
+      "order": 40
+    },
+    {
+      "map_id": 21,
+      "position": [
+        19,
+        45
+      ],
+      "order": 41
+    },
+    {
+      "map_id": 21,
+      "position": [
+        18,
+        17
+      ],
+      "order": 42
+    },
+    {
+      "map_id": 21,
+      "position": [
+        23,
+        20
+      ],
+      "order": 43
+    },
+    {
+      "map_id": 23,
+      "position": [
+        21,
+        21
+      ],
+      "order": 44
+    },
+    {
+      "map_id": 23,
+      "position": [
+        25,
+        17
+      ],
+      "order": 45
+    },
+    {
+      "map_id": 23,
+      "position": [
+        25,
+        14
+      ],
+      "order": 46
+    },
+    {
+      "map_id": 33,
+      "position": [
+        43,
+        26
+      ],
+      "order": 47
+    },
+    {
+      "map_id": 11,
+      "position": [
+        11,
+        14
+      ],
+      "order": 48
+    },
+    {
+      "map_id": 43,
+      "position": [
+        38,
+        31
+      ],
+      "order": 49
+    },
+    {
+      "map_id": 43,
+      "position": [
+        31,
+        45
+      ],
+      "order": 50
+    },
+    {
+      "map_id": 31,
+      "position": [
+        25,
+        24
+      ],
+      "order": 51
+    },
+    {
+      "map_id": 31,
+      "position": [
+        19,
+        40
+      ],
+      "order": 52
+    },
+    {
+      "map_id": 31,
+      "position": [
+        19,
+        16
+      ],
+      "order": 53
+    },
+    {
+      "map_id": 31,
+      "position": [
+        23,
+        21
+      ],
+      "order": 54
+    },
+    {
+      "map_id": 13,
+      "position": [
+        13,
+        15
+      ],
+      "order": 55
+    },
+    {
+      "map_id": 23,
+      "position": [
+        22,
+        15
+      ],
+      "order": 56
+    },
+    {
+      "map_id": 22,
+      "position": [
+        19,
+        7
+      ],
+      "order": 57
+    },
+    {
+      "map_id": 22,
+      "position": [
+        15,
+        35
+      ],
+      "order": 58
+    },
+    {
+      "map_id": 22,
+      "position": [
+        21,
+        25
+      ],
+      "order": 59
+    },
+    {
+      "map_id": 34,
+      "position": [
+        31,
+        43
+      ],
+      "order": 60
+    },
+    {
+      "map_id": 34,
+      "position": [
+        33,
+        33
+      ],
+      "order": 61
+    },
+    {
+      "map_id": 33,
+      "position": [
+        28,
+        30
+      ],
+      "order": 62
+    },
+    {
+      "map_id": 33,
+      "position": [
+        28,
+        27
+      ],
+      "order": 63
+    },
+    {
+      "map_id": 33,
+      "position": [
+        28,
+        24
+      ],
+      "order": 64
+    },
+    {
+      "map_id": 33,
+      "position": [
+        29,
+        12
+      ],
+      "order": 65
+    },
+    {
+      "map_id": 33,
+      "position": [
+        29,
+        9
+      ],
+      "order": 66
+    },
+    {
+      "map_id": 21,
+      "position": [
+        17,
+        81
+      ],
+      "order": 67
+    },
+    {
+      "map_id": 21,
+      "position": [
+        13,
+        58
+      ],
+      "order": 68
+    },
+    {
+      "map_id": 14,
+      "position": [
+        14,
+        8
+      ],
+      "order": 69
+    },
+    {
+      "map_id": 36,
+      "position": [
+        35,
+        50
+      ],
+      "order": 70
+    },
+    {
+      "map_id": 36,
+      "position": [
+        32,
+        50
+      ],
+      "order": 71
+    },
+    {
+      "map_id": 36,
+      "position": [
+        29,
+        50
+      ],
+      "order": 72
+    },
+    {
+      "map_id": 36,
+      "position": [
+        20,
+        50
+      ],
+      "order": 73
+    },
+    {
+      "map_id": 36,
+      "position": [
+        35,
+        53
+      ],
+      "order": 74
+    },
+    {
+      "map_id": 36,
+      "position": [
+        42,
+        67
+      ],
+      "order": 75
+    },
+    {
+      "map_id": 36,
+      "position": [
+        45,
+        67
+      ],
+      "order": 76
+    },
+    {
+      "map_id": 36,
+      "position": [
+        49,
+        65
+      ],
+      "order": 77
+    },
+    {
+      "map_id": 36,
+      "position": [
+        49,
+        62
+      ],
+      "order": 78
+    },
+    {
+      "map_id": 36,
+      "position": [
+        46,
+        49
+      ],
+      "order": 79
+    },
+    {
+      "map_id": 36,
+      "position": [
+        46,
+        41
+      ],
+      "order": 80
+    },
+    {
+      "map_id": 36,
+      "position": [
+        46,
+        38
+      ],
+      "order": 81
+    },
+    {
+      "map_id": 36,
+      "position": [
+        46,
+        35
+      ],
+      "order": 82
+    },
+    {
+      "map_id": 36,
+      "position": [
+        48,
+        32
+      ],
+      "order": 83
+    },
+    {
+      "map_id": 36,
+      "position": [
+        51,
+        32
+      ],
+      "order": 84
+    },
+    {
+      "map_id": 36,
+      "position": [
+        57,
+        35
+      ],
+      "order": 85
+    },
+    {
+      "map_id": 36,
+      "position": [
+        57,
+        38
+      ],
+      "order": 86
+    },
+    {
+      "map_id": 36,
+      "position": [
+        57,
+        41
+      ],
+      "order": 87
+    },
+    {
+      "map_id": 36,
+      "position": [
+        57,
+        44
+      ],
+      "order": 88
+    },
+    {
+      "map_id": 36,
+      "position": [
+        55,
+        49
+      ],
+      "order": 89
+    },
+    {
+      "map_id": 36,
+      "position": [
+        55,
+        46
+      ],
+      "order": 90
+    },
+    {
+      "map_id": 36,
+      "position": [
+        55,
+        43
+      ],
+      "order": 91
+    },
+    {
+      "map_id": 36,
+      "position": [
+        47,
+        26
+      ],
+      "order": 92
+    },
+    {
+      "map_id": 36,
+      "position": [
+        49,
+        22
+      ],
+      "order": 93
+    },
+    {
+      "map_id": 36,
+      "position": [
+        49,
+        12
+      ],
+      "order": 94
+    },
+    {
+      "map_id": 36,
+      "position": [
+        46,
+        12
+      ],
+      "order": 95
+    },
+    {
+      "map_id": 36,
+      "position": [
+        43,
+        12
+      ],
+      "order": 96
+    },
+    {
+      "map_id": 36,
+      "position": [
+        34,
+        21
+      ],
+      "order": 97
+    },
+    {
+      "map_id": 36,
+      "position": [
+        27,
+        19
+      ],
+      "order": 98
+    },
+    {
+      "map_id": 36,
+      "position": [
+        27,
+        16
+      ],
+      "order": 99
+    },
+    {
+      "map_id": 36,
+      "position": [
+        19,
+        27
+      ],
+      "order": 100
+    },
+    {
+      "map_id": 36,
+      "position": [
+        19,
+        30
+      ],
+      "order": 101
+    },
+    {
+      "map_id": 36,
+      "position": [
+        12,
+        37
+      ],
+      "order": 102
+    },
+    {
+      "map_id": 36,
+      "position": [
+        12,
+        16
+      ],
+      "order": 103
+    },
+    {
+      "map_id": 14,
+      "position": [
+        14,
+        12
+      ],
+      "order": 104
+    },
+    {
+      "map_id": 12,
+      "position": [
+        17,
+        13
+      ],
+      "order": 105
+    },
+    {
+      "map_id": 12,
+      "position": [
+        17,
+        10
+      ],
+      "order": 106
+    },
+    {
+      "map_id": 12,
+      "position": [
+        17,
+        7
+      ],
+      "order": 107
+    },
+    {
+      "map_id": 24,
+      "position": [
+        29,
+        44
+      ],
+      "order": 108
+    },
+    {
+      "map_id": 24,
+      "position": [
+        24,
+        32
+      ],
+      "order": 109
+    },
+    {
+      "map_id": 24,
+      "position": [
+        24,
+        35
+      ],
+      "order": 110
+    },
+    {
+      "map_id": 24,
+      "position": [
+        29,
+        47
+      ],
+      "order": 111
+    },
+    {
+      "map_id": 12,
+      "position": [
+        14,
+        14
+      ],
+      "order": 112
+    },
+    {
+      "map_id": 24,
+      "position": [
+        30,
+        25
+      ],
+      "order": 113
+    },
+    {
+      "map_id": 24,
+      "position": [
+        30,
+        22
+      ],
+      "order": 114
+    },
+    {
+      "map_id": 24,
+      "position": [
+        20,
+        17
+      ],
+      "order": 115
+    },
+    {
+      "map_id": 24,
+      "position": [
+        14,
+        20
+      ],
+      "order": 116
+    },
+    {
+      "map_id": 24,
+      "position": [
+        22,
+        23
+      ],
+      "order": 117
+    },
+    {
+      "map_id": 22,
+      "position": [
+        19,
+        24
+      ],
+      "order": 118
+    },
+    {
+      "map_id": 22,
+      "position": [
+        31,
+        21
+      ],
+      "order": 119
+    },
+    {
+      "map_id": 22,
+      "position": [
+        31,
+        24
+      ],
+      "order": 120
+    },
+    {
+      "map_id": 22,
+      "position": [
+        31,
+        28
+      ],
+      "order": 121
+    },
+    {
+      "map_id": 22,
+      "position": [
+        31,
+        31
+      ],
+      "order": 122
+    },
+    {
+      "map_id": 22,
+      "position": [
+        24,
+        32
+      ],
+      "order": 123
+    },
+    {
+      "map_id": 24,
+      "position": [
+        26,
+        33
+      ],
+      "order": 124
+    },
+    {
+      "map_id": 24,
+      "position": [
+        17,
+        25
+      ],
+      "order": 125
+    },
+    {
+      "map_id": 12,
+      "position": [
+        12,
+        19
+      ],
+      "order": 126
+    },
+    {
+      "map_id": 12,
+      "position": [
+        12,
+        22
+      ],
+      "order": 127
+    },
+    {
+      "map_id": 12,
+      "position": [
+        15,
+        39
+      ],
+      "order": 128
+    },
+    {
+      "map_id": 12,
+      "position": [
+        20,
+        38
+      ],
+      "order": 129
+    },
+    {
+      "map_id": 12,
+      "position": [
+        20,
+        35
+      ],
+      "order": 130
+    },
+    {
+      "map_id": 12,
+      "position": [
+        20,
+        32
+      ],
+      "order": 131
+    },
+    {
+      "map_id": 12,
+      "position": [
+        30,
+        22
+      ],
+      "order": 132
+    },
+    {
+      "map_id": 12,
+      "position": [
+        30,
+        25
+      ],
+      "order": 133
+    },
+    {
+      "map_id": 12,
+      "position": [
+        30,
+        28
+      ],
+      "order": 134
+    },
+    {
+      "map_id": 12,
+      "position": [
+        46,
+        22
+      ],
+      "order": 135
+    },
+    {
+      "map_id": 12,
+      "position": [
+        38,
+        22
+      ],
+      "order": 136
+    },
+    {
+      "map_id": 12,
+      "position": [
+        37,
+        26
+      ],
+      "order": 137
+    },
+    {
+      "map_id": 12,
+      "position": [
+        23,
+        14
+      ],
+      "order": 138
+    },
+    {
+      "map_id": 12,
+      "position": [
+        19,
+        16
+      ],
+      "order": 139
+    },
+    {
+      "map_id": 12,
+      "position": [
+        22,
+        28
+      ],
+      "order": 140
+    },
+    {
+      "map_id": 12,
+      "position": [
+        22,
+        31
+      ],
+      "order": 141
+    },
+    {
+      "map_id": 12,
+      "position": [
+        12,
+        38
+      ],
+      "order": 142
+    },
+    {
+      "map_id": 12,
+      "position": [
+        12,
+        31
+      ],
+      "order": 143
+    },
+    {
+      "map_id": 12,
+      "position": [
+        12,
+        28
+      ],
+      "order": 144
+    },
+    {
+      "map_id": 12,
+      "position": [
+        12,
+        25
+      ],
+      "order": 145
+    },
+    {
+      "map_id": 24,
+      "position": [
+        29,
+        41
+      ],
+      "order": 146
+    },
+    {
+      "map_id": 12,
+      "position": [
+        15,
+        17
+      ],
+      "order": 147
+    },
+    {
+      "map_id": 12,
+      "position": [
+        21,
+        24
+      ],
+      "order": 148
+    },
+    {
+      "map_id": 12,
+      "position": [
+        21,
+        20
+      ],
+      "order": 149
+    },
+    {
+      "map_id": 24,
+      "position": [
+        27,
+        39
+      ],
+      "order": 150
+    },
+    {
+      "map_id": 24,
+      "position": [
+        29,
+        20
+      ],
+      "order": 151
+    },
+    {
+      "map_id": 24,
+      "position": [
+        27,
+        16
+      ],
+      "order": 152
+    },
+    {
+      "map_id": 24,
+      "position": [
+        24,
+        16
+      ],
+      "order": 153
+    },
+    {
+      "map_id": 24,
+      "position": [
+        35,
+        25
+      ],
+      "order": 154
+    },
+    {
+      "map_id": 35,
+      "position": [
+        35,
+        25
+      ],
+      "order": 155
+    },
+    {
+      "map_id": 35,
+      "position": [
+        31,
+        27
+      ],
+      "order": 156
+    },
+    {
+      "map_id": 35,
+      "position": [
+        31,
+        24
+      ],
+      "order": 157
+    },
+    {
+      "map_id": 35,
+      "position": [
+        31,
+        21
+      ],
+      "order": 158
+    },
+    {
+      "map_id": 35,
+      "position": [
+        17,
+        24
+      ],
+      "order": 159
+    },
+    {
+      "map_id": 35,
+      "position": [
+        22,
+        23
+      ],
+      "order": 160
+    },
+    {
+      "map_id": 22,
+      "position": [
+        14,
+        20
+      ],
+      "order": 161
+    },
+    {
+      "map_id": 22,
+      "position": [
+        14,
+        17
+      ],
+      "order": 162
+    },
+    {
+      "map_id": 22,
+      "position": [
+        21,
+        15
+      ],
+      "order": 163
+    },
+    {
+      "map_id": 22,
+      "position": [
+        24,
+        15
+      ],
+      "order": 164
+    },
+    {
+      "map_id": 22,
+      "position": [
+        27,
+        15
+      ],
+      "order": 165
+    },
+    {
+      "map_id": 24,
+      "position": [
+        38,
+        26
+      ],
+      "order": 166
+    },
+    {
+      "map_id": 24,
+      "position": [
+        41,
+        26
+      ],
+      "order": 167
+    }
+  ],
   "metadata": {
-    "total_targets": 0,
-    "maps_with_targets": [],
+    "total_targets": 167,
+    "maps_with_targets": [
+      11,
+      12,
+      13,
+      14,
+      17,
+      21,
+      22,
+      23,
+      24,
+      31,
+      33,
+      34,
+      35,
+      36,
+      43,
+      81
+    ],
     "analysis_window_after": 40,
     "min_forward_progress": 0.5,
     "dedup_radius": 2,
-    "generated_from_frames": 0
+    "generated_from_frames": 19659
   }
 }
