@@ -183,57 +183,6 @@
         "paged_at": 0
       }
     },
-    "battle_L4_execution": {
-      "battle_L4_1": {
-        "kind": "entity",
-        "action": null,
-        "group": null,
-        "entity_type": "battle_execution_32",
-        "chain": "battle",
-        "utility": 1.0,
-        "familiarity": 47.70000000000105,
-        "learning_rate": 0.05,
-        "active_activation": "squared",
-        "activation_fit_score": -0.49593931193427754,
-        "trigger_context": "battle_L4_1",
-        "weights_shape": 8,
-        "weights_nonzero": [
-          [
-            0,
-            202.587385257788
-          ],
-          [
-            1,
-            201.61657518357623
-          ],
-          [
-            2,
-            200.47340780351396
-          ],
-          [
-            3,
-            165.14306137293352
-          ],
-          [
-            4,
-            184.88865614693472
-          ],
-          [
-            5,
-            183.87747309140562
-          ],
-          [
-            6,
-            182.84580033549142
-          ],
-          [
-            7,
-            181.90044938036147
-          ]
-        ],
-        "paged_at": 0
-      }
-    },
     "battle_L5_outcome_observation": {
       "battle_L5_1": {
         "kind": "entity",

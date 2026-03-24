@@ -1,18 +1,18 @@
 {
   "0": {
-    "species": 1,
+    "species": 4,
     "moves": [
-      33,
+      10,
       45
     ],
     "fingerprint": [
-      13,
+      11,
       10,
       10,
-      14,
-      13
+      11,
+      11
     ],
-    "level": 6,
-    "last_updated": 31101
+    "level": 5,
+    "last_updated": 10585
   }
 }

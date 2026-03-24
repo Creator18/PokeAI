@@ -1,12 +1,12 @@
 {
   "player_moves": {
-    "33": {
+    "10": {
       "total_uses": 5,
       "total_damage": 0,
       "avg_damage": 0.0,
       "misses": 5,
       "vs_species": {
-        "16": {
+        "7": {
           "uses": 5,
           "damage": 0,
           "avg": 0.0,
@@ -19,15 +19,9 @@
     }
   },
   "enemy_moves": {
-    "10": {
-      "observed_uses": 7,
-      "damage_to_us": 29,
-      "status_inflicted": 0,
-      "stat_changes": 0
-    },
     "33": {
       "observed_uses": 4,
-      "damage_to_us": 18,
+      "damage_to_us": 17,
       "status_inflicted": 0,
       "stat_changes": 0
     }
