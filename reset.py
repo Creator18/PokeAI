@@ -13,7 +13,7 @@ from pathlib import Path
 
 # === UPDATE THIS PATH ===
 _CANDIDATE_PATHS = [
-    Path("C:/Users/HP/Documents/cogai/"),
+    Path("C:/Users/HP/Documents/cogai/jsons"),
     Path("C:/Users/natmaw/Documents/Boston Stuff/CS 5100 Foundations of AI/PokeAI/"),
 ]
 
