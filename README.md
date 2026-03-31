@@ -147,4 +147,4 @@ teach_pokemon ──→ Record human demonstrations
 - **Nathaniel Maw**
 - **Achal Mukkapati**
 
-Khoury College of Computer Sciences, Northeastern University | March 2026
+Khoury College of Computer Sciences, Northeastern University
