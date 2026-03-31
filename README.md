@@ -143,8 +143,8 @@ teach_pokemon ──→ Record human demonstrations
 
 ## Authors
 
-- **Angshuman Basu** — Architecture, AI/conversation engine, all core systems
-- **Nathaniel Maw** — [contribution area]
-- **Achal Mukkapati** — [contribution area]
+- **Angshuman Basu**
+- **Nathaniel Maw**
+- **Achal Mukkapati**
 
 Khoury College of Computer Sciences, Northeastern University | March 2026
