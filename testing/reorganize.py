@@ -33,7 +33,7 @@ import sys
 from pathlib import Path
 from datetime import datetime
 
-BASE_PATH = Path(r"C:\Users\HP\Documents\cogai")
+BASE_PATH = Path(__file__).resolve().parent.parent  # cogai/testing/ → cogai/
 
 # ============================================================================
 # NEW DIRECTORY STRUCTURE
