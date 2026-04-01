@@ -1,12 +1,49 @@
-# Reset all JSON files for AI Agent (Multi-Pool Pipeline) + Teaching Code
-# Creates files if they don't exist, resets to empty if they do
+# ============================================================================
+# Reset all JSON files for AI Agent v17.7
+# ============================================================================
+# Creates the jsons/ directory structure under cogai/ and resets all files.
 #
-# MULTI-MODEL FOLDER STRUCTURE:
-# Taught data now lives in taught_models/model_N/ folders.
-# If old flat taught files exist in cogai/, they are MOVED into
-# taught_models/model_1/ automatically (migration).
+# FOLDER STRUCTURE:
+#   cogai/jsons/
+#   ├── io/                    Lua ↔ AI real-time communication
+#   │   ├── action.json
+#   │   └── game_state.json
+#   ├── taught_models/         Human demonstration data (read-only by AI)
+#   │   ├── model_1/
+#   │   │   ├── taught_model_checkpoint.json
+#   │   │   ├── taught_transitions.json
+#   │   │   ├── taught_battle_transitions.json
+#   │   │   ├── taught_bag_transitions.json
+#   │   │   ├── taught_start_menu_transitions.json
+#   │   │   ├── taught_exploration_memory.json
+#   │   │   ├── taught_nav_targets.json
+#   │   │   └── event_timeline.json
+#   │   └── model_N/  ...
+#   ├── ai_checkpoint/         AI's own learned weights + pipeline state
+#   │   ├── model_checkpoint.json
+#   │   └── residual_perceptrons.json
+#   ├── empirical_knowledge/   Knowledge built through play
+#   │   ├── exploration_memory.json
+#   │   ├── roster.json
+#   │   ├── move_knowledge.json
+#   │   ├── item_knowledge.json
+#   │   ├── type_clusters.json
+#   │   ├── type_data.json         (Track B — optional, not reset if present)
+#   │   └── ai_event_timeline.json
+#   └── debug/                 Adaptive window debug dumps (ephemeral)
+#       ├── active_transitions.json
+#       ├── active_battle.json
+#       ├── active_bag.json
+#       └── active_start_menu.json
 #
-# Update BASE_PATH to match your device
+# MIGRATION:
+#   If old flat files exist in cogai/ (pre-v17.7 layout), they are
+#   automatically moved into the correct subfolder.
+#   If old taught_models/ exists at cogai/taught_models/, it is moved
+#   into cogai/jsons/taught_models/.
+#
+# Update BASE_PATH to match your device.
+# ============================================================================
 
 import json
 import shutil
@@ -15,13 +52,21 @@ from pathlib import Path
 BASE_PATH = Path(r"C:\Users\HP\Documents\cogai")
 BASE_PATH.mkdir(parents=True, exist_ok=True)
 
-TAUGHT_MODELS_DIR = BASE_PATH / "taught_models"
+# ============================================================================
+# NEW DIRECTORY STRUCTURE
+# ============================================================================
 
-count = 0
-total = 20  # updated count
+JSONS_ROOT = BASE_PATH / "jsons"
+IO_DIR = JSONS_ROOT / "io"
+TAUGHT_MODELS_DIR = JSONS_ROOT / "taught_models"
+AI_CHECKPOINT_DIR = JSONS_ROOT / "ai_checkpoint"
+EMPIRICAL_DIR = JSONS_ROOT / "empirical_knowledge"
+DEBUG_DIR = JSONS_ROOT / "debug"
+
+ALL_DIRS = [JSONS_ROOT, IO_DIR, TAUGHT_MODELS_DIR, AI_CHECKPOINT_DIR, EMPIRICAL_DIR, DEBUG_DIR]
 
 # ============================================================================
-# TAUGHT MODEL FILE NAMES (these live inside each model_N folder)
+# TAUGHT MODEL FILE NAMES (inside each model_N folder)
 # ============================================================================
 
 TAUGHT_FILENAMES = [
@@ -35,7 +80,10 @@ TAUGHT_FILENAMES = [
     "event_timeline.json",
 ]
 
-# Empty templates for each taught file (used when creating fresh model folders)
+# ============================================================================
+# EMPTY TEMPLATES
+# ============================================================================
+
 TAUGHT_TEMPLATES = {
     "taught_model_checkpoint.json": {
         "timestep": 0,
@@ -165,129 +213,195 @@ TAUGHT_TEMPLATES = {
 }
 
 # ============================================================================
-# STEP 1: Create taught_models/ directory
+# MAPPING: old flat file name → new location
+# (used for migration from pre-v17.7 flat layout)
 # ============================================================================
-count += 1
-TAUGHT_MODELS_DIR.mkdir(parents=True, exist_ok=True)
-print(f"✅ {count}/{total} taught_models/ directory created")
+
+FLAT_MIGRATION_MAP = {
+    "action.json": IO_DIR / "action.json",
+    "game_state.json": IO_DIR / "game_state.json",
+    "model_checkpoint.json": AI_CHECKPOINT_DIR / "model_checkpoint.json",
+    "residual_perceptrons.json": AI_CHECKPOINT_DIR / "residual_perceptrons.json",
+    "exploration_memory.json": EMPIRICAL_DIR / "exploration_memory.json",
+    "roster.json": EMPIRICAL_DIR / "roster.json",
+    "move_knowledge.json": EMPIRICAL_DIR / "move_knowledge.json",
+    "item_knowledge.json": EMPIRICAL_DIR / "item_knowledge.json",
+    "type_clusters.json": EMPIRICAL_DIR / "type_clusters.json",
+    "type_data.json": EMPIRICAL_DIR / "type_data.json",
+    "ai_event_timeline.json": EMPIRICAL_DIR / "ai_event_timeline.json",
+    "active_transitions.json": DEBUG_DIR / "active_transitions.json",
+    "active_battle.json": DEBUG_DIR / "active_battle.json",
+    "active_bag.json": DEBUG_DIR / "active_bag.json",
+    "active_start_menu.json": DEBUG_DIR / "active_start_menu.json",
+}
 
 # ============================================================================
-# STEP 2: Migrate flat taught files → taught_models/model_1/ if they exist
+# COUNTERS
 # ============================================================================
-count += 1
 
-flat_taught_files = [BASE_PATH / fn for fn in TAUGHT_FILENAMES]
-flat_files_exist = [f for f in flat_taught_files if f.exists()]
+step = 0
+total_steps = 14
 
-if flat_files_exist:
-    # Find next available model number
-    existing_models = sorted([
-        d for d in TAUGHT_MODELS_DIR.iterdir()
+def log(msg):
+    global step
+    step += 1
+    print(f"  [{step}/{total_steps}] {msg}")
+
+
+print("=" * 65)
+print("RESET — AI Agent v17.7 (jsons/ subfolder structure)")
+print("=" * 65)
+
+# ============================================================================
+# STEP 1: Create directory structure
+# ============================================================================
+
+for d in ALL_DIRS:
+    d.mkdir(parents=True, exist_ok=True)
+log(f"✅ Directory structure created under {JSONS_ROOT}")
+for d in ALL_DIRS[1:]:
+    print(f"       📂 {d.relative_to(BASE_PATH)}/")
+
+# ============================================================================
+# STEP 2: Migrate old flat files → new locations
+# ============================================================================
+
+migrated_count = 0
+for old_name, new_path in FLAT_MIGRATION_MAP.items():
+    old_path = BASE_PATH / old_name
+    if old_path.exists():
+        if old_name == "type_data.json" and not new_path.exists():
+            shutil.move(str(old_path), str(new_path))
+            migrated_count += 1
+            print(f"       📦 {old_name} → {new_path.relative_to(BASE_PATH)} (preserved)")
+        elif old_name != "type_data.json":
+            shutil.move(str(old_path), str(new_path))
+            migrated_count += 1
+            print(f"       📦 {old_name} → {new_path.relative_to(BASE_PATH)}")
+
+# Migrate old taught_models/ folder if it exists at cogai/taught_models/
+old_taught_dir = BASE_PATH / "taught_models"
+if old_taught_dir.exists() and old_taught_dir != TAUGHT_MODELS_DIR:
+    old_models = sorted([
+        d for d in old_taught_dir.iterdir()
         if d.is_dir() and d.name.startswith('model_')
-    ], key=lambda d: int(d.name.split('_')[1]) if d.name.split('_')[1].isdigit() else 0)
+    ])
+    for model_dir in old_models:
+        dest = TAUGHT_MODELS_DIR / model_dir.name
+        if not dest.exists():
+            shutil.move(str(model_dir), str(dest))
+            migrated_count += 1
+            print(f"       📦 taught_models/{model_dir.name}/ → jsons/taught_models/{model_dir.name}/")
+        else:
+            print(f"       ⏭️  taught_models/{model_dir.name}/ already exists in jsons/, skipping")
+    if not any(old_taught_dir.iterdir()):
+        old_taught_dir.rmdir()
+        print(f"       🗑️  Removed empty old taught_models/")
 
-    next_num = 1
-    if existing_models:
-        last_num = int(existing_models[-1].name.split('_')[1])
-        next_num = last_num + 1
-
-    migration_dir = TAUGHT_MODELS_DIR / f"model_{next_num}"
-    migration_dir.mkdir(parents=True, exist_ok=True)
-
-    migrated = 0
-    for flat_file in flat_files_exist:
-        dest = migration_dir / flat_file.name
-        shutil.move(str(flat_file), str(dest))
-        migrated += 1
-
-    print(f"✅ {count}/{total} MIGRATED {migrated} flat taught files → {migration_dir.name}/")
-    for f in flat_files_exist:
-        print(f"     📦 {f.name}")
-
-    # Check if any taught files are missing from the migration
-    missing = [fn for fn in TAUGHT_FILENAMES if not (migration_dir / fn).exists()]
-    if missing:
-        print(f"     ⚠️ Missing files (creating empty): {', '.join(missing)}")
-        for fn in missing:
-            with open(migration_dir / fn, 'w') as f:
-                json.dump(TAUGHT_TEMPLATES[fn], f, indent=2)
+if migrated_count > 0:
+    log(f"✅ Migrated {migrated_count} items from flat layout")
 else:
-    # No flat files to migrate — check if any model folders exist
-    existing_models = sorted([
-        d for d in TAUGHT_MODELS_DIR.iterdir()
-        if d.is_dir() and d.name.startswith('model_')
-    ]) if TAUGHT_MODELS_DIR.exists() else []
-
-    if existing_models:
-        print(f"✅ {count}/{total} No flat files to migrate — {len(existing_models)} model folder(s) already exist")
-    else:
-        # Create empty model_1 with template files
-        model_1_dir = TAUGHT_MODELS_DIR / "model_1"
-        model_1_dir.mkdir(parents=True, exist_ok=True)
-        for fn in TAUGHT_FILENAMES:
-            with open(model_1_dir / fn, 'w') as f:
-                json.dump(TAUGHT_TEMPLATES[fn], f, indent=2)
-        print(f"✅ {count}/{total} Created empty taught_models/model_1/ with {len(TAUGHT_FILENAMES)} template files")
+    log(f"✅ No flat files to migrate")
 
 # ============================================================================
-# STEP 3: Report taught model folder contents
+# STEP 3: Taught models — ensure at least model_1/ exists
 # ============================================================================
-count += 1
+
 existing_models = sorted([
     d for d in TAUGHT_MODELS_DIR.iterdir()
     if d.is_dir() and d.name.startswith('model_')
-]) if TAUGHT_MODELS_DIR.exists() else []
+], key=lambda d: int(d.name.split('_')[1]) if d.name.split('_')[1].isdigit() else 0)
 
-print(f"✅ {count}/{total} Taught model folders: {len(existing_models)}")
+if not existing_models:
+    model_1_dir = TAUGHT_MODELS_DIR / "model_1"
+    model_1_dir.mkdir(parents=True, exist_ok=True)
+    for fn in TAUGHT_FILENAMES:
+        with open(model_1_dir / fn, 'w') as f:
+            json.dump(TAUGHT_TEMPLATES[fn], f, indent=2)
+    log(f"✅ Created empty taught_models/model_1/ with {len(TAUGHT_FILENAMES)} templates")
+    existing_models = [model_1_dir]
+else:
+    for model_dir in existing_models:
+        missing = [fn for fn in TAUGHT_FILENAMES if not (model_dir / fn).exists()]
+        if missing:
+            for fn in missing:
+                with open(model_dir / fn, 'w') as f:
+                    json.dump(TAUGHT_TEMPLATES[fn], f, indent=2)
+            print(f"       ⚠️  {model_dir.name}: created {len(missing)} missing template files")
+    log(f"✅ Taught models: {len(existing_models)} folder(s)")
+
 for model_dir in existing_models:
-    files_present = [f.name for f in model_dir.iterdir() if f.is_file()]
-    files_with_data = []
-    for f in model_dir.iterdir():
-        if f.is_file() and f.stat().st_size > 50:  # more than just empty JSON
-            files_with_data.append(f.name)
-    print(f"     📂 {model_dir.name}: {len(files_present)}/{len(TAUGHT_FILENAMES)} files"
-          f" ({len(files_with_data)} with data)")
+    files_present = list(model_dir.iterdir())
+    files_with_data = [f for f in files_present if f.is_file() and f.stat().st_size > 50]
+    print(f"       📂 {model_dir.name}: {len(files_present)}/{len(TAUGHT_FILENAMES)} files "
+          f"({len(files_with_data)} with data)")
 
 # ============================================================================
-# AI AGENT FILES (produced by AI agent — still in flat cogai/)
+# STEP 4: Reset io/ files
 # ============================================================================
 
-# 4. model_checkpoint.json
-count += 1
-fp = BASE_PATH / "model_checkpoint.json"
+with open(IO_DIR / "action.json", 'w') as f:
+    json.dump({"action": "NONE"}, f)
+
+with open(IO_DIR / "game_state.json", 'w') as f:
+    json.dump({
+        "s": [0, 0, 0, 0, 0, 0],
+        "gs": 0,
+        "tf": 0,
+        "bd": 0,
+        "dead": False,
+        "b": {
+            "bc": -1, "mc": -1, "ps": -1, "es": -1,
+            "ph": -1, "pm": -1, "eh": -1, "em": -1,
+            "pl": -1, "el": -1, "pst": 0, "est": 0, "bt": 0,
+            "m0": -1, "m1": -1, "m2": -1, "m3": -1,
+            "pp0": -1, "pp1": -1, "pp2": -1, "pp3": -1,
+            "pss": [-1, -1, -1, -1, -1, -1, -1],
+            "em0": -1, "em1": -1, "em2": -1, "em3": -1,
+            "epp0": -1, "epp1": -1, "epp2": -1, "epp3": -1,
+            "ess": [-1, -1, -1, -1, -1, -1, -1],
+            "pc": -1
+        },
+        "pa": {"c": 0, "s": []},
+        "mu": {"mc": -1, "mm": -1, "pc": -1, "sc": -1},
+        "bg": {"pk": -1, "bc": -1, "a": 0, "it": []}
+    }, f, indent=2)
+
+log(f"✅ io/ — action.json + game_state.json (reset)")
+
+# ============================================================================
+# STEP 5: Reset ai_checkpoint/ files
+# ============================================================================
+
+fp = AI_CHECKPOINT_DIR / "model_checkpoint.json"
 if fp.exists():
     fp.unlink()
-    print(f"✅ {count}/{total} model_checkpoint.json (DELETED — AI will bootstrap from taught)")
+    print(f"       🗑️  model_checkpoint.json deleted (AI will bootstrap from taught)")
 else:
-    print(f"✅ {count}/{total} model_checkpoint.json (not present — AI will bootstrap)")
+    print(f"       ⬚  model_checkpoint.json not present (AI will bootstrap)")
 
-# 5. exploration_memory.json
-count += 1
-with open(BASE_PATH / "exploration_memory.json", 'w') as f:
+with open(AI_CHECKPOINT_DIR / "residual_perceptrons.json", 'w') as f:
     json.dump({}, f)
-print(f"✅ {count}/{total} exploration_memory.json")
 
-# 6. roster.json
-count += 1
-with open(BASE_PATH / "roster.json", 'w') as f:
+log(f"✅ ai_checkpoint/ — model_checkpoint (deleted) + residual_perceptrons (reset)")
+
+# ============================================================================
+# STEP 6: Reset empirical_knowledge/ files
+# ============================================================================
+
+with open(EMPIRICAL_DIR / "exploration_memory.json", 'w') as f:
     json.dump({}, f)
-print(f"✅ {count}/{total} roster.json")
 
-# 7. move_knowledge.json
-count += 1
-with open(BASE_PATH / "move_knowledge.json", 'w') as f:
+with open(EMPIRICAL_DIR / "roster.json", 'w') as f:
+    json.dump({}, f)
+
+with open(EMPIRICAL_DIR / "move_knowledge.json", 'w') as f:
     json.dump({"player_moves": {}, "enemy_moves": {}}, f, indent=2)
-print(f"✅ {count}/{total} move_knowledge.json")
 
-# 8. item_knowledge.json
-count += 1
-with open(BASE_PATH / "item_knowledge.json", 'w') as f:
+with open(EMPIRICAL_DIR / "item_knowledge.json", 'w') as f:
     json.dump({}, f)
-print(f"✅ {count}/{total} item_knowledge.json")
 
-# 9. type_clusters.json
-count += 1
-with open(BASE_PATH / "type_clusters.json", 'w') as f:
+with open(EMPIRICAL_DIR / "type_clusters.json", 'w') as f:
     json.dump({
         "move_type_clusters": {},
         "species_type_clusters": {},
@@ -297,11 +411,8 @@ with open(BASE_PATH / "type_clusters.json", 'w') as f:
         "clustering_run_count": 0,
         "last_clustering_timestep": 0
     }, f, indent=2)
-print(f"✅ {count}/{total} type_clusters.json")
 
-# 10. ai_event_timeline.json
-count += 1
-with open(BASE_PATH / "ai_event_timeline.json", 'w') as f:
+with open(EMPIRICAL_DIR / "ai_event_timeline.json", 'w') as f:
     json.dump({
         "events": [],
         "summary": {
@@ -310,107 +421,129 @@ with open(BASE_PATH / "ai_event_timeline.json", 'w') as f:
             "first_timestep": 0, "last_timestep": 0, "maps_visited": []
         }
     }, f, indent=2)
-print(f"✅ {count}/{total} ai_event_timeline.json")
 
-# 11. residual_perceptrons.json
-count += 1
-with open(BASE_PATH / "residual_perceptrons.json", 'w') as f:
-    json.dump({}, f)
-print(f"✅ {count}/{total} residual_perceptrons.json")
+log(f"✅ empirical_knowledge/ — 6 files reset")
 
-# ============================================================================
-# I/O FILES (Lua ↔ AI communication)
-# ============================================================================
-
-# 12. action.json
-count += 1
-with open(BASE_PATH / "action.json", 'w') as f:
-    json.dump({"action": "NONE"}, f)
-print(f"✅ {count}/{total} action.json")
-
-# 13. game_state.json
-count += 1
-with open(BASE_PATH / "game_state.json", 'w') as f:
-    json.dump({
-        "s": [0, 0, 0, 0, 0, 0],
-        "gs": 0,
-        "tf": 0,
-        "dead": False,
-        "b": {"bc": -1, "mc": -1, "ps": -1, "es": -1, "ph": -1, "pm": -1, "eh": -1, "em": -1,
-              "pl": -1, "el": -1, "pst": 0, "est": 0, "bt": 0,
-              "m0": -1, "m1": -1, "m2": -1, "m3": -1,
-              "pp0": -1, "pp1": -1, "pp2": -1, "pp3": -1,
-              "pss": [-1, -1, -1, -1, -1, -1, -1],
-              "em0": -1, "em1": -1, "em2": -1, "em3": -1,
-              "epp0": -1, "epp1": -1, "epp2": -1, "epp3": -1,
-              "ess": [-1, -1, -1, -1, -1, -1, -1],
-              "pc": -1},
-        "pa": {"c": 0, "s": []},
-        "mu": {"mc": -1, "mm": -1, "pc": -1, "sc": -1},
-        "bg": {"pk": -1, "bc": -1, "a": 0, "it": []}
-    }, f, indent=2)
-print(f"✅ {count}/{total} game_state.json")
-
-# ============================================================================
-# OPTIONAL FILES (not reset, just noted)
-# ============================================================================
-
-# 14. type_data.json — optional Track B ground truth
-count += 1
-opt_type_data = BASE_PATH / "type_data.json"
-if opt_type_data.exists():
-    print(f"✅ {count}/{total} type_data.json EXISTS ({opt_type_data.stat().st_size} bytes) — not reset (optional Track B)")
+# Handle type_data.json (Track B — preserve if exists, note if absent)
+type_data_path = EMPIRICAL_DIR / "type_data.json"
+if type_data_path.exists():
+    print(f"       📌 type_data.json EXISTS ({type_data_path.stat().st_size} bytes) — preserved (Track B)")
 else:
-    print(f"⬚  {count}/{total} type_data.json not found (Track B — optional, from Lua verification script)")
+    print(f"       ⬚  type_data.json not found (Track B — optional, from Lua verification script)")
+
+log(f"✅ empirical_knowledge/ — type_data.json checked")
 
 # ============================================================================
-# CLEANUP: Warn about any leftover flat taught files (shouldn't exist after migration)
+# STEP 7: Reset debug/ files
 # ============================================================================
-count += 1
-leftover_flat = [BASE_PATH / fn for fn in TAUGHT_FILENAMES if (BASE_PATH / fn).exists()]
-if leftover_flat:
-    print(f"\n⚠️  {count}/{total} WARNING: {len(leftover_flat)} flat taught files still in cogai/:")
-    for f in leftover_flat:
-        print(f"     ⚠️ {f.name} ({f.stat().st_size} bytes)")
-    print(f"     These should have been migrated. Delete manually or re-run reset.")
+
+for fn in ["active_transitions.json", "active_battle.json",
+           "active_bag.json", "active_start_menu.json"]:
+    with open(DEBUG_DIR / fn, 'w') as f:
+        json.dump({}, f)
+
+log(f"✅ debug/ — 4 active window files (reset)")
+
+# ============================================================================
+# STEP 8: Cleanup — warn about leftover flat files in cogai/
+# ============================================================================
+
+all_known_flat_names = list(FLAT_MIGRATION_MAP.keys()) + TAUGHT_FILENAMES
+leftover = [BASE_PATH / fn for fn in all_known_flat_names if (BASE_PATH / fn).exists()]
+
+if leftover:
+    print(f"\n  ⚠️  WARNING: {len(leftover)} stale flat file(s) still in cogai/:")
+    for f in leftover:
+        print(f"       ⚠️  {f.name} ({f.stat().st_size} bytes)")
+    print(f"       These should have been migrated. Delete manually or re-run reset.")
+    log(f"⚠️  {len(leftover)} leftover flat files detected")
 else:
-    print(f"✅ {count}/{total} No leftover flat taught files (clean)")
+    log(f"✅ No leftover flat files in cogai/ (clean)")
+
+# Old taught_models/ at root level
+old_taught = BASE_PATH / "taught_models"
+if old_taught.exists() and any(old_taught.iterdir()):
+    print(f"\n  ⚠️  Old taught_models/ still has content at cogai/taught_models/")
+    print(f"       Move contents to cogai/jsons/taught_models/ and delete the old folder.")
+    log(f"⚠️  Old taught_models/ still has content")
+else:
+    log(f"✅ No old taught_models/ at root level")
+
+# ============================================================================
+# STEP 9: Verify all expected files exist
+# ============================================================================
+
+expected_files = {
+    IO_DIR / "action.json": "io",
+    IO_DIR / "game_state.json": "io",
+    AI_CHECKPOINT_DIR / "residual_perceptrons.json": "ai_checkpoint",
+    EMPIRICAL_DIR / "exploration_memory.json": "empirical_knowledge",
+    EMPIRICAL_DIR / "roster.json": "empirical_knowledge",
+    EMPIRICAL_DIR / "move_knowledge.json": "empirical_knowledge",
+    EMPIRICAL_DIR / "item_knowledge.json": "empirical_knowledge",
+    EMPIRICAL_DIR / "type_clusters.json": "empirical_knowledge",
+    EMPIRICAL_DIR / "ai_event_timeline.json": "empirical_knowledge",
+    DEBUG_DIR / "active_transitions.json": "debug",
+    DEBUG_DIR / "active_battle.json": "debug",
+    DEBUG_DIR / "active_bag.json": "debug",
+    DEBUG_DIR / "active_start_menu.json": "debug",
+}
+
+missing = [str(p.relative_to(BASE_PATH)) for p, _ in expected_files.items() if not p.exists()]
+if missing:
+    print(f"\n  ❌ VERIFICATION FAILED — missing files:")
+    for m in missing:
+        print(f"       ❌ {m}")
+    log(f"❌ Verification: {len(missing)} files missing")
+else:
+    log(f"✅ Verification: all {len(expected_files)} expected files present")
 
 # ============================================================================
 # SUMMARY
 # ============================================================================
-print(f"\n{'='*60}")
-print(f"📁 All {total} items handled.")
-print(f"   Path: {BASE_PATH}")
-print(f"\n   Folder structure:")
+
+print(f"\n{'=' * 65}")
+print(f"📁 Reset complete — {total_steps} steps")
+print(f"   Base: {BASE_PATH}")
+print(f"\n   Directory structure:")
 print(f"     cogai/")
-print(f"     ├── taught_models/")
+print(f"     └── jsons/")
+print(f"         ├── io/                          (2 files)")
+print(f"         │   ├── action.json")
+print(f"         │   └── game_state.json")
+print(f"         ├── taught_models/                ({len(existing_models)} model folder(s))")
 for model_dir in existing_models:
-    files_count = len(list(model_dir.iterdir()))
-    print(f"     │   ├── {model_dir.name}/  ({files_count} files)")
-print(f"     │   └── (add model_N/ folders for additional playthroughs)")
-print(f"     ├── model_checkpoint.json      (AI's own checkpoint)")
-print(f"     ├── exploration_memory.json     (AI's exploration data)")
-print(f"     ├── residual_perceptrons.json   (pipeline paged perceptrons)")
-print(f"     ├── roster.json                 (party roster)")
-print(f"     ├── move_knowledge.json         (move effectiveness)")
-print(f"     ├── item_knowledge.json         (item categorization)")
-print(f"     ├── type_clusters.json          (empirical type chart)")
-print(f"     ├── ai_event_timeline.json      (AI event log)")
-print(f"     ├── type_data.json              (optional Track B)")
-print(f"     ├── action.json                 (Lua ↔ AI)")
-print(f"     └── game_state.json             (Lua ↔ AI)")
-print(f"\n   File breakdown:")
-print(f"     Taught models directory:    1 folder with {len(existing_models)} model(s)")
-print(f"     AI agent state:             8 files (reset/deleted)")
-print(f"     Lua ↔ AI communication:     2 files (reset)")
-print(f"     Optional (Track B):         1 file  (not touched)")
-print(f"\n   To add a new human playthrough:")
-print(f"   1. Create taught_models/model_N/ (next number)")
-print(f"   2. Put the 8 taught JSON files from GitHub into it")
-print(f"   3. AI's load_all_taught_models() will discover and merge automatically")
-print(f"\n   To start fresh AI run:")
-print(f"   1. Run this reset script")
-print(f"   2. Run AI agent — it bootstraps from best taught checkpoint")
-print(f"   3. Pipelines start empty, populate through play")
-print(f"   4. Revenge targets start empty, populate on losses")
+    fc = len(list(model_dir.iterdir()))
+    print(f"         │   ├── {model_dir.name}/     ({fc} files)")
+print(f"         │   └── (add model_N/ for additional playthroughs)")
+print(f"         ├── ai_checkpoint/                (1 file — checkpoint deleted for bootstrap)")
+print(f"         │   ├── model_checkpoint.json     (created by AI on save)")
+print(f"         │   └── residual_perceptrons.json")
+print(f"         ├── empirical_knowledge/          (7 files)")
+print(f"         │   ├── exploration_memory.json")
+print(f"         │   ├── roster.json")
+print(f"         │   ├── move_knowledge.json")
+print(f"         │   ├── item_knowledge.json")
+print(f"         │   ├── type_clusters.json")
+print(f"         │   ├── type_data.json            (Track B — optional)")
+print(f"         │   └── ai_event_timeline.json")
+print(f"         └── debug/                        (4 files)")
+print(f"             ├── active_transitions.json")
+print(f"             ├── active_battle.json")
+print(f"             ├── active_bag.json")
+print(f"             └── active_start_menu.json")
+
+print(f"\n   Path constants for AI agent Cell 1:")
+print(f'     JSONS_ROOT        = BASE_PATH / "jsons"')
+print(f'     IO_DIR            = JSONS_ROOT / "io"')
+print(f'     TAUGHT_MODELS_DIR = JSONS_ROOT / "taught_models"')
+print(f'     AI_CHECKPOINT_DIR = JSONS_ROOT / "ai_checkpoint"')
+print(f'     EMPIRICAL_DIR     = JSONS_ROOT / "empirical_knowledge"')
+print(f'     DEBUG_DIR         = JSONS_ROOT / "debug"')
+
+print(f"\n   Next steps:")
+print(f"   1. Update Cell 1 file paths to use new directory constants")
+print(f"   2. Update Lua script paths: io/ subfolder for action.json + game_state.json")
+print(f"   3. Place human playthrough data in jsons/taught_models/model_N/")
+print(f"   4. Run AI agent — it bootstraps from best taught checkpoint")
+print(f"{'=' * 65}")
