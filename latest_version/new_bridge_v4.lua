@@ -1,10 +1,56 @@
 -------------------------------------------------
 -- CONFIG
+-- v3.2.1 PATH REORGANIZATION:
+-- STATE_FILE + INPUT_FILE → jsons/io/
+-- TRANSITIONS_FILE → jsons/taught_models/run_N/
+-- Run discovery scans for highest run_N folder
 -------------------------------------------------
 BASE_PATH = "C:/Users/HP/Documents/cogai/"
-STATE_FILE = BASE_PATH .. "game_state.json"
-INPUT_FILE = BASE_PATH .. "input_cache.txt"
-TRANSITIONS_FILE = BASE_PATH .. "taught_transitions.json"
+JSONS_ROOT = BASE_PATH .. "jsons/"
+IO_DIR = JSONS_ROOT .. "io/"
+TAUGHT_MODELS_DIR = JSONS_ROOT .. "taught_models/"
+
+STATE_FILE = IO_DIR .. "game_state.json"
+INPUT_FILE = IO_DIR .. "input_cache.txt"
+
+-------------------------------------------------
+-- RUN DISCOVERY
+-- Scans taught_models/ for run_N folders,
+-- picks the highest N for TRANSITIONS_FILE.
+-------------------------------------------------
+function discover_active_run()
+    local highest = -1
+    -- Try run_0 through run_99
+    for n = 0, 99 do
+        local dir_path = TAUGHT_MODELS_DIR .. "run_" .. n .. "/"
+        local test_file = dir_path .. "taught_model_checkpoint.json"
+        local f = io.open(test_file, "r")
+        if f then
+            f:close()
+            highest = n
+        else
+            -- Once we hit a gap, stop scanning
+            -- (runs are sequential: 0, 1, 2, ...)
+            if highest >= 0 then break end
+        end
+    end
+    return highest
+end
+
+local active_run = discover_active_run()
+if active_run < 0 then
+    print("WARNING: No run folders found. Defaulting to run_0.")
+    print("  Run reset.py to create the directory structure.")
+    active_run = 0
+end
+
+ACTIVE_RUN_DIR = TAUGHT_MODELS_DIR .. "run_" .. active_run .. "/"
+TRANSITIONS_FILE = ACTIVE_RUN_DIR .. "taught_transitions.json"
+
+print(string.format("Active run: run_%d", active_run))
+print(string.format("  Transitions: %s", TRANSITIONS_FILE))
+print(string.format("  State:       %s", STATE_FILE))
+print(string.format("  Input:       %s", INPUT_FILE))
 
 -- TIMING CONFIG
 CACHE_FLUSH_INTERVAL = 1800
@@ -53,7 +99,7 @@ BAG_POCKET_INFO = {
     [4] = {offset = 0x0564, slots = 46, name = "Berries"},
 }
 
--- === BADGE FLAGS (NEW v3.2) ===
+-- === BADGE FLAGS ===
 BADGE_FLAGS_OFFSET = 0x0FE4
 BADGE_UPDATE_RATE  = 60
 
@@ -147,7 +193,7 @@ local cached_tiles_str = ""
 -------------------------------------------------
 local sb1_cache = 0
 local bag_key_cache = 0
-local cached_badge_count = 0   -- NEW v3.2
+local cached_badge_count = 0
 
 -------------------------------------------------
 -- HELPERS
@@ -202,10 +248,7 @@ function expand_action(short)
 end
 
 -------------------------------------------------
--- BADGE COUNT (NEW v3.2)
--- Reads badge bitmask from SB1 event flags.
--- bit0=Boulder, bit1=Cascade, ..., bit7=Earth
--- Returns count of set bits (0-8).
+-- BADGE COUNT
 -------------------------------------------------
 function count_set_bits(byte)
     local n = 0
@@ -524,8 +567,8 @@ function save_transitions()
     end
     f:write(']}}')
     f:close()
-    print(string.format(">> TRANSITIONS SAVED: %d batches, %d frames, %d action changes",
-        #batches_to_save, total_frames_logged, action_change_count))
+    print(string.format(">> TRANSITIONS SAVED: %d batches, %d frames, %d action changes → run_%d",
+        #batches_to_save, total_frames_logged, action_change_count, active_run))
 end
 
 -------------------------------------------------
@@ -583,8 +626,6 @@ end
 
 -------------------------------------------------
 -- STATE WRITERS
--- NEW v3.2: badge_count param added to both writers
--- "bd" field written into JSON between "tf" and "dead"
 -------------------------------------------------
 function write_minimal_state(x, y, map, in_battle, menu_flag, direction, game_state, text_flag, badge_count)
     local f = io.open(STATE_FILE, "w")
@@ -635,16 +676,17 @@ end
 local frame_counter = 0
 
 print("==========================================")
-print("Pokemon AI v3.2 — TEACHING MODE")
+print("Pokemon AI v3.2.1 — TEACHING MODE")
+print("  Path Reorganization Update")
 print("==========================================")
-print("BADGES (NEW v3.2):")
-print("  BadgeFlags: SB1+0x0FE4")
-print("  bit0=Boulder..bit7=Earth, count set bits")
+print(string.format("  Active run:    run_%d", active_run))
+print(string.format("  IO dir:        %s", IO_DIR))
+print(string.format("  Run dir:       %s", ACTIVE_RUN_DIR))
 print("==========================================")
 
 update_visual_cache()
 update_bag_caches()
-cached_badge_count = get_badge_count()   -- NEW v3.2: initial read
+cached_badge_count = get_badge_count()
 print(string.format("SB1=0x%08X BagKey=%d Badges=%d", sb1_cache, bag_key_cache, cached_badge_count))
 collectgarbage("collect")
 
@@ -660,7 +702,7 @@ while true do
     local in_battle = (battle_flag == 1) and 1 or 0
     local menu_flag = (game_state > 0 and in_battle == 0) and 1 or 0
 
-    -- Badge update (NEW v3.2)
+    -- Badge update
     if frame_counter % BADGE_UPDATE_RATE == 0 then
         cached_badge_count = get_badge_count()
     end
@@ -725,9 +767,9 @@ while true do
             local bt_str = (bt % 16 >= 8) and "TRAINER" or "WILD"
             local mem = collectgarbage("count")
             print(string.format(
-                "F:%d | %s bc:%d mc:%d | P:%d hp:%d E:%d hp:%d | Menu:%d/%d PC:%d%s Bd:%d | Buf:%d | Mem:%.1fKB",
+                "F:%d | %s bc:%d mc:%d | P:%d hp:%d E:%d hp:%d | Menu:%d/%d PC:%d%s Bd:%d R:%d | Buf:%d | Mem:%.1fKB",
                 frame_counter, bt_str, bc, moc, ps, ph, es, eh,
-                mc, mm, pc, tf_str, cached_badge_count, input_count, mem))
+                mc, mm, pc, tf_str, cached_badge_count, active_run, input_count, mem))
         else
             local gs_names = {[0]="OW", [1]="MENU", [14]="BAG"}
             local gs_str = gs_names[game_state] or string.format("GS%d", game_state)
@@ -743,9 +785,9 @@ while true do
                 extra = string.format(" Menu:%d/%d PC:%d", mc, mm, pc)
             end
             print(string.format(
-                "F:%d | %s (%d,%d) Map:%d Dir:%d | Party:%d HP:%d/%d%s%s Bd:%d | Buf:%d Bat:%d Fr:%d | Mem:%.1fKB",
+                "F:%d | %s (%d,%d) Map:%d Dir:%d | Party:%d HP:%d/%d%s%s Bd:%d R:%d | Buf:%d Bat:%d Fr:%d | Mem:%.1fKB",
                 frame_counter, gs_str, x, y, map, direction,
-                party_count, hp, mhp, extra, tf_str, cached_badge_count,
+                party_count, hp, mhp, extra, tf_str, cached_badge_count, active_run,
                 input_count, #all_batches, total_frames_logged, mem))
         end
     end
