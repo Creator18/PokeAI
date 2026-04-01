@@ -1,0 +1,13 @@
+{
+  "events": [],
+  "summary": {
+    "total_events": 0,
+    "battle_events": 0,
+    "bag_events": 0,
+    "map_events": 0,
+    "levelup_events": 0,
+    "first_timestep": 0,
+    "last_timestep": 0,
+    "maps_visited": []
+  }
+}
