@@ -1,6 +1,6 @@
 # ============================================================================
 # Reset/Create all teaching-side JSON files to empty state
-# v17.8 — Path Reorganization
+# v17.8 — Path Reorganization + Live Eval Checkpoints
 #
 # Creates the jsons/ subfolder hierarchy and resets/creates 14 files:
 #   jsons/io/                       → action.json, game_state.json, input_cache.txt
@@ -8,22 +8,16 @@
 #   jsons/ai_checkpoint/            → residual_perceptrons.json (single, not per-run)
 #   jsons/logs/taught_logs/run_0/   → checkpoint_metrics.json, stagnation_metrics.json
 #
-# This script lives in cogai/testing/ and resolves paths relative to cogai/.
-#
-# Run-numbered folders (run_0, run_1, ...):
-#   - taught_models/run_N/     → one per human playthrough
-#   - logs/taught_logs/run_N/  → eval baseline per playthrough
-#
-# Shared (not per-run):
-#   - io/                      → real-time Lua ↔ Python communication
-#   - ai_checkpoint/           → residual perceptrons accumulate across runs
+# CHANGES from previous reset.py:
+# 1. taught_model_checkpoint.json template now includes eval_state block
+# 2. checkpoint_metrics.json metadata aligned with live writer
+#    (total_timesteps instead of total_frames, added source field)
 # ============================================================================
 
 import json
 from pathlib import Path
 
 # === RESOLVE BASE PATH ===
-# Script lives in cogai/testing/, so parent.parent = cogai/
 SCRIPT_DIR = Path(__file__).resolve().parent
 COGAI_ROOT = SCRIPT_DIR.parent
 
@@ -199,7 +193,13 @@ write_json(RUN_0_TAUGHT / "taught_model_checkpoint.json", {
             ]
         }
     },
-    "revenge_targets": {}
+    "revenge_targets": {},
+    "eval_state": {
+        "checkpoint_log": [],
+        "last_checkpoint_ts": 0,
+        "last_checkpoint_order": -1,
+        "nav_visited_targets": []
+    }
 }, "Model checkpoint")
 
 # 5. taught_transitions.json
@@ -310,9 +310,10 @@ write_json(RUN_0_LOGS / "checkpoint_metrics.json", {
     "checkpoints": [],
     "metadata": {
         "total_checkpoints": 0,
-        "total_frames": 0,
+        "total_timesteps": 0,
+        "badge_count": 0,
         "model_number": 0,
-        "taught_model_count": 0
+        "source": "human_teaching_live"
     }
 }, "Taught checkpoint metrics")
 
