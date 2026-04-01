@@ -1,9 +1,9 @@
 -------------------------------------------------
--- CONFIG - AI MODE v3.2
+-- CONFIG - AI MODE v3.2.1
 -------------------------------------------------
 BASE_PATH = "C:/Users/HP/Documents/cogai/"
-ACTION_FILE = BASE_PATH .. "action.json"
-STATE_FILE  = BASE_PATH .. "game_state.json"
+ACTION_FILE = BASE_PATH .. "jsons/io/action.json"
+STATE_FILE  = BASE_PATH .. "jsons/io/game_state.json"
 
 -------------------------------------------------
 -- MEMORY ADDRESSES — ALL VERIFIED

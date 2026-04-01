@@ -18,13 +18,17 @@
 #   ├── taught_models/         model_1/ … model_N/
 #   ├── ai_checkpoint/         model_checkpoint.json, residual_perceptrons.json
 #   ├── empirical_knowledge/   exploration_memory, roster, move/item knowledge, etc.
-#   └── debug/                 active_transitions, active_battle, etc.
+#   ├── debug/                 active_transitions, active_battle, etc.
+#   └── logs/                  evaluation metrics
+#       ├── ai_logs/           checkpoint_metrics.json, stagnation_metrics.json
+#       └── taught_logs/       checkpoint_metrics.json, stagnation_metrics.json
 #
 # USAGE:
 #   python reorganize.py          # dry run — shows plan
 #   python reorganize.py --apply  # executes the moves
+#   python reorganize.py --verify # checks current state only
 #
-# Update BASE_PATH to match your device.
+# Run from: cogai/testing/
 # ============================================================================
 
 import json
@@ -45,14 +49,17 @@ TAUGHT_MODELS_DIR = JSONS_ROOT / "taught_models"
 AI_CHECKPOINT_DIR = JSONS_ROOT / "ai_checkpoint"
 EMPIRICAL_DIR = JSONS_ROOT / "empirical_knowledge"
 DEBUG_DIR = JSONS_ROOT / "debug"
+LOGS_DIR = JSONS_ROOT / "logs"
+AI_LOGS_DIR = LOGS_DIR / "ai_logs"
+TAUGHT_LOGS_DIR = LOGS_DIR / "taught_logs"
 
-ALL_DIRS = [JSONS_ROOT, IO_DIR, TAUGHT_MODELS_DIR, AI_CHECKPOINT_DIR, EMPIRICAL_DIR, DEBUG_DIR]
+ALL_DIRS = [JSONS_ROOT, IO_DIR, TAUGHT_MODELS_DIR, AI_CHECKPOINT_DIR,
+            EMPIRICAL_DIR, DEBUG_DIR, LOGS_DIR, AI_LOGS_DIR, TAUGHT_LOGS_DIR]
 
 # ============================================================================
 # FILE → DESTINATION MAPPING
 # ============================================================================
 
-# Flat files in cogai/ → target subfolder
 FILE_DESTINATION_MAP = {
     # io/
     "action.json": IO_DIR,
@@ -90,19 +97,21 @@ TAUGHT_FILENAMES = [
     "event_timeline.json",
 ]
 
+# Eval log files that might exist from a previous v17.8 run
+# (won't exist in pre-v17.8 layouts, but included for completeness)
+EVAL_LOG_FILES = {
+    "checkpoint_metrics.json": AI_LOGS_DIR,    # could be in ai_logs/ or taught_logs/
+    "stagnation_metrics.json": AI_LOGS_DIR,
+}
+
 # ============================================================================
 # HELPERS
 # ============================================================================
 
 def safe_dest_path(dest_dir, filename):
-    """
-    Return a non-colliding path in dest_dir for filename.
-    If dest_dir/filename already exists, appends _2, _3, etc.
-    """
     target = dest_dir / filename
     if not target.exists():
         return target
-
     stem = Path(filename).stem
     suffix = Path(filename).suffix
     counter = 2
@@ -114,7 +123,6 @@ def safe_dest_path(dest_dir, filename):
 
 
 def file_has_data(filepath):
-    """Check if a JSON file has meaningful content (not just empty containers)."""
     try:
         if not filepath.exists():
             return False
@@ -132,13 +140,17 @@ def file_has_data(filepath):
                 return False
             if data == {"player_moves": {}, "enemy_moves": {}}:
                 return False
+            # Empty eval logs
+            if data.get('checkpoints') == [] and data.get('snapshots') is None:
+                return False
+            if data.get('snapshots') == [] and data.get('checkpoints') is None:
+                return False
         return True
     except Exception:
         return False
 
 
 def get_file_summary(filepath):
-    """Return a short description of file contents."""
     try:
         size = filepath.stat().st_size
         if size <= 4:
@@ -157,6 +169,10 @@ def get_file_summary(filepath):
                 return f"{len(data.get('batches', []))} batches"
             if "player_moves" in data:
                 return f"{len(data.get('player_moves', {}))} moves"
+            if "checkpoints" in data:
+                return f"{len(data.get('checkpoints', []))} checkpoints"
+            if "snapshots" in data:
+                return f"{len(data.get('snapshots', []))} snapshots"
             return f"{len(keys)} keys, {size}B"
         if isinstance(data, list):
             return f"{len(data)} items"
@@ -166,7 +182,6 @@ def get_file_summary(filepath):
 
 
 def get_next_model_number(taught_dir):
-    """Find the next available model_N number."""
     existing = sorted([
         d for d in taught_dir.iterdir()
         if d.is_dir() and d.name.startswith('model_')
@@ -185,10 +200,6 @@ def get_next_model_number(taught_dir):
 # ============================================================================
 
 def build_plan():
-    """
-    Scan cogai/ and build a list of (source, dest, action, notes) tuples.
-    Does not modify the filesystem.
-    """
     plan = []
     warnings = []
 
@@ -201,31 +212,25 @@ def build_plan():
         dest = dest_dir / filename
 
         if dest.exists():
-            # Both source and dest exist — check if they're different
             src_has_data = file_has_data(src)
             dest_has_data = file_has_data(dest)
 
             if src_has_data and dest_has_data:
-                # Both have data — keep both, rename source
                 safe = safe_dest_path(dest_dir, filename)
                 plan.append((src, safe, "move+rename",
                              f"DUPLICATE: dest has data, source renamed to {safe.name}"))
                 warnings.append(f"Duplicate: {filename} — both source and dest have data. "
                                 f"Source saved as {safe.name}")
             elif src_has_data and not dest_has_data:
-                # Source has data, dest is empty — overwrite dest
                 plan.append((src, dest, "move+overwrite",
                              "dest was empty, source overwrites"))
             elif not src_has_data and dest_has_data:
-                # Source is empty, dest has data — delete source
                 plan.append((src, None, "delete",
                              "source empty, dest already has data"))
             else:
-                # Both empty — delete source
                 plan.append((src, None, "delete",
                              "both empty, keeping dest"))
         else:
-            # Dest doesn't exist — simple move
             plan.append((src, dest, "move", get_file_summary(src)))
 
     # --- 2. Old taught_models/ at cogai/taught_models/ ---
@@ -240,22 +245,18 @@ def build_plan():
             dest = TAUGHT_MODELS_DIR / model_dir.name
 
             if dest.exists():
-                # Destination model folder exists — check for file-level conflicts
                 src_files = {f.name for f in model_dir.iterdir() if f.is_file()}
                 dest_files = {f.name for f in dest.iterdir() if f.is_file()}
                 conflicts = src_files & dest_files
 
                 if conflicts:
-                    # Check which side has more data
                     src_data_count = sum(1 for f in model_dir.iterdir()
                                          if f.is_file() and file_has_data(f))
                     dest_data_count = sum(1 for f in dest.iterdir()
                                           if f.is_file() and file_has_data(f))
 
                     if src_data_count > dest_data_count:
-                        # Source has more data — assign to new model number
                         next_num = get_next_model_number(TAUGHT_MODELS_DIR)
-                        # Account for planned moves that haven't happened yet
                         planned_models = {p[1].parent.name for p in plan
                                           if p[1] is not None and
                                           TAUGHT_MODELS_DIR in p[1].parents}
@@ -268,20 +269,17 @@ def build_plan():
                         warnings.append(f"Taught model conflict: {model_dir.name} → "
                                         f"model_{next_num} (both had data)")
                     else:
-                        # Dest has more/equal data — skip source, just note
                         plan.append((model_dir, None, "skip-folder",
                                      f"dest {model_dir.name} has equal/more data ({dest_data_count} files), "
                                      f"source skipped"))
                         warnings.append(f"Taught model skipped: old {model_dir.name} "
                                         f"(dest already has {dest_data_count} data files)")
                 else:
-                    # No file conflicts — merge files into existing folder
                     for src_file in model_dir.iterdir():
                         if src_file.is_file():
                             plan.append((src_file, dest / src_file.name, "move",
                                          f"merge into existing {model_dir.name}/"))
             else:
-                # Simple move — no conflict
                 plan.append((model_dir, dest, "move-folder",
                              f"{len(list(model_dir.iterdir()))} files"))
 
@@ -292,7 +290,6 @@ def build_plan():
         flat_with_data = [f for f in flat_taught if file_has_data(f)]
 
         if flat_with_data:
-            # Find next model number (accounting for existing + planned)
             next_num = get_next_model_number(TAUGHT_MODELS_DIR)
             planned_models = set()
             for p in plan:
@@ -310,7 +307,6 @@ def build_plan():
                 plan.append((f, new_model_dir / f.name, "move",
                              f"flat taught → model_{next_num}/"))
         else:
-            # All flat taught files are empty — just delete them
             for f in flat_taught:
                 plan.append((f, None, "delete", "empty flat taught file"))
 
@@ -330,7 +326,6 @@ def build_plan():
 # ============================================================================
 
 def display_plan(plan, warnings):
-    """Pretty-print the reorganization plan."""
     if not plan:
         print("\n  ✅ Nothing to do — all files are already in the correct location.")
         return
@@ -349,7 +344,6 @@ def display_plan(plan, warnings):
         "unknown": "❓",
     }
 
-    # Group by action type
     by_action = {}
     for src, dest, action, notes in plan:
         by_action.setdefault(action, []).append((src, dest, notes))
@@ -388,7 +382,6 @@ def display_plan(plan, warnings):
         for w in warnings:
             print(f"       ⚠️  {w}")
 
-    # Summary counts
     moves = sum(1 for _, _, a, _ in plan if a.startswith("move"))
     deletes = sum(1 for _, _, a, _ in plan if a == "delete")
     skips = sum(1 for _, _, a, _ in plan if a.startswith("skip"))
@@ -404,14 +397,12 @@ def display_plan(plan, warnings):
 # ============================================================================
 
 def execute_plan(plan):
-    """Execute the reorganization plan."""
     print(f"\n  🚀 EXECUTING ({len(plan)} operations)")
     print(f"  {'─' * 60}")
 
     success = 0
     errors = 0
 
-    # Create directories first
     for d in ALL_DIRS:
         d.mkdir(parents=True, exist_ok=True)
 
@@ -471,7 +462,6 @@ def execute_plan(plan):
                 old_taught.rmdir()
                 print(f"  🗑️  Removed empty old taught_models/")
             elif all(not any(d.iterdir()) for d in remaining if d.is_dir()):
-                # All subdirs are empty
                 for d in remaining:
                     if d.is_dir():
                         d.rmdir()
@@ -489,13 +479,11 @@ def execute_plan(plan):
 # ============================================================================
 
 def verify_structure():
-    """Verify the final directory structure."""
     print(f"\n  🔍 VERIFICATION")
     print(f"  {'─' * 60}")
 
     all_ok = True
 
-    # Check directories exist
     for d in ALL_DIRS:
         if d.exists():
             print(f"  ✅ {d.relative_to(BASE_PATH)}/")
@@ -503,30 +491,30 @@ def verify_structure():
             print(f"  ❌ {d.relative_to(BASE_PATH)}/ MISSING")
             all_ok = False
 
-    # Check io/ files
+    # io/
     for fn in ["action.json", "game_state.json"]:
         fp = IO_DIR / fn
         status = "✅" if fp.exists() else "⬚ "
         summary = get_file_summary(fp) if fp.exists() else "not present"
         print(f"    {status} io/{fn} — {summary}")
 
-    # Check ai_checkpoint/ files
+    # ai_checkpoint/
     for fn in ["model_checkpoint.json", "residual_perceptrons.json"]:
         fp = AI_CHECKPOINT_DIR / fn
         status = "✅" if fp.exists() else "⬚ "
         summary = get_file_summary(fp) if fp.exists() else "not present"
         print(f"    {status} ai_checkpoint/{fn} — {summary}")
 
-    # Check empirical_knowledge/ files
+    # empirical_knowledge/
     for fn in ["exploration_memory.json", "roster.json", "move_knowledge.json",
                "item_knowledge.json", "type_clusters.json", "type_data.json",
                "ai_event_timeline.json"]:
         fp = EMPIRICAL_DIR / fn
         status = "✅" if fp.exists() else "⬚ "
-        summary = get_file_summary(fp) if fp.exists() else "not present (optional)" if fn == "type_data.json" else "not present"
+        summary = get_file_summary(fp) if fp.exists() else ("not present (optional)" if fn == "type_data.json" else "not present")
         print(f"    {status} empirical_knowledge/{fn} — {summary}")
 
-    # Check debug/ files
+    # debug/
     for fn in ["active_transitions.json", "active_battle.json",
                "active_bag.json", "active_start_menu.json"]:
         fp = DEBUG_DIR / fn
@@ -534,7 +522,18 @@ def verify_structure():
         summary = get_file_summary(fp) if fp.exists() else "not present"
         print(f"    {status} debug/{fn} — {summary}")
 
-    # Check taught models
+    # logs/
+    for fn in ["checkpoint_metrics.json", "stagnation_metrics.json"]:
+        fp_ai = AI_LOGS_DIR / fn
+        fp_taught = TAUGHT_LOGS_DIR / fn
+        status_ai = "✅" if fp_ai.exists() else "⬚ "
+        status_taught = "✅" if fp_taught.exists() else "⬚ "
+        summary_ai = get_file_summary(fp_ai) if fp_ai.exists() else "not present"
+        summary_taught = get_file_summary(fp_taught) if fp_taught.exists() else "not present"
+        print(f"    {status_ai} logs/ai_logs/{fn} — {summary_ai}")
+        print(f"    {status_taught} logs/taught_logs/{fn} — {summary_taught}")
+
+    # taught models
     models = sorted([
         d for d in TAUGHT_MODELS_DIR.iterdir()
         if d.is_dir() and d.name.startswith('model_')
@@ -553,7 +552,7 @@ def verify_structure():
     else:
         print(f"\n    ⬚  No taught model folders found")
 
-    # Check for leftover flat files
+    # leftover flat files
     all_known = set(FILE_DESTINATION_MAP.keys()) | set(TAUGHT_FILENAMES)
     leftovers = [f for f in BASE_PATH.iterdir()
                  if f.is_file() and f.suffix == '.json' and f.name in all_known]
@@ -592,10 +591,7 @@ def main():
         verify_structure()
         return
 
-    # Build plan
     plan, warnings = build_plan()
-
-    # Display plan
     display_plan(plan, warnings)
 
     if not plan:
@@ -611,17 +607,14 @@ def main():
         print(f"  {'=' * 60}")
         return
 
-    # Confirm
     print(f"\n  ⚠️  This will move {len(plan)} items. Proceed? [y/N] ", end="")
     response = input().strip().lower()
     if response != 'y':
         print("  Aborted.")
         return
 
-    # Execute
     success = execute_plan(plan)
 
-    # Verify
     print()
     all_ok = verify_structure()
 
@@ -635,6 +628,9 @@ def main():
         print(f'     AI_CHECKPOINT_DIR = JSONS_ROOT / "ai_checkpoint"')
         print(f'     EMPIRICAL_DIR     = JSONS_ROOT / "empirical_knowledge"')
         print(f'     DEBUG_DIR         = JSONS_ROOT / "debug"')
+        print(f'     LOGS_DIR          = JSONS_ROOT / "logs"')
+        print(f'     AI_LOGS_DIR       = LOGS_DIR / "ai_logs"')
+        print(f'     TAUGHT_LOGS_DIR   = LOGS_DIR / "taught_logs"')
         print(f"\n  Next: update Cell 1 paths + Lua script paths")
         print(f"  {'=' * 60}")
     else:

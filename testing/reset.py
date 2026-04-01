@@ -1,5 +1,5 @@
 # ============================================================================
-# Reset all JSON files for AI Agent v17.7
+# Reset all JSON files for AI Agent v17.8
 # ============================================================================
 # Creates the jsons/ directory structure under cogai/ and resets all files.
 #
@@ -30,19 +30,26 @@
 #   │   ├── type_clusters.json
 #   │   ├── type_data.json         (Track B — optional, not reset if present)
 #   │   └── ai_event_timeline.json
-#   └── debug/                 Adaptive window debug dumps (ephemeral)
-#       ├── active_transitions.json
-#       ├── active_battle.json
-#       ├── active_bag.json
-#       └── active_start_menu.json
+#   ├── debug/                 Adaptive window debug dumps (ephemeral)
+#   │   ├── active_transitions.json
+#   │   ├── active_battle.json
+#   │   ├── active_bag.json
+#   │   └── active_start_menu.json
+#   └── logs/                  Evaluation metrics
+#       ├── ai_logs/
+#       │   ├── checkpoint_metrics.json
+#       │   └── stagnation_metrics.json
+#       └── taught_logs/
+#           ├── checkpoint_metrics.json
+#           └── stagnation_metrics.json
 #
 # MIGRATION:
-#   If old flat files exist in cogai/ (pre-v17.7 layout), they are
+#   If old flat files exist in cogai/ (pre-v17.8 layout), they are
 #   automatically moved into the correct subfolder.
 #   If old taught_models/ exists at cogai/taught_models/, it is moved
 #   into cogai/jsons/taught_models/.
 #
-# Update BASE_PATH to match your device.
+# Run from: cogai/testing/
 # ============================================================================
 
 import json
@@ -62,8 +69,12 @@ TAUGHT_MODELS_DIR = JSONS_ROOT / "taught_models"
 AI_CHECKPOINT_DIR = JSONS_ROOT / "ai_checkpoint"
 EMPIRICAL_DIR = JSONS_ROOT / "empirical_knowledge"
 DEBUG_DIR = JSONS_ROOT / "debug"
+LOGS_DIR = JSONS_ROOT / "logs"
+AI_LOGS_DIR = LOGS_DIR / "ai_logs"
+TAUGHT_LOGS_DIR = LOGS_DIR / "taught_logs"
 
-ALL_DIRS = [JSONS_ROOT, IO_DIR, TAUGHT_MODELS_DIR, AI_CHECKPOINT_DIR, EMPIRICAL_DIR, DEBUG_DIR]
+ALL_DIRS = [JSONS_ROOT, IO_DIR, TAUGHT_MODELS_DIR, AI_CHECKPOINT_DIR,
+            EMPIRICAL_DIR, DEBUG_DIR, LOGS_DIR, AI_LOGS_DIR, TAUGHT_LOGS_DIR]
 
 # ============================================================================
 # TAUGHT MODEL FILE NAMES (inside each model_N folder)
@@ -214,14 +225,19 @@ TAUGHT_TEMPLATES = {
 
 # ============================================================================
 # MAPPING: old flat file name → new location
-# (used for migration from pre-v17.7 flat layout)
+# (used for migration from pre-v17.8 flat layout)
 # ============================================================================
 
 FLAT_MIGRATION_MAP = {
+    # io/
     "action.json": IO_DIR / "action.json",
     "game_state.json": IO_DIR / "game_state.json",
+
+    # ai_checkpoint/
     "model_checkpoint.json": AI_CHECKPOINT_DIR / "model_checkpoint.json",
     "residual_perceptrons.json": AI_CHECKPOINT_DIR / "residual_perceptrons.json",
+
+    # empirical_knowledge/
     "exploration_memory.json": EMPIRICAL_DIR / "exploration_memory.json",
     "roster.json": EMPIRICAL_DIR / "roster.json",
     "move_knowledge.json": EMPIRICAL_DIR / "move_knowledge.json",
@@ -229,6 +245,8 @@ FLAT_MIGRATION_MAP = {
     "type_clusters.json": EMPIRICAL_DIR / "type_clusters.json",
     "type_data.json": EMPIRICAL_DIR / "type_data.json",
     "ai_event_timeline.json": EMPIRICAL_DIR / "ai_event_timeline.json",
+
+    # debug/
     "active_transitions.json": DEBUG_DIR / "active_transitions.json",
     "active_battle.json": DEBUG_DIR / "active_battle.json",
     "active_bag.json": DEBUG_DIR / "active_bag.json",
@@ -240,7 +258,7 @@ FLAT_MIGRATION_MAP = {
 # ============================================================================
 
 step = 0
-total_steps = 14
+total_steps = 16
 
 def log(msg):
     global step
@@ -249,7 +267,7 @@ def log(msg):
 
 
 print("=" * 65)
-print("RESET — AI Agent v17.7 (jsons/ subfolder structure)")
+print("RESET — AI Agent v17.8 (jsons/ subfolder structure + eval logs)")
 print("=" * 65)
 
 # ============================================================================
@@ -445,7 +463,52 @@ for fn in ["active_transitions.json", "active_battle.json",
 log(f"✅ debug/ — 4 active window files (reset)")
 
 # ============================================================================
-# STEP 8: Cleanup — warn about leftover flat files in cogai/
+# STEP 8: Reset logs/ files
+# ============================================================================
+
+with open(AI_LOGS_DIR / "checkpoint_metrics.json", 'w') as f:
+    json.dump({
+        "checkpoints": [],
+        "metadata": {
+            "total_checkpoints": 0,
+            "total_timesteps": 0,
+            "badge_count": 0,
+        }
+    }, f, indent=2)
+
+with open(AI_LOGS_DIR / "stagnation_metrics.json", 'w') as f:
+    json.dump({
+        "snapshots": [],
+        "metadata": {
+            "total_snapshots": 0,
+            "log_interval": 50,
+            "total_timesteps": 0,
+        }
+    }, f, indent=2)
+
+with open(TAUGHT_LOGS_DIR / "checkpoint_metrics.json", 'w') as f:
+    json.dump({
+        "checkpoints": [],
+        "metadata": {
+            "total_checkpoints": 0,
+            "total_taught_frames": 0,
+            "taught_model_count": 0,
+        }
+    }, f, indent=2)
+
+with open(TAUGHT_LOGS_DIR / "stagnation_metrics.json", 'w') as f:
+    json.dump({
+        "snapshots": [],
+        "metadata": {
+            "note": "Human baseline has zero stagnation by definition",
+            "total_snapshots": 0,
+        }
+    }, f, indent=2)
+
+log(f"✅ logs/ — 4 evaluation metric files (reset)")
+
+# ============================================================================
+# STEP 9: Cleanup — warn about leftover flat files in cogai/
 # ============================================================================
 
 all_known_flat_names = list(FLAT_MIGRATION_MAP.keys()) + TAUGHT_FILENAMES
@@ -470,7 +533,7 @@ else:
     log(f"✅ No old taught_models/ at root level")
 
 # ============================================================================
-# STEP 9: Verify all expected files exist
+# STEP 10: Verify all expected files exist
 # ============================================================================
 
 expected_files = {
@@ -487,6 +550,10 @@ expected_files = {
     DEBUG_DIR / "active_battle.json": "debug",
     DEBUG_DIR / "active_bag.json": "debug",
     DEBUG_DIR / "active_start_menu.json": "debug",
+    AI_LOGS_DIR / "checkpoint_metrics.json": "logs/ai_logs",
+    AI_LOGS_DIR / "stagnation_metrics.json": "logs/ai_logs",
+    TAUGHT_LOGS_DIR / "checkpoint_metrics.json": "logs/taught_logs",
+    TAUGHT_LOGS_DIR / "stagnation_metrics.json": "logs/taught_logs",
 }
 
 missing = [str(p.relative_to(BASE_PATH)) for p, _ in expected_files.items() if not p.exists()]
@@ -527,23 +594,31 @@ print(f"         │   ├── item_knowledge.json")
 print(f"         │   ├── type_clusters.json")
 print(f"         │   ├── type_data.json            (Track B — optional)")
 print(f"         │   └── ai_event_timeline.json")
-print(f"         └── debug/                        (4 files)")
-print(f"             ├── active_transitions.json")
-print(f"             ├── active_battle.json")
-print(f"             ├── active_bag.json")
-print(f"             └── active_start_menu.json")
+print(f"         ├── debug/                        (4 files)")
+print(f"         │   ├── active_transitions.json")
+print(f"         │   ├── active_battle.json")
+print(f"         │   ├── active_bag.json")
+print(f"         │   └── active_start_menu.json")
+print(f"         └── logs/                         (4 files)")
+print(f"             ├── ai_logs/")
+print(f"             │   ├── checkpoint_metrics.json")
+print(f"             │   └── stagnation_metrics.json")
+print(f"             └── taught_logs/")
+print(f"                 ├── checkpoint_metrics.json")
+print(f"                 └── stagnation_metrics.json")
 
-print(f"\n   Path constants for AI agent Cell 1:")
-print(f'     JSONS_ROOT        = BASE_PATH / "jsons"')
-print(f'     IO_DIR            = JSONS_ROOT / "io"')
-print(f'     TAUGHT_MODELS_DIR = JSONS_ROOT / "taught_models"')
-print(f'     AI_CHECKPOINT_DIR = JSONS_ROOT / "ai_checkpoint"')
-print(f'     EMPIRICAL_DIR     = JSONS_ROOT / "empirical_knowledge"')
-print(f'     DEBUG_DIR         = JSONS_ROOT / "debug"')
+print(f"\n   File counts:")
+print(f"     io:                  2 files (reset)")
+print(f"     taught_models:       {len(existing_models)} folder(s) (preserved)")
+print(f"     ai_checkpoint:       1 file  (checkpoint deleted, residual reset)")
+print(f"     empirical_knowledge: 7 files (6 reset + type_data preserved)")
+print(f"     debug:               4 files (reset)")
+print(f"     logs:                4 files (reset)")
+print(f"     TOTAL:               {len(expected_files)} files verified")
 
 print(f"\n   Next steps:")
-print(f"   1. Update Cell 1 file paths to use new directory constants")
-print(f"   2. Update Lua script paths: io/ subfolder for action.json + game_state.json")
-print(f"   3. Place human playthrough data in jsons/taught_models/model_N/")
-print(f"   4. Run AI agent — it bootstraps from best taught checkpoint")
+print(f"   1. Place human playthrough data in jsons/taught_models/model_N/")
+print(f"   2. Run AI agent — it bootstraps from best taught checkpoint")
+print(f"   3. Eval logs populate automatically during play")
+print(f"   4. Run eval comparison script after AI run completes")
 print(f"{'=' * 65}")
