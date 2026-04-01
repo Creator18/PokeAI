@@ -1,48 +1,134 @@
 # ============================================================================
-# Reset/Create all 9 taught JSON files to empty state (v17.4 Pipeline)
-# If file exists → reset to empty. If file doesn't exist → create it.
-# Update BASE_PATH to match your device.
+# Reset/Create all teaching-side JSON files to empty state
+# v17.8 — Path Reorganization
 #
-# CHANGES from v17.2:
-# 1. taught_model_checkpoint.json — NEW keys: "pipelines", "revenge_targets"
-# 2. NEW file #9: residual_perceptrons.json
+# Creates the jsons/ subfolder hierarchy and resets/creates 14 files:
+#   jsons/io/                       → action.json, game_state.json, input_cache.txt
+#   jsons/taught_models/run_0/      → 8 taught output files
+#   jsons/ai_checkpoint/            → residual_perceptrons.json (single, not per-run)
+#   jsons/logs/taught_logs/run_0/   → checkpoint_metrics.json, stagnation_metrics.json
+#
+# This script lives in cogai/testing/ and resolves paths relative to cogai/.
+#
+# Run-numbered folders (run_0, run_1, ...):
+#   - taught_models/run_N/     → one per human playthrough
+#   - logs/taught_logs/run_N/  → eval baseline per playthrough
+#
+# Shared (not per-run):
+#   - io/                      → real-time Lua ↔ Python communication
+#   - ai_checkpoint/           → residual perceptrons accumulate across runs
 # ============================================================================
 
 import json
 from pathlib import Path
 
-# === UPDATE THIS PATH ===
-_CANDIDATE_PATHS = [
-    Path("C:/Users/HP/Documents/cogai/jsons"),
-    Path("C:/Users/natmaw/Documents/Boston Stuff/CS 5100 Foundations of AI/PokeAI/"),
+# === RESOLVE BASE PATH ===
+# Script lives in cogai/testing/, so parent.parent = cogai/
+SCRIPT_DIR = Path(__file__).resolve().parent
+COGAI_ROOT = SCRIPT_DIR.parent
+
+_CANDIDATE_ROOTS = [
+    COGAI_ROOT,
+    Path("C:/Users/HP/Documents/cogai"),
+    Path("C:/Users/natmaw/Documents/Boston Stuff/CS 5100 Foundations of AI/PokeAI"),
 ]
 
 BASE_PATH = None
-for _p in _CANDIDATE_PATHS:
+for _p in _CANDIDATE_ROOTS:
     if _p.exists():
         BASE_PATH = _p
         break
 
 if BASE_PATH is None:
-    BASE_PATH = _CANDIDATE_PATHS[0]
+    BASE_PATH = _CANDIDATE_ROOTS[0]
     print(f"⚠️ WARNING: No valid base path found. Defaulting to {BASE_PATH}")
 else:
-    print(f"📂 BASE_PATH: {BASE_PATH}")
+    print(f"📂 COGAI_ROOT: {BASE_PATH}")
 
+JSONS_ROOT = BASE_PATH / "jsons"
+
+# === SUBFOLDER PATHS ===
+IO_DIR = JSONS_ROOT / "io"
+TAUGHT_MODELS_DIR = JSONS_ROOT / "taught_models"
+RUN_0_TAUGHT = TAUGHT_MODELS_DIR / "run_0"
+AI_CHECKPOINT_DIR = JSONS_ROOT / "ai_checkpoint"
+TAUGHT_LOGS_DIR = JSONS_ROOT / "logs" / "taught_logs"
+RUN_0_LOGS = TAUGHT_LOGS_DIR / "run_0"
+
+# === CREATE ALL DIRECTORIES ===
+dirs_to_create = [
+    IO_DIR,
+    RUN_0_TAUGHT,
+    AI_CHECKPOINT_DIR,
+    RUN_0_LOGS,
+]
+
+print(f"\n📁 Creating directory structure under {JSONS_ROOT}/")
+for d in dirs_to_create:
+    d.mkdir(parents=True, exist_ok=True)
+    rel = d.relative_to(BASE_PATH)
+    print(f"  📂 {rel}/")
+
+# === FILE COUNTER ===
 count = 0
-total = 9
+total = 14
 
-def write_file(filepath, data, label):
+
+def write_json(filepath, data, label):
     global count
     count += 1
     status = "RESET" if filepath.exists() else "CREATED"
     with open(filepath, 'w') as f:
         json.dump(data, f, indent=2)
-    print(f"  ✅ {count}/{total} {filepath.name} — {status}")
+    rel = filepath.relative_to(BASE_PATH)
+    print(f"  ✅ {count}/{total} {rel} — {status}")
 
 
-# 1. taught_model_checkpoint.json
-write_file(BASE_PATH / "taught_model_checkpoint.json", {
+def write_text(filepath, content, label):
+    global count
+    count += 1
+    status = "RESET" if filepath.exists() else "CREATED"
+    with open(filepath, 'w') as f:
+        f.write(content)
+    rel = filepath.relative_to(BASE_PATH)
+    print(f"  ✅ {count}/{total} {rel} — {status}")
+
+
+# ============================================================================
+# jsons/io/ — Real-time Lua ↔ Python communication (3 files)
+# ============================================================================
+print(f"\n{'='*50}")
+print("  jsons/io/ — Real-time communication")
+print(f"{'='*50}")
+
+# 1. action.json
+write_json(IO_DIR / "action.json", {
+    "action": None
+}, "Action file")
+
+# 2. game_state.json
+write_json(IO_DIR / "game_state.json", {
+    "state": [0, 0, 0, 0, 0, 0],
+    "palette": [],
+    "tiles": [],
+    "dead": False,
+    "gs": 0,
+    "tf": 0,
+    "bd": 0
+}, "Game state file")
+
+# 3. input_cache.txt
+write_text(IO_DIR / "input_cache.txt", "", "Input cache")
+
+# ============================================================================
+# jsons/taught_models/run_0/ — Taught output files (8 files)
+# ============================================================================
+print(f"\n{'='*50}")
+print("  jsons/taught_models/run_0/ — Taught output")
+print(f"{'='*50}")
+
+# 4. taught_model_checkpoint.json
+write_json(RUN_0_TAUGHT / "taught_model_checkpoint.json", {
     "timestep": 0,
     "perceptrons": {"actions": [], "entities": []},
     "debt_tracking": {
@@ -73,7 +159,6 @@ write_file(BASE_PATH / "taught_model_checkpoint.json", {
         "cluster_effectiveness": {}, "move_to_cluster": {},
         "species_to_cluster": {}, "clustering_run_count": 0
     },
-    # === NEW v17.4: Pipeline state ===
     "pipelines": {
         "battle": {
             "pipeline_id": "battle", "name": "Battle Pipeline", "credit_decay": 0.7,
@@ -114,12 +199,11 @@ write_file(BASE_PATH / "taught_model_checkpoint.json", {
             ]
         }
     },
-    # === NEW v17.4: Revenge targets ===
     "revenge_targets": {}
 }, "Model checkpoint")
 
-# 2. taught_transitions.json
-write_file(BASE_PATH / "taught_transitions.json", {
+# 5. taught_transitions.json
+write_json(RUN_0_TAUGHT / "taught_transitions.json", {
     "batches": [],
     "metadata": {
         "total_frames": 0,
@@ -128,11 +212,12 @@ write_file(BASE_PATH / "taught_transitions.json", {
     }
 }, "Overworld transitions")
 
-# 3. taught_exploration_memory.json
-write_file(BASE_PATH / "taught_exploration_memory.json", {}, "Exploration memory")
+# 6. taught_exploration_memory.json
+write_json(RUN_0_TAUGHT / "taught_exploration_memory.json",
+           {}, "Exploration memory")
 
-# 4. taught_nav_targets.json
-write_file(BASE_PATH / "taught_nav_targets.json", {
+# 7. taught_nav_targets.json
+write_json(RUN_0_TAUGHT / "taught_nav_targets.json", {
     "targets_by_map": {},
     "global_order": [],
     "metadata": {
@@ -141,12 +226,14 @@ write_file(BASE_PATH / "taught_nav_targets.json", {
         "analysis_window_after": 40,
         "min_forward_progress": 0.5,
         "dedup_radius": 2,
-        "generated_from_frames": 0
+        "generated_from_frames": 0,
+        "badge_count_at_extraction": 0,
+        "team_avg_level_at_extraction": 0.0
     }
 }, "Nav targets")
 
-# 5. taught_battle_transitions.json
-write_file(BASE_PATH / "taught_battle_transitions.json", {
+# 8. taught_battle_transitions.json
+write_json(RUN_0_TAUGHT / "taught_battle_transitions.json", {
     "battle_sequences": [],
     "flat_frames": [],
     "metadata": {
@@ -161,8 +248,8 @@ write_file(BASE_PATH / "taught_battle_transitions.json", {
     }
 }, "Battle transitions")
 
-# 6. taught_bag_transitions.json
-write_file(BASE_PATH / "taught_bag_transitions.json", {
+# 9. taught_bag_transitions.json
+write_json(RUN_0_TAUGHT / "taught_bag_transitions.json", {
     "bag_frames": [],
     "metadata": {
         "total_bag_frames": 0,
@@ -172,8 +259,8 @@ write_file(BASE_PATH / "taught_bag_transitions.json", {
     }
 }, "Bag transitions")
 
-# 7. taught_start_menu_transitions.json
-write_file(BASE_PATH / "taught_start_menu_transitions.json", {
+# 10. taught_start_menu_transitions.json
+write_json(RUN_0_TAUGHT / "taught_start_menu_transitions.json", {
     "start_menu_frames": [],
     "metadata": {
         "total_frames": 0,
@@ -183,8 +270,8 @@ write_file(BASE_PATH / "taught_start_menu_transitions.json", {
     }
 }, "Start menu transitions")
 
-# 8. event_timeline.json
-write_file(BASE_PATH / "event_timeline.json", {
+# 11. event_timeline.json
+write_json(RUN_0_TAUGHT / "event_timeline.json", {
     "events": [],
     "segments": [],
     "preparation_points": [],
@@ -200,8 +287,51 @@ write_file(BASE_PATH / "event_timeline.json", {
     }
 }, "Event timeline")
 
-# 9. residual_perceptrons.json (NEW v17.4)
-write_file(BASE_PATH / "residual_perceptrons.json", {}, "Residual perceptrons")
+# ============================================================================
+# jsons/ai_checkpoint/ — Residual perceptrons (1 file, shared across runs)
+# ============================================================================
+print(f"\n{'='*50}")
+print("  jsons/ai_checkpoint/ — Residual perceptrons")
+print(f"{'='*50}")
 
-print(f"\n🧹 All {total} taught files ready at {BASE_PATH}")
+# 12. residual_perceptrons.json
+write_json(AI_CHECKPOINT_DIR / "residual_perceptrons.json",
+           {}, "Residual perceptrons")
+
+# ============================================================================
+# jsons/logs/taught_logs/run_0/ — Evaluation baseline (2 files)
+# ============================================================================
+print(f"\n{'='*50}")
+print("  jsons/logs/taught_logs/run_0/ — Evaluation baseline")
+print(f"{'='*50}")
+
+# 13. checkpoint_metrics.json
+write_json(RUN_0_LOGS / "checkpoint_metrics.json", {
+    "checkpoints": [],
+    "metadata": {
+        "total_checkpoints": 0,
+        "total_frames": 0,
+        "model_number": 0,
+        "taught_model_count": 0
+    }
+}, "Taught checkpoint metrics")
+
+# 14. stagnation_metrics.json
+write_json(RUN_0_LOGS / "stagnation_metrics.json", {
+    "snapshots": [],
+    "metadata": {
+        "note": "Human baseline has zero stagnation by definition",
+        "total_snapshots": 0
+    }
+}, "Taught stagnation metrics (zero baseline)")
+
+# ============================================================================
+# SUMMARY
+# ============================================================================
+print(f"\n{'='*50}")
+print(f"🧹 All {total} teaching files ready under {JSONS_ROOT}/")
+print(f"   Taught models: {RUN_0_TAUGHT.relative_to(BASE_PATH)}/")
+print(f"   Taught logs:   {RUN_0_LOGS.relative_to(BASE_PATH)}/")
+print(f"   Shared:        {AI_CHECKPOINT_DIR.relative_to(BASE_PATH)}/")
 print(f"   Fresh teaching can begin.")
+print(f"{'='*50}")
