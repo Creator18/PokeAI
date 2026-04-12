@@ -1,7 +1,13 @@
 {
   "snapshots": [],
   "metadata": {
-    "note": "Human baseline has zero stagnation by definition",
-    "total_snapshots": 0
+    "total_snapshots": 0,
+    "stagnation_types": {},
+    "total_stagnation_frames": 0,
+    "total_timesteps": 0,
+    "stagnation_ratio": 0.0,
+    "model_number": 0,
+    "source": "human_teaching_live",
+    "active_at_save": []
   }
 }

@@ -1,5 +1,5 @@
 # ============================================================================
-# reorganize.py — Run Management & Structure Validation (v17.8)
+# reorganize.py — Run Management & Structure Validation (v17.8.1)
 #
 # Lives in cogai/testing/. Handles:
 #   1. Validates the jsons/ directory structure exists (run reset.py if not)
@@ -15,6 +15,14 @@
 # Shared (not per-run):
 #   jsons/io/                       → real-time Lua ↔ Python communication
 #   jsons/ai_checkpoint/            → residual_perceptrons.json (accumulates)
+#
+# CHANGES from v17.8 reorganize.py:
+# 1. eval_state template updated to v17.8.1 event-driven format
+# 2. NEW: stagnation_state block in checkpoint template
+# 3. checkpoint_metrics.json template updated with full v17.8.1 fields
+# 4. stagnation_metrics.json template updated with full v17.8.1 fields
+# 5. is_run_empty() now also checks stagnation snapshots
+# 6. get_run_summary() now includes stagnation snapshot count
 #
 # Usage:
 #   python reorganize.py           → check state, create next run if needed
@@ -128,11 +136,24 @@ EMPTY_TAUGHT_FILES = {
             },
         },
         "revenge_targets": {},
+        # v17.8.1: Event-driven evaluation checkpoint state
         "eval_state": {
             "checkpoint_log": [],
             "last_checkpoint_ts": 0,
-            "last_checkpoint_order": -1,
-            "nav_visited_targets": [],
+            "checkpoint_counter": 0,
+            "maps_first_visited": [],
+            "badges_checkpointed": [],
+            "trainer_battles_checkpointed": 0,
+        },
+        # v17.8.1: Stagnation snapshot state
+        "stagnation_state": {
+            "snapshot_log": [],
+            "snapshot_counter": 0,
+            "total_stagnation_frames": 0,
+            "cooldowns": {},
+            "map_progress_ts": 0,
+            "last_check_ts": 0,
+            "active_events": {},
         },
     },
     "taught_transitions.json": {
@@ -191,17 +212,28 @@ EMPTY_LOG_FILES = {
     "checkpoint_metrics.json": {
         "checkpoints": [],
         "metadata": {
-            "total_checkpoints": 0, "total_timesteps": 0,
+            "total_checkpoints": 0,
+            "total_timesteps": 0,
             "badge_count": 0,
             "model_number": 0,
             "source": "human_teaching_live",
+            "checkpoint_types": {},
+            "maps_visited": [],
+            "badges_logged": [],
+            "trainer_battles_logged": 0,
         },
     },
     "stagnation_metrics.json": {
         "snapshots": [],
         "metadata": {
-            "note": "Human baseline has zero stagnation by definition",
             "total_snapshots": 0,
+            "stagnation_types": {},
+            "total_stagnation_frames": 0,
+            "total_timesteps": 0,
+            "stagnation_ratio": 0.0,
+            "model_number": 0,
+            "source": "human_teaching_live",
+            "active_at_save": [],
         },
     },
 }
@@ -235,8 +267,8 @@ def get_highest_run(parent_dir):
 def is_run_empty(taught_dir, logs_dir):
     """
     Check if a run folder contains only empty/default data.
-    A run is 'empty' if its checkpoint timestep is 0 and it has no
-    transition batches.
+    A run is 'empty' if its checkpoint timestep is 0, it has no
+    transition batches, no eval checkpoints, and no stagnation snapshots.
     """
     # Check taught_model_checkpoint.json
     ckpt = taught_dir / "taught_model_checkpoint.json"
@@ -271,6 +303,17 @@ def is_run_empty(taught_dir, logs_dir):
         except (json.JSONDecodeError, Exception):
             pass
 
+    # Check stagnation_metrics.json in logs
+    stagnation = logs_dir / "stagnation_metrics.json"
+    if stagnation.exists():
+        try:
+            with open(stagnation, 'r') as f:
+                data = json.load(f)
+            if len(data.get("snapshots", [])) > 0:
+                return False
+        except (json.JSONDecodeError, Exception):
+            pass
+
     return True
 
 
@@ -287,9 +330,6 @@ def create_run_folder(run_number):
     # Write taught model files
     for filename, template in EMPTY_TAUGHT_FILES.items():
         filepath = taught_dir / filename
-        # Update model_number in checkpoint if present
-        if filename == "taught_model_checkpoint.json":
-            template = dict(template)  # shallow copy
         with open(filepath, 'w') as f:
             json.dump(template, f, indent=2)
         created_count += 1
@@ -313,7 +353,8 @@ def get_run_summary(run_number):
     logs_dir = TAUGHT_LOGS_DIR / f"run_{run_number}"
 
     summary = {"run": run_number, "empty": True, "timestep": 0,
-               "batches": 0, "battles": 0, "checkpoints": 0}
+               "batches": 0, "battles": 0, "checkpoints": 0,
+               "stagnation_snapshots": 0}
 
     ckpt = taught_dir / "taught_model_checkpoint.json"
     if ckpt.exists():
@@ -353,6 +394,17 @@ def get_run_summary(run_number):
                 data = json.load(f)
             summary["checkpoints"] = len(data.get("checkpoints", []))
             if summary["checkpoints"] > 0:
+                summary["empty"] = False
+        except Exception:
+            pass
+
+    stagnation = logs_dir / "stagnation_metrics.json"
+    if stagnation.exists():
+        try:
+            with open(stagnation, 'r') as f:
+                data = json.load(f)
+            summary["stagnation_snapshots"] = len(data.get("snapshots", []))
+            if summary["stagnation_snapshots"] > 0:
                 summary["empty"] = False
         except Exception:
             pass
@@ -463,6 +515,8 @@ def cmd_status():
             parts.append(f"battles={s['battles']}")
         if s["checkpoints"] > 0:
             parts.append(f"checkpoints={s['checkpoints']}")
+        if s["stagnation_snapshots"] > 0:
+            parts.append(f"stagnation={s['stagnation_snapshots']}")
         detail = f" | {', '.join(parts)}" if parts else ""
 
         missing = []
@@ -556,6 +610,8 @@ def cmd_reorganize(force=False):
             print(f"    battles: {s['battles']}")
         if s["checkpoints"] > 0:
             print(f"    checkpoints: {s['checkpoints']}")
+        if s["stagnation_snapshots"] > 0:
+            print(f"    stagnation snapshots: {s['stagnation_snapshots']}")
 
     # Create next run
     next_n = highest + 1

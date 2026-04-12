@@ -1,6 +1,6 @@
 # ============================================================================
 # Reset/Create all teaching-side JSON files to empty state
-# v17.8 — Path Reorganization + Live Eval Checkpoints
+# v17.8.1 — Event-Driven Checkpoints + Stagnation Snapshots
 #
 # Creates the jsons/ subfolder hierarchy and resets/creates 14 files:
 #   jsons/io/                       → action.json, game_state.json, input_cache.txt
@@ -8,10 +8,14 @@
 #   jsons/ai_checkpoint/            → residual_perceptrons.json (single, not per-run)
 #   jsons/logs/taught_logs/run_0/   → checkpoint_metrics.json, stagnation_metrics.json
 #
-# CHANGES from previous reset.py:
-# 1. taught_model_checkpoint.json template now includes eval_state block
-# 2. checkpoint_metrics.json metadata aligned with live writer
-#    (total_timesteps instead of total_frames, added source field)
+# CHANGES from v17.8 reset.py:
+# 1. eval_state template updated to v17.8.1 event-driven format:
+#    - REMOVED: last_checkpoint_order, nav_visited_targets
+#    - ADDED: checkpoint_counter, maps_first_visited, badges_checkpointed,
+#             trainer_battles_checkpointed
+# 2. NEW: stagnation_state block in checkpoint template
+# 3. checkpoint_metrics.json metadata updated with full v17.8.1 fields
+# 4. stagnation_metrics.json metadata updated with full v17.8.1 fields
 # ============================================================================
 
 import json
@@ -194,11 +198,24 @@ write_json(RUN_0_TAUGHT / "taught_model_checkpoint.json", {
         }
     },
     "revenge_targets": {},
+    # v17.8.1: Event-driven evaluation checkpoint state
     "eval_state": {
         "checkpoint_log": [],
         "last_checkpoint_ts": 0,
-        "last_checkpoint_order": -1,
-        "nav_visited_targets": []
+        "checkpoint_counter": 0,
+        "maps_first_visited": [],
+        "badges_checkpointed": [],
+        "trainer_battles_checkpointed": 0
+    },
+    # v17.8.1: Stagnation snapshot state
+    "stagnation_state": {
+        "snapshot_log": [],
+        "snapshot_counter": 0,
+        "total_stagnation_frames": 0,
+        "cooldowns": {},
+        "map_progress_ts": 0,
+        "last_check_ts": 0,
+        "active_events": {}
     }
 }, "Model checkpoint")
 
@@ -313,7 +330,11 @@ write_json(RUN_0_LOGS / "checkpoint_metrics.json", {
         "total_timesteps": 0,
         "badge_count": 0,
         "model_number": 0,
-        "source": "human_teaching_live"
+        "source": "human_teaching_live",
+        "checkpoint_types": {},
+        "maps_visited": [],
+        "badges_logged": [],
+        "trainer_battles_logged": 0
     }
 }, "Taught checkpoint metrics")
 
@@ -321,10 +342,16 @@ write_json(RUN_0_LOGS / "checkpoint_metrics.json", {
 write_json(RUN_0_LOGS / "stagnation_metrics.json", {
     "snapshots": [],
     "metadata": {
-        "note": "Human baseline has zero stagnation by definition",
-        "total_snapshots": 0
+        "total_snapshots": 0,
+        "stagnation_types": {},
+        "total_stagnation_frames": 0,
+        "total_timesteps": 0,
+        "stagnation_ratio": 0.0,
+        "model_number": 0,
+        "source": "human_teaching_live",
+        "active_at_save": []
     }
-}, "Taught stagnation metrics (zero baseline)")
+}, "Taught stagnation metrics")
 
 # ============================================================================
 # SUMMARY

@@ -277,5 +277,22 @@
       ]
     }
   },
-  "revenge_targets": {}
+  "revenge_targets": {},
+  "eval_state": {
+    "checkpoint_log": [],
+    "last_checkpoint_ts": 0,
+    "checkpoint_counter": 0,
+    "maps_first_visited": [],
+    "badges_checkpointed": [],
+    "trainer_battles_checkpointed": 0
+  },
+  "stagnation_state": {
+    "snapshot_log": [],
+    "snapshot_counter": 0,
+    "total_stagnation_frames": 0,
+    "cooldowns": {},
+    "map_progress_ts": 0,
+    "last_check_ts": 0,
+    "active_events": {}
+  }
 }
