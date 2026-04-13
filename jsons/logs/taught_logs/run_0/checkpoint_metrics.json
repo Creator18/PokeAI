@@ -1,14 +1,737 @@
 {
-  "checkpoints": [],
+  "checkpoints": [
+    {
+      "checkpoint_id": 0,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "loss",
+        "enemy_species": 4,
+        "enemy_level": 5,
+        "hp_cost_ratio": 1.0,
+        "is_gym": false,
+        "trainer_battle_number": 1
+      },
+      "badge_count": 0,
+      "timestep": 23845,
+      "frames_from_previous": 23845,
+      "team_avg_level": 5.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 13,
+      "position": [
+        13,
+        15
+      ],
+      "time": 1776036473.8548543
+    },
+    {
+      "checkpoint_id": 1,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 23
+      },
+      "badge_count": 0,
+      "timestep": 24700,
+      "frames_from_previous": 855,
+      "team_avg_level": 5.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 23,
+      "position": [
+        23,
+        20
+      ],
+      "time": 1776036475.9625082
+    },
+    {
+      "checkpoint_id": 2,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 35
+      },
+      "badge_count": 0,
+      "timestep": 30500,
+      "frames_from_previous": 5800,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 0.19047619047619047,
+      "map_id": 35,
+      "position": [
+        29,
+        41
+      ],
+      "time": 1776036503.5561042
+    },
+    {
+      "checkpoint_id": 3,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 14
+      },
+      "badge_count": 0,
+      "timestep": 31065,
+      "frames_from_previous": 565,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 0.19047619047619047,
+      "map_id": 14,
+      "position": [
+        14,
+        15
+      ],
+      "time": 1776036504.858231
+    },
+    {
+      "checkpoint_id": 4,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 33
+      },
+      "badge_count": 0,
+      "timestep": 32292,
+      "frames_from_previous": 1227,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 33,
+      "position": [
+        33,
+        33
+      ],
+      "time": 1776036507.67179
+    },
+    {
+      "checkpoint_id": 5,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 11
+      },
+      "badge_count": 0,
+      "timestep": 32963,
+      "frames_from_previous": 671,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 11,
+      "position": [
+        11,
+        14
+      ],
+      "time": 1776036509.2280343
+    },
+    {
+      "checkpoint_id": 6,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 43
+      },
+      "badge_count": 0,
+      "timestep": 34773,
+      "frames_from_previous": 1810,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 43,
+      "position": [
+        43,
+        26
+      ],
+      "time": 1776036513.7031627
+    },
+    {
+      "checkpoint_id": 7,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 31
+      },
+      "badge_count": 0,
+      "timestep": 35854,
+      "frames_from_previous": 1081,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 31,
+      "position": [
+        19,
+        10
+      ],
+      "time": 1776036516.271954
+    },
+    {
+      "checkpoint_id": 8,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 21
+      },
+      "badge_count": 0,
+      "timestep": 39822,
+      "frames_from_previous": 3968,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 21,
+      "position": [
+        19,
+        7
+      ],
+      "time": 1776036539.6615117
+    },
+    {
+      "checkpoint_id": 9,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 22
+      },
+      "badge_count": 0,
+      "timestep": 57900,
+      "frames_from_previous": 18078,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 22,
+      "position": [
+        22,
+        14
+      ],
+      "time": 1776036616.0275662
+    },
+    {
+      "checkpoint_id": 10,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 34
+      },
+      "badge_count": 0,
+      "timestep": 62993,
+      "frames_from_previous": 5093,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 0.55625,
+      "map_id": 34,
+      "position": [
+        31,
+        43
+      ],
+      "time": 1776036663.253258
+    },
+    {
+      "checkpoint_id": 11,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 81
+      },
+      "badge_count": 0,
+      "timestep": 67155,
+      "frames_from_previous": 4162,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 81,
+      "position": [
+        52,
+        14
+      ],
+      "time": 1776036674.1271589
+    },
+    {
+      "checkpoint_id": 12,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "loss",
+        "enemy_species": 4,
+        "enemy_level": 9,
+        "hp_cost_ratio": 0.741,
+        "is_gym": false,
+        "trainer_battle_number": 2
+      },
+      "badge_count": 0,
+      "timestep": 75637,
+      "frames_from_previous": 8482,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 81,
+      "position": [
+        40,
+        12
+      ],
+      "time": 1776036755.6483521
+    },
+    {
+      "checkpoint_id": 13,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 4,
+        "enemy_level": 9,
+        "hp_cost_ratio": 0.0,
+        "is_gym": false,
+        "trainer_battle_number": 3
+      },
+      "badge_count": 0,
+      "timestep": 76717,
+      "frames_from_previous": 1080,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 0.8620689655172413,
+      "map_id": 81,
+      "position": [
+        40,
+        12
+      ],
+      "time": 1776036779.0109675
+    },
+    {
+      "checkpoint_id": 14,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 36
+      },
+      "badge_count": 0,
+      "timestep": 86836,
+      "frames_from_previous": 10119,
+      "team_avg_level": 5.25,
+      "avg_party_hp_ratio": 0.806288032454361,
+      "map_id": 36,
+      "position": [
+        36,
+        69
+      ],
+      "time": 1776036834.0205724
+    },
+    {
+      "checkpoint_id": 15,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 10,
+        "enemy_level": 6,
+        "hp_cost_ratio": 0.0,
+        "is_gym": false,
+        "trainer_battle_number": 4
+      },
+      "badge_count": 0,
+      "timestep": 91874,
+      "frames_from_previous": 5038,
+      "team_avg_level": 5.5,
+      "avg_party_hp_ratio": 0.8074003795066413,
+      "map_id": 36,
+      "position": [
+        50,
+        52
+      ],
+      "time": 1776036887.1681328
+    },
+    {
+      "checkpoint_id": 16,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 14,
+        "enemy_level": 7,
+        "hp_cost_ratio": 0.032,
+        "is_gym": false,
+        "trainer_battle_number": 5
+      },
+      "badge_count": 0,
+      "timestep": 95040,
+      "frames_from_previous": 3166,
+      "team_avg_level": 5.75,
+      "avg_party_hp_ratio": 0.785650623885918,
+      "map_id": 36,
+      "position": [
+        54,
+        37
+      ],
+      "time": 1776036934.4454067
+    },
+    {
+      "checkpoint_id": 17,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 11,
+        "enemy_level": 7,
+        "hp_cost_ratio": 0.0,
+        "is_gym": false,
+        "trainer_battle_number": 6
+      },
+      "badge_count": 0,
+      "timestep": 99054,
+      "frames_from_previous": 4014,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 0.8235294117647058,
+      "map_id": 36,
+      "position": [
+        24,
+        12
+      ],
+      "time": 1776036992.5471416
+    },
+    {
+      "checkpoint_id": 18,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 13,
+        "enemy_level": 9,
+        "hp_cost_ratio": 0.343,
+        "is_gym": false,
+        "trainer_battle_number": 7
+      },
+      "badge_count": 0,
+      "timestep": 102147,
+      "frames_from_previous": 3093,
+      "team_avg_level": 6.25,
+      "avg_party_hp_ratio": 0.7221780604133545,
+      "map_id": 36,
+      "position": [
+        10,
+        29
+      ],
+      "time": 1776037027.8061705
+    },
+    {
+      "checkpoint_id": 19,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 12
+      },
+      "badge_count": 0,
+      "timestep": 103000,
+      "frames_from_previous": 853,
+      "team_avg_level": 6.25,
+      "avg_party_hp_ratio": 0.7221780604133545,
+      "map_id": 12,
+      "position": [
+        12,
+        20
+      ],
+      "time": 1776037033.5349786
+    },
+    {
+      "checkpoint_id": 20,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 24
+      },
+      "badge_count": 0,
+      "timestep": 103409,
+      "frames_from_previous": 409,
+      "team_avg_level": 6.25,
+      "avg_party_hp_ratio": 0.7221780604133545,
+      "map_id": 24,
+      "position": [
+        30,
+        44
+      ],
+      "time": 1776037034.8579395
+    },
+    {
+      "checkpoint_id": 21,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 27,
+        "enemy_level": 11,
+        "hp_cost_ratio": 0.0,
+        "is_gym": false,
+        "trainer_battle_number": 8
+      },
+      "badge_count": 0,
+      "timestep": 108770,
+      "frames_from_previous": 5361,
+      "team_avg_level": 6.5,
+      "avg_party_hp_ratio": 0.9807692307692308,
+      "map_id": 13,
+      "position": [
+        13,
+        15
+      ],
+      "time": 1776037089.4711945
+    },
+    {
+      "checkpoint_id": 22,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 95,
+        "enemy_level": 14,
+        "hp_cost_ratio": 0.103,
+        "is_gym": false,
+        "trainer_battle_number": 9
+      },
+      "badge_count": 1,
+      "timestep": 111019,
+      "frames_from_previous": 2249,
+      "team_avg_level": 6.75,
+      "avg_party_hp_ratio": 0.9510869565217391,
+      "map_id": 13,
+      "position": [
+        13,
+        13
+      ],
+      "time": 1776037127.739041
+    },
+    {
+      "checkpoint_id": 23,
+      "event_type": "badge",
+      "event_detail": {
+        "badge_number": 1
+      },
+      "badge_count": 1,
+      "timestep": 111019,
+      "frames_from_previous": 0,
+      "team_avg_level": 6.75,
+      "avg_party_hp_ratio": 0.9510869565217391,
+      "map_id": 13,
+      "position": [
+        13,
+        13
+      ],
+      "time": 1776037127.7390897
+    },
+    {
+      "checkpoint_id": 24,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 232
+      },
+      "badge_count": 1,
+      "timestep": 116792,
+      "frames_from_previous": 5773,
+      "team_avg_level": 6.75,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 232,
+      "position": [
+        10,
+        18
+      ],
+      "time": 1776037161.553085
+    },
+    {
+      "checkpoint_id": 25,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 16,
+        "enemy_level": 9,
+        "hp_cost_ratio": 0.268,
+        "is_gym": false,
+        "trainer_battle_number": 10
+      },
+      "badge_count": 1,
+      "timestep": 119972,
+      "frames_from_previous": 3180,
+      "team_avg_level": 7.25,
+      "avg_party_hp_ratio": 0.7516304347826086,
+      "map_id": 232,
+      "position": [
+        26,
+        15
+      ],
+      "time": 1776037233.4918923
+    },
+    {
+      "checkpoint_id": 26,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 10,
+        "enemy_level": 10,
+        "hp_cost_ratio": 0.0,
+        "is_gym": false,
+        "trainer_battle_number": 11
+      },
+      "badge_count": 1,
+      "timestep": 125251,
+      "frames_from_previous": 5279,
+      "team_avg_level": 7.5,
+      "avg_party_hp_ratio": 0.7224555335968379,
+      "map_id": 232,
+      "position": [
+        21,
+        13
+      ],
+      "time": 1776037371.9898224
+    },
+    {
+      "checkpoint_id": 27,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 23,
+        "enemy_level": 11,
+        "hp_cost_ratio": 0.0,
+        "is_gym": false,
+        "trainer_battle_number": 12
+      },
+      "badge_count": 1,
+      "timestep": 133951,
+      "frames_from_previous": 8700,
+      "team_avg_level": 7.75,
+      "avg_party_hp_ratio": 0.7717391304347826,
+      "map_id": 232,
+      "position": [
+        23,
+        11
+      ],
+      "time": 1776037467.121648
+    },
+    {
+      "checkpoint_id": 28,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 29,
+        "enemy_level": 10,
+        "hp_cost_ratio": 0.283,
+        "is_gym": false,
+        "trainer_battle_number": 13
+      },
+      "badge_count": 1,
+      "timestep": 136761,
+      "frames_from_previous": 2810,
+      "team_avg_level": 8.25,
+      "avg_party_hp_ratio": 0.7387820512820512,
+      "map_id": 232,
+      "position": [
+        32,
+        10
+      ],
+      "time": 1776037516.6248033
+    },
+    {
+      "checkpoint_id": 29,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 29,
+        "enemy_level": 10,
+        "hp_cost_ratio": 0.0,
+        "is_gym": false,
+        "trainer_battle_number": 14
+      },
+      "badge_count": 1,
+      "timestep": 137713,
+      "frames_from_previous": 952,
+      "team_avg_level": 8.25,
+      "avg_party_hp_ratio": 0.7387820512820512,
+      "map_id": 232,
+      "position": [
+        32,
+        10
+      ],
+      "time": 1776037539.6190495
+    },
+    {
+      "checkpoint_id": 30,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 11,
+        "enemy_level": 9,
+        "hp_cost_ratio": 0.0,
+        "is_gym": false,
+        "trainer_battle_number": 15
+      },
+      "badge_count": 1,
+      "timestep": 146766,
+      "frames_from_previous": 9053,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.9516129032258065,
+      "map_id": 232,
+      "position": [
+        32,
+        12
+      ],
+      "time": 1776037626.561364
+    },
+    {
+      "checkpoint_id": 31,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 11,
+        "enemy_level": 11,
+        "hp_cost_ratio": 0.065,
+        "is_gym": false,
+        "trainer_battle_number": 16
+      },
+      "badge_count": 1,
+      "timestep": 149195,
+      "frames_from_previous": 2429,
+      "team_avg_level": 9.25,
+      "avg_party_hp_ratio": 0.9242424242424243,
+      "map_id": 232,
+      "position": [
+        39,
+        12
+      ],
+      "time": 1776037667.5895386
+    },
+    {
+      "checkpoint_id": 32,
+      "event_type": "trainer_battle",
+      "event_detail": {
+        "outcome": "win",
+        "enemy_species": 39,
+        "enemy_level": 14,
+        "hp_cost_ratio": 0.0,
+        "is_gym": false,
+        "trainer_battle_number": 17
+      },
+      "badge_count": 1,
+      "timestep": 152209,
+      "frames_from_previous": 3014,
+      "team_avg_level": 9.25,
+      "avg_party_hp_ratio": 0.7727272727272727,
+      "map_id": 232,
+      "position": [
+        47,
+        22
+      ],
+      "time": 1776037718.9845977
+    },
+    {
+      "checkpoint_id": 33,
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 172
+      },
+      "badge_count": 1,
+      "timestep": 154000,
+      "frames_from_previous": 1791,
+      "team_avg_level": 9.25,
+      "avg_party_hp_ratio": 0.7727272727272727,
+      "map_id": 172,
+      "position": [
+        19,
+        24
+      ],
+      "time": 1776037726.5091014
+    }
+  ],
   "metadata": {
-    "total_checkpoints": 0,
-    "total_timesteps": 0,
-    "badge_count": 0,
+    "total_checkpoints": 34,
+    "total_timesteps": 158609,
+    "badge_count": 1,
     "model_number": 0,
     "source": "human_teaching_live",
-    "checkpoint_types": {},
-    "maps_visited": [],
-    "badges_logged": [],
-    "trainer_battles_logged": 0
+    "checkpoint_types": {
+      "trainer_battle": 17,
+      "new_map": 16,
+      "badge": 1
+    },
+    "maps_visited": [
+      11,
+      12,
+      13,
+      14,
+      17,
+      21,
+      22,
+      23,
+      24,
+      31,
+      33,
+      34,
+      35,
+      36,
+      43,
+      81,
+      172,
+      232
+    ],
+    "badges_logged": [
+      1
+    ],
+    "trainer_battles_logged": 17
   }
 }

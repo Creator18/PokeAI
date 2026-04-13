@@ -1,0 +1,14 @@
+{
+  "targets_by_map": {},
+  "global_order": [],
+  "metadata": {
+    "total_targets": 0,
+    "maps_with_targets": [],
+    "analysis_window_after": 40,
+    "min_forward_progress": 0.5,
+    "dedup_radius": 2,
+    "generated_from_frames": 0,
+    "badge_count_at_extraction": 0,
+    "team_avg_level_at_extraction": 0.0
+  }
+}

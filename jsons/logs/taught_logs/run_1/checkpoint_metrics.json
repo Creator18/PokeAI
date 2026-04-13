@@ -1,0 +1,14 @@
+{
+  "checkpoints": [],
+  "metadata": {
+    "total_checkpoints": 0,
+    "total_timesteps": 0,
+    "badge_count": 0,
+    "model_number": 1,
+    "source": "human_teaching_live",
+    "checkpoint_types": {},
+    "maps_visited": [],
+    "badges_logged": [],
+    "trainer_battles_logged": 0
+  }
+}

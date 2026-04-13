@@ -1,0 +1,15 @@
+{
+  "events": [],
+  "segments": [],
+  "preparation_points": [],
+  "metadata": {
+    "total_events": 0,
+    "total_battles": 0,
+    "total_bag_sessions": 0,
+    "total_switches": 0,
+    "total_map_transitions": 0,
+    "playthrough_timesteps": 0,
+    "nav_targets_covered": [],
+    "generation_timestamp": ""
+  }
+}
