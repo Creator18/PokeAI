@@ -1,0 +1,1122 @@
+{
+  "aggregated_checkpoints": [
+    {
+      "checkpoint_key": "new_map:23",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 23
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 20651,
+      "std_timestep": 3508.2,
+      "avg_frames_from_previous": 753.3,
+      "std_frames_from_previous": 107.4,
+      "avg_team_avg_level": 5.67,
+      "std_team_avg_level": 0.58,
+      "avg_party_hp_ratio": 1.0,
+      "std_party_hp_ratio": 0.0,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 24700,
+          "team_avg_level": 5.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 855,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 18519,
+          "team_avg_level": 6.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 764,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 18734,
+          "team_avg_level": 6.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 641,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:35",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 35
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 26047,
+      "std_timestep": 3910.7,
+      "avg_frames_from_previous": 5396,
+      "std_frames_from_previous": 645.1,
+      "avg_team_avg_level": 6.67,
+      "std_team_avg_level": 0.58,
+      "avg_party_hp_ratio": 0.2591,
+      "std_party_hp_ratio": 0.2149,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 30500,
+          "team_avg_level": 6.0,
+          "avg_party_hp_ratio": 0.19047619047619047,
+          "frames_from_previous": 5800,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 23171,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 0.5,
+          "frames_from_previous": 4652,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 24470,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 0.08695652173913043,
+          "frames_from_previous": 5736,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:14",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 14
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 26752,
+      "std_timestep": 3830.8,
+      "avg_frames_from_previous": 705,
+      "std_frames_from_previous": 234.7,
+      "avg_team_avg_level": 6.67,
+      "std_team_avg_level": 0.58,
+      "avg_party_hp_ratio": 0.2591,
+      "std_party_hp_ratio": 0.2149,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 31065,
+          "team_avg_level": 6.0,
+          "avg_party_hp_ratio": 0.19047619047619047,
+          "frames_from_previous": 565,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 23745,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 0.5,
+          "frames_from_previous": 574,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 25446,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 0.08695652173913043,
+          "frames_from_previous": 976,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:33",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 33
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 27896.3,
+      "std_timestep": 3883.4,
+      "avg_frames_from_previous": 1144.3,
+      "std_frames_from_previous": 109.6,
+      "avg_team_avg_level": 6.67,
+      "std_team_avg_level": 0.58,
+      "avg_party_hp_ratio": 1.0,
+      "std_party_hp_ratio": 0.0,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 32292,
+          "team_avg_level": 6.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 1227,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 24931,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 1186,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 26466,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 1020,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:11",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 11
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 29104.3,
+      "std_timestep": 3448.6,
+      "avg_frames_from_previous": 1208,
+      "std_frames_from_previous": 472.7,
+      "avg_team_avg_level": 6.67,
+      "std_team_avg_level": 0.58,
+      "avg_party_hp_ratio": 1.0,
+      "std_party_hp_ratio": 0.0,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 32963,
+          "team_avg_level": 6.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 671,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 26323,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 1392,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 28027,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 1561,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:43",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 43
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 30367.3,
+      "std_timestep": 3905.8,
+      "avg_frames_from_previous": 1263,
+      "std_frames_from_previous": 474.0,
+      "avg_team_avg_level": 6.67,
+      "std_team_avg_level": 0.58,
+      "avg_party_hp_ratio": 1.0,
+      "std_party_hp_ratio": 0.0,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 34773,
+          "team_avg_level": 6.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 1810,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 27329,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 1006,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 29000,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 973,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:31",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 31
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 32322.7,
+      "std_timestep": 3200.3,
+      "avg_frames_from_previous": 1627.3,
+      "std_frames_from_previous": 1370.7,
+      "avg_team_avg_level": 6.67,
+      "std_team_avg_level": 0.58,
+      "avg_party_hp_ratio": 0.9722,
+      "std_party_hp_ratio": 0.0481,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 35854,
+          "team_avg_level": 6.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 1081,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 31500,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 0.9166666666666666,
+          "frames_from_previous": 3187,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 29614,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 614,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:22",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 22
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 47539.7,
+      "std_timestep": 8980.0,
+      "avg_frames_from_previous": 13894.3,
+      "std_frames_from_previous": 3853.9,
+      "avg_team_avg_level": 7.67,
+      "std_team_avg_level": 0.58,
+      "avg_party_hp_ratio": 0.9359,
+      "std_party_hp_ratio": 0.111,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 57900,
+          "team_avg_level": 7.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 18078,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 41989,
+          "team_avg_level": 8.0,
+          "avg_party_hp_ratio": 0.8076923076923077,
+          "frames_from_previous": 10489,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 42730,
+          "team_avg_level": 8.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 13116,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:21",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 21
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 52309.3,
+      "std_timestep": 13190.8,
+      "avg_frames_from_previous": 4768.3,
+      "std_frames_from_previous": 3243.4,
+      "avg_team_avg_level": 5.78,
+      "std_team_avg_level": 0.69,
+      "avg_party_hp_ratio": 1.0,
+      "std_party_hp_ratio": 0.0,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 39822,
+          "team_avg_level": 6.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 3968,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 66106,
+          "team_avg_level": 6.333333333333333,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 8337,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 51000,
+          "team_avg_level": 5.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 2000,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:81",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 81
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 58318.3,
+      "std_timestep": 8082.4,
+      "avg_frames_from_previous": 3987.3,
+      "std_frames_from_previous": 1607.1,
+      "avg_team_avg_level": 5.67,
+      "std_team_avg_level": 0.58,
+      "avg_party_hp_ratio": 1.0,
+      "std_party_hp_ratio": 0.0,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 67155,
+          "team_avg_level": 6.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 4162,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 51300,
+          "team_avg_level": 6.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 2300,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 56500,
+          "team_avg_level": 5.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 5500,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:36",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 36
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 99716.7,
+      "std_timestep": 39932.7,
+      "avg_frames_from_previous": 15392.7,
+      "std_frames_from_previous": 16948.5,
+      "avg_team_avg_level": 6.86,
+      "std_team_avg_level": 1.93,
+      "avg_party_hp_ratio": 0.9247,
+      "std_party_hp_ratio": 0.1038,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 86836,
+          "team_avg_level": 5.25,
+          "avg_party_hp_ratio": 0.806288032454361,
+          "frames_from_previous": 10119,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 67814,
+          "team_avg_level": 6.333333333333333,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 1708,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 144500,
+          "team_avg_level": 9.0,
+          "avg_party_hp_ratio": 0.967741935483871,
+          "frames_from_previous": 34351,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:12",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 12
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 113440.3,
+      "std_timestep": 39697.9,
+      "avg_frames_from_previous": 911,
+      "std_frames_from_previous": 609.1,
+      "avg_team_avg_level": 7.97,
+      "std_team_avg_level": 2.12,
+      "avg_party_hp_ratio": 0.8684,
+      "std_party_hp_ratio": 0.1395,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 103000,
+          "team_avg_level": 6.25,
+          "avg_party_hp_ratio": 0.7221780604133545,
+          "frames_from_previous": 853,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 80006,
+          "team_avg_level": 7.333333333333333,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 333,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 157315,
+          "team_avg_level": 10.333333333333334,
+          "avg_party_hp_ratio": 0.8828828828828829,
+          "frames_from_previous": 1547,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:24",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 24
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 113829.3,
+      "std_timestep": 39568.3,
+      "avg_frames_from_previous": 389,
+      "std_frames_from_previous": 130.2,
+      "avg_team_avg_level": 7.97,
+      "std_team_avg_level": 2.12,
+      "avg_party_hp_ratio": 0.8684,
+      "std_party_hp_ratio": 0.1395,
+      "avg_badge_count": 0,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 103409,
+          "team_avg_level": 6.25,
+          "avg_party_hp_ratio": 0.7221780604133545,
+          "frames_from_previous": 409,
+          "badge_count": 0
+        },
+        {
+          "run": 1,
+          "timestep": 80514,
+          "team_avg_level": 7.333333333333333,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 508,
+          "badge_count": 0
+        },
+        {
+          "run": 2,
+          "timestep": 157565,
+          "team_avg_level": 10.333333333333334,
+          "avg_party_hp_ratio": 0.8828828828828829,
+          "frames_from_previous": 250,
+          "badge_count": 0
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "badge:1",
+      "event_type": "badge",
+      "event_detail": {
+        "badge_number": 1
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 121935.7,
+      "std_timestep": 35970.6,
+      "avg_frames_from_previous": 55.3,
+      "std_frames_from_previous": 61.8,
+      "avg_team_avg_level": 8.58,
+      "std_team_avg_level": 2.18,
+      "avg_party_hp_ratio": 0.9033,
+      "std_party_hp_ratio": 0.0812,
+      "avg_badge_count": 1,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 111019,
+          "team_avg_level": 6.75,
+          "avg_party_hp_ratio": 0.9510869565217391,
+          "frames_from_previous": 0,
+          "badge_count": 1
+        },
+        {
+          "run": 1,
+          "timestep": 92688,
+          "team_avg_level": 8.0,
+          "avg_party_hp_ratio": 0.8095238095238096,
+          "frames_from_previous": 122,
+          "badge_count": 1
+        },
+        {
+          "run": 2,
+          "timestep": 162100,
+          "team_avg_level": 11.0,
+          "avg_party_hp_ratio": 0.9492753623188405,
+          "frames_from_previous": 44,
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:232",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 232
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 129405,
+      "std_timestep": 37344.7,
+      "avg_frames_from_previous": 7469.3,
+      "std_frames_from_previous": 1780.2,
+      "avg_team_avg_level": 8.58,
+      "std_team_avg_level": 2.18,
+      "avg_party_hp_ratio": 1.0,
+      "std_party_hp_ratio": 0.0,
+      "avg_badge_count": 1,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 116792,
+          "team_avg_level": 6.75,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 5773,
+          "badge_count": 1
+        },
+        {
+          "run": 1,
+          "timestep": 100000,
+          "team_avg_level": 8.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 7312,
+          "badge_count": 1
+        },
+        {
+          "run": 2,
+          "timestep": 171423,
+          "team_avg_level": 11.0,
+          "avg_party_hp_ratio": 1.0,
+          "frames_from_previous": 9323,
+          "badge_count": 1
+        }
+      ]
+    },
+    {
+      "checkpoint_key": "new_map:172",
+      "event_type": "new_map",
+      "event_detail": {
+        "new_map_id": 172
+      },
+      "runs_matched": 3,
+      "run_ids": [
+        0,
+        1,
+        2
+      ],
+      "avg_timestep": 153648.7,
+      "std_timestep": 34829.3,
+      "avg_frames_from_previous": 2902.7,
+      "std_frames_from_previous": 965.3,
+      "avg_team_avg_level": 11.19,
+      "std_team_avg_level": 1.76,
+      "avg_party_hp_ratio": 0.6984,
+      "std_party_hp_ratio": 0.0785,
+      "avg_badge_count": 1,
+      "per_run": [
+        {
+          "run": 0,
+          "timestep": 154000,
+          "team_avg_level": 9.25,
+          "avg_party_hp_ratio": 0.7727272727272727,
+          "frames_from_previous": 1791,
+          "badge_count": 1
+        },
+        {
+          "run": 1,
+          "timestep": 118645,
+          "team_avg_level": 11.666666666666666,
+          "avg_party_hp_ratio": 0.6162962962962962,
+          "frames_from_previous": 3529,
+          "badge_count": 1
+        },
+        {
+          "run": 2,
+          "timestep": 188301,
+          "team_avg_level": 12.666666666666666,
+          "avg_party_hp_ratio": 0.7060321190755973,
+          "frames_from_previous": 3388,
+          "badge_count": 1
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "runs_analyzed": 3,
+    "run_numbers": [
+      0,
+      1,
+      2
+    ],
+    "match_threshold": 0.75,
+    "total_unique_checkpoints_across_runs": 60,
+    "checkpoints_meeting_threshold": 16,
+    "checkpoints_excluded": 44,
+    "excluded_checkpoints": [
+      {
+        "key": "trainer_battle:1:4:5",
+        "appeared_in_runs": [
+          0
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "new_map:34",
+        "appeared_in_runs": [
+          0,
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:2:4:9",
+        "appeared_in_runs": [
+          0
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:3:4:9",
+        "appeared_in_runs": [
+          0
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:4:10:6",
+        "appeared_in_runs": [
+          0
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:5:14:7",
+        "appeared_in_runs": [
+          0
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:6:11:7",
+        "appeared_in_runs": [
+          0
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:7:13:9",
+        "appeared_in_runs": [
+          0
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:8:27:11",
+        "appeared_in_runs": [
+          0
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:9:95:14",
+        "appeared_in_runs": [
+          0,
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:10:16:9",
+        "appeared_in_runs": [
+          0,
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:11:10:10",
+        "appeared_in_runs": [
+          0,
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:12:23:11",
+        "appeared_in_runs": [
+          0,
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:13:29:10",
+        "appeared_in_runs": [
+          0
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:14:29:10",
+        "appeared_in_runs": [
+          0,
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:15:11:9",
+        "appeared_in_runs": [
+          0,
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:16:11:11",
+        "appeared_in_runs": [
+          0,
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:17:39:14",
+        "appeared_in_runs": [
+          0
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:1:7:5",
+        "appeared_in_runs": [
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "new_map:91",
+        "appeared_in_runs": [
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "new_map:25",
+        "appeared_in_runs": [
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:2:7:9",
+        "appeared_in_runs": [
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:3:10:6",
+        "appeared_in_runs": [
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:4:14:7",
+        "appeared_in_runs": [
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:5:11:7",
+        "appeared_in_runs": [
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:6:13:9",
+        "appeared_in_runs": [
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:7:27:11",
+        "appeared_in_runs": [
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:8:95:14",
+        "appeared_in_runs": [
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:13:11:9",
+        "appeared_in_runs": [
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:15:11:11",
+        "appeared_in_runs": [
+          1
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:1:1:5",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:2:1:9",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:3:16:9",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:4:16:9",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:5:1:9",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:6:10:6",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:7:14:7",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:8:11:7",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:9:13:9",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:10:27:11",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:11:95:14",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:12:16:9",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:13:10:10",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      },
+      {
+        "key": "trainer_battle:14:23:11",
+        "appeared_in_runs": [
+          2
+        ],
+        "reason": "below_threshold"
+      }
+    ],
+    "per_run_summary": [
+      {
+        "run": 0,
+        "total_checkpoints": 34,
+        "matched": 16,
+        "unmatched": 18
+      },
+      {
+        "run": 1,
+        "total_checkpoints": 33,
+        "matched": 16,
+        "unmatched": 17
+      },
+      {
+        "run": 2,
+        "total_checkpoints": 33,
+        "matched": 16,
+        "unmatched": 17
+      }
+    ]
+  }
+}
