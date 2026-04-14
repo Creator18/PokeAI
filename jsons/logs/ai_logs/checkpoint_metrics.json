@@ -1,13 +1,226 @@
 {
-  "checkpoints": [],
+  "checkpoints": [
+    {
+      "checkpoint_id": 0,
+      "event_type": "new_map",
+      "event_detail": {
+        "map_id": 17
+      },
+      "badge_count": 0,
+      "timestep": 411,
+      "frames_from_previous": 411,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "map_id": 17,
+      "position": [
+        17,
+        9
+      ],
+      "time": 1776140253.822717
+    },
+    {
+      "checkpoint_id": 1,
+      "event_type": "new_map",
+      "event_detail": {
+        "map_id": 11
+      },
+      "badge_count": 0,
+      "timestep": 456,
+      "frames_from_previous": 45,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "map_id": 11,
+      "position": [
+        11,
+        15
+      ],
+      "time": 1776140260.26047
+    },
+    {
+      "checkpoint_id": 2,
+      "event_type": "new_map",
+      "event_detail": {
+        "map_id": 23
+      },
+      "badge_count": 0,
+      "timestep": 1723,
+      "frames_from_previous": 1267,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 23,
+      "position": [
+        23,
+        20
+      ],
+      "time": 1776140362.672102
+    },
+    {
+      "checkpoint_id": 3,
+      "event_type": "new_map",
+      "event_detail": {
+        "map_id": 15
+      },
+      "badge_count": 0,
+      "timestep": 2435,
+      "frames_from_previous": 712,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 15,
+      "position": [
+        15,
+        12
+      ],
+      "time": 1776140435.4902112
+    },
+    {
+      "checkpoint_id": 4,
+      "event_type": "new_map",
+      "event_detail": {
+        "map_id": 25
+      },
+      "badge_count": 0,
+      "timestep": 3056,
+      "frames_from_previous": 621,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "map_id": 25,
+      "position": [
+        29,
+        46
+      ],
+      "time": 1776140499.4131482
+    },
+    {
+      "checkpoint_id": 5,
+      "event_type": "new_map",
+      "event_detail": {
+        "map_id": 14
+      },
+      "badge_count": 0,
+      "timestep": 3860,
+      "frames_from_previous": 804,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "map_id": 14,
+      "position": [
+        14,
+        15
+      ],
+      "time": 1776140567.0086105
+    },
+    {
+      "checkpoint_id": 6,
+      "event_type": "new_map",
+      "event_detail": {
+        "map_id": 33
+      },
+      "badge_count": 0,
+      "timestep": 4019,
+      "frames_from_previous": 159,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 33,
+      "position": [
+        33,
+        33
+      ],
+      "time": 1776140584.1803825
+    },
+    {
+      "checkpoint_id": 7,
+      "event_type": "new_map",
+      "event_detail": {
+        "map_id": 43
+      },
+      "badge_count": 0,
+      "timestep": 4226,
+      "frames_from_previous": 207,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 43,
+      "position": [
+        43,
+        26
+      ],
+      "time": 1776140601.1998606
+    },
+    {
+      "checkpoint_id": 8,
+      "event_type": "new_map",
+      "event_detail": {
+        "map_id": 31
+      },
+      "badge_count": 0,
+      "timestep": 4465,
+      "frames_from_previous": 239,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 31,
+      "position": [
+        17,
+        7
+      ],
+      "time": 1776140620.242249
+    },
+    {
+      "checkpoint_id": 9,
+      "event_type": "new_map",
+      "event_detail": {
+        "map_id": 35
+      },
+      "badge_count": 0,
+      "timestep": 6858,
+      "frames_from_previous": 2393,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 0.896551724137931,
+      "map_id": 35,
+      "position": [
+        31,
+        46
+      ],
+      "time": 1776140899.0151312
+    },
+    {
+      "checkpoint_id": 10,
+      "event_type": "new_map",
+      "event_detail": {
+        "map_id": 81
+      },
+      "badge_count": 0,
+      "timestep": 7071,
+      "frames_from_previous": 213,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 1.0,
+      "map_id": 81,
+      "position": [
+        54,
+        14
+      ],
+      "time": 1776140920.7000327
+    }
+  ],
   "metadata": {
-    "total_checkpoints": 0,
-    "total_timesteps": 0,
+    "total_checkpoints": 11,
+    "total_timesteps": 8255,
     "badge_count": 0,
     "model_number": 0,
     "source": "ai_agent_live",
-    "checkpoint_types": {},
-    "maps_visited": [],
+    "checkpoint_types": {
+      "new_map": 11
+    },
+    "maps_visited": [
+      11,
+      14,
+      15,
+      17,
+      23,
+      25,
+      31,
+      33,
+      35,
+      43,
+      81
+    ],
     "badges_logged": [],
     "trainer_battles_logged": 0
   }

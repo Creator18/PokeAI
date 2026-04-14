@@ -10,8 +10,8 @@
 # 2. UPDATED: ai_logs/ templates — stagnation_metrics.json now has
 #    source="ai_agent_live", stagnation_types, total_stagnation_frames,
 #    stagnation_ratio, active_at_save fields matching open/close snapshot system
-# 3. UPDATED: taught_logs/ templates — checkpoint_metrics.json has
-#    source="human_teaching_live" placeholder for aggregation compatibility
+# 3. REMOVED: taught_logs/ file creation — that folder is populated by the
+#    teaching pipeline separately. Reset script preserves existing content.
 # 4. UPDATED: taught model checkpoint template — includes eval_state and
 #    stagnation_state blocks for session persistence compatibility
 # 5. UPDATED: Version references in banner/comments
@@ -52,9 +52,9 @@
 #       ├── ai_logs/
 #       │   ├── checkpoint_metrics.json   (event-driven: new_map, trainer_battle, badge)
 #       │   └── stagnation_metrics.json   (open/close intervals, 7 types)
-#       └── taught_logs/
-#           ├── checkpoint_metrics.json   (extracted from taught nav targets)
-#           └── stagnation_metrics.json   (human baseline = zero stagnation)
+#       └── taught_logs/                  (NOT TOUCHED by reset — human data goes here)
+#           ├── checkpoint_metrics.json   (from teaching pipeline)
+#           └── stagnation_metrics.json   (from teaching pipeline)
 #
 # MIGRATION:
 #   If old flat files exist in cogai/ (pre-v17.8 layout), they are
@@ -539,30 +539,22 @@ with open(AI_LOGS_DIR / "stagnation_metrics.json", 'w') as f:
         }
     }, f, indent=2)
 
-# --- TAUGHT LOGS: checkpoint_metrics.json ---
-# Schema matches Brain.save_taught_baseline() output
-with open(TAUGHT_LOGS_DIR / "checkpoint_metrics.json", 'w') as f:
-    json.dump({
-        "checkpoints": [],
-        "metadata": {
-            "total_checkpoints": 0,
-            "total_taught_frames": 0,
-            "taught_model_count": 0
-        }
-    }, f, indent=2)
+# --- TAUGHT LOGS: NOT TOUCHED ---
+# taught_logs/ is populated by the teaching pipeline separately.
+# The AI agent does not write to this folder.
+# Check if files exist and report status.
+taught_cp = TAUGHT_LOGS_DIR / "checkpoint_metrics.json"
+taught_stag = TAUGHT_LOGS_DIR / "stagnation_metrics.json"
+if taught_cp.exists():
+    print(f"       📌 taught_logs/checkpoint_metrics.json EXISTS ({taught_cp.stat().st_size} bytes) — preserved")
+else:
+    print(f"       ⬚  taught_logs/checkpoint_metrics.json not found (place human data here)")
+if taught_stag.exists():
+    print(f"       📌 taught_logs/stagnation_metrics.json EXISTS ({taught_stag.stat().st_size} bytes) — preserved")
+else:
+    print(f"       ⬚  taught_logs/stagnation_metrics.json not found (place human data here)")
 
-# --- TAUGHT LOGS: stagnation_metrics.json ---
-# Human baseline has zero stagnation by definition
-with open(TAUGHT_LOGS_DIR / "stagnation_metrics.json", 'w') as f:
-    json.dump({
-        "snapshots": [],
-        "metadata": {
-            "note": "Human baseline has zero stagnation by definition",
-            "total_snapshots": 0
-        }
-    }, f, indent=2)
-
-log(f"✅ logs/ — 4 evaluation metric files (reset, v17.8.1 schemas)")
+log(f"✅ logs/ — 2 AI eval files reset, taught_logs/ preserved")
 
 # ============================================================================
 # STEP 9: Cleanup — warn about leftover flat files in cogai/
@@ -609,6 +601,10 @@ expected_files = {
     DEBUG_DIR / "active_start_menu.json": "debug",
     AI_LOGS_DIR / "checkpoint_metrics.json": "logs/ai_logs",
     AI_LOGS_DIR / "stagnation_metrics.json": "logs/ai_logs",
+}
+
+# taught_logs/ files are optional — placed by teaching pipeline, not reset
+optional_files = {
     TAUGHT_LOGS_DIR / "checkpoint_metrics.json": "logs/taught_logs",
     TAUGHT_LOGS_DIR / "stagnation_metrics.json": "logs/taught_logs",
 }
@@ -621,6 +617,16 @@ if missing:
     log(f"❌ Verification: {len(missing)} files missing")
 else:
     log(f"✅ Verification: all {len(expected_files)} expected files present")
+
+# Check optional taught_logs files
+optional_present = sum(1 for p in optional_files if p.exists())
+optional_total = len(optional_files)
+if optional_present == optional_total:
+    print(f"       📌 taught_logs/: {optional_present}/{optional_total} files present (human data)")
+elif optional_present > 0:
+    print(f"       ⚠️  taught_logs/: {optional_present}/{optional_total} files present (incomplete)")
+else:
+    print(f"       ⬚  taught_logs/: empty (place human eval data here before comparison)")
 
 # ============================================================================
 # SUMMARY
@@ -656,13 +662,13 @@ print(f"         │   ├── active_transitions.json")
 print(f"         │   ├── active_battle.json")
 print(f"         │   ├── active_bag.json")
 print(f"         │   └── active_start_menu.json")
-print(f"         └── logs/                         (4 eval files, v17.8.1 schemas)")
-print(f"             ├── ai_logs/")
+print(f"         └── logs/")
+print(f"             ├── ai_logs/                  (2 eval files, reset)")
 print(f"             │   ├── checkpoint_metrics.json   (source: ai_agent_live)")
 print(f"             │   └── stagnation_metrics.json   (7 types, open/close)")
-print(f"             └── taught_logs/")
-print(f"                 ├── checkpoint_metrics.json   (extracted from taught)")
-print(f"                 └── stagnation_metrics.json   (human = zero)")
+print(f"             └── taught_logs/              (NOT TOUCHED — human data)")
+print(f"                 ├── checkpoint_metrics.json   (place human data here)")
+print(f"                 └── stagnation_metrics.json   (place human data here)")
 
 print(f"\n   File counts:")
 print(f"     io:                  2 files (reset)")
@@ -670,8 +676,9 @@ print(f"     taught_models:       {len(existing_models)} folder(s) (preserved)")
 print(f"     ai_checkpoint:       1 file  (checkpoint deleted, residual reset)")
 print(f"     empirical_knowledge: 7 files (6 reset + type_data preserved)")
 print(f"     debug:               4 files (reset)")
-print(f"     logs:                4 files (reset, v17.8.1 schemas)")
-print(f"     TOTAL:               {len(expected_files)} files verified")
+print(f"     logs/ai_logs:        2 files (reset)")
+print(f"     logs/taught_logs:    preserved (human data — not touched)")
+print(f"     TOTAL:               {len(expected_files)} files verified + {optional_total} optional")
 
 print(f"\n   Eval schemas (v17.8.1):")
 print(f"     checkpoint_metrics.json:")
@@ -687,8 +694,9 @@ print(f"               duration_frames, map_id, position, resolution")
 
 print(f"\n   Next steps:")
 print(f"   1. Place human playthrough data in jsons/taught_models/model_N/")
-print(f"   2. Run AI agent — it bootstraps from best taught checkpoint")
-print(f"   3. Eval logs populate automatically during play")
-print(f"   4. Run aggregation scripts on ai_logs/ and taught_logs/")
-print(f"   5. Run compare_eval.py to produce comparison report")
+print(f"   2. Place human eval logs in jsons/logs/taught_logs/")
+print(f"   3. Run AI agent — it bootstraps from best taught checkpoint")
+print(f"   4. AI eval logs populate in ai_logs/ during play")
+print(f"   5. Run aggregation scripts on taught_logs/ and ai_logs/")
+print(f"   6. Run compare_eval.py to produce comparison report")
 print(f"{'=' * 65}")

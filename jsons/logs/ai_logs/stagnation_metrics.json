@@ -1,11 +1,2698 @@
 {
-  "snapshots": [],
+  "snapshots": [
+    {
+      "snapshot_id": 0,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 9,
+      "timestep_end": 29,
+      "duration_frames": 20,
+      "map_id": 13,
+      "position": [
+        13,
+        13
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 8
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140229.0762265
+    },
+    {
+      "snapshot_id": 1,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 19,
+      "timestep_end": 59,
+      "duration_frames": 40,
+      "map_id": 13,
+      "position": [
+        13,
+        13
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "position_stagnation_count": 18,
+        "position": [
+          13,
+          13
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140229.5145361
+    },
+    {
+      "snapshot_id": 2,
+      "stagnation_type": "backtracking",
+      "timestep_start": 39,
+      "timestep_end": 69,
+      "duration_frames": 30,
+      "map_id": 13,
+      "position": [
+        13,
+        13
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "location_key": "(13, 10, 10)",
+        "visit_count": 39
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140230.3798172
+    },
+    {
+      "snapshot_id": 7,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 229,
+      "timestep_end": 259,
+      "duration_frames": 30,
+      "map_id": 13,
+      "position": [
+        12,
+        12
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "position_stagnation_count": 15,
+        "position": [
+          12,
+          12
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140239.8932383
+    },
+    {
+      "snapshot_id": 6,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 219,
+      "timestep_end": 259,
+      "duration_frames": 40,
+      "map_id": 13,
+      "position": [
+        12,
+        12
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 5
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140239.4544272
+    },
+    {
+      "snapshot_id": 8,
+      "stagnation_type": "backtracking",
+      "timestep_start": 249,
+      "timestep_end": 279,
+      "duration_frames": 30,
+      "map_id": 13,
+      "position": [
+        12,
+        12
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "location_key": "(13, 10, 10)",
+        "visit_count": 137
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140240.7692988
+    },
+    {
+      "snapshot_id": 11,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 339,
+      "timestep_end": 409,
+      "duration_frames": 70,
+      "map_id": 13,
+      "position": [
+        8,
+        9
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "position_stagnation_count": 18,
+        "position": [
+          8,
+          9
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140247.9596102
+    },
+    {
+      "snapshot_id": 12,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 389,
+      "timestep_end": 409,
+      "duration_frames": 20,
+      "map_id": 13,
+      "position": [
+        8,
+        9
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 13
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140250.4153097
+    },
+    {
+      "snapshot_id": 10,
+      "stagnation_type": "backtracking",
+      "timestep_start": 329,
+      "timestep_end": 409,
+      "duration_frames": 80,
+      "map_id": 13,
+      "position": [
+        8,
+        9
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "location_key": "(13, 5, 5)",
+        "visit_count": 42
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140247.467536
+    },
+    {
+      "snapshot_id": 3,
+      "stagnation_type": "area_grinding",
+      "timestep_start": 59,
+      "timestep_end": 419,
+      "duration_frames": 360,
+      "map_id": 13,
+      "position": [
+        13,
+        14
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "map_novelty_debt": 10.0,
+        "location_visits": 59,
+        "tiles_visited_during": 103,
+        "new_tiles_during": 0
+      },
+      "resolution": "map_change",
+      "time": 1776140231.2521932
+    },
+    {
+      "snapshot_id": 13,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 459,
+      "timestep_end": 489,
+      "duration_frames": 30,
+      "map_id": 11,
+      "position": [
+        11,
+        9
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "pattern": [
+          "UP"
+        ],
+        "repeat_count": 5
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140260.8139448
+    },
+    {
+      "snapshot_id": 14,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 479,
+      "timestep_end": 499,
+      "duration_frames": 20,
+      "map_id": 11,
+      "position": [
+        11,
+        9
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "position_stagnation_count": 21,
+        "position": [
+          11,
+          9
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140261.7778554
+    },
+    {
+      "snapshot_id": 15,
+      "stagnation_type": "area_grinding",
+      "timestep_start": 479,
+      "timestep_end": 499,
+      "duration_frames": 20,
+      "map_id": 11,
+      "position": [
+        11,
+        9
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "map_novelty_debt": 4.55,
+        "location_visits": 23,
+        "tiles_visited_during": 31,
+        "new_tiles_during": -12
+      },
+      "resolution": "map_change",
+      "time": 1776140261.7778902
+    },
+    {
+      "snapshot_id": 18,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 569,
+      "timestep_end": 599,
+      "duration_frames": 30,
+      "map_id": 13,
+      "position": [
+        22,
+        10
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "position_stagnation_count": 17,
+        "position": [
+          22,
+          10
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140270.9842725
+    },
+    {
+      "snapshot_id": 19,
+      "stagnation_type": "backtracking",
+      "timestep_start": 589,
+      "timestep_end": 659,
+      "duration_frames": 70,
+      "map_id": 13,
+      "position": [
+        22,
+        10
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "location_key": "(13, 20, 10)",
+        "visit_count": 37
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140272.0121212
+    },
+    {
+      "snapshot_id": 21,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 699,
+      "timestep_end": 719,
+      "duration_frames": 20,
+      "map_id": 13,
+      "position": [
+        9,
+        20
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 5
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140279.9239018
+    },
+    {
+      "snapshot_id": 22,
+      "stagnation_type": "backtracking",
+      "timestep_start": 709,
+      "timestep_end": 759,
+      "duration_frames": 50,
+      "map_id": 13,
+      "position": [
+        9,
+        9
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "location_key": "(13, 5, 5)",
+        "visit_count": 133
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140281.043912
+    },
+    {
+      "snapshot_id": 23,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 769,
+      "timestep_end": 799,
+      "duration_frames": 30,
+      "map_id": 13,
+      "position": [
+        16,
+        10
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "pattern": [
+          "DOWN"
+        ],
+        "repeat_count": 5
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140285.360817
+    },
+    {
+      "snapshot_id": 27,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 889,
+      "timestep_end": 929,
+      "duration_frames": 40,
+      "map_id": 13,
+      "position": [
+        19,
+        24
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "position_stagnation_count": 18,
+        "position": [
+          19,
+          24
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140294.0133862
+    },
+    {
+      "snapshot_id": 25,
+      "stagnation_type": "backtracking",
+      "timestep_start": 809,
+      "timestep_end": 929,
+      "duration_frames": 120,
+      "map_id": 13,
+      "position": [
+        16,
+        9
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "location_key": "(13, 15, 5)",
+        "visit_count": 41
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140288.4909816
+    },
+    {
+      "snapshot_id": 30,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 979,
+      "timestep_end": 1009,
+      "duration_frames": 30,
+      "map_id": 13,
+      "position": [
+        16,
+        19
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 4
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140299.0388653
+    },
+    {
+      "snapshot_id": 29,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 979,
+      "timestep_end": 1019,
+      "duration_frames": 40,
+      "map_id": 13,
+      "position": [
+        16,
+        19
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "position_stagnation_count": 23,
+        "position": [
+          16,
+          19
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140299.0388544
+    },
+    {
+      "snapshot_id": 31,
+      "stagnation_type": "backtracking",
+      "timestep_start": 979,
+      "timestep_end": 1019,
+      "duration_frames": 40,
+      "map_id": 13,
+      "position": [
+        16,
+        19
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "location_key": "(13, 15, 15)",
+        "visit_count": 40
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140299.038906
+    },
+    {
+      "snapshot_id": 36,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 1149,
+      "timestep_end": 1179,
+      "duration_frames": 30,
+      "map_id": 13,
+      "position": [
+        13,
+        17
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 4
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140313.6588838
+    },
+    {
+      "snapshot_id": 38,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 1229,
+      "timestep_end": 1269,
+      "duration_frames": 40,
+      "map_id": 13,
+      "position": [
+        13,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "pattern": [
+          "B"
+        ],
+        "repeat_count": 6
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140318.5683367
+    },
+    {
+      "snapshot_id": 37,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 1179,
+      "timestep_end": 1319,
+      "duration_frames": 140,
+      "map_id": 13,
+      "position": [
+        13,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "position_stagnation_count": 24,
+        "position": [
+          13,
+          11
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140315.524229
+    },
+    {
+      "snapshot_id": 40,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 1369,
+      "timestep_end": 1429,
+      "duration_frames": 60,
+      "map_id": 13,
+      "position": [
+        17,
+        10
+      ],
+      "badge_count": 0,
+      "team_avg_level": 5.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "position_stagnation_count": 29,
+        "position": [
+          17,
+          10
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140327.4480083
+    },
+    {
+      "snapshot_id": 41,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 1419,
+      "timestep_end": 1449,
+      "duration_frames": 30,
+      "map_id": 13,
+      "position": [
+        17,
+        9
+      ],
+      "badge_count": 0,
+      "team_avg_level": 5.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 4
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140331.3231134
+    },
+    {
+      "snapshot_id": 43,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 1603,
+      "timestep_end": 1623,
+      "duration_frames": 20,
+      "map_id": 13,
+      "position": [
+        12,
+        15
+      ],
+      "badge_count": 0,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 50
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140351.7813842
+    },
+    {
+      "snapshot_id": 35,
+      "stagnation_type": "area_grinding",
+      "timestep_start": 1129,
+      "timestep_end": 1733,
+      "duration_frames": 604,
+      "map_id": 13,
+      "position": [
+        20,
+        10
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "map_novelty_debt": 10.0,
+        "location_visits": 1049,
+        "tiles_visited_during": 186,
+        "new_tiles_during": 1
+      },
+      "resolution": "map_change",
+      "time": 1776140312.0981982
+    },
+    {
+      "snapshot_id": 32,
+      "stagnation_type": "backtracking",
+      "timestep_start": 1069,
+      "timestep_end": 1733,
+      "duration_frames": 664,
+      "map_id": 13,
+      "position": [
+        17,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.0,
+      "avg_party_hp_ratio": 0.0,
+      "stagnation_detail": {
+        "location_key": "(13, 15, 10)",
+        "visit_count": 67
+      },
+      "resolution": "new_map",
+      "time": 1776140308.0148854
+    },
+    {
+      "snapshot_id": 45,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 1733,
+      "timestep_end": 1753,
+      "duration_frames": 20,
+      "map_id": 23,
+      "position": [
+        16,
+        19
+      ],
+      "badge_count": 0,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "UP"
+        ],
+        "repeat_count": 5
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140363.961857
+    },
+    {
+      "snapshot_id": 48,
+      "stagnation_type": "backtracking",
+      "timestep_start": 1883,
+      "timestep_end": 1903,
+      "duration_frames": 20,
+      "map_id": 23,
+      "position": [
+        20,
+        10
+      ],
+      "badge_count": 0,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "location_key": "(23, 20, 10)",
+        "visit_count": 32
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140374.5174
+    },
+    {
+      "snapshot_id": 53,
+      "stagnation_type": "backtracking",
+      "timestep_start": 2111,
+      "timestep_end": 2198,
+      "duration_frames": 87,
+      "map_id": 23,
+      "position": [
+        11,
+        39
+      ],
+      "badge_count": 0,
+      "team_avg_level": 6.0,
+      "avg_party_hp_ratio": 0.8571428571428571,
+      "stagnation_detail": {
+        "location_key": "(23, 10, 35)",
+        "visit_count": 30
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140398.1445973
+    },
+    {
+      "snapshot_id": 55,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 2188,
+      "timestep_end": 2255,
+      "duration_frames": 67,
+      "map_id": 23,
+      "position": [
+        12,
+        40
+      ],
+      "badge_count": 0,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 0.6521739130434783,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 50
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140406.3130758
+    },
+    {
+      "snapshot_id": 57,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 2295,
+      "timestep_end": 2315,
+      "duration_frames": 20,
+      "map_id": 23,
+      "position": [
+        13,
+        35
+      ],
+      "badge_count": 0,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 0.6521739130434783,
+      "stagnation_detail": {
+        "position_stagnation_count": 24,
+        "position": [
+          13,
+          35
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140417.7437239
+    },
+    {
+      "snapshot_id": 56,
+      "stagnation_type": "backtracking",
+      "timestep_start": 2275,
+      "timestep_end": 2315,
+      "duration_frames": 40,
+      "map_id": 23,
+      "position": [
+        13,
+        35
+      ],
+      "badge_count": 0,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 0.6521739130434783,
+      "stagnation_detail": {
+        "location_key": "(23, 10, 35)",
+        "visit_count": 107
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140416.8238206
+    },
+    {
+      "snapshot_id": 58,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 2447,
+      "timestep_end": 2467,
+      "duration_frames": 20,
+      "map_id": 15,
+      "position": [
+        15,
+        12
+      ],
+      "badge_count": 0,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 8
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140436.2911983
+    },
+    {
+      "snapshot_id": 59,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 2457,
+      "timestep_end": 2607,
+      "duration_frames": 150,
+      "map_id": 15,
+      "position": [
+        15,
+        12
+      ],
+      "badge_count": 0,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "position_stagnation_count": 21,
+        "position": [
+          15,
+          12
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140436.7984488
+    },
+    {
+      "snapshot_id": 60,
+      "stagnation_type": "backtracking",
+      "timestep_start": 2467,
+      "timestep_end": 2607,
+      "duration_frames": 140,
+      "map_id": 15,
+      "position": [
+        15,
+        12
+      ],
+      "badge_count": 0,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "location_key": "(15, 15, 10)",
+        "visit_count": 32
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140437.279133
+    },
+    {
+      "snapshot_id": 61,
+      "stagnation_type": "area_grinding",
+      "timestep_start": 2487,
+      "timestep_end": 2627,
+      "duration_frames": 140,
+      "map_id": 15,
+      "position": [
+        15,
+        12
+      ],
+      "badge_count": 0,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "map_novelty_debt": 10.0,
+        "location_visits": 52,
+        "tiles_visited_during": 1,
+        "new_tiles_during": 0
+      },
+      "resolution": "map_change",
+      "time": 1776140438.2844536
+    },
+    {
+      "snapshot_id": 63,
+      "stagnation_type": "backtracking",
+      "timestep_start": 2667,
+      "timestep_end": 2687,
+      "duration_frames": 20,
+      "map_id": 13,
+      "position": [
+        16,
+        9
+      ],
+      "badge_count": 0,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "location_key": "(13, 15, 5)",
+        "visit_count": 81
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140455.6886513
+    },
+    {
+      "snapshot_id": 64,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 2677,
+      "timestep_end": 2697,
+      "duration_frames": 20,
+      "map_id": 13,
+      "position": [
+        9,
+        15
+      ],
+      "badge_count": 0,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "DOWN"
+        ],
+        "repeat_count": 6
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140456.9953158
+    },
+    {
+      "snapshot_id": 66,
+      "stagnation_type": "backtracking",
+      "timestep_start": 2777,
+      "timestep_end": 2807,
+      "duration_frames": 30,
+      "map_id": 13,
+      "position": [
+        26,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "location_key": "(13, 25, 10)",
+        "visit_count": 30
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140463.8236742
+    },
+    {
+      "snapshot_id": 67,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 2837,
+      "timestep_end": 2905,
+      "duration_frames": 68,
+      "map_id": 13,
+      "position": [
+        9,
+        39
+      ],
+      "badge_count": 0,
+      "team_avg_level": 7.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "UP"
+        ],
+        "repeat_count": 6
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140469.126823
+    },
+    {
+      "snapshot_id": 70,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 2985,
+      "timestep_end": 3010,
+      "duration_frames": 25,
+      "map_id": 13,
+      "position": [
+        23,
+        24
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.76,
+      "stagnation_detail": {
+        "pattern": [
+          "RIGHT"
+        ],
+        "repeat_count": 6
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140487.2585986
+    },
+    {
+      "snapshot_id": 72,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 3040,
+      "timestep_end": 3060,
+      "duration_frames": 20,
+      "map_id": 13,
+      "position": [
+        21,
+        9
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "position_stagnation_count": 17,
+        "position": [
+          21,
+          9
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140497.44926
+    },
+    {
+      "snapshot_id": 71,
+      "stagnation_type": "backtracking",
+      "timestep_start": 2985,
+      "timestep_end": 3060,
+      "duration_frames": 75,
+      "map_id": 13,
+      "position": [
+        23,
+        24
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.76,
+      "stagnation_detail": {
+        "location_key": "(13, 20, 20)",
+        "visit_count": 52
+      },
+      "resolution": "new_map",
+      "time": 1776140487.258705
+    },
+    {
+      "snapshot_id": 74,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 3150,
+      "timestep_end": 3180,
+      "duration_frames": 30,
+      "map_id": 25,
+      "position": [
+        14,
+        40
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "pattern": [
+          "LEFT"
+        ],
+        "repeat_count": 4
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140507.996583
+    },
+    {
+      "snapshot_id": 75,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 3180,
+      "timestep_end": 3200,
+      "duration_frames": 20,
+      "map_id": 25,
+      "position": [
+        14,
+        38
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "position_stagnation_count": 19,
+        "position": [
+          14,
+          38
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140509.742985
+    },
+    {
+      "snapshot_id": 77,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 3270,
+      "timestep_end": 3290,
+      "duration_frames": 20,
+      "map_id": 25,
+      "position": [
+        14,
+        38
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "position_stagnation_count": 21,
+        "position": [
+          14,
+          38
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140516.8923955
+    },
+    {
+      "snapshot_id": 76,
+      "stagnation_type": "backtracking",
+      "timestep_start": 3180,
+      "timestep_end": 3380,
+      "duration_frames": 200,
+      "map_id": 25,
+      "position": [
+        14,
+        38
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "location_key": "(25, 10, 35)",
+        "visit_count": 34
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140509.7431
+    },
+    {
+      "snapshot_id": 79,
+      "stagnation_type": "backtracking",
+      "timestep_start": 3460,
+      "timestep_end": 3500,
+      "duration_frames": 40,
+      "map_id": 25,
+      "position": [
+        46,
+        41
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "location_key": "(25, 45, 40)",
+        "visit_count": 32
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140532.140975
+    },
+    {
+      "snapshot_id": 84,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 3640,
+      "timestep_end": 3690,
+      "duration_frames": 50,
+      "map_id": 25,
+      "position": [
+        26,
+        23
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "position_stagnation_count": 15,
+        "position": [
+          26,
+          23
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140550.623435
+    },
+    {
+      "snapshot_id": 86,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 3690,
+      "timestep_end": 3720,
+      "duration_frames": 30,
+      "map_id": 25,
+      "position": [
+        26,
+        25
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "pattern": [
+          "UP"
+        ],
+        "repeat_count": 5
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140554.0177739
+    },
+    {
+      "snapshot_id": 85,
+      "stagnation_type": "backtracking",
+      "timestep_start": 3660,
+      "timestep_end": 3720,
+      "duration_frames": 60,
+      "map_id": 25,
+      "position": [
+        26,
+        23
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "location_key": "(25, 25, 20)",
+        "visit_count": 37
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140552.4480448
+    },
+    {
+      "snapshot_id": 87,
+      "stagnation_type": "backtracking",
+      "timestep_start": 3770,
+      "timestep_end": 3790,
+      "duration_frames": 20,
+      "map_id": 25,
+      "position": [
+        24,
+        41
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "location_key": "(25, 20, 40)",
+        "visit_count": 66
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140560.5195708
+    },
+    {
+      "snapshot_id": 88,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 3810,
+      "timestep_end": 3830,
+      "duration_frames": 20,
+      "map_id": 25,
+      "position": [
+        28,
+        39
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "pattern": [
+          "LEFT"
+        ],
+        "repeat_count": 5
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140563.4234035
+    },
+    {
+      "snapshot_id": 73,
+      "stagnation_type": "area_grinding",
+      "timestep_start": 3080,
+      "timestep_end": 3870,
+      "duration_frames": 790,
+      "map_id": 25,
+      "position": [
+        21,
+        42
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "map_novelty_debt": 5.25,
+        "location_visits": 24,
+        "tiles_visited_during": 24,
+        "new_tiles_during": -225
+      },
+      "resolution": "map_change",
+      "time": 1776140500.9585638
+    },
+    {
+      "snapshot_id": 89,
+      "stagnation_type": "backtracking",
+      "timestep_start": 3850,
+      "timestep_end": 3870,
+      "duration_frames": 20,
+      "map_id": 25,
+      "position": [
+        34,
+        34
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "location_key": "(25, 30, 30)",
+        "visit_count": 63
+      },
+      "resolution": "new_map",
+      "time": 1776140566.4476318
+    },
+    {
+      "snapshot_id": 90,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 3880,
+      "timestep_end": 3900,
+      "duration_frames": 20,
+      "map_id": 14,
+      "position": [
+        7,
+        15
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "pattern": [
+          "LEFT"
+        ],
+        "repeat_count": 5
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140569.0233335
+    },
+    {
+      "snapshot_id": 91,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 3910,
+      "timestep_end": 4020,
+      "duration_frames": 110,
+      "map_id": 14,
+      "position": [
+        14,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "position_stagnation_count": 22,
+        "position": [
+          14,
+          11
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140572.185102
+    },
+    {
+      "snapshot_id": 92,
+      "stagnation_type": "area_grinding",
+      "timestep_start": 3920,
+      "timestep_end": 4020,
+      "duration_frames": 100,
+      "map_id": 14,
+      "position": [
+        14,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "map_novelty_debt": 10.0,
+        "location_visits": 60,
+        "tiles_visited_during": 30,
+        "new_tiles_during": 0
+      },
+      "resolution": "map_change",
+      "time": 1776140572.6388004
+    },
+    {
+      "snapshot_id": 93,
+      "stagnation_type": "backtracking",
+      "timestep_start": 3920,
+      "timestep_end": 4020,
+      "duration_frames": 100,
+      "map_id": 14,
+      "position": [
+        14,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.64,
+      "stagnation_detail": {
+        "location_key": "(14, 10, 10)",
+        "visit_count": 34
+      },
+      "resolution": "new_map",
+      "time": 1776140572.6388988
+    },
+    {
+      "snapshot_id": 96,
+      "stagnation_type": "backtracking",
+      "timestep_start": 4080,
+      "timestep_end": 4100,
+      "duration_frames": 20,
+      "map_id": 33,
+      "position": [
+        42,
+        27
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "location_key": "(33, 40, 25)",
+        "visit_count": 32
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140589.2526
+    },
+    {
+      "snapshot_id": 98,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 4110,
+      "timestep_end": 4130,
+      "duration_frames": 20,
+      "map_id": 33,
+      "position": [
+        42,
+        27
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 13
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140591.6146994
+    },
+    {
+      "snapshot_id": 99,
+      "stagnation_type": "backtracking",
+      "timestep_start": 4150,
+      "timestep_end": 4180,
+      "duration_frames": 30,
+      "map_id": 33,
+      "position": [
+        44,
+        27
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "location_key": "(33, 40, 25)",
+        "visit_count": 96
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140594.5102556
+    },
+    {
+      "snapshot_id": 100,
+      "stagnation_type": "area_grinding",
+      "timestep_start": 4200,
+      "timestep_end": 4230,
+      "duration_frames": 30,
+      "map_id": 11,
+      "position": [
+        11,
+        14
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "map_novelty_debt": 10.0,
+        "location_visits": 49,
+        "tiles_visited_during": 33,
+        "new_tiles_during": -188
+      },
+      "resolution": "map_change",
+      "time": 1776140598.6965437
+    },
+    {
+      "snapshot_id": 103,
+      "stagnation_type": "backtracking",
+      "timestep_start": 4240,
+      "timestep_end": 4260,
+      "duration_frames": 20,
+      "map_id": 11,
+      "position": [
+        11,
+        14
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "location_key": "(11, 10, 10)",
+        "visit_count": 35
+      },
+      "resolution": "new_map",
+      "time": 1776140602.705587
+    },
+    {
+      "snapshot_id": 105,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 4300,
+      "timestep_end": 4350,
+      "duration_frames": 50,
+      "map_id": 43,
+      "position": [
+        43,
+        31
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 4
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140608.877843
+    },
+    {
+      "snapshot_id": 107,
+      "stagnation_type": "backtracking",
+      "timestep_start": 4420,
+      "timestep_end": 4440,
+      "duration_frames": 20,
+      "map_id": 43,
+      "position": [
+        42,
+        39
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "location_key": "(43, 40, 35)",
+        "visit_count": 35
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140617.0068862
+    },
+    {
+      "snapshot_id": 112,
+      "stagnation_type": "action_repeat",
+      "timestep_start": 4569,
+      "timestep_end": 4608,
+      "duration_frames": 39,
+      "map_id": 31,
+      "position": [
+        23,
+        16
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.6,
+      "stagnation_detail": {
+        "action": "A",
+        "consecutive_count": 15
+      },
+      "resolution": "different_action",
+      "time": 1776140637.080232
+    },
+    {
+      "snapshot_id": 109,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 4515,
+      "timestep_end": 4618,
+      "duration_frames": 103,
+      "map_id": 31,
+      "position": [
+        18,
+        17
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.88,
+      "stagnation_detail": {
+        "position_stagnation_count": 29,
+        "position": [
+          18,
+          17
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140628.4916558
+    },
+    {
+      "snapshot_id": 110,
+      "stagnation_type": "backtracking",
+      "timestep_start": 4515,
+      "timestep_end": 4618,
+      "duration_frames": 103,
+      "map_id": 31,
+      "position": [
+        18,
+        17
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.88,
+      "stagnation_detail": {
+        "location_key": "(31, 15, 15)",
+        "visit_count": 47
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140628.4917445
+    },
+    {
+      "snapshot_id": 111,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 4569,
+      "timestep_end": 4658,
+      "duration_frames": 89,
+      "map_id": 31,
+      "position": [
+        23,
+        16
+      ],
+      "badge_count": 0,
+      "team_avg_level": 8.0,
+      "avg_party_hp_ratio": 0.6,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 43
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140637.080174
+    },
+    {
+      "snapshot_id": 116,
+      "stagnation_type": "backtracking",
+      "timestep_start": 4806,
+      "timestep_end": 4826,
+      "duration_frames": 20,
+      "map_id": 31,
+      "position": [
+        14,
+        42
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "location_key": "(31, 10, 40)",
+        "visit_count": 74
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140676.3874278
+    },
+    {
+      "snapshot_id": 118,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 4866,
+      "timestep_end": 4896,
+      "duration_frames": 30,
+      "map_id": 31,
+      "position": [
+        23,
+        10
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "position_stagnation_count": 21,
+        "position": [
+          23,
+          10
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140680.8298938
+    },
+    {
+      "snapshot_id": 120,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 4966,
+      "timestep_end": 4986,
+      "duration_frames": 20,
+      "map_id": 31,
+      "position": [
+        20,
+        21
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "pattern": [
+          "LEFT"
+        ],
+        "repeat_count": 5
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140689.0481675
+    },
+    {
+      "snapshot_id": 121,
+      "stagnation_type": "backtracking",
+      "timestep_start": 4976,
+      "timestep_end": 5076,
+      "duration_frames": 100,
+      "map_id": 31,
+      "position": [
+        24,
+        21
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "location_key": "(31, 20, 20)",
+        "visit_count": 31
+      },
+      "resolution": "new_map",
+      "time": 1776140690.5403242
+    },
+    {
+      "snapshot_id": 123,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 5076,
+      "timestep_end": 5096,
+      "duration_frames": 20,
+      "map_id": 13,
+      "position": [
+        18,
+        19
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "pattern": [
+          "RIGHT"
+        ],
+        "repeat_count": 6
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140703.8857856
+    },
+    {
+      "snapshot_id": 125,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 5156,
+      "timestep_end": 5186,
+      "duration_frames": 30,
+      "map_id": 13,
+      "position": [
+        14,
+        10
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 10
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140712.2550802
+    },
+    {
+      "snapshot_id": 128,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 5256,
+      "timestep_end": 5276,
+      "duration_frames": 20,
+      "map_id": 13,
+      "position": [
+        14,
+        10
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 11
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140718.829923
+    },
+    {
+      "snapshot_id": 126,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 5166,
+      "timestep_end": 5506,
+      "duration_frames": 340,
+      "map_id": 13,
+      "position": [
+        14,
+        10
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "position_stagnation_count": 19,
+        "position": [
+          14,
+          10
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140712.7495716
+    },
+    {
+      "snapshot_id": 130,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 5456,
+      "timestep_end": 5516,
+      "duration_frames": 60,
+      "map_id": 13,
+      "position": [
+        14,
+        10
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 4
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140731.2249444
+    },
+    {
+      "snapshot_id": 131,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 5596,
+      "timestep_end": 5676,
+      "duration_frames": 80,
+      "map_id": 13,
+      "position": [
+        15,
+        19
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "position_stagnation_count": 15,
+        "position": [
+          15,
+          19
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140742.0457797
+    },
+    {
+      "snapshot_id": 127,
+      "stagnation_type": "area_grinding",
+      "timestep_start": 5176,
+      "timestep_end": 5706,
+      "duration_frames": 530,
+      "map_id": 13,
+      "position": [
+        14,
+        10
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "map_novelty_debt": 10.0,
+        "location_visits": 2177,
+        "tiles_visited_during": 281,
+        "new_tiles_during": 0
+      },
+      "resolution": "map_change",
+      "time": 1776140714.015041
+    },
+    {
+      "snapshot_id": 124,
+      "stagnation_type": "backtracking",
+      "timestep_start": 5126,
+      "timestep_end": 5706,
+      "duration_frames": 580,
+      "map_id": 13,
+      "position": [
+        18,
+        16
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "location_key": "(13, 15, 15)",
+        "visit_count": 220
+      },
+      "resolution": "new_map",
+      "time": 1776140707.7321749
+    },
+    {
+      "snapshot_id": 134,
+      "stagnation_type": "backtracking",
+      "timestep_start": 5756,
+      "timestep_end": 5776,
+      "duration_frames": 20,
+      "map_id": 23,
+      "position": [
+        19,
+        12
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.6296296296296297,
+      "stagnation_detail": {
+        "location_key": "(23, 15, 10)",
+        "visit_count": 39
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140753.9878879
+    },
+    {
+      "snapshot_id": 135,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 5881,
+      "timestep_end": 5901,
+      "duration_frames": 20,
+      "map_id": 23,
+      "position": [
+        20,
+        44
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.5185185185185185,
+      "stagnation_detail": {
+        "position_stagnation_count": 29,
+        "position": [
+          20,
+          44
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140768.145667
+    },
+    {
+      "snapshot_id": 137,
+      "stagnation_type": "backtracking",
+      "timestep_start": 5941,
+      "timestep_end": 6071,
+      "duration_frames": 130,
+      "map_id": 23,
+      "position": [
+        19,
+        42
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.5185185185185185,
+      "stagnation_detail": {
+        "location_key": "(23, 15, 40)",
+        "visit_count": 39
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140771.910756
+    },
+    {
+      "snapshot_id": 138,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 5997,
+      "timestep_end": 6081,
+      "duration_frames": 84,
+      "map_id": 23,
+      "position": [
+        18,
+        39
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.4074074074074074,
+      "stagnation_detail": {
+        "pattern": [
+          "LEFT"
+        ],
+        "repeat_count": 4
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140779.4924853
+    },
+    {
+      "snapshot_id": 140,
+      "stagnation_type": "backtracking",
+      "timestep_start": 6121,
+      "timestep_end": 6315,
+      "duration_frames": 194,
+      "map_id": 23,
+      "position": [
+        17,
+        39
+      ],
+      "badge_count": 0,
+      "team_avg_level": 9.0,
+      "avg_party_hp_ratio": 0.4074074074074074,
+      "stagnation_detail": {
+        "location_key": "(23, 15, 35)",
+        "visit_count": 41
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140793.0937033
+    },
+    {
+      "snapshot_id": 143,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 6355,
+      "timestep_end": 6375,
+      "duration_frames": 20,
+      "map_id": 23,
+      "position": [
+        20,
+        8
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 0.3448275862068966,
+      "stagnation_detail": {
+        "position_stagnation_count": 17,
+        "position": [
+          20,
+          8
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140818.0553694
+    },
+    {
+      "snapshot_id": 144,
+      "stagnation_type": "backtracking",
+      "timestep_start": 6365,
+      "timestep_end": 6436,
+      "duration_frames": 71,
+      "map_id": 23,
+      "position": [
+        20,
+        8
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 0.3448275862068966,
+      "stagnation_detail": {
+        "location_key": "(23, 20, 5)",
+        "visit_count": 78
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140818.5110493
+    },
+    {
+      "snapshot_id": 146,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 6456,
+      "timestep_end": 6512,
+      "duration_frames": 56,
+      "map_id": 23,
+      "position": [
+        16,
+        39
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 0.3448275862068966,
+      "stagnation_detail": {
+        "pattern": [
+          "LEFT"
+        ],
+        "repeat_count": 5
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140835.3794394
+    },
+    {
+      "snapshot_id": 149,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 6672,
+      "timestep_end": 6692,
+      "duration_frames": 20,
+      "map_id": 23,
+      "position": [
+        19,
+        32
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 0.896551724137931,
+      "stagnation_detail": {
+        "pattern": [
+          "A"
+        ],
+        "repeat_count": 50
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140872.4282076
+    },
+    {
+      "snapshot_id": 147,
+      "stagnation_type": "backtracking",
+      "timestep_start": 6512,
+      "timestep_end": 6702,
+      "duration_frames": 190,
+      "map_id": 23,
+      "position": [
+        13,
+        38
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 0.3448275862068966,
+      "stagnation_detail": {
+        "location_key": "(23, 10, 35)",
+        "visit_count": 221
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140845.477729
+    },
+    {
+      "snapshot_id": 150,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 6742,
+      "timestep_end": 6823,
+      "duration_frames": 81,
+      "map_id": 23,
+      "position": [
+        22,
+        15
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 0.896551724137931,
+      "stagnation_detail": {
+        "pattern": [
+          "LEFT"
+        ],
+        "repeat_count": 5
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140877.6951725
+    },
+    {
+      "snapshot_id": 152,
+      "stagnation_type": "backtracking",
+      "timestep_start": 6823,
+      "timestep_end": 6863,
+      "duration_frames": 40,
+      "map_id": 23,
+      "position": [
+        24,
+        15
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 0.896551724137931,
+      "stagnation_detail": {
+        "location_key": "(23, 20, 15)",
+        "visit_count": 93
+      },
+      "resolution": "new_map",
+      "time": 1776140896.7413435
+    },
+    {
+      "snapshot_id": 153,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 6883,
+      "timestep_end": 6923,
+      "duration_frames": 40,
+      "map_id": 35,
+      "position": [
+        30,
+        39
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 0.896551724137931,
+      "stagnation_detail": {
+        "pattern": [
+          "LEFT"
+        ],
+        "repeat_count": 4
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140900.5756555
+    },
+    {
+      "snapshot_id": 155,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 6963,
+      "timestep_end": 7003,
+      "duration_frames": 40,
+      "map_id": 14,
+      "position": [
+        14,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 0.896551724137931,
+      "stagnation_detail": {
+        "position_stagnation_count": 16,
+        "position": [
+          14,
+          11
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140908.0531156
+    },
+    {
+      "snapshot_id": 154,
+      "stagnation_type": "backtracking",
+      "timestep_start": 6943,
+      "timestep_end": 7003,
+      "duration_frames": 60,
+      "map_id": 14,
+      "position": [
+        14,
+        13
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 0.896551724137931,
+      "stagnation_detail": {
+        "location_key": "(14, 10, 10)",
+        "visit_count": 137
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140905.7013268
+    },
+    {
+      "snapshot_id": 160,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 7234,
+      "timestep_end": 7254,
+      "duration_frames": 20,
+      "map_id": 81,
+      "position": [
+        46,
+        18
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "LEFT"
+        ],
+        "repeat_count": 6
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140940.169527
+    },
+    {
+      "snapshot_id": 157,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 7224,
+      "timestep_end": 7328,
+      "duration_frames": 104,
+      "map_id": 81,
+      "position": [
+        43,
+        18
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "position_stagnation_count": 29,
+        "position": [
+          43,
+          18
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140938.700381
+    },
+    {
+      "snapshot_id": 162,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 7308,
+      "timestep_end": 7328,
+      "duration_frames": 20,
+      "map_id": 81,
+      "position": [
+        41,
+        21
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "LEFT"
+        ],
+        "repeat_count": 7
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140953.7466357
+    },
+    {
+      "snapshot_id": 163,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 7388,
+      "timestep_end": 7418,
+      "duration_frames": 30,
+      "map_id": 81,
+      "position": [
+        29,
+        23
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "LEFT"
+        ],
+        "repeat_count": 4
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140960.6463053
+    },
+    {
+      "snapshot_id": 165,
+      "stagnation_type": "backtracking",
+      "timestep_start": 7418,
+      "timestep_end": 7438,
+      "duration_frames": 20,
+      "map_id": 81,
+      "position": [
+        32,
+        23
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "location_key": "(81, 30, 20)",
+        "visit_count": 33
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140964.4760046
+    },
+    {
+      "snapshot_id": 166,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 7468,
+      "timestep_end": 7488,
+      "duration_frames": 20,
+      "map_id": 81,
+      "position": [
+        47,
+        23
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "RIGHT"
+        ],
+        "repeat_count": 4
+      },
+      "resolution": "pattern_broken",
+      "time": 1776140967.273629
+    },
+    {
+      "snapshot_id": 167,
+      "stagnation_type": "backtracking",
+      "timestep_start": 7488,
+      "timestep_end": 7565,
+      "duration_frames": 77,
+      "map_id": 81,
+      "position": [
+        45,
+        21
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "location_key": "(81, 45, 20)",
+        "visit_count": 33
+      },
+      "resolution": "low_visit_area",
+      "time": 1776140968.3315723
+    },
+    {
+      "snapshot_id": 168,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 7545,
+      "timestep_end": 7585,
+      "duration_frames": 40,
+      "map_id": 81,
+      "position": [
+        44,
+        17
+      ],
+      "badge_count": 0,
+      "team_avg_level": 11.0,
+      "avg_party_hp_ratio": 0.7741935483870968,
+      "stagnation_detail": {
+        "position_stagnation_count": 29,
+        "position": [
+          44,
+          17
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140984.0466385
+    },
+    {
+      "snapshot_id": 158,
+      "stagnation_type": "area_grinding",
+      "timestep_start": 7224,
+      "timestep_end": 7845,
+      "duration_frames": 621,
+      "map_id": 81,
+      "position": [
+        43,
+        18
+      ],
+      "badge_count": 0,
+      "team_avg_level": 10.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "map_novelty_debt": 10.0,
+        "location_visits": 153,
+        "tiles_visited_during": 161,
+        "new_tiles_during": 2
+      },
+      "resolution": "map_change",
+      "time": 1776140938.7004564
+    },
+    {
+      "snapshot_id": 170,
+      "stagnation_type": "backtracking",
+      "timestep_start": 7615,
+      "timestep_end": 7845,
+      "duration_frames": 230,
+      "map_id": 81,
+      "position": [
+        40,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 11.0,
+      "avg_party_hp_ratio": 0.7741935483870968,
+      "stagnation_detail": {
+        "location_key": "(81, 40, 10)",
+        "visit_count": 59
+      },
+      "resolution": "new_map",
+      "time": 1776140992.2476852
+    },
+    {
+      "snapshot_id": 171,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 7635,
+      "timestep_end": 7895,
+      "duration_frames": 260,
+      "map_id": 81,
+      "position": [
+        40,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 11.0,
+      "avg_party_hp_ratio": 0.7741935483870968,
+      "stagnation_detail": {
+        "position_stagnation_count": 29,
+        "position": [
+          40,
+          11
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776140993.3288908
+    },
+    {
+      "snapshot_id": 175,
+      "stagnation_type": "area_grinding",
+      "timestep_start": 7985,
+      "timestep_end": 8005,
+      "duration_frames": 20,
+      "map_id": 14,
+      "position": [
+        14,
+        15
+      ],
+      "badge_count": 0,
+      "team_avg_level": 11.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "map_novelty_debt": 10.0,
+        "location_visits": 356,
+        "tiles_visited_during": 32,
+        "new_tiles_during": 2
+      },
+      "resolution": "map_change",
+      "time": 1776141062.1940725
+    },
+    {
+      "snapshot_id": 176,
+      "stagnation_type": "backtracking",
+      "timestep_start": 7985,
+      "timestep_end": 8005,
+      "duration_frames": 20,
+      "map_id": 14,
+      "position": [
+        14,
+        15
+      ],
+      "badge_count": 0,
+      "team_avg_level": 11.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "location_key": "(14, 10, 15)",
+        "visit_count": 49
+      },
+      "resolution": "new_map",
+      "time": 1776141062.1941514
+    },
+    {
+      "snapshot_id": 177,
+      "stagnation_type": "position_stuck",
+      "timestep_start": 8025,
+      "timestep_end": 8055,
+      "duration_frames": 30,
+      "map_id": 33,
+      "position": [
+        28,
+        27
+      ],
+      "badge_count": 0,
+      "team_avg_level": 11.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "position_stagnation_count": 17,
+        "position": [
+          28,
+          27
+        ]
+      },
+      "resolution": "position_changed",
+      "time": 1776141067.8799844
+    },
+    {
+      "snapshot_id": 178,
+      "stagnation_type": "action_pattern",
+      "timestep_start": 8075,
+      "timestep_end": 8105,
+      "duration_frames": 30,
+      "map_id": 33,
+      "position": [
+        14,
+        27
+      ],
+      "badge_count": 0,
+      "team_avg_level": 11.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "pattern": [
+          "DOWN"
+        ],
+        "repeat_count": 4
+      },
+      "resolution": "pattern_broken",
+      "time": 1776141071.6928084
+    },
+    {
+      "snapshot_id": 180,
+      "stagnation_type": "backtracking",
+      "timestep_start": 8105,
+      "timestep_end": 8210,
+      "duration_frames": 105,
+      "map_id": 81,
+      "position": [
+        49,
+        21
+      ],
+      "badge_count": 0,
+      "team_avg_level": 11.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "location_key": "(81, 45, 20)",
+        "visit_count": 36
+      },
+      "resolution": "low_visit_area",
+      "time": 1776141074.1964986
+    },
+    {
+      "snapshot_id": 179,
+      "stagnation_type": "area_grinding",
+      "timestep_start": 8105,
+      "timestep_end": 8255,
+      "duration_frames": 150,
+      "map_id": 81,
+      "position": [
+        49,
+        21
+      ],
+      "badge_count": 0,
+      "team_avg_level": 11.0,
+      "avg_party_hp_ratio": 1.0,
+      "stagnation_detail": {
+        "map_novelty_debt": 10.0,
+        "location_visits": 776,
+        "tiles_visited_during": 182,
+        "new_tiles_during": -53
+      },
+      "resolution": "session_end",
+      "time": 1776141074.1963737
+    }
+  ],
   "metadata": {
-    "total_snapshots": 0,
-    "stagnation_types": {},
-    "total_stagnation_frames": 0,
-    "total_timesteps": 0,
-    "stagnation_ratio": 0.0,
+    "total_snapshots": 119,
+    "stagnation_types": {
+      "action_pattern": 39,
+      "position_stuck": 27,
+      "backtracking": 41,
+      "area_grinding": 11,
+      "action_repeat": 1
+    },
+    "total_stagnation_frames": 10657,
+    "total_timesteps": 8255,
+    "stagnation_ratio": 1.291,
     "model_number": 0,
     "source": "ai_agent_live",
     "active_at_save": []

@@ -1,13 +1,1055 @@
 {
-  "events": [],
+  "events": [
+    {
+      "type": "map_transition",
+      "timestep": 411,
+      "time": 1776140253.8226798,
+      "map_id": 13,
+      "data": {
+        "from_map": 13,
+        "to_map": 17,
+        "position": [
+          17,
+          9
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 446,
+      "time": 1776140258.5878425,
+      "map_id": 17,
+      "data": {
+        "from_map": 17,
+        "to_map": 13,
+        "position": [
+          13,
+          15
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 456,
+      "time": 1776140260.2604403,
+      "map_id": 13,
+      "data": {
+        "from_map": 13,
+        "to_map": 11,
+        "position": [
+          11,
+          15
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 497,
+      "time": 1776140262.804014,
+      "map_id": 11,
+      "data": {
+        "from_map": 11,
+        "to_map": 17,
+        "position": [
+          17,
+          9
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 501,
+      "time": 1776140265.1487422,
+      "map_id": 17,
+      "data": {
+        "from_map": 17,
+        "to_map": 13,
+        "position": [
+          13,
+          15
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 1600,
+      "time": 1776140351.4185362,
+      "map_id": 13,
+      "data": {
+        "battle_id": 1,
+        "outcome": "unknown",
+        "turns": 0,
+        "enemy_species": 7,
+        "enemy_level": 5,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 8,
+        "party_snapshot": [
+          {
+            "hp": 21,
+            "max_hp": 21
+          }
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 1723,
+      "time": 1776140362.672021,
+      "map_id": 13,
+      "data": {
+        "from_map": 13,
+        "to_map": 23,
+        "position": [
+          23,
+          20
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 2095,
+      "time": 1776140396.5905702,
+      "map_id": 23,
+      "data": {
+        "battle_id": 2,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 18,
+        "party_snapshot": [
+          {
+            "hp": 18,
+            "max_hp": 21
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 2188,
+      "time": 1776140406.313937,
+      "map_id": 23,
+      "data": {
+        "battle_id": 3,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 15,
+        "party_snapshot": [
+          {
+            "hp": 15,
+            "max_hp": 23
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 2248,
+      "time": 1776140414.7029963,
+      "map_id": 23,
+      "data": {
+        "battle_id": 4,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 2,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 15,
+        "party_snapshot": [
+          {
+            "hp": 15,
+            "max_hp": 23
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 2343,
+      "time": 1776140426.236946,
+      "map_id": 23,
+      "data": {
+        "battle_id": 5,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 16,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 7,
+        "party_snapshot": [
+          {
+            "hp": 7,
+            "max_hp": 23
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 2435,
+      "time": 1776140435.4899526,
+      "map_id": 23,
+      "data": {
+        "battle_id": 6,
+        "outcome": "loss",
+        "turns": 0,
+        "enemy_species": 16,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 0,
+        "party_snapshot": [
+          {
+            "hp": 23,
+            "max_hp": 23
+          }
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 2435,
+      "time": 1776140435.4901118,
+      "map_id": 23,
+      "data": {
+        "from_map": 23,
+        "to_map": 15,
+        "position": [
+          15,
+          12
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 2626,
+      "time": 1776140450.9352274,
+      "map_id": 15,
+      "data": {
+        "from_map": 15,
+        "to_map": 13,
+        "position": [
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 2899,
+      "time": 1776140479.2652755,
+      "map_id": 13,
+      "data": {
+        "battle_id": 7,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 16,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 19,
+        "party_snapshot": [
+          {
+            "hp": 19,
+            "max_hp": 25
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 3006,
+      "time": 1776140494.4236715,
+      "map_id": 13,
+      "data": {
+        "battle_id": 8,
+        "outcome": "run",
+        "turns": 0,
+        "enemy_species": 16,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 16,
+        "party_snapshot": [
+          {
+            "hp": 16,
+            "max_hp": 25
+          }
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 3056,
+      "time": 1776140499.4130008,
+      "map_id": 13,
+      "data": {
+        "from_map": 13,
+        "to_map": 25,
+        "position": [
+          29,
+          46
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 3860,
+      "time": 1776140567.00851,
+      "map_id": 25,
+      "data": {
+        "from_map": 25,
+        "to_map": 14,
+        "position": [
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 4019,
+      "time": 1776140584.1802082,
+      "map_id": 14,
+      "data": {
+        "from_map": 14,
+        "to_map": 33,
+        "position": [
+          33,
+          33
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 4192,
+      "time": 1776140597.0940945,
+      "map_id": 33,
+      "data": {
+        "from_map": 33,
+        "to_map": 11,
+        "position": [
+          11,
+          14
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 4226,
+      "time": 1776140601.1996963,
+      "map_id": 11,
+      "data": {
+        "from_map": 11,
+        "to_map": 43,
+        "position": [
+          43,
+          26
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 4239,
+      "time": 1776140602.455959,
+      "map_id": 43,
+      "data": {
+        "from_map": 43,
+        "to_map": 11,
+        "position": [
+          11,
+          14
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 4242,
+      "time": 1776140603.1111887,
+      "map_id": 11,
+      "data": {
+        "from_map": 11,
+        "to_map": 43,
+        "position": [
+          43,
+          26
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 4248,
+      "time": 1776140604.5083125,
+      "map_id": 43,
+      "data": {
+        "from_map": 43,
+        "to_map": 11,
+        "position": [
+          11,
+          14
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 4258,
+      "time": 1776140605.1309814,
+      "map_id": 11,
+      "data": {
+        "from_map": 11,
+        "to_map": 43,
+        "position": [
+          43,
+          26
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 4273,
+      "time": 1776140606.0774286,
+      "map_id": 43,
+      "data": {
+        "from_map": 43,
+        "to_map": 11,
+        "position": [
+          11,
+          14
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 4284,
+      "time": 1776140607.374625,
+      "map_id": 11,
+      "data": {
+        "from_map": 11,
+        "to_map": 43,
+        "position": [
+          43,
+          26
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 4465,
+      "time": 1776140620.2421412,
+      "map_id": 43,
+      "data": {
+        "from_map": 43,
+        "to_map": 31,
+        "position": [
+          17,
+          7
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 4513,
+      "time": 1776140628.4214704,
+      "map_id": 31,
+      "data": {
+        "battle_id": 9,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 16,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 22,
+        "party_snapshot": [
+          {
+            "hp": 22,
+            "max_hp": 25
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 4569,
+      "time": 1776140637.085718,
+      "map_id": 31,
+      "data": {
+        "battle_id": 10,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 15,
+        "party_snapshot": [
+          {
+            "hp": 15,
+            "max_hp": 25
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 4607,
+      "time": 1776140645.7708573,
+      "map_id": 31,
+      "data": {
+        "battle_id": 11,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 15,
+        "party_snapshot": [
+          {
+            "hp": 15,
+            "max_hp": 25
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 4719,
+      "time": 1776140659.3728373,
+      "map_id": 31,
+      "data": {
+        "battle_id": 12,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 2,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 17,
+        "party_snapshot": [
+          {
+            "hp": 17,
+            "max_hp": 27
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 4804,
+      "time": 1776140676.3002532,
+      "map_id": 31,
+      "data": {
+        "battle_id": 13,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 17,
+        "party_snapshot": [
+          {
+            "hp": 17,
+            "max_hp": 27
+          }
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 5072,
+      "time": 1776140703.3512225,
+      "map_id": 31,
+      "data": {
+        "from_map": 31,
+        "to_map": 13,
+        "position": [
+          16,
+          19
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 5705,
+      "time": 1776140750.5137126,
+      "map_id": 13,
+      "data": {
+        "from_map": 13,
+        "to_map": 23,
+        "position": [
+          23,
+          20
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 5879,
+      "time": 1776140767.8824413,
+      "map_id": 23,
+      "data": {
+        "battle_id": 14,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 16,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 14,
+        "party_snapshot": [
+          {
+            "hp": 14,
+            "max_hp": 27
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 5988,
+      "time": 1776140778.8270626,
+      "map_id": 23,
+      "data": {
+        "battle_id": 15,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 11,
+        "party_snapshot": [
+          {
+            "hp": 11,
+            "max_hp": 27
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 6067,
+      "time": 1776140789.1986427,
+      "map_id": 23,
+      "data": {
+        "battle_id": 16,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 4,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 11,
+        "party_snapshot": [
+          {
+            "hp": 11,
+            "max_hp": 27
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 6191,
+      "time": 1776140801.5854213,
+      "map_id": 23,
+      "data": {
+        "battle_id": 17,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 11,
+        "party_snapshot": [
+          {
+            "hp": 11,
+            "max_hp": 27
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 6299,
+      "time": 1776140814.2683904,
+      "map_id": 23,
+      "data": {
+        "battle_id": 18,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 16,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 10,
+        "party_snapshot": [
+          {
+            "hp": 10,
+            "max_hp": 29
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 6424,
+      "time": 1776140832.2602007,
+      "map_id": 23,
+      "data": {
+        "battle_id": 19,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 10,
+        "party_snapshot": [
+          {
+            "hp": 10,
+            "max_hp": 29
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 6506,
+      "time": 1776140845.175194,
+      "map_id": 23,
+      "data": {
+        "battle_id": 20,
+        "outcome": "run",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 10,
+        "party_snapshot": [
+          {
+            "hp": 10,
+            "max_hp": 29
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 6613,
+      "time": 1776140858.346957,
+      "map_id": 23,
+      "data": {
+        "battle_id": 21,
+        "outcome": "run",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 26,
+        "party_snapshot": [
+          {
+            "hp": 26,
+            "max_hp": 29
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 6671,
+      "time": 1776140872.2224894,
+      "map_id": 23,
+      "data": {
+        "battle_id": 22,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 26,
+        "party_snapshot": [
+          {
+            "hp": 26,
+            "max_hp": 29
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 6820,
+      "time": 1776140896.5103378,
+      "map_id": 23,
+      "data": {
+        "battle_id": 23,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 26,
+        "party_snapshot": [
+          {
+            "hp": 26,
+            "max_hp": 29
+          }
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 6858,
+      "time": 1776140899.0150225,
+      "map_id": 23,
+      "data": {
+        "from_map": 23,
+        "to_map": 35,
+        "position": [
+          31,
+          46
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 6934,
+      "time": 1776140904.6549337,
+      "map_id": 35,
+      "data": {
+        "from_map": 35,
+        "to_map": 14,
+        "position": [
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 7007,
+      "time": 1776140913.7488394,
+      "map_id": 14,
+      "data": {
+        "from_map": 14,
+        "to_map": 33,
+        "position": [
+          33,
+          33
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 7071,
+      "time": 1776140920.699898,
+      "map_id": 33,
+      "data": {
+        "from_map": 33,
+        "to_map": 81,
+        "position": [
+          54,
+          14
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 7220,
+      "time": 1776140938.4386077,
+      "map_id": 81,
+      "data": {
+        "battle_id": 24,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 56,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 29,
+        "party_snapshot": [
+          {
+            "hp": 29,
+            "max_hp": 29
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 7295,
+      "time": 1776140951.9132442,
+      "map_id": 81,
+      "data": {
+        "battle_id": 25,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 19,
+        "enemy_level": 3,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 29,
+        "party_snapshot": [
+          {
+            "hp": 29,
+            "max_hp": 29
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 7538,
+      "time": 1776140983.5572748,
+      "map_id": 81,
+      "data": {
+        "battle_id": 26,
+        "outcome": "win",
+        "turns": 0,
+        "enemy_species": 56,
+        "enemy_level": 4,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 24,
+        "party_snapshot": [
+          {
+            "hp": 24,
+            "max_hp": 31
+          }
+        ]
+      }
+    },
+    {
+      "type": "battle_end",
+      "timestep": 7837,
+      "time": 1776141047.7538571,
+      "map_id": 81,
+      "data": {
+        "battle_id": 27,
+        "outcome": "loss",
+        "turns": 0,
+        "enemy_species": 7,
+        "enemy_level": 9,
+        "is_trainer": false,
+        "player_hp_start": -1,
+        "player_hp_end": 0,
+        "party_snapshot": [
+          {
+            "hp": 31,
+            "max_hp": 31
+          }
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 7837,
+      "time": 1776141047.7539725,
+      "map_id": 81,
+      "data": {
+        "from_map": 81,
+        "to_map": 14,
+        "position": [
+          14,
+          11
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 7953,
+      "time": 1776141059.5755303,
+      "map_id": 14,
+      "data": {
+        "from_map": 14,
+        "to_map": 33,
+        "position": [
+          33,
+          33
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 7977,
+      "time": 1776141061.036341,
+      "map_id": 33,
+      "data": {
+        "from_map": 33,
+        "to_map": 14,
+        "position": [
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 8000,
+      "time": 1776141063.003321,
+      "map_id": 14,
+      "data": {
+        "from_map": 14,
+        "to_map": 33,
+        "position": [
+          33,
+          33
+        ]
+      }
+    },
+    {
+      "type": "map_transition",
+      "timestep": 8095,
+      "time": 1776141072.9837968,
+      "map_id": 33,
+      "data": {
+        "from_map": 33,
+        "to_map": 81,
+        "position": [
+          54,
+          16
+        ]
+      }
+    }
+  ],
   "summary": {
-    "total_events": 0,
-    "battle_events": 0,
+    "total_events": 58,
+    "battle_events": 27,
     "bag_events": 0,
-    "map_events": 0,
+    "map_events": 31,
     "levelup_events": 0,
-    "first_timestep": 0,
-    "last_timestep": 0,
-    "maps_visited": []
+    "first_timestep": 411,
+    "last_timestep": 8095,
+    "maps_visited": [
+      11,
+      13,
+      14,
+      15,
+      17,
+      23,
+      25,
+      31,
+      33,
+      35,
+      43,
+      81
+    ]
   }
 }

@@ -1,1 +1,10 @@
-{}
+{
+  "window_start": 79,
+  "window_end": 83,
+  "maps": [
+    14,
+    21,
+    36
+  ],
+  "frame_count": 10135
+}

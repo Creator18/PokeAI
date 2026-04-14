@@ -1,0 +1,224 @@
+{
+  "aggregated_overall": {
+    "runs_analyzed": 3,
+    "run_numbers": [
+      0,
+      1,
+      2
+    ],
+    "avg_deduplicated_stagnation_ratio": 0.787,
+    "std_deduplicated_stagnation_ratio": 0.0305,
+    "avg_total_events": 472.7,
+    "std_total_events": 119.9,
+    "avg_total_timesteps": 156803,
+    "per_run": [
+      {
+        "run": 0,
+        "total_events": 407,
+        "total_timesteps": 158609,
+        "raw_stagnation_frames": 417167,
+        "raw_stagnation_ratio": 2.6302,
+        "deduplicated_stagnation_frames": 119509,
+        "deduplicated_stagnation_ratio": 0.7535
+      },
+      {
+        "run": 1,
+        "total_events": 400,
+        "total_timesteps": 121000,
+        "raw_stagnation_frames": 326430,
+        "raw_stagnation_ratio": 2.6978,
+        "deduplicated_stagnation_frames": 96110,
+        "deduplicated_stagnation_ratio": 0.7943
+      },
+      {
+        "run": 2,
+        "total_events": 611,
+        "total_timesteps": 190800,
+        "raw_stagnation_frames": 563680,
+        "raw_stagnation_ratio": 2.9543,
+        "deduplicated_stagnation_frames": 155150,
+        "deduplicated_stagnation_ratio": 0.8132
+      }
+    ]
+  },
+  "aggregated_by_type": {
+    "action_pattern": {
+      "avg_count": 120.3,
+      "std_count": 25.9,
+      "avg_total_duration": 122779.7,
+      "std_total_duration": 29645.1,
+      "avg_mean_duration_per_event": 1022.5,
+      "std_mean_duration_per_event": 145.6,
+      "most_common_resolutions": [
+        "map_change",
+        "battle_start",
+        "pattern_broken"
+      ],
+      "resolution_distribution": {
+        "map_change": 0.4238,
+        "battle_start": 0.4238,
+        "pattern_broken": 0.1191,
+        "level_gained": 0.0111,
+        "timeout": 0.0083,
+        "session_end": 0.0083,
+        "badge_acquired": 0.0055
+      },
+      "per_run": [
+        {
+          "run": 0,
+          "count": 102,
+          "total_duration": 118859,
+          "mean_duration": 1165.3
+        },
+        {
+          "run": 1,
+          "count": 109,
+          "total_duration": 95290,
+          "mean_duration": 874.2
+        },
+        {
+          "run": 2,
+          "count": 150,
+          "total_duration": 154190,
+          "mean_duration": 1027.9
+        }
+      ]
+    },
+    "action_repeat": {
+      "avg_count": 181,
+      "std_count": 43.4,
+      "avg_total_duration": 118899.7,
+      "std_total_duration": 28805.4,
+      "avg_mean_duration_per_event": 657.5,
+      "std_mean_duration_per_event": 54.7,
+      "most_common_resolutions": [
+        "action_changed",
+        "battle_start",
+        "map_change"
+      ],
+      "resolution_distribution": {
+        "action_changed": 0.4291,
+        "battle_start": 0.2762,
+        "map_change": 0.2744,
+        "level_gained": 0.0074,
+        "session_end": 0.0055,
+        "badge_acquired": 0.0037,
+        "timeout": 0.0037
+      },
+      "per_run": [
+        {
+          "run": 0,
+          "count": 159,
+          "total_duration": 113839,
+          "mean_duration": 716.0
+        },
+        {
+          "run": 1,
+          "count": 153,
+          "total_duration": 92960,
+          "mean_duration": 607.6
+        },
+        {
+          "run": 2,
+          "count": 231,
+          "total_duration": 149900,
+          "mean_duration": 648.9
+        }
+      ]
+    },
+    "area_grinding": {
+      "avg_count": 107.7,
+      "std_count": 24.5,
+      "avg_total_duration": 123473,
+      "std_total_duration": 29646.7,
+      "avg_mean_duration_per_event": 1148.4,
+      "std_mean_duration_per_event": 131.1,
+      "most_common_resolutions": [
+        "battle_start",
+        "map_change",
+        "level_gained"
+      ],
+      "resolution_distribution": {
+        "battle_start": 0.4861,
+        "map_change": 0.4768,
+        "level_gained": 0.0124,
+        "timeout": 0.0093,
+        "session_end": 0.0093,
+        "badge_acquired": 0.0062
+      },
+      "per_run": [
+        {
+          "run": 0,
+          "count": 93,
+          "total_duration": 119389,
+          "mean_duration": 1283.8
+        },
+        {
+          "run": 1,
+          "count": 94,
+          "total_duration": 96080,
+          "mean_duration": 1022.1
+        },
+        {
+          "run": 2,
+          "count": 136,
+          "total_duration": 154950,
+          "mean_duration": 1139.3
+        }
+      ]
+    },
+    "no_map_progress": {
+      "avg_count": 63.7,
+      "std_count": 26.7,
+      "avg_total_duration": 70606.7,
+      "std_total_duration": 31634.2,
+      "avg_mean_duration_per_event": 1099.3,
+      "std_mean_duration_per_event": 136.1,
+      "most_common_resolutions": [
+        "battle_start",
+        "map_change",
+        "level_gained"
+      ],
+      "resolution_distribution": {
+        "battle_start": 0.4869,
+        "map_change": 0.4764,
+        "level_gained": 0.0209,
+        "timeout": 0.0105,
+        "badge_acquired": 0.0052
+      },
+      "per_run": [
+        {
+          "run": 0,
+          "count": 53,
+          "total_duration": 65080,
+          "mean_duration": 1227.9
+        },
+        {
+          "run": 1,
+          "count": 44,
+          "total_duration": 42100,
+          "mean_duration": 956.8
+        },
+        {
+          "run": 2,
+          "count": 94,
+          "total_duration": 104640,
+          "mean_duration": 1113.2
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "preprocessing_applied": [
+      "interval_deduplication_for_stagnation_ratio",
+      "per_type_duration_averaging"
+    ],
+    "stagnation_types_observed": [
+      "action_pattern",
+      "action_repeat",
+      "area_grinding",
+      "no_map_progress"
+    ],
+    "notes": "deduplicated_stagnation_ratio represents true wall-clock stagnation percentage after merging overlapping concurrent events"
+  }
+}

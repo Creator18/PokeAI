@@ -1,1 +1,13 @@
-{}
+{
+  "13": {
+    "uses": 2,
+    "category": "catch",
+    "confidence": 0.4,
+    "avg_hp_restored": 9.5,
+    "total_hp_restored": 19,
+    "status_cured": [],
+    "catch_attempts": 2,
+    "catch_successes": 0,
+    "last_used_timestep": 6601
+  }
+}
