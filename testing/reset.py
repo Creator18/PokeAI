@@ -1,7 +1,20 @@
 # ============================================================================
-# Reset all JSON files for AI Agent v17.8
+# Reset all JSON files for AI Agent v17.8.1
 # ============================================================================
 # Creates the jsons/ directory structure under cogai/ and resets all files.
+#
+# CHANGES from v17.8 → v17.8.1:
+# 1. UPDATED: ai_logs/ templates — checkpoint_metrics.json now has
+#    source="ai_agent_live", checkpoint_types, maps_visited, badges_logged,
+#    trainer_battles_logged fields matching the AI Brain's save_eval_logs()
+# 2. UPDATED: ai_logs/ templates — stagnation_metrics.json now has
+#    source="ai_agent_live", stagnation_types, total_stagnation_frames,
+#    stagnation_ratio, active_at_save fields matching open/close snapshot system
+# 3. UPDATED: taught_logs/ templates — checkpoint_metrics.json has
+#    source="human_teaching_live" placeholder for aggregation compatibility
+# 4. UPDATED: taught model checkpoint template — includes eval_state and
+#    stagnation_state blocks for session persistence compatibility
+# 5. UPDATED: Version references in banner/comments
 #
 # FOLDER STRUCTURE:
 #   cogai/jsons/
@@ -37,11 +50,11 @@
 #   │   └── active_start_menu.json
 #   └── logs/                  Evaluation metrics
 #       ├── ai_logs/
-#       │   ├── checkpoint_metrics.json
-#       │   └── stagnation_metrics.json
+#       │   ├── checkpoint_metrics.json   (event-driven: new_map, trainer_battle, badge)
+#       │   └── stagnation_metrics.json   (open/close intervals, 7 types)
 #       └── taught_logs/
-#           ├── checkpoint_metrics.json
-#           └── stagnation_metrics.json
+#           ├── checkpoint_metrics.json   (extracted from taught nav targets)
+#           └── stagnation_metrics.json   (human baseline = zero stagnation)
 #
 # MIGRATION:
 #   If old flat files exist in cogai/ (pre-v17.8 layout), they are
@@ -182,7 +195,32 @@ TAUGHT_TEMPLATES = {
                 ]
             }
         },
-        "revenge_targets": {}
+        "revenge_targets": {},
+        # v17.8.1: Evaluation state (empty — populated during play)
+        "eval_state": {
+            "checkpoint_log": [],
+            "checkpoint_id_counter": 0,
+            "last_checkpoint_ts": 0,
+            "maps_first_visited": [],
+            "prev_badge_count": 0,
+            "trainer_battle_count": 0
+        },
+        "stagnation_state": {
+            "snapshot_log": [],
+            "snapshot_id_counter": 0,
+            "cooldown_until": {
+                "position_stuck": 0,
+                "action_pattern": 0,
+                "action_repeat": 0,
+                "area_grinding": 0,
+                "no_level_progress": 0,
+                "no_map_progress": 0,
+                "backtracking": 0
+            },
+            "last_level_gain_ts": 0,
+            "last_new_map_ts": 0,
+            "last_team_avg_level": 0.0
+        }
     },
     "taught_transitions.json": {
         "batches": [],
@@ -267,7 +305,7 @@ def log(msg):
 
 
 print("=" * 65)
-print("RESET — AI Agent v17.8 (jsons/ subfolder structure + eval logs)")
+print("RESET — AI Agent v17.8.1 (eval logging: checkpoint + stagnation)")
 print("=" * 65)
 
 # ============================================================================
@@ -463,9 +501,11 @@ for fn in ["active_transitions.json", "active_battle.json",
 log(f"✅ debug/ — 4 active window files (reset)")
 
 # ============================================================================
-# STEP 8: Reset logs/ files
+# STEP 8: Reset logs/ files (v17.8.1 schemas)
 # ============================================================================
 
+# --- AI LOGS: checkpoint_metrics.json ---
+# Schema matches Brain.save_eval_logs() output exactly
 with open(AI_LOGS_DIR / "checkpoint_metrics.json", 'w') as f:
     json.dump({
         "checkpoints": [],
@@ -473,39 +513,56 @@ with open(AI_LOGS_DIR / "checkpoint_metrics.json", 'w') as f:
             "total_checkpoints": 0,
             "total_timesteps": 0,
             "badge_count": 0,
+            "model_number": 0,
+            "source": "ai_agent_live",
+            "checkpoint_types": {},
+            "maps_visited": [],
+            "badges_logged": [],
+            "trainer_battles_logged": 0
         }
     }, f, indent=2)
 
+# --- AI LOGS: stagnation_metrics.json ---
+# Schema matches Brain.save_eval_logs() output exactly
 with open(AI_LOGS_DIR / "stagnation_metrics.json", 'w') as f:
     json.dump({
         "snapshots": [],
         "metadata": {
             "total_snapshots": 0,
-            "log_interval": 50,
+            "stagnation_types": {},
+            "total_stagnation_frames": 0,
             "total_timesteps": 0,
+            "stagnation_ratio": 0.0,
+            "model_number": 0,
+            "source": "ai_agent_live",
+            "active_at_save": []
         }
     }, f, indent=2)
 
+# --- TAUGHT LOGS: checkpoint_metrics.json ---
+# Schema matches Brain.save_taught_baseline() output
 with open(TAUGHT_LOGS_DIR / "checkpoint_metrics.json", 'w') as f:
     json.dump({
         "checkpoints": [],
         "metadata": {
             "total_checkpoints": 0,
             "total_taught_frames": 0,
-            "taught_model_count": 0,
+            "taught_model_count": 0
         }
     }, f, indent=2)
 
+# --- TAUGHT LOGS: stagnation_metrics.json ---
+# Human baseline has zero stagnation by definition
 with open(TAUGHT_LOGS_DIR / "stagnation_metrics.json", 'w') as f:
     json.dump({
         "snapshots": [],
         "metadata": {
             "note": "Human baseline has zero stagnation by definition",
-            "total_snapshots": 0,
+            "total_snapshots": 0
         }
     }, f, indent=2)
 
-log(f"✅ logs/ — 4 evaluation metric files (reset)")
+log(f"✅ logs/ — 4 evaluation metric files (reset, v17.8.1 schemas)")
 
 # ============================================================================
 # STEP 9: Cleanup — warn about leftover flat files in cogai/
@@ -599,13 +656,13 @@ print(f"         │   ├── active_transitions.json")
 print(f"         │   ├── active_battle.json")
 print(f"         │   ├── active_bag.json")
 print(f"         │   └── active_start_menu.json")
-print(f"         └── logs/                         (4 files)")
+print(f"         └── logs/                         (4 eval files, v17.8.1 schemas)")
 print(f"             ├── ai_logs/")
-print(f"             │   ├── checkpoint_metrics.json")
-print(f"             │   └── stagnation_metrics.json")
+print(f"             │   ├── checkpoint_metrics.json   (source: ai_agent_live)")
+print(f"             │   └── stagnation_metrics.json   (7 types, open/close)")
 print(f"             └── taught_logs/")
-print(f"                 ├── checkpoint_metrics.json")
-print(f"                 └── stagnation_metrics.json")
+print(f"                 ├── checkpoint_metrics.json   (extracted from taught)")
+print(f"                 └── stagnation_metrics.json   (human = zero)")
 
 print(f"\n   File counts:")
 print(f"     io:                  2 files (reset)")
@@ -613,12 +670,25 @@ print(f"     taught_models:       {len(existing_models)} folder(s) (preserved)")
 print(f"     ai_checkpoint:       1 file  (checkpoint deleted, residual reset)")
 print(f"     empirical_knowledge: 7 files (6 reset + type_data preserved)")
 print(f"     debug:               4 files (reset)")
-print(f"     logs:                4 files (reset)")
+print(f"     logs:                4 files (reset, v17.8.1 schemas)")
 print(f"     TOTAL:               {len(expected_files)} files verified")
+
+print(f"\n   Eval schemas (v17.8.1):")
+print(f"     checkpoint_metrics.json:")
+print(f"       triggers: new_map, trainer_battle, badge")
+print(f"       fields: checkpoint_id, event_type, event_detail, badge_count,")
+print(f"               timestep, frames_from_previous, team_avg_level,")
+print(f"               avg_party_hp_ratio, map_id, position, time")
+print(f"     stagnation_metrics.json:")
+print(f"       types: position_stuck, action_pattern, action_repeat,")
+print(f"              area_grinding, no_level_progress, no_map_progress, backtracking")
+print(f"       fields: snapshot_id, stagnation_type, timestep_start/end,")
+print(f"               duration_frames, map_id, position, resolution")
 
 print(f"\n   Next steps:")
 print(f"   1. Place human playthrough data in jsons/taught_models/model_N/")
 print(f"   2. Run AI agent — it bootstraps from best taught checkpoint")
 print(f"   3. Eval logs populate automatically during play")
-print(f"   4. Run eval comparison script after AI run completes")
+print(f"   4. Run aggregation scripts on ai_logs/ and taught_logs/")
+print(f"   5. Run compare_eval.py to produce comparison report")
 print(f"{'=' * 65}")
