@@ -6,13 +6,13 @@
       "nav_target_order": 2,
       "map_id": 13,
       "position": [
-        16,
+        17,
         9
       ],
       "destination_map": 17,
       "timestamp_range": [
-        71,
-        72
+        48,
+        49
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -24,7 +24,7 @@
     {
       "order": 1,
       "type": "map_transition",
-      "nav_target_order": 36,
+      "nav_target_order": 94,
       "map_id": 17,
       "position": [
         13,
@@ -32,8 +32,8 @@
       ],
       "destination_map": 13,
       "timestamp_range": [
-        360,
-        361
+        235,
+        236
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -45,15 +45,15 @@
     {
       "order": 2,
       "type": "battle",
-      "nav_target_order": 36,
+      "nav_target_order": 94,
       "map_id": 13,
       "position": [
-        13,
+        14,
         15
       ],
       "timestamp_range": [
-        767,
-        1017
+        557,
+        735
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -80,7 +80,7 @@
     {
       "order": 3,
       "type": "map_transition",
-      "nav_target_order": 7,
+      "nav_target_order": 11,
       "map_id": 13,
       "position": [
         23,
@@ -88,8 +88,8 @@
       ],
       "destination_map": 23,
       "timestamp_range": [
-        1040,
-        1041
+        772,
+        773
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -101,15 +101,15 @@
     {
       "order": 4,
       "type": "battle",
-      "nav_target_order": 37,
+      "nav_target_order": 8,
       "map_id": 23,
       "position": [
-        14,
+        15,
         39
       ],
       "timestamp_range": [
-        1133,
-        1194
+        847,
+        949
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -136,15 +136,15 @@
     {
       "order": 5,
       "type": "battle",
-      "nav_target_order": 7,
+      "nav_target_order": 10,
       "map_id": 23,
       "position": [
-        21,
-        33
+        23,
+        31
       ],
       "timestamp_range": [
-        1325,
-        1453
+        1053,
+        1101
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -170,142 +170,16 @@
     },
     {
       "order": 6,
-      "type": "map_transition",
-      "nav_target_order": 10,
+      "type": "battle",
+      "nav_target_order": 11,
       "map_id": 23,
       "position": [
-        29,
-        46
-      ],
-      "destination_map": 35,
-      "timestamp_range": [
-        1552,
-        1553
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 7,
-      "type": "map_transition",
-      "nav_target_order": 12,
-      "map_id": 35,
-      "position": [
-        14,
-        14
-      ],
-      "destination_map": 14,
-      "timestamp_range": [
-        1587,
-        1588
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 8,
-      "type": "map_transition",
-      "nav_target_order": 13,
-      "map_id": 14,
-      "position": [
-        33,
-        33
-      ],
-      "destination_map": 33,
-      "timestamp_range": [
-        1652,
-        1653
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 9,
-      "type": "map_transition",
-      "nav_target_order": 17,
-      "map_id": 33,
-      "position": [
-        11,
-        14
-      ],
-      "destination_map": 11,
-      "timestamp_range": [
-        1700,
-        1701
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 10,
-      "type": "map_transition",
-      "nav_target_order": 18,
-      "map_id": 11,
-      "position": [
-        43,
-        27
-      ],
-      "destination_map": 43,
-      "timestamp_range": [
-        1762,
-        1763
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 11,
-      "type": "map_transition",
-      "nav_target_order": 21,
-      "map_id": 43,
-      "position": [
-        19,
-        7
-      ],
-      "destination_map": 31,
-      "timestamp_range": [
-        1841,
-        1842
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 12,
-      "type": "battle",
-      "nav_target_order": 21,
-      "map_id": 31,
-      "position": [
-        22,
-        16
+        26,
+        21
       ],
       "timestamp_range": [
-        1870,
-        1948
+        1198,
+        1269
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -330,17 +204,143 @@
       }
     },
     {
-      "order": 13,
-      "type": "battle",
-      "nav_target_order": 80,
-      "map_id": 14,
+      "order": 7,
+      "type": "map_transition",
+      "nav_target_order": 14,
+      "map_id": 23,
+      "position": [
+        31,
+        46
+      ],
+      "destination_map": 35,
+      "timestamp_range": [
+        1312,
+        1313
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 8,
+      "type": "map_transition",
+      "nav_target_order": 15,
+      "map_id": 35,
       "position": [
         14,
-        11
+        14
+      ],
+      "destination_map": 14,
+      "timestamp_range": [
+        1387,
+        1388
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 9,
+      "type": "map_transition",
+      "nav_target_order": 49,
+      "map_id": 14,
+      "position": [
+        33,
+        34
+      ],
+      "destination_map": 33,
+      "timestamp_range": [
+        1437,
+        1438
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 10,
+      "type": "map_transition",
+      "nav_target_order": 17,
+      "map_id": 33,
+      "position": [
+        11,
+        14
+      ],
+      "destination_map": 11,
+      "timestamp_range": [
+        1544,
+        1545
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 11,
+      "type": "map_transition",
+      "nav_target_order": 18,
+      "map_id": 11,
+      "position": [
+        43,
+        27
+      ],
+      "destination_map": 43,
+      "timestamp_range": [
+        1579,
+        1580
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 12,
+      "type": "map_transition",
+      "nav_target_order": 22,
+      "map_id": 43,
+      "position": [
+        54,
+        16
+      ],
+      "destination_map": 91,
+      "timestamp_range": [
+        1703,
+        1704
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 13,
+      "type": "battle",
+      "nav_target_order": 22,
+      "map_id": 91,
+      "position": [
+        43,
+        17
       ],
       "timestamp_range": [
-        2018,
-        2113
+        1761,
+        1821
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -367,16 +367,16 @@
     {
       "order": 14,
       "type": "map_transition",
-      "nav_target_order": 80,
-      "map_id": 31,
+      "nav_target_order": 21,
+      "map_id": 91,
       "position": [
-        14,
-        11
+        7,
+        26
       ],
-      "destination_map": 14,
+      "destination_map": 43,
       "timestamp_range": [
-        2112,
-        2113
+        1923,
+        1924
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -388,16 +388,16 @@
     {
       "order": 15,
       "type": "map_transition",
-      "nav_target_order": 13,
-      "map_id": 14,
+      "nav_target_order": 27,
+      "map_id": 43,
       "position": [
-        33,
-        33
+        18,
+        7
       ],
-      "destination_map": 33,
+      "destination_map": 31,
       "timestamp_range": [
-        2173,
-        2174
+        2016,
+        2017
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -408,19 +408,33 @@
     },
     {
       "order": 16,
-      "type": "map_transition",
-      "nav_target_order": 30,
-      "map_id": 33,
+      "type": "battle",
+      "nav_target_order": 29,
+      "map_id": 31,
       "position": [
-        19,
-        8
+        20,
+        36
       ],
-      "destination_map": 21,
       "timestamp_range": [
-        2206,
-        2207
+        2106,
+        2188
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -430,15 +444,15 @@
     {
       "order": 17,
       "type": "battle",
-      "nav_target_order": 31,
-      "map_id": 21,
+      "nav_target_order": 27,
+      "map_id": 31,
       "position": [
-        25,
-        15
+        20,
+        7
       ],
       "timestamp_range": [
-        2233,
-        2320
+        2255,
+        2303
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -464,33 +478,19 @@
     },
     {
       "order": 18,
-      "type": "battle",
-      "nav_target_order": 35,
-      "map_id": 21,
+      "type": "map_transition",
+      "nav_target_order": 3,
+      "map_id": 31,
       "position": [
-        23,
-        22
+        13,
+        18
       ],
+      "destination_map": 13,
       "timestamp_range": [
-        2345,
-        2430
+        2377,
+        2378
       ],
-      "battle_info": {
-        "battle_type": "wild",
-        "enemy_species": -1,
-        "enemy_level": -1,
-        "outcome": "win",
-        "turns": 0,
-        "hp_cost": 0.0,
-        "moves_used": []
-      },
-      "party_before": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      },
-      "party_after": {
+      "party_snapshot": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -499,33 +499,19 @@
     },
     {
       "order": 19,
-      "type": "battle",
-      "nav_target_order": 32,
-      "map_id": 21,
+      "type": "map_transition",
+      "nav_target_order": 11,
+      "map_id": 13,
       "position": [
-        24,
-        34
+        23,
+        21
       ],
+      "destination_map": 23,
       "timestamp_range": [
-        2499,
-        2607
+        2592,
+        2593
       ],
-      "battle_info": {
-        "battle_type": "wild",
-        "enemy_species": -1,
-        "enemy_level": -1,
-        "outcome": "win",
-        "turns": 0,
-        "hp_cost": 0.0,
-        "moves_used": []
-      },
-      "party_before": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      },
-      "party_after": {
+      "party_snapshot": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -534,33 +520,19 @@
     },
     {
       "order": 20,
-      "type": "battle",
-      "nav_target_order": 33,
-      "map_id": 21,
+      "type": "map_transition",
+      "nav_target_order": 17,
+      "map_id": 23,
       "position": [
-        28,
-        39
+        11,
+        14
       ],
+      "destination_map": 11,
       "timestamp_range": [
-        2630,
-        2722
+        2670,
+        2671
       ],
-      "battle_info": {
-        "battle_type": "wild",
-        "enemy_species": -1,
-        "enemy_level": -1,
-        "outcome": "win",
-        "turns": 0,
-        "hp_cost": 0.0,
-        "moves_used": []
-      },
-      "party_before": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      },
-      "party_after": {
+      "party_snapshot": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -570,16 +542,16 @@
     {
       "order": 21,
       "type": "map_transition",
-      "nav_target_order": 4,
-      "map_id": 21,
+      "nav_target_order": 32,
+      "map_id": 11,
       "position": [
-        13,
-        18
+        22,
+        14
       ],
-      "destination_map": 13,
+      "destination_map": 22,
       "timestamp_range": [
-        2866,
-        2867
+        2743,
+        2744
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -591,16 +563,16 @@
     {
       "order": 22,
       "type": "map_transition",
-      "nav_target_order": 7,
-      "map_id": 13,
+      "nav_target_order": 17,
+      "map_id": 22,
       "position": [
-        23,
-        21
+        11,
+        15
       ],
-      "destination_map": 23,
+      "destination_map": 11,
       "timestamp_range": [
-        3115,
-        3116
+        2768,
+        2769
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -612,16 +584,16 @@
     {
       "order": 23,
       "type": "map_transition",
-      "nav_target_order": 17,
-      "map_id": 23,
+      "nav_target_order": 94,
+      "map_id": 11,
       "position": [
-        11,
-        14
+        13,
+        15
       ],
-      "destination_map": 11,
+      "destination_map": 13,
       "timestamp_range": [
-        3173,
-        3174
+        2861,
+        2862
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -632,19 +604,33 @@
     },
     {
       "order": 24,
-      "type": "map_transition",
-      "nav_target_order": 36,
-      "map_id": 11,
+      "type": "battle",
+      "nav_target_order": 34,
+      "map_id": 13,
       "position": [
-        13,
-        15
+        15,
+        38
       ],
-      "destination_map": 13,
       "timestamp_range": [
-        3283,
-        3284
+        2986,
+        3041
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -653,19 +639,33 @@
     },
     {
       "order": 25,
-      "type": "map_transition",
-      "nav_target_order": 17,
+      "type": "battle",
+      "nav_target_order": 34,
       "map_id": 13,
       "position": [
-        11,
-        14
+        24,
+        32
       ],
-      "destination_map": 11,
       "timestamp_range": [
-        3340,
-        3341
+        3087,
+        3160
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -674,19 +674,33 @@
     },
     {
       "order": 26,
-      "type": "map_transition",
-      "nav_target_order": 108,
-      "map_id": 11,
+      "type": "battle",
+      "nav_target_order": 35,
+      "map_id": 13,
       "position": [
-        22,
-        15
+        27,
+        22
       ],
-      "destination_map": 22,
       "timestamp_range": [
-        3418,
-        3419
+        3249,
+        3335
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -696,15 +710,15 @@
     {
       "order": 27,
       "type": "battle",
-      "nav_target_order": 41,
-      "map_id": 22,
+      "nav_target_order": 33,
+      "map_id": 13,
       "position": [
-        15,
-        39
+        21,
+        16
       ],
       "timestamp_range": [
-        3496,
-        3582
+        3370,
+        3477
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -731,15 +745,15 @@
     {
       "order": 28,
       "type": "battle",
-      "nav_target_order": 41,
-      "map_id": 22,
+      "nav_target_order": 33,
+      "map_id": 13,
       "position": [
-        12,
-        39
+        23,
+        16
       ],
       "timestamp_range": [
-        3607,
-        3710
+        3497,
+        3561
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -766,15 +780,15 @@
     {
       "order": 29,
       "type": "battle",
-      "nav_target_order": 114,
-      "map_id": 22,
+      "nav_target_order": 33,
+      "map_id": 13,
       "position": [
-        22,
-        32
+        24,
+        14
       ],
       "timestamp_range": [
-        3755,
-        3893
+        3597,
+        3645
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -800,16 +814,142 @@
     },
     {
       "order": 30,
-      "type": "battle",
-      "nav_target_order": 109,
-      "map_id": 22,
+      "type": "map_transition",
+      "nav_target_order": 36,
+      "map_id": 13,
       "position": [
-        27,
-        13
+        30,
+        46
+      ],
+      "destination_map": 25,
+      "timestamp_range": [
+        3678,
+        3679
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 31,
+      "type": "map_transition",
+      "nav_target_order": 15,
+      "map_id": 25,
+      "position": [
+        14,
+        14
+      ],
+      "destination_map": 14,
+      "timestamp_range": [
+        3748,
+        3749
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 32,
+      "type": "map_transition",
+      "nav_target_order": 49,
+      "map_id": 14,
+      "position": [
+        33,
+        33
+      ],
+      "destination_map": 33,
+      "timestamp_range": [
+        3800,
+        3801
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 33,
+      "type": "map_transition",
+      "nav_target_order": 42,
+      "map_id": 33,
+      "position": [
+        54,
+        14
+      ],
+      "destination_map": 81,
+      "timestamp_range": [
+        3885,
+        3886
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 34,
+      "type": "map_transition",
+      "nav_target_order": 41,
+      "map_id": 81,
+      "position": [
+        7,
+        24
+      ],
+      "destination_map": 33,
+      "timestamp_range": [
+        3932,
+        3933
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 35,
+      "type": "map_transition",
+      "nav_target_order": 42,
+      "map_id": 33,
+      "position": [
+        54,
+        16
+      ],
+      "destination_map": 81,
+      "timestamp_range": [
+        4077,
+        4078
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 36,
+      "type": "battle",
+      "nav_target_order": 42,
+      "map_id": 81,
+      "position": [
+        44,
+        18
       ],
       "timestamp_range": [
-        3977,
-        4061
+        4157,
+        4233
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -834,143 +974,17 @@
       }
     },
     {
-      "order": 31,
-      "type": "map_transition",
-      "nav_target_order": 47,
-      "map_id": 22,
-      "position": [
-        31,
-        46
-      ],
-      "destination_map": 34,
-      "timestamp_range": [
-        4095,
-        4096
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 32,
-      "type": "map_transition",
-      "nav_target_order": 12,
-      "map_id": 34,
-      "position": [
-        14,
-        14
-      ],
-      "destination_map": 14,
-      "timestamp_range": [
-        4215,
-        4216
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 33,
-      "type": "map_transition",
-      "nav_target_order": 13,
-      "map_id": 14,
-      "position": [
-        33,
-        34
-      ],
-      "destination_map": 33,
-      "timestamp_range": [
-        4267,
-        4268
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 34,
-      "type": "map_transition",
-      "nav_target_order": 50,
-      "map_id": 33,
-      "position": [
-        54,
-        14
-      ],
-      "destination_map": 81,
-      "timestamp_range": [
-        4369,
-        4370
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 35,
-      "type": "map_transition",
-      "nav_target_order": 55,
-      "map_id": 81,
-      "position": [
-        7,
-        24
-      ],
-      "destination_map": 33,
-      "timestamp_range": [
-        4391,
-        4392
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 36,
-      "type": "map_transition",
-      "nav_target_order": 50,
-      "map_id": 33,
-      "position": [
-        54,
-        15
-      ],
-      "destination_map": 81,
-      "timestamp_range": [
-        4524,
-        4525
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
       "order": 37,
       "type": "battle",
-      "nav_target_order": 56,
+      "nav_target_order": 42,
       "map_id": 81,
       "position": [
-        45,
-        16
+        44,
+        18
       ],
       "timestamp_range": [
-        4646,
-        4761
+        4280,
+        4322
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -997,15 +1011,15 @@
     {
       "order": 38,
       "type": "battle",
-      "nav_target_order": 56,
+      "nav_target_order": 45,
       "map_id": 81,
       "position": [
-        46,
-        20
+        41,
+        18
       ],
       "timestamp_range": [
-        4801,
-        4884
+        4363,
+        4411
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1032,15 +1046,15 @@
     {
       "order": 39,
       "type": "battle",
-      "nav_target_order": 56,
+      "nav_target_order": 42,
       "map_id": 81,
       "position": [
         46,
-        17
+        16
       ],
       "timestamp_range": [
-        4906,
-        4993
+        4468,
+        4533
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1067,15 +1081,15 @@
     {
       "order": 40,
       "type": "battle",
-      "nav_target_order": 65,
+      "nav_target_order": 42,
       "map_id": 81,
       "position": [
-        41,
-        18
+        46,
+        16
       ],
       "timestamp_range": [
-        5019,
-        5130
+        4571,
+        4620
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1102,15 +1116,15 @@
     {
       "order": 41,
       "type": "battle",
-      "nav_target_order": 57,
+      "nav_target_order": 45,
       "map_id": 81,
       "position": [
-        40,
-        12
+        43,
+        16
       ],
       "timestamp_range": [
-        5208,
-        5729
+        4654,
+        4697
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1137,15 +1151,15 @@
     {
       "order": 42,
       "type": "battle",
-      "nav_target_order": 60,
+      "nav_target_order": 45,
       "map_id": 81,
       "position": [
-        25,
-        19
+        40,
+        11
       ],
       "timestamp_range": [
-        5827,
-        5915
+        4760,
+        4949
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1171,19 +1185,33 @@
     },
     {
       "order": 43,
-      "type": "map_transition",
-      "nav_target_order": 55,
+      "type": "battle",
+      "nav_target_order": 47,
       "map_id": 81,
       "position": [
-        7,
-        24
+        25,
+        18
       ],
-      "destination_map": 33,
       "timestamp_range": [
-        6008,
-        6009
+        5031,
+        5071
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "run",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -1192,58 +1220,16 @@
     },
     {
       "order": 44,
-      "type": "map_transition",
-      "nav_target_order": 12,
-      "map_id": 33,
-      "position": [
-        14,
-        14
-      ],
-      "destination_map": 14,
-      "timestamp_range": [
-        6141,
-        6142
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 45,
-      "type": "map_transition",
-      "nav_target_order": 13,
-      "map_id": 14,
-      "position": [
-        33,
-        34
-      ],
-      "destination_map": 33,
-      "timestamp_range": [
-        6197,
-        6198
-      ],
-      "party_snapshot": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
-      "order": 46,
       "type": "battle",
-      "nav_target_order": 72,
-      "map_id": 33,
+      "nav_target_order": 47,
+      "map_id": 81,
       "position": [
-        29,
-        15
+        26,
+        18
       ],
       "timestamp_range": [
-        6348,
-        6351
+        5072,
+        5123
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1268,18 +1254,74 @@
       }
     },
     {
+      "order": 45,
+      "type": "battle",
+      "nav_target_order": 47,
+      "map_id": 81,
+      "position": [
+        24,
+        17
+      ],
+      "timestamp_range": [
+        5179,
+        5266
+      ],
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 46,
+      "type": "map_transition",
+      "nav_target_order": 44,
+      "map_id": 81,
+      "position": [
+        7,
+        25
+      ],
+      "destination_map": 33,
+      "timestamp_range": [
+        5433,
+        5434
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
       "order": 47,
       "type": "map_transition",
-      "nav_target_order": 74,
+      "nav_target_order": 15,
       "map_id": 33,
       "position": [
-        17,
-        86
+        14,
+        14
       ],
-      "destination_map": 21,
+      "destination_map": 14,
       "timestamp_range": [
-        6389,
-        6390
+        5539,
+        5540
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -1290,33 +1332,19 @@
     },
     {
       "order": 48,
-      "type": "battle",
-      "nav_target_order": 78,
-      "map_id": 21,
+      "type": "map_transition",
+      "nav_target_order": 49,
+      "map_id": 14,
       "position": [
-        18,
-        64
+        33,
+        34
       ],
+      "destination_map": 33,
       "timestamp_range": [
-        6468,
-        6615
+        5593,
+        5594
       ],
-      "battle_info": {
-        "battle_type": "wild",
-        "enemy_species": -1,
-        "enemy_level": -1,
-        "outcome": "win",
-        "turns": 0,
-        "hp_cost": 0.0,
-        "moves_used": []
-      },
-      "party_before": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      },
-      "party_after": {
+      "party_snapshot": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -1326,16 +1354,16 @@
     {
       "order": 49,
       "type": "map_transition",
-      "nav_target_order": 12,
-      "map_id": 21,
+      "nav_target_order": 51,
+      "map_id": 33,
       "position": [
-        14,
-        17
+        17,
+        86
       ],
-      "destination_map": 14,
+      "destination_map": 21,
       "timestamp_range": [
-        6677,
-        6678
+        5737,
+        5738
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -1346,17 +1374,52 @@
     },
     {
       "order": 50,
-      "type": "map_transition",
-      "nav_target_order": 81,
-      "map_id": 14,
+      "type": "battle",
+      "nav_target_order": 55,
+      "map_id": 21,
       "position": [
-        36,
-        69
+        18,
+        63
       ],
-      "destination_map": 36,
       "timestamp_range": [
-        6697,
-        6698
+        5813,
+        5853
+      ],
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 51,
+      "type": "map_transition",
+      "nav_target_order": 15,
+      "map_id": 21,
+      "position": [
+        14,
+        17
+      ],
+      "destination_map": 14,
+      "timestamp_range": [
+        5896,
+        5897
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -1366,69 +1429,20 @@
       }
     },
     {
-      "order": 51,
-      "type": "battle",
-      "nav_target_order": 81,
-      "map_id": 36,
-      "position": [
-        46,
-        62
-      ],
-      "timestamp_range": [
-        6762,
-        6891
-      ],
-      "battle_info": {
-        "battle_type": "wild",
-        "enemy_species": -1,
-        "enemy_level": -1,
-        "outcome": "win",
-        "turns": 0,
-        "hp_cost": 0.0,
-        "moves_used": []
-      },
-      "party_before": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      },
-      "party_after": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
       "order": 52,
-      "type": "battle",
-      "nav_target_order": 82,
-      "map_id": 36,
+      "type": "map_transition",
+      "nav_target_order": 57,
+      "map_id": 14,
       "position": [
-        46,
-        49
+        36,
+        69
       ],
+      "destination_map": 36,
       "timestamp_range": [
-        6953,
-        7048
+        5915,
+        5916
       ],
-      "battle_info": {
-        "battle_type": "wild",
-        "enemy_species": -1,
-        "enemy_level": -1,
-        "outcome": "win",
-        "turns": 0,
-        "hp_cost": 0.0,
-        "moves_used": []
-      },
-      "party_before": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      },
-      "party_after": {
+      "party_snapshot": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -1438,15 +1452,15 @@
     {
       "order": 53,
       "type": "battle",
-      "nav_target_order": 81,
+      "nav_target_order": 57,
       "map_id": 36,
       "position": [
-        50,
-        52
+        48,
+        63
       ],
       "timestamp_range": [
-        7091,
-        7296
+        5998,
+        6055
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1473,15 +1487,15 @@
     {
       "order": 54,
       "type": "battle",
-      "nav_target_order": 84,
+      "nav_target_order": 58,
       "map_id": 36,
       "position": [
-        54,
-        37
+        53,
+        68
       ],
       "timestamp_range": [
-        7444,
-        7798
+        6106,
+        6157
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1508,15 +1522,15 @@
     {
       "order": 55,
       "type": "battle",
-      "nav_target_order": 85,
+      "nav_target_order": 58,
       "map_id": 36,
       "position": [
-        38,
-        25
+        57,
+        68
       ],
       "timestamp_range": [
-        7937,
-        7988
+        6199,
+        6263
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1543,15 +1557,15 @@
     {
       "order": 56,
       "type": "battle",
-      "nav_target_order": 87,
+      "nav_target_order": 59,
       "map_id": 36,
       "position": [
-        28,
-        22
+        51,
+        62
       ],
       "timestamp_range": [
-        8040,
-        8099
+        6326,
+        6372
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1578,15 +1592,15 @@
     {
       "order": 57,
       "type": "battle",
-      "nav_target_order": 87,
+      "nav_target_order": 60,
       "map_id": 36,
       "position": [
-        24,
-        12
+        51,
+        51
       ],
       "timestamp_range": [
-        8153,
-        8501
+        6412,
+        6507
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1613,15 +1627,15 @@
     {
       "order": 58,
       "type": "battle",
-      "nav_target_order": 90,
+      "nav_target_order": 63,
       "map_id": 36,
       "position": [
-        20,
-        30
+        55,
+        36
       ],
       "timestamp_range": [
-        8566,
-        8687
+        6577,
+        6772
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1648,15 +1662,15 @@
     {
       "order": 59,
       "type": "battle",
-      "nav_target_order": 96,
+      "nav_target_order": 67,
       "map_id": 36,
       "position": [
-        10,
-        28
+        34,
+        18
       ],
       "timestamp_range": [
-        8861,
-        9037
+        6891,
+        6936
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1683,15 +1697,15 @@
     {
       "order": 60,
       "type": "battle",
-      "nav_target_order": 97,
+      "nav_target_order": 74,
       "map_id": 36,
       "position": [
-        13,
-        21
+        29,
+        19
       ],
       "timestamp_range": [
-        9080,
-        9124
+        7078,
+        7127
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -1717,19 +1731,33 @@
     },
     {
       "order": 61,
-      "type": "map_transition",
-      "nav_target_order": 12,
+      "type": "battle",
+      "nav_target_order": 75,
       "map_id": 36,
       "position": [
-        14,
-        17
+        22,
+        12
       ],
-      "destination_map": 14,
       "timestamp_range": [
-        9147,
-        9148
+        7198,
+        7372
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -1738,19 +1766,33 @@
     },
     {
       "order": 62,
-      "type": "map_transition",
-      "nav_target_order": 98,
-      "map_id": 14,
+      "type": "battle",
+      "nav_target_order": 77,
+      "map_id": 36,
       "position": [
-        12,
-        20
+        18,
+        27
       ],
-      "destination_map": 12,
       "timestamp_range": [
-        9168,
-        9169
+        7414,
+        7472
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -1759,19 +1801,33 @@
     },
     {
       "order": 63,
-      "type": "map_transition",
-      "nav_target_order": 128,
-      "map_id": 12,
+      "type": "battle",
+      "nav_target_order": 78,
+      "map_id": 36,
       "position": [
-        30,
-        46
+        12,
+        34
       ],
-      "destination_map": 24,
       "timestamp_range": [
-        9224,
-        9225
+        7566,
+        7642
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -1780,19 +1836,33 @@
     },
     {
       "order": 64,
-      "type": "map_transition",
-      "nav_target_order": 12,
-      "map_id": 24,
+      "type": "battle",
+      "nav_target_order": 78,
+      "map_id": 36,
       "position": [
-        14,
-        14
+        12,
+        28
       ],
-      "destination_map": 14,
       "timestamp_range": [
-        9292,
-        9293
+        7666,
+        7728
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -1802,16 +1872,16 @@
     {
       "order": 65,
       "type": "map_transition",
-      "nav_target_order": 100,
-      "map_id": 14,
+      "nav_target_order": 15,
+      "map_id": 36,
       "position": [
-        24,
-        33
+        14,
+        16
       ],
-      "destination_map": 24,
+      "destination_map": 14,
       "timestamp_range": [
-        9452,
-        9453
+        7752,
+        7753
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -1823,16 +1893,16 @@
     {
       "order": 66,
       "type": "map_transition",
-      "nav_target_order": 4,
-      "map_id": 24,
+      "nav_target_order": 82,
+      "map_id": 14,
       "position": [
-        13,
-        20
+        12,
+        19
       ],
-      "destination_map": 13,
+      "destination_map": 12,
       "timestamp_range": [
-        9598,
-        9599
+        7764,
+        7765
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -1843,33 +1913,19 @@
     },
     {
       "order": 67,
-      "type": "battle",
-      "nav_target_order": 36,
-      "map_id": 13,
+      "type": "map_transition",
+      "nav_target_order": 84,
+      "map_id": 12,
       "position": [
-        13,
-        14
+        28,
+        46
       ],
+      "destination_map": 24,
       "timestamp_range": [
-        9635,
-        9940
+        7797,
+        7798
       ],
-      "battle_info": {
-        "battle_type": "wild",
-        "enemy_species": -1,
-        "enemy_level": -1,
-        "outcome": "win",
-        "turns": 0,
-        "hp_cost": 0.0,
-        "moves_used": []
-      },
-      "party_before": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      },
-      "party_after": {
+      "party_snapshot": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -1878,33 +1934,19 @@
     },
     {
       "order": 68,
-      "type": "battle",
-      "nav_target_order": 36,
-      "map_id": 13,
+      "type": "map_transition",
+      "nav_target_order": 15,
+      "map_id": 24,
       "position": [
-        13,
-        13
+        14,
+        14
       ],
+      "destination_map": 14,
       "timestamp_range": [
-        10001,
-        10298
+        7887,
+        7888
       ],
-      "battle_info": {
-        "battle_type": "wild",
-        "enemy_species": -1,
-        "enemy_level": -1,
-        "outcome": "win",
-        "turns": 0,
-        "hp_cost": 0.0,
-        "moves_used": []
-      },
-      "party_before": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      },
-      "party_after": {
+      "party_snapshot": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -1914,16 +1956,16 @@
     {
       "order": 69,
       "type": "map_transition",
-      "nav_target_order": 43,
-      "map_id": 13,
+      "nav_target_order": 83,
+      "map_id": 14,
       "position": [
-        22,
-        24
+        24,
+        33
       ],
-      "destination_map": 22,
+      "destination_map": 24,
       "timestamp_range": [
-        10359,
-        10360
+        7943,
+        7944
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -1935,16 +1977,16 @@
     {
       "order": 70,
       "type": "map_transition",
-      "nav_target_order": 12,
-      "map_id": 22,
+      "nav_target_order": 3,
+      "map_id": 24,
       "position": [
-        14,
-        14
+        13,
+        20
       ],
-      "destination_map": 14,
+      "destination_map": 13,
       "timestamp_range": [
-        10488,
-        10489
+        8156,
+        8157
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -1955,19 +1997,33 @@
     },
     {
       "order": 71,
-      "type": "map_transition",
-      "nav_target_order": 100,
-      "map_id": 14,
+      "type": "battle",
+      "nav_target_order": 94,
+      "map_id": 13,
       "position": [
-        24,
-        32
+        13,
+        14
       ],
-      "destination_map": 24,
       "timestamp_range": [
-        10542,
-        10543
+        8192,
+        8399
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -1976,17 +2032,52 @@
     },
     {
       "order": 72,
-      "type": "map_transition",
-      "nav_target_order": 127,
-      "map_id": 24,
+      "type": "battle",
+      "nav_target_order": 56,
+      "map_id": 14,
       "position": [
-        7,
-        18
+        14,
+        11
       ],
-      "destination_map": 232,
       "timestamp_range": [
-        10860,
-        10861
+        8456,
+        8780
+      ],
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 73,
+      "type": "map_transition",
+      "nav_target_order": 56,
+      "map_id": 13,
+      "position": [
+        14,
+        11
+      ],
+      "destination_map": 14,
+      "timestamp_range": [
+        8779,
+        8780
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -1996,69 +2087,20 @@
       }
     },
     {
-      "order": 73,
-      "type": "battle",
-      "nav_target_order": 130,
-      "map_id": 232,
-      "position": [
-        26,
-        15
-      ],
-      "timestamp_range": [
-        10936,
-        11572
-      ],
-      "battle_info": {
-        "battle_type": "wild",
-        "enemy_species": -1,
-        "enemy_level": -1,
-        "outcome": "win",
-        "turns": 0,
-        "hp_cost": 0.0,
-        "moves_used": []
-      },
-      "party_before": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      },
-      "party_after": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      }
-    },
-    {
       "order": 74,
-      "type": "battle",
-      "nav_target_order": 124,
-      "map_id": 232,
+      "type": "map_transition",
+      "nav_target_order": 83,
+      "map_id": 14,
       "position": [
-        21,
-        13
+        24,
+        32
       ],
+      "destination_map": 24,
       "timestamp_range": [
-        11633,
-        12345
+        8827,
+        8828
       ],
-      "battle_info": {
-        "battle_type": "wild",
-        "enemy_species": -1,
-        "enemy_level": -1,
-        "outcome": "win",
-        "turns": 0,
-        "hp_cost": 0.0,
-        "moves_used": []
-      },
-      "party_before": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      },
-      "party_after": {
+      "party_snapshot": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -2068,16 +2110,16 @@
     {
       "order": 75,
       "type": "map_transition",
-      "nav_target_order": 122,
-      "map_id": 232,
+      "nav_target_order": 3,
+      "map_id": 24,
       "position": [
-        54,
-        27
+        13,
+        20
       ],
-      "destination_map": 24,
+      "destination_map": 13,
       "timestamp_range": [
-        12389,
-        12390
+        8989,
+        8990
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -2088,19 +2130,33 @@
     },
     {
       "order": 76,
-      "type": "map_transition",
-      "nav_target_order": 12,
-      "map_id": 24,
+      "type": "battle",
+      "nav_target_order": 94,
+      "map_id": 13,
       "position": [
-        14,
-        15
+        13,
+        13
       ],
-      "destination_map": 14,
       "timestamp_range": [
-        12493,
-        12494
+        9039,
+        9126
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -2110,16 +2166,16 @@
     {
       "order": 77,
       "type": "map_transition",
-      "nav_target_order": 100,
-      "map_id": 14,
+      "nav_target_order": 96,
+      "map_id": 13,
       "position": [
-        24,
-        33
+        22,
+        24
       ],
-      "destination_map": 24,
+      "destination_map": 22,
       "timestamp_range": [
-        12536,
-        12537
+        9161,
+        9162
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -2131,16 +2187,16 @@
     {
       "order": 78,
       "type": "map_transition",
-      "nav_target_order": 127,
-      "map_id": 24,
+      "nav_target_order": 15,
+      "map_id": 22,
       "position": [
-        7,
-        18
+        14,
+        15
       ],
-      "destination_map": 232,
+      "destination_map": 14,
       "timestamp_range": [
-        12600,
-        12601
+        9273,
+        9274
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -2151,33 +2207,19 @@
     },
     {
       "order": 79,
-      "type": "battle",
-      "nav_target_order": 129,
-      "map_id": 232,
+      "type": "map_transition",
+      "nav_target_order": 83,
+      "map_id": 14,
       "position": [
-        23,
-        11
+        24,
+        33
       ],
+      "destination_map": 24,
       "timestamp_range": [
-        12668,
-        12921
+        9319,
+        9320
       ],
-      "battle_info": {
-        "battle_type": "wild",
-        "enemy_species": -1,
-        "enemy_level": -1,
-        "outcome": "win",
-        "turns": 0,
-        "hp_cost": 0.0,
-        "moves_used": []
-      },
-      "party_before": {
-        "hp_ratios": [],
-        "status_flags": [],
-        "count": 0,
-        "levels": []
-      },
-      "party_after": {
+      "party_snapshot": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -2186,16 +2228,37 @@
     },
     {
       "order": 80,
+      "type": "map_transition",
+      "nav_target_order": 98,
+      "map_id": 24,
+      "position": [
+        7,
+        18
+      ],
+      "destination_map": 232,
+      "timestamp_range": [
+        9439,
+        9440
+      ],
+      "party_snapshot": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 81,
       "type": "battle",
-      "nav_target_order": 132,
+      "nav_target_order": 99,
       "map_id": 232,
       "position": [
-        32,
-        10
+        21,
+        16
       ],
       "timestamp_range": [
-        12959,
-        13184
+        9570,
+        9739
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -2220,41 +2283,34 @@
       }
     },
     {
-      "order": 81,
-      "type": "map_transition",
-      "nav_target_order": 122,
+      "order": 82,
+      "type": "battle",
+      "nav_target_order": 99,
       "map_id": 232,
       "position": [
-        54,
-        27
+        21,
+        12
       ],
-      "destination_map": 24,
       "timestamp_range": [
-        13251,
-        13252
+        9757,
+        9974
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
         "levels": []
-      }
-    },
-    {
-      "order": 82,
-      "type": "map_transition",
-      "nav_target_order": 12,
-      "map_id": 24,
-      "position": [
-        14,
-        15
-      ],
-      "destination_map": 14,
-      "timestamp_range": [
-        13337,
-        13338
-      ],
-      "party_snapshot": {
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -2263,19 +2319,33 @@
     },
     {
       "order": 83,
-      "type": "map_transition",
-      "nav_target_order": 100,
-      "map_id": 14,
+      "type": "battle",
+      "nav_target_order": 99,
+      "map_id": 232,
       "position": [
-        24,
-        33
+        23,
+        11
       ],
-      "destination_map": 24,
       "timestamp_range": [
-        13384,
-        13385
+        10001,
+        10155
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -2284,19 +2354,33 @@
     },
     {
       "order": 84,
-      "type": "map_transition",
-      "nav_target_order": 127,
-      "map_id": 24,
+      "type": "battle",
+      "nav_target_order": 100,
+      "map_id": 232,
       "position": [
-        7,
-        18
+        31,
+        11
       ],
-      "destination_map": 232,
       "timestamp_range": [
-        13462,
-        13463
+        10202,
+        10349
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -2306,15 +2390,15 @@
     {
       "order": 85,
       "type": "battle",
-      "nav_target_order": 132,
+      "nav_target_order": 100,
       "map_id": 232,
       "position": [
-        33,
-        12
+        37,
+        11
       ],
       "timestamp_range": [
-        13559,
-        13716
+        10387,
+        10463
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -2341,15 +2425,15 @@
     {
       "order": 86,
       "type": "battle",
-      "nav_target_order": 132,
+      "nav_target_order": 100,
       "map_id": 232,
       "position": [
-        39,
-        12
+        37,
+        11
       ],
       "timestamp_range": [
-        13753,
-        13849
+        10464,
+        10551
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -2376,15 +2460,15 @@
     {
       "order": 87,
       "type": "battle",
-      "nav_target_order": 132,
+      "nav_target_order": 100,
       "map_id": 232,
       "position": [
-        48,
-        22
+        39,
+        12
       ],
       "timestamp_range": [
-        13915,
-        14058
+        10574,
+        10661
       ],
       "battle_info": {
         "battle_type": "wild",
@@ -2410,19 +2494,33 @@
     },
     {
       "order": 88,
-      "type": "map_transition",
-      "nav_target_order": 134,
+      "type": "battle",
+      "nav_target_order": 101,
       "map_id": 232,
       "position": [
-        19,
-        26
+        46,
+        21
       ],
-      "destination_map": 172,
       "timestamp_range": [
-        14207,
-        14208
+        10728,
+        10783
       ],
-      "party_snapshot": {
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
         "hp_ratios": [],
         "status_flags": [],
         "count": 0,
@@ -2431,17 +2529,52 @@
     },
     {
       "order": 89,
-      "type": "map_transition",
-      "nav_target_order": 12,
-      "map_id": 172,
+      "type": "battle",
+      "nav_target_order": 102,
+      "map_id": 232,
       "position": [
-        14,
-        15
+        52,
+        21
       ],
-      "destination_map": 14,
       "timestamp_range": [
-        14232,
-        14233
+        10809,
+        10837
+      ],
+      "battle_info": {
+        "battle_type": "wild",
+        "enemy_species": -1,
+        "enemy_level": -1,
+        "outcome": "win",
+        "turns": 0,
+        "hp_cost": 0.0,
+        "moves_used": []
+      },
+      "party_before": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      },
+      "party_after": {
+        "hp_ratios": [],
+        "status_flags": [],
+        "count": 0,
+        "levels": []
+      }
+    },
+    {
+      "order": 90,
+      "type": "map_transition",
+      "nav_target_order": 108,
+      "map_id": 232,
+      "position": [
+        18,
+        26
+      ],
+      "destination_map": 172,
+      "timestamp_range": [
+        10958,
+        10959
       ],
       "party_snapshot": {
         "hp_ratios": [],
@@ -2454,7 +2587,7 @@
   "segments": [
     {
       "from_nav_order": 2,
-      "to_nav_order": 4,
+      "to_nav_order": 3,
       "battles_expected": 0,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0,
@@ -2464,19 +2597,41 @@
       "map_transitions": 1
     },
     {
-      "from_nav_order": 4,
-      "to_nav_order": 7,
+      "from_nav_order": 3,
+      "to_nav_order": 8,
       "battles_expected": 0,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0,
       "bag_sessions": 0,
       "trainer_battles": 0,
       "wild_battles": 0,
-      "map_transitions": 2
+      "map_transitions": 3
     },
     {
-      "from_nav_order": 7,
+      "from_nav_order": 8,
       "to_nav_order": 10,
+      "battles_expected": 1,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0.0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 1,
+      "map_transitions": 0
+    },
+    {
+      "from_nav_order": 10,
+      "to_nav_order": 11,
+      "battles_expected": 1,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0.0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 1,
+      "map_transitions": 0
+    },
+    {
+      "from_nav_order": 11,
+      "to_nav_order": 14,
       "battles_expected": 1,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0.0,
@@ -2486,8 +2641,8 @@
       "map_transitions": 2
     },
     {
-      "from_nav_order": 10,
-      "to_nav_order": 12,
+      "from_nav_order": 14,
+      "to_nav_order": 15,
       "battles_expected": 0,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0,
@@ -2497,18 +2652,7 @@
       "map_transitions": 1
     },
     {
-      "from_nav_order": 12,
-      "to_nav_order": 13,
-      "battles_expected": 0,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 0,
-      "map_transitions": 10
-    },
-    {
-      "from_nav_order": 13,
+      "from_nav_order": 15,
       "to_nav_order": 17,
       "battles_expected": 0,
       "avg_hp_cost_per_battle": 0.0,
@@ -2516,7 +2660,7 @@
       "bag_sessions": 0,
       "trainer_battles": 0,
       "wild_battles": 0,
-      "map_transitions": 4
+      "map_transitions": 7
     },
     {
       "from_nav_order": 17,
@@ -2542,18 +2686,7 @@
     },
     {
       "from_nav_order": 21,
-      "to_nav_order": 30,
-      "battles_expected": 1,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 1,
-      "map_transitions": 1
-    },
-    {
-      "from_nav_order": 30,
-      "to_nav_order": 31,
+      "to_nav_order": 22,
       "battles_expected": 0,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0,
@@ -2563,7 +2696,29 @@
       "map_transitions": 1
     },
     {
-      "from_nav_order": 31,
+      "from_nav_order": 22,
+      "to_nav_order": 27,
+      "battles_expected": 1,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0.0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 1,
+      "map_transitions": 1
+    },
+    {
+      "from_nav_order": 27,
+      "to_nav_order": 29,
+      "battles_expected": 1,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0.0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 1,
+      "map_transitions": 1
+    },
+    {
+      "from_nav_order": 29,
       "to_nav_order": 32,
       "battles_expected": 1,
       "avg_hp_cost_per_battle": 0.0,
@@ -2576,23 +2731,34 @@
     {
       "from_nav_order": 32,
       "to_nav_order": 33,
-      "battles_expected": 1,
+      "battles_expected": 0,
       "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
+      "total_hp_cost": 0,
       "bag_sessions": 0,
       "trainer_battles": 0,
-      "wild_battles": 1,
-      "map_transitions": 0
+      "wild_battles": 0,
+      "map_transitions": 1
     },
     {
       "from_nav_order": 33,
-      "to_nav_order": 35,
-      "battles_expected": 1,
+      "to_nav_order": 34,
+      "battles_expected": 3,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0.0,
       "bag_sessions": 0,
       "trainer_battles": 0,
-      "wild_battles": 1,
+      "wild_battles": 3,
+      "map_transitions": 0
+    },
+    {
+      "from_nav_order": 34,
+      "to_nav_order": 35,
+      "battles_expected": 2,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0.0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 2,
       "map_transitions": 0
     },
     {
@@ -2608,18 +2774,95 @@
     },
     {
       "from_nav_order": 36,
-      "to_nav_order": 37,
+      "to_nav_order": 41,
+      "battles_expected": 0,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 0,
+      "map_transitions": 1
+    },
+    {
+      "from_nav_order": 41,
+      "to_nav_order": 42,
+      "battles_expected": 0,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 0,
+      "map_transitions": 1
+    },
+    {
+      "from_nav_order": 42,
+      "to_nav_order": 44,
+      "battles_expected": 4,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0.0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 4,
+      "map_transitions": 2
+    },
+    {
+      "from_nav_order": 44,
+      "to_nav_order": 45,
+      "battles_expected": 0,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 0,
+      "map_transitions": 1
+    },
+    {
+      "from_nav_order": 45,
+      "to_nav_order": 47,
       "battles_expected": 3,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0.0,
       "bag_sessions": 0,
       "trainer_battles": 0,
       "wild_battles": 3,
-      "map_transitions": 2
+      "map_transitions": 0
     },
     {
-      "from_nav_order": 37,
-      "to_nav_order": 41,
+      "from_nav_order": 47,
+      "to_nav_order": 49,
+      "battles_expected": 3,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0.0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 3,
+      "map_transitions": 0
+    },
+    {
+      "from_nav_order": 49,
+      "to_nav_order": 51,
+      "battles_expected": 0,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 0,
+      "map_transitions": 3
+    },
+    {
+      "from_nav_order": 51,
+      "to_nav_order": 55,
+      "battles_expected": 0,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 0,
+      "map_transitions": 1
+    },
+    {
+      "from_nav_order": 55,
+      "to_nav_order": 56,
       "battles_expected": 1,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0.0,
@@ -2629,8 +2872,30 @@
       "map_transitions": 0
     },
     {
-      "from_nav_order": 41,
-      "to_nav_order": 43,
+      "from_nav_order": 56,
+      "to_nav_order": 57,
+      "battles_expected": 1,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0.0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 1,
+      "map_transitions": 1
+    },
+    {
+      "from_nav_order": 57,
+      "to_nav_order": 58,
+      "battles_expected": 1,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0.0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 1,
+      "map_transitions": 1
+    },
+    {
+      "from_nav_order": 58,
+      "to_nav_order": 59,
       "battles_expected": 2,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0.0,
@@ -2640,62 +2905,7 @@
       "map_transitions": 0
     },
     {
-      "from_nav_order": 43,
-      "to_nav_order": 47,
-      "battles_expected": 0,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 0,
-      "map_transitions": 1
-    },
-    {
-      "from_nav_order": 47,
-      "to_nav_order": 50,
-      "battles_expected": 0,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 0,
-      "map_transitions": 1
-    },
-    {
-      "from_nav_order": 50,
-      "to_nav_order": 55,
-      "battles_expected": 0,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 0,
-      "map_transitions": 2
-    },
-    {
-      "from_nav_order": 55,
-      "to_nav_order": 56,
-      "battles_expected": 0,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 0,
-      "map_transitions": 2
-    },
-    {
-      "from_nav_order": 56,
-      "to_nav_order": 57,
-      "battles_expected": 3,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 3,
-      "map_transitions": 0
-    },
-    {
-      "from_nav_order": 57,
+      "from_nav_order": 59,
       "to_nav_order": 60,
       "battles_expected": 1,
       "avg_hp_cost_per_battle": 0.0,
@@ -2707,7 +2917,7 @@
     },
     {
       "from_nav_order": 60,
-      "to_nav_order": 65,
+      "to_nav_order": 63,
       "battles_expected": 1,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0.0,
@@ -2717,8 +2927,8 @@
       "map_transitions": 0
     },
     {
-      "from_nav_order": 65,
-      "to_nav_order": 72,
+      "from_nav_order": 63,
+      "to_nav_order": 67,
       "battles_expected": 1,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0.0,
@@ -2728,7 +2938,7 @@
       "map_transitions": 0
     },
     {
-      "from_nav_order": 72,
+      "from_nav_order": 67,
       "to_nav_order": 74,
       "battles_expected": 1,
       "avg_hp_cost_per_battle": 0.0,
@@ -2740,18 +2950,7 @@
     },
     {
       "from_nav_order": 74,
-      "to_nav_order": 78,
-      "battles_expected": 0,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 0,
-      "map_transitions": 1
-    },
-    {
-      "from_nav_order": 78,
-      "to_nav_order": 80,
+      "to_nav_order": 75,
       "battles_expected": 1,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0.0,
@@ -2761,18 +2960,29 @@
       "map_transitions": 0
     },
     {
-      "from_nav_order": 80,
-      "to_nav_order": 81,
+      "from_nav_order": 75,
+      "to_nav_order": 77,
       "battles_expected": 1,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0.0,
       "bag_sessions": 0,
       "trainer_battles": 0,
       "wild_battles": 1,
-      "map_transitions": 1
+      "map_transitions": 0
     },
     {
-      "from_nav_order": 81,
+      "from_nav_order": 77,
+      "to_nav_order": 78,
+      "battles_expected": 1,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0.0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 1,
+      "map_transitions": 0
+    },
+    {
+      "from_nav_order": 78,
       "to_nav_order": 82,
       "battles_expected": 2,
       "avg_hp_cost_per_battle": 0.0,
@@ -2780,165 +2990,22 @@
       "bag_sessions": 0,
       "trainer_battles": 0,
       "wild_battles": 2,
-      "map_transitions": 1
+      "map_transitions": 0
     },
     {
       "from_nav_order": 82,
+      "to_nav_order": 83,
+      "battles_expected": 0,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 0,
+      "map_transitions": 1
+    },
+    {
+      "from_nav_order": 83,
       "to_nav_order": 84,
-      "battles_expected": 1,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 1,
-      "map_transitions": 0
-    },
-    {
-      "from_nav_order": 84,
-      "to_nav_order": 85,
-      "battles_expected": 1,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 1,
-      "map_transitions": 0
-    },
-    {
-      "from_nav_order": 85,
-      "to_nav_order": 87,
-      "battles_expected": 1,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 1,
-      "map_transitions": 0
-    },
-    {
-      "from_nav_order": 87,
-      "to_nav_order": 90,
-      "battles_expected": 2,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 2,
-      "map_transitions": 0
-    },
-    {
-      "from_nav_order": 90,
-      "to_nav_order": 96,
-      "battles_expected": 1,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 1,
-      "map_transitions": 0
-    },
-    {
-      "from_nav_order": 96,
-      "to_nav_order": 97,
-      "battles_expected": 1,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 1,
-      "map_transitions": 0
-    },
-    {
-      "from_nav_order": 97,
-      "to_nav_order": 98,
-      "battles_expected": 1,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 1,
-      "map_transitions": 0
-    },
-    {
-      "from_nav_order": 98,
-      "to_nav_order": 100,
-      "battles_expected": 0,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 0,
-      "map_transitions": 1
-    },
-    {
-      "from_nav_order": 100,
-      "to_nav_order": 108,
-      "battles_expected": 0,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 0,
-      "map_transitions": 4
-    },
-    {
-      "from_nav_order": 108,
-      "to_nav_order": 109,
-      "battles_expected": 0,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 0,
-      "map_transitions": 1
-    },
-    {
-      "from_nav_order": 109,
-      "to_nav_order": 114,
-      "battles_expected": 1,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 1,
-      "map_transitions": 0
-    },
-    {
-      "from_nav_order": 114,
-      "to_nav_order": 122,
-      "battles_expected": 1,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 1,
-      "map_transitions": 0
-    },
-    {
-      "from_nav_order": 122,
-      "to_nav_order": 124,
-      "battles_expected": 0,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 0,
-      "map_transitions": 2
-    },
-    {
-      "from_nav_order": 124,
-      "to_nav_order": 127,
-      "battles_expected": 1,
-      "avg_hp_cost_per_battle": 0.0,
-      "total_hp_cost": 0.0,
-      "bag_sessions": 0,
-      "trainer_battles": 0,
-      "wild_battles": 1,
-      "map_transitions": 0
-    },
-    {
-      "from_nav_order": 127,
-      "to_nav_order": 128,
       "battles_expected": 0,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0,
@@ -2948,8 +3015,8 @@
       "map_transitions": 3
     },
     {
-      "from_nav_order": 128,
-      "to_nav_order": 129,
+      "from_nav_order": 84,
+      "to_nav_order": 94,
       "battles_expected": 0,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0,
@@ -2959,30 +3026,52 @@
       "map_transitions": 1
     },
     {
-      "from_nav_order": 129,
-      "to_nav_order": 130,
-      "battles_expected": 1,
+      "from_nav_order": 94,
+      "to_nav_order": 96,
+      "battles_expected": 3,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0.0,
       "bag_sessions": 0,
       "trainer_battles": 0,
-      "wild_battles": 1,
-      "map_transitions": 0
+      "wild_battles": 3,
+      "map_transitions": 2
     },
     {
-      "from_nav_order": 130,
-      "to_nav_order": 132,
-      "battles_expected": 1,
+      "from_nav_order": 96,
+      "to_nav_order": 98,
+      "battles_expected": 0,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 0,
+      "map_transitions": 1
+    },
+    {
+      "from_nav_order": 98,
+      "to_nav_order": 99,
+      "battles_expected": 0,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 0,
+      "map_transitions": 1
+    },
+    {
+      "from_nav_order": 99,
+      "to_nav_order": 100,
+      "battles_expected": 3,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0.0,
       "bag_sessions": 0,
       "trainer_battles": 0,
-      "wild_battles": 1,
+      "wild_battles": 3,
       "map_transitions": 0
     },
     {
-      "from_nav_order": 132,
-      "to_nav_order": 134,
+      "from_nav_order": 100,
+      "to_nav_order": 101,
       "battles_expected": 4,
       "avg_hp_cost_per_battle": 0.0,
       "total_hp_cost": 0.0,
@@ -2990,68 +3079,88 @@
       "trainer_battles": 0,
       "wild_battles": 4,
       "map_transitions": 0
+    },
+    {
+      "from_nav_order": 101,
+      "to_nav_order": 102,
+      "battles_expected": 1,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0.0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 1,
+      "map_transitions": 0
+    },
+    {
+      "from_nav_order": 102,
+      "to_nav_order": 108,
+      "battles_expected": 1,
+      "avg_hp_cost_per_battle": 0.0,
+      "total_hp_cost": 0.0,
+      "bag_sessions": 0,
+      "trainer_battles": 0,
+      "wild_battles": 1,
+      "map_transitions": 0
     }
   ],
   "preparation_points": [],
   "metadata": {
-    "total_events": 90,
-    "total_battles": 40,
+    "total_events": 91,
+    "total_battles": 48,
     "total_bag_sessions": 0,
     "total_switches": 0,
-    "total_map_transitions": 50,
-    "playthrough_timesteps": 14266,
+    "total_map_transitions": 43,
+    "playthrough_timesteps": 11004,
     "nav_targets_covered": [
       2,
-      4,
-      7,
+      3,
+      8,
       10,
-      12,
-      13,
+      11,
+      14,
+      15,
       17,
       18,
       21,
-      30,
-      31,
+      22,
+      27,
+      29,
       32,
       33,
+      34,
       35,
       36,
-      37,
       41,
-      43,
+      42,
+      44,
+      45,
       47,
-      50,
+      49,
+      51,
       55,
       56,
       57,
+      58,
+      59,
       60,
-      65,
-      72,
+      63,
+      67,
       74,
+      75,
+      77,
       78,
-      80,
-      81,
       82,
+      83,
       84,
-      85,
-      87,
-      90,
+      94,
       96,
-      97,
       98,
+      99,
       100,
-      108,
-      109,
-      114,
-      122,
-      124,
-      127,
-      128,
-      129,
-      130,
-      132,
-      134
+      101,
+      102,
+      108
     ],
-    "generation_timestamp": "2026-04-12T19:49:09.500556"
+    "generation_timestamp": "2026-04-13T18:10:29.135637"
   }
 }
