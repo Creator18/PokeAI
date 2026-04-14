@@ -1,0 +1,2690 @@
+{
+  "targets_by_map": {
+    "13": [
+      {
+        "position": [
+          17,
+          9
+        ],
+        "direction": 2,
+        "order": 1,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 17,
+        "frame_index": 49,
+        "badge_count": 0,
+        "team_avg_level": 0.1
+      },
+      {
+        "position": [
+          13,
+          19
+        ],
+        "direction": 0,
+        "order": 3,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 23,
+        "frame_index": 773,
+        "badge_count": 0,
+        "team_avg_level": 0.8
+      },
+      {
+        "position": [
+          19,
+          8
+        ],
+        "direction": 1,
+        "order": 33,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2928,
+        "badge_count": 0,
+        "team_avg_level": 3.1
+      },
+      {
+        "position": [
+          19,
+          34
+        ],
+        "direction": 3,
+        "order": 34,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3062,
+        "badge_count": 0,
+        "team_avg_level": 3.2
+      },
+      {
+        "position": [
+          19,
+          26
+        ],
+        "direction": 3,
+        "order": 35,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3221,
+        "badge_count": 0,
+        "team_avg_level": 3.4
+      },
+      {
+        "position": [
+          13,
+          13
+        ],
+        "direction": 1,
+        "order": 94,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 14,
+        "frame_index": 8780,
+        "badge_count": 1,
+        "team_avg_level": 9.3
+      }
+    ],
+    "17": [
+      {
+        "position": [
+          11,
+          15
+        ],
+        "direction": 0,
+        "order": 2,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 13,
+        "frame_index": 236,
+        "badge_count": 0,
+        "team_avg_level": 0.3
+      }
+    ],
+    "23": [
+      {
+        "position": [
+          19,
+          18
+        ],
+        "direction": 1,
+        "order": 4,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 793,
+        "badge_count": 0,
+        "team_avg_level": 0.8
+      },
+      {
+        "position": [
+          19,
+          15
+        ],
+        "direction": 1,
+        "order": 5,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 797,
+        "badge_count": 0,
+        "team_avg_level": 0.8
+      },
+      {
+        "position": [
+          20,
+          7
+        ],
+        "direction": 1,
+        "order": 6,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 819,
+        "badge_count": 0,
+        "team_avg_level": 0.9
+      },
+      {
+        "position": [
+          20,
+          44
+        ],
+        "direction": 1,
+        "order": 7,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 822,
+        "badge_count": 0,
+        "team_avg_level": 0.9
+      },
+      {
+        "position": [
+          15,
+          35
+        ],
+        "direction": 3,
+        "order": 8,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1031,
+        "badge_count": 0,
+        "team_avg_level": 1.1
+      },
+      {
+        "position": [
+          18,
+          35
+        ],
+        "direction": 3,
+        "order": 9,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1035,
+        "badge_count": 0,
+        "team_avg_level": 1.1
+      },
+      {
+        "position": [
+          20,
+          26
+        ],
+        "direction": 3,
+        "order": 10,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1166,
+        "badge_count": 0,
+        "team_avg_level": 1.2
+      },
+      {
+        "position": [
+          26,
+          18
+        ],
+        "direction": 1,
+        "order": 11,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1278,
+        "badge_count": 0,
+        "team_avg_level": 1.4
+      },
+      {
+        "position": [
+          26,
+          15
+        ],
+        "direction": 1,
+        "order": 12,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1282,
+        "badge_count": 0,
+        "team_avg_level": 1.4
+      },
+      {
+        "position": [
+          24,
+          11
+        ],
+        "direction": 2,
+        "order": 13,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1295,
+        "badge_count": 0,
+        "team_avg_level": 1.4
+      },
+      {
+        "position": [
+          22,
+          14
+        ],
+        "direction": 1,
+        "order": 31,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 11,
+        "frame_index": 2671,
+        "badge_count": 0,
+        "team_avg_level": 2.8
+      }
+    ],
+    "35": [
+      {
+        "position": [
+          33,
+          33
+        ],
+        "direction": 1,
+        "order": 14,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 14,
+        "frame_index": 1388,
+        "badge_count": 0,
+        "team_avg_level": 1.5
+      }
+    ],
+    "14": [
+      {
+        "position": [
+          14,
+          15
+        ],
+        "direction": 0,
+        "order": 15,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 33,
+        "frame_index": 1438,
+        "badge_count": 0,
+        "team_avg_level": 1.5
+      },
+      {
+        "position": [
+          14,
+          8
+        ],
+        "direction": 1,
+        "order": 56,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 36,
+        "frame_index": 5916,
+        "badge_count": 1,
+        "team_avg_level": 6.3
+      }
+    ],
+    "33": [
+      {
+        "position": [
+          43,
+          26
+        ],
+        "direction": 1,
+        "order": 16,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 11,
+        "frame_index": 1545,
+        "badge_count": 0,
+        "team_avg_level": 1.6
+      },
+      {
+        "position": [
+          28,
+          31
+        ],
+        "direction": 1,
+        "order": 37,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3827,
+        "badge_count": 0,
+        "team_avg_level": 4.1
+      },
+      {
+        "position": [
+          26,
+          27
+        ],
+        "direction": 2,
+        "order": 38,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3840,
+        "badge_count": 0,
+        "team_avg_level": 4.1
+      },
+      {
+        "position": [
+          23,
+          27
+        ],
+        "direction": 2,
+        "order": 39,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3844,
+        "badge_count": 0,
+        "team_avg_level": 4.1
+      },
+      {
+        "position": [
+          20,
+          27
+        ],
+        "direction": 2,
+        "order": 40,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3848,
+        "badge_count": 0,
+        "team_avg_level": 4.1
+      },
+      {
+        "position": [
+          11,
+          24
+        ],
+        "direction": 2,
+        "order": 41,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 3879,
+        "badge_count": 0,
+        "team_avg_level": 4.1
+      },
+      {
+        "position": [
+          12,
+          26
+        ],
+        "direction": 2,
+        "order": 43,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4070,
+        "badge_count": 0,
+        "team_avg_level": 4.3
+      },
+      {
+        "position": [
+          9,
+          26
+        ],
+        "direction": 2,
+        "order": 44,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4074,
+        "badge_count": 0,
+        "team_avg_level": 4.3
+      },
+      {
+        "position": [
+          29,
+          34
+        ],
+        "direction": 3,
+        "order": 48,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5517,
+        "badge_count": 1,
+        "team_avg_level": 5.8
+      },
+      {
+        "position": [
+          33,
+          33
+        ],
+        "direction": 1,
+        "order": 49,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 14,
+        "frame_index": 5540,
+        "badge_count": 1,
+        "team_avg_level": 5.9
+      },
+      {
+        "position": [
+          29,
+          7
+        ],
+        "direction": 1,
+        "order": 50,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5736,
+        "badge_count": 1,
+        "team_avg_level": 6.1
+      }
+    ],
+    "11": [
+      {
+        "position": [
+          11,
+          14
+        ],
+        "direction": 0,
+        "order": 17,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 43,
+        "frame_index": 1580,
+        "badge_count": 0,
+        "team_avg_level": 1.7
+      }
+    ],
+    "43": [
+      {
+        "position": [
+          33,
+          36
+        ],
+        "direction": 2,
+        "order": 18,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1632,
+        "badge_count": 0,
+        "team_avg_level": 1.7
+      },
+      {
+        "position": [
+          30,
+          36
+        ],
+        "direction": 2,
+        "order": 19,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1636,
+        "badge_count": 0,
+        "team_avg_level": 1.7
+      },
+      {
+        "position": [
+          26,
+          34
+        ],
+        "direction": 1,
+        "order": 20,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1649,
+        "badge_count": 0,
+        "team_avg_level": 1.7
+      },
+      {
+        "position": [
+          7,
+          26
+        ],
+        "direction": 2,
+        "order": 21,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1702,
+        "badge_count": 0,
+        "team_avg_level": 1.8
+      },
+      {
+        "position": [
+          16,
+          26
+        ],
+        "direction": 3,
+        "order": 23,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1937,
+        "badge_count": 0,
+        "team_avg_level": 2.1
+      },
+      {
+        "position": [
+          24,
+          30
+        ],
+        "direction": 3,
+        "order": 24,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1964,
+        "badge_count": 0,
+        "team_avg_level": 2.1
+      },
+      {
+        "position": [
+          29,
+          34
+        ],
+        "direction": 0,
+        "order": 25,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1981,
+        "badge_count": 0,
+        "team_avg_level": 2.1
+      },
+      {
+        "position": [
+          30,
+          46
+        ],
+        "direction": 0,
+        "order": 26,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2015,
+        "badge_count": 0,
+        "team_avg_level": 2.1
+      }
+    ],
+    "91": [
+      {
+        "position": [
+          53,
+          16
+        ],
+        "direction": 3,
+        "order": 22,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 1922,
+        "badge_count": 0,
+        "team_avg_level": 2.0
+      }
+    ],
+    "31": [
+      {
+        "position": [
+          18,
+          16
+        ],
+        "direction": 0,
+        "order": 27,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2028,
+        "badge_count": 0,
+        "team_avg_level": 2.2
+      },
+      {
+        "position": [
+          13,
+          28
+        ],
+        "direction": 3,
+        "order": 28,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2071,
+        "badge_count": 0,
+        "team_avg_level": 2.2
+      },
+      {
+        "position": [
+          20,
+          38
+        ],
+        "direction": 0,
+        "order": 29,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 2196,
+        "badge_count": 0,
+        "team_avg_level": 2.3
+      },
+      {
+        "position": [
+          23,
+          20
+        ],
+        "direction": 1,
+        "order": 30,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 13,
+        "frame_index": 2378,
+        "badge_count": 0,
+        "team_avg_level": 2.5
+      }
+    ],
+    "22": [
+      {
+        "position": [
+          13,
+          14
+        ],
+        "direction": 1,
+        "order": 32,
+        "progress_type": "map_transition",
+        "forward_progress_score": 0.925,
+        "destination_map": 11,
+        "frame_index": 2769,
+        "badge_count": 0,
+        "team_avg_level": 2.9
+      },
+      {
+        "position": [
+          24,
+          32
+        ],
+        "direction": 1,
+        "order": 96,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 14,
+        "frame_index": 9274,
+        "badge_count": 1,
+        "team_avg_level": 9.8
+      }
+    ],
+    "25": [
+      {
+        "position": [
+          33,
+          34
+        ],
+        "direction": 1,
+        "order": 36,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 14,
+        "frame_index": 3749,
+        "badge_count": 0,
+        "team_avg_level": 4.0
+      }
+    ],
+    "81": [
+      {
+        "position": [
+          54,
+          14
+        ],
+        "direction": 3,
+        "order": 42,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 33,
+        "frame_index": 3933,
+        "badge_count": 0,
+        "team_avg_level": 4.2
+      },
+      {
+        "position": [
+          37,
+          11
+        ],
+        "direction": 2,
+        "order": 45,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4973,
+        "badge_count": 0,
+        "team_avg_level": 5.3
+      },
+      {
+        "position": [
+          34,
+          11
+        ],
+        "direction": 2,
+        "order": 46,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 4977,
+        "badge_count": 0,
+        "team_avg_level": 5.3
+      },
+      {
+        "position": [
+          24,
+          20
+        ],
+        "direction": 0,
+        "order": 47,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5275,
+        "badge_count": 0,
+        "team_avg_level": 5.6
+      }
+    ],
+    "21": [
+      {
+        "position": [
+          17,
+          82
+        ],
+        "direction": 1,
+        "order": 51,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5742,
+        "badge_count": 1,
+        "team_avg_level": 6.1
+      },
+      {
+        "position": [
+          17,
+          79
+        ],
+        "direction": 1,
+        "order": 52,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5746,
+        "badge_count": 1,
+        "team_avg_level": 6.1
+      },
+      {
+        "position": [
+          12,
+          72
+        ],
+        "direction": 1,
+        "order": 53,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5773,
+        "badge_count": 1,
+        "team_avg_level": 6.1
+      },
+      {
+        "position": [
+          12,
+          69
+        ],
+        "direction": 1,
+        "order": 54,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5777,
+        "badge_count": 1,
+        "team_avg_level": 6.1
+      },
+      {
+        "position": [
+          12,
+          58
+        ],
+        "direction": 1,
+        "order": 55,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 14,
+        "frame_index": 5897,
+        "badge_count": 1,
+        "team_avg_level": 6.3
+      }
+    ],
+    "36": [
+      {
+        "position": [
+          43,
+          63
+        ],
+        "direction": 3,
+        "order": 57,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 5987,
+        "badge_count": 1,
+        "team_avg_level": 6.3
+      },
+      {
+        "position": [
+          54,
+          65
+        ],
+        "direction": 1,
+        "order": 58,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6313,
+        "badge_count": 1,
+        "team_avg_level": 6.7
+      },
+      {
+        "position": [
+          51,
+          60
+        ],
+        "direction": 1,
+        "order": 59,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6383,
+        "badge_count": 1,
+        "team_avg_level": 6.8
+      },
+      {
+        "position": [
+          51,
+          57
+        ],
+        "direction": 1,
+        "order": 60,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6386,
+        "badge_count": 1,
+        "team_avg_level": 6.8
+      },
+      {
+        "position": [
+          56,
+          48
+        ],
+        "direction": 1,
+        "order": 61,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6537,
+        "badge_count": 1,
+        "team_avg_level": 6.9
+      },
+      {
+        "position": [
+          56,
+          45
+        ],
+        "direction": 1,
+        "order": 62,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6541,
+        "badge_count": 1,
+        "team_avg_level": 6.9
+      },
+      {
+        "position": [
+          56,
+          42
+        ],
+        "direction": 1,
+        "order": 63,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6544,
+        "badge_count": 1,
+        "team_avg_level": 6.9
+      },
+      {
+        "position": [
+          46,
+          24
+        ],
+        "direction": 2,
+        "order": 64,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6859,
+        "badge_count": 1,
+        "team_avg_level": 7.3
+      },
+      {
+        "position": [
+          43,
+          24
+        ],
+        "direction": 2,
+        "order": 65,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6863,
+        "badge_count": 1,
+        "team_avg_level": 7.3
+      },
+      {
+        "position": [
+          40,
+          24
+        ],
+        "direction": 2,
+        "order": 66,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6867,
+        "badge_count": 1,
+        "team_avg_level": 7.3
+      },
+      {
+        "position": [
+          34,
+          16
+        ],
+        "direction": 1,
+        "order": 67,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6944,
+        "badge_count": 1,
+        "team_avg_level": 7.4
+      },
+      {
+        "position": [
+          38,
+          14
+        ],
+        "direction": 0,
+        "order": 68,
+        "progress_type": "new_area",
+        "forward_progress_score": 0.85,
+        "destination_map": null,
+        "frame_index": 6976,
+        "badge_count": 1,
+        "team_avg_level": 7.4
+      },
+      {
+        "position": [
+          38,
+          17
+        ],
+        "direction": 0,
+        "order": 69,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6980,
+        "badge_count": 1,
+        "team_avg_level": 7.4
+      },
+      {
+        "position": [
+          38,
+          20
+        ],
+        "direction": 0,
+        "order": 70,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 6984,
+        "badge_count": 1,
+        "team_avg_level": 7.4
+      },
+      {
+        "position": [
+          34,
+          28
+        ],
+        "direction": 0,
+        "order": 71,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7011,
+        "badge_count": 1,
+        "team_avg_level": 7.4
+      },
+      {
+        "position": [
+          29,
+          29
+        ],
+        "direction": 1,
+        "order": 72,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7039,
+        "badge_count": 1,
+        "team_avg_level": 7.5
+      },
+      {
+        "position": [
+          29,
+          26
+        ],
+        "direction": 1,
+        "order": 73,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7043,
+        "badge_count": 1,
+        "team_avg_level": 7.5
+      },
+      {
+        "position": [
+          28,
+          15
+        ],
+        "direction": 2,
+        "order": 74,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7144,
+        "badge_count": 1,
+        "team_avg_level": 7.6
+      },
+      {
+        "position": [
+          18,
+          14
+        ],
+        "direction": 0,
+        "order": 75,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7390,
+        "badge_count": 1,
+        "team_avg_level": 7.8
+      },
+      {
+        "position": [
+          18,
+          17
+        ],
+        "direction": 0,
+        "order": 76,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7394,
+        "badge_count": 1,
+        "team_avg_level": 7.8
+      },
+      {
+        "position": [
+          18,
+          20
+        ],
+        "direction": 0,
+        "order": 77,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7398,
+        "badge_count": 1,
+        "team_avg_level": 7.8
+      },
+      {
+        "position": [
+          12,
+          26
+        ],
+        "direction": 1,
+        "order": 78,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7736,
+        "badge_count": 1,
+        "team_avg_level": 8.2
+      },
+      {
+        "position": [
+          12,
+          23
+        ],
+        "direction": 1,
+        "order": 79,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7740,
+        "badge_count": 1,
+        "team_avg_level": 8.2
+      },
+      {
+        "position": [
+          12,
+          20
+        ],
+        "direction": 1,
+        "order": 80,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7744,
+        "badge_count": 1,
+        "team_avg_level": 8.2
+      },
+      {
+        "position": [
+          12,
+          17
+        ],
+        "direction": 1,
+        "order": 81,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7748,
+        "badge_count": 1,
+        "team_avg_level": 8.2
+      }
+    ],
+    "12": [
+      {
+        "position": [
+          16,
+          7
+        ],
+        "direction": 1,
+        "order": 82,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 7796,
+        "badge_count": 1,
+        "team_avg_level": 8.3
+      }
+    ],
+    "24": [
+      {
+        "position": [
+          24,
+          33
+        ],
+        "direction": 1,
+        "order": 83,
+        "progress_type": "map_transition",
+        "forward_progress_score": 1.0,
+        "destination_map": 14,
+        "frame_index": 7888,
+        "badge_count": 1,
+        "team_avg_level": 8.4
+      },
+      {
+        "position": [
+          28,
+          34
+        ],
+        "direction": 3,
+        "order": 84,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8018,
+        "badge_count": 1,
+        "team_avg_level": 8.5
+      },
+      {
+        "position": [
+          31,
+          31
+        ],
+        "direction": 1,
+        "order": 85,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8031,
+        "badge_count": 1,
+        "team_avg_level": 8.5
+      },
+      {
+        "position": [
+          31,
+          28
+        ],
+        "direction": 1,
+        "order": 86,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8035,
+        "badge_count": 1,
+        "team_avg_level": 8.5
+      },
+      {
+        "position": [
+          29,
+          21
+        ],
+        "direction": 1,
+        "order": 87,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8061,
+        "badge_count": 1,
+        "team_avg_level": 8.5
+      },
+      {
+        "position": [
+          29,
+          18
+        ],
+        "direction": 1,
+        "order": 88,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8065,
+        "badge_count": 1,
+        "team_avg_level": 8.6
+      },
+      {
+        "position": [
+          26,
+          15
+        ],
+        "direction": 2,
+        "order": 89,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8078,
+        "badge_count": 1,
+        "team_avg_level": 8.6
+      },
+      {
+        "position": [
+          23,
+          15
+        ],
+        "direction": 2,
+        "order": 90,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8082,
+        "badge_count": 1,
+        "team_avg_level": 8.6
+      },
+      {
+        "position": [
+          20,
+          15
+        ],
+        "direction": 2,
+        "order": 91,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8086,
+        "badge_count": 1,
+        "team_avg_level": 8.6
+      },
+      {
+        "position": [
+          18,
+          25
+        ],
+        "direction": 3,
+        "order": 92,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8142,
+        "badge_count": 1,
+        "team_avg_level": 8.6
+      },
+      {
+        "position": [
+          22,
+          23
+        ],
+        "direction": 1,
+        "order": 93,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8156,
+        "badge_count": 1,
+        "team_avg_level": 8.6
+      },
+      {
+        "position": [
+          30,
+          26
+        ],
+        "direction": 1,
+        "order": 95,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 8876,
+        "badge_count": 1,
+        "team_avg_level": 9.4
+      },
+      {
+        "position": [
+          54,
+          28
+        ],
+        "direction": 3,
+        "order": 97,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9436,
+        "badge_count": 1,
+        "team_avg_level": 10.0
+      }
+    ],
+    "232": [
+      {
+        "position": [
+          14,
+          16
+        ],
+        "direction": 3,
+        "order": 98,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9546,
+        "badge_count": 1,
+        "team_avg_level": 10.1
+      },
+      {
+        "position": [
+          17,
+          16
+        ],
+        "direction": 3,
+        "order": 99,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 9550,
+        "badge_count": 1,
+        "team_avg_level": 10.1
+      },
+      {
+        "position": [
+          33,
+          12
+        ],
+        "direction": 3,
+        "order": 100,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10363,
+        "badge_count": 1,
+        "team_avg_level": 11.0
+      },
+      {
+        "position": [
+          42,
+          15
+        ],
+        "direction": 0,
+        "order": 101,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10678,
+        "badge_count": 1,
+        "team_avg_level": 11.3
+      },
+      {
+        "position": [
+          56,
+          13
+        ],
+        "direction": 3,
+        "order": 102,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10873,
+        "badge_count": 1,
+        "team_avg_level": 11.5
+      },
+      {
+        "position": [
+          59,
+          13
+        ],
+        "direction": 3,
+        "order": 103,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10877,
+        "badge_count": 1,
+        "team_avg_level": 11.5
+      },
+      {
+        "position": [
+          62,
+          13
+        ],
+        "direction": 3,
+        "order": 104,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10881,
+        "badge_count": 1,
+        "team_avg_level": 11.5
+      },
+      {
+        "position": [
+          78,
+          15
+        ],
+        "direction": 1,
+        "order": 105,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10947,
+        "badge_count": 1,
+        "team_avg_level": 11.6
+      },
+      {
+        "position": [
+          78,
+          12
+        ],
+        "direction": 1,
+        "order": 106,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10951,
+        "badge_count": 1,
+        "team_avg_level": 11.6
+      },
+      {
+        "position": [
+          78,
+          9
+        ],
+        "direction": 1,
+        "order": 107,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10955,
+        "badge_count": 1,
+        "team_avg_level": 11.6
+      }
+    ],
+    "172": [
+      {
+        "position": [
+          20,
+          17
+        ],
+        "direction": 1,
+        "order": 108,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 10984,
+        "badge_count": 1,
+        "team_avg_level": 11.6
+      },
+      {
+        "position": [
+          19,
+          12
+        ],
+        "direction": 1,
+        "order": 109,
+        "progress_type": "new_area",
+        "forward_progress_score": 1.0,
+        "destination_map": null,
+        "frame_index": 11002,
+        "badge_count": 1,
+        "team_avg_level": 11.7
+      }
+    ]
+  },
+  "global_order": [
+    {
+      "order": 1,
+      "map_id": 13,
+      "position": [
+        17,
+        9
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.1
+    },
+    {
+      "order": 2,
+      "map_id": 17,
+      "position": [
+        11,
+        15
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.3
+    },
+    {
+      "order": 3,
+      "map_id": 13,
+      "position": [
+        13,
+        19
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.8
+    },
+    {
+      "order": 4,
+      "map_id": 23,
+      "position": [
+        19,
+        18
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.8
+    },
+    {
+      "order": 5,
+      "map_id": 23,
+      "position": [
+        19,
+        15
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.8
+    },
+    {
+      "order": 6,
+      "map_id": 23,
+      "position": [
+        20,
+        7
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.9
+    },
+    {
+      "order": 7,
+      "map_id": 23,
+      "position": [
+        20,
+        44
+      ],
+      "badge_count": 0,
+      "team_avg_level": 0.9
+    },
+    {
+      "order": 8,
+      "map_id": 23,
+      "position": [
+        15,
+        35
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.1
+    },
+    {
+      "order": 9,
+      "map_id": 23,
+      "position": [
+        18,
+        35
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.1
+    },
+    {
+      "order": 10,
+      "map_id": 23,
+      "position": [
+        20,
+        26
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.2
+    },
+    {
+      "order": 11,
+      "map_id": 23,
+      "position": [
+        26,
+        18
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.4
+    },
+    {
+      "order": 12,
+      "map_id": 23,
+      "position": [
+        26,
+        15
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.4
+    },
+    {
+      "order": 13,
+      "map_id": 23,
+      "position": [
+        24,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.4
+    },
+    {
+      "order": 14,
+      "map_id": 35,
+      "position": [
+        33,
+        33
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.5
+    },
+    {
+      "order": 15,
+      "map_id": 14,
+      "position": [
+        14,
+        15
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.5
+    },
+    {
+      "order": 16,
+      "map_id": 33,
+      "position": [
+        43,
+        26
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.6
+    },
+    {
+      "order": 17,
+      "map_id": 11,
+      "position": [
+        11,
+        14
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.7
+    },
+    {
+      "order": 18,
+      "map_id": 43,
+      "position": [
+        33,
+        36
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.7
+    },
+    {
+      "order": 19,
+      "map_id": 43,
+      "position": [
+        30,
+        36
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.7
+    },
+    {
+      "order": 20,
+      "map_id": 43,
+      "position": [
+        26,
+        34
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.7
+    },
+    {
+      "order": 21,
+      "map_id": 43,
+      "position": [
+        7,
+        26
+      ],
+      "badge_count": 0,
+      "team_avg_level": 1.8
+    },
+    {
+      "order": 22,
+      "map_id": 91,
+      "position": [
+        53,
+        16
+      ],
+      "badge_count": 0,
+      "team_avg_level": 2.0
+    },
+    {
+      "order": 23,
+      "map_id": 43,
+      "position": [
+        16,
+        26
+      ],
+      "badge_count": 0,
+      "team_avg_level": 2.1
+    },
+    {
+      "order": 24,
+      "map_id": 43,
+      "position": [
+        24,
+        30
+      ],
+      "badge_count": 0,
+      "team_avg_level": 2.1
+    },
+    {
+      "order": 25,
+      "map_id": 43,
+      "position": [
+        29,
+        34
+      ],
+      "badge_count": 0,
+      "team_avg_level": 2.1
+    },
+    {
+      "order": 26,
+      "map_id": 43,
+      "position": [
+        30,
+        46
+      ],
+      "badge_count": 0,
+      "team_avg_level": 2.1
+    },
+    {
+      "order": 27,
+      "map_id": 31,
+      "position": [
+        18,
+        16
+      ],
+      "badge_count": 0,
+      "team_avg_level": 2.2
+    },
+    {
+      "order": 28,
+      "map_id": 31,
+      "position": [
+        13,
+        28
+      ],
+      "badge_count": 0,
+      "team_avg_level": 2.2
+    },
+    {
+      "order": 29,
+      "map_id": 31,
+      "position": [
+        20,
+        38
+      ],
+      "badge_count": 0,
+      "team_avg_level": 2.3
+    },
+    {
+      "order": 30,
+      "map_id": 31,
+      "position": [
+        23,
+        20
+      ],
+      "badge_count": 0,
+      "team_avg_level": 2.5
+    },
+    {
+      "order": 31,
+      "map_id": 23,
+      "position": [
+        22,
+        14
+      ],
+      "badge_count": 0,
+      "team_avg_level": 2.8
+    },
+    {
+      "order": 32,
+      "map_id": 22,
+      "position": [
+        13,
+        14
+      ],
+      "badge_count": 0,
+      "team_avg_level": 2.9
+    },
+    {
+      "order": 33,
+      "map_id": 13,
+      "position": [
+        19,
+        8
+      ],
+      "badge_count": 0,
+      "team_avg_level": 3.1
+    },
+    {
+      "order": 34,
+      "map_id": 13,
+      "position": [
+        19,
+        34
+      ],
+      "badge_count": 0,
+      "team_avg_level": 3.2
+    },
+    {
+      "order": 35,
+      "map_id": 13,
+      "position": [
+        19,
+        26
+      ],
+      "badge_count": 0,
+      "team_avg_level": 3.4
+    },
+    {
+      "order": 36,
+      "map_id": 25,
+      "position": [
+        33,
+        34
+      ],
+      "badge_count": 0,
+      "team_avg_level": 4.0
+    },
+    {
+      "order": 37,
+      "map_id": 33,
+      "position": [
+        28,
+        31
+      ],
+      "badge_count": 0,
+      "team_avg_level": 4.1
+    },
+    {
+      "order": 38,
+      "map_id": 33,
+      "position": [
+        26,
+        27
+      ],
+      "badge_count": 0,
+      "team_avg_level": 4.1
+    },
+    {
+      "order": 39,
+      "map_id": 33,
+      "position": [
+        23,
+        27
+      ],
+      "badge_count": 0,
+      "team_avg_level": 4.1
+    },
+    {
+      "order": 40,
+      "map_id": 33,
+      "position": [
+        20,
+        27
+      ],
+      "badge_count": 0,
+      "team_avg_level": 4.1
+    },
+    {
+      "order": 41,
+      "map_id": 33,
+      "position": [
+        11,
+        24
+      ],
+      "badge_count": 0,
+      "team_avg_level": 4.1
+    },
+    {
+      "order": 42,
+      "map_id": 81,
+      "position": [
+        54,
+        14
+      ],
+      "badge_count": 0,
+      "team_avg_level": 4.2
+    },
+    {
+      "order": 43,
+      "map_id": 33,
+      "position": [
+        12,
+        26
+      ],
+      "badge_count": 0,
+      "team_avg_level": 4.3
+    },
+    {
+      "order": 44,
+      "map_id": 33,
+      "position": [
+        9,
+        26
+      ],
+      "badge_count": 0,
+      "team_avg_level": 4.3
+    },
+    {
+      "order": 45,
+      "map_id": 81,
+      "position": [
+        37,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 5.3
+    },
+    {
+      "order": 46,
+      "map_id": 81,
+      "position": [
+        34,
+        11
+      ],
+      "badge_count": 0,
+      "team_avg_level": 5.3
+    },
+    {
+      "order": 47,
+      "map_id": 81,
+      "position": [
+        24,
+        20
+      ],
+      "badge_count": 0,
+      "team_avg_level": 5.6
+    },
+    {
+      "order": 48,
+      "map_id": 33,
+      "position": [
+        29,
+        34
+      ],
+      "badge_count": 1,
+      "team_avg_level": 5.8
+    },
+    {
+      "order": 49,
+      "map_id": 33,
+      "position": [
+        33,
+        33
+      ],
+      "badge_count": 1,
+      "team_avg_level": 5.9
+    },
+    {
+      "order": 50,
+      "map_id": 33,
+      "position": [
+        29,
+        7
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.1
+    },
+    {
+      "order": 51,
+      "map_id": 21,
+      "position": [
+        17,
+        82
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.1
+    },
+    {
+      "order": 52,
+      "map_id": 21,
+      "position": [
+        17,
+        79
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.1
+    },
+    {
+      "order": 53,
+      "map_id": 21,
+      "position": [
+        12,
+        72
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.1
+    },
+    {
+      "order": 54,
+      "map_id": 21,
+      "position": [
+        12,
+        69
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.1
+    },
+    {
+      "order": 55,
+      "map_id": 21,
+      "position": [
+        12,
+        58
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.3
+    },
+    {
+      "order": 56,
+      "map_id": 14,
+      "position": [
+        14,
+        8
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.3
+    },
+    {
+      "order": 57,
+      "map_id": 36,
+      "position": [
+        43,
+        63
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.3
+    },
+    {
+      "order": 58,
+      "map_id": 36,
+      "position": [
+        54,
+        65
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.7
+    },
+    {
+      "order": 59,
+      "map_id": 36,
+      "position": [
+        51,
+        60
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.8
+    },
+    {
+      "order": 60,
+      "map_id": 36,
+      "position": [
+        51,
+        57
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.8
+    },
+    {
+      "order": 61,
+      "map_id": 36,
+      "position": [
+        56,
+        48
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.9
+    },
+    {
+      "order": 62,
+      "map_id": 36,
+      "position": [
+        56,
+        45
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.9
+    },
+    {
+      "order": 63,
+      "map_id": 36,
+      "position": [
+        56,
+        42
+      ],
+      "badge_count": 1,
+      "team_avg_level": 6.9
+    },
+    {
+      "order": 64,
+      "map_id": 36,
+      "position": [
+        46,
+        24
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.3
+    },
+    {
+      "order": 65,
+      "map_id": 36,
+      "position": [
+        43,
+        24
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.3
+    },
+    {
+      "order": 66,
+      "map_id": 36,
+      "position": [
+        40,
+        24
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.3
+    },
+    {
+      "order": 67,
+      "map_id": 36,
+      "position": [
+        34,
+        16
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.4
+    },
+    {
+      "order": 68,
+      "map_id": 36,
+      "position": [
+        38,
+        14
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.4
+    },
+    {
+      "order": 69,
+      "map_id": 36,
+      "position": [
+        38,
+        17
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.4
+    },
+    {
+      "order": 70,
+      "map_id": 36,
+      "position": [
+        38,
+        20
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.4
+    },
+    {
+      "order": 71,
+      "map_id": 36,
+      "position": [
+        34,
+        28
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.4
+    },
+    {
+      "order": 72,
+      "map_id": 36,
+      "position": [
+        29,
+        29
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.5
+    },
+    {
+      "order": 73,
+      "map_id": 36,
+      "position": [
+        29,
+        26
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.5
+    },
+    {
+      "order": 74,
+      "map_id": 36,
+      "position": [
+        28,
+        15
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.6
+    },
+    {
+      "order": 75,
+      "map_id": 36,
+      "position": [
+        18,
+        14
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.8
+    },
+    {
+      "order": 76,
+      "map_id": 36,
+      "position": [
+        18,
+        17
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.8
+    },
+    {
+      "order": 77,
+      "map_id": 36,
+      "position": [
+        18,
+        20
+      ],
+      "badge_count": 1,
+      "team_avg_level": 7.8
+    },
+    {
+      "order": 78,
+      "map_id": 36,
+      "position": [
+        12,
+        26
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.2
+    },
+    {
+      "order": 79,
+      "map_id": 36,
+      "position": [
+        12,
+        23
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.2
+    },
+    {
+      "order": 80,
+      "map_id": 36,
+      "position": [
+        12,
+        20
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.2
+    },
+    {
+      "order": 81,
+      "map_id": 36,
+      "position": [
+        12,
+        17
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.2
+    },
+    {
+      "order": 82,
+      "map_id": 12,
+      "position": [
+        16,
+        7
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.3
+    },
+    {
+      "order": 83,
+      "map_id": 24,
+      "position": [
+        24,
+        33
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.4
+    },
+    {
+      "order": 84,
+      "map_id": 24,
+      "position": [
+        28,
+        34
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.5
+    },
+    {
+      "order": 85,
+      "map_id": 24,
+      "position": [
+        31,
+        31
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.5
+    },
+    {
+      "order": 86,
+      "map_id": 24,
+      "position": [
+        31,
+        28
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.5
+    },
+    {
+      "order": 87,
+      "map_id": 24,
+      "position": [
+        29,
+        21
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.5
+    },
+    {
+      "order": 88,
+      "map_id": 24,
+      "position": [
+        29,
+        18
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.6
+    },
+    {
+      "order": 89,
+      "map_id": 24,
+      "position": [
+        26,
+        15
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.6
+    },
+    {
+      "order": 90,
+      "map_id": 24,
+      "position": [
+        23,
+        15
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.6
+    },
+    {
+      "order": 91,
+      "map_id": 24,
+      "position": [
+        20,
+        15
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.6
+    },
+    {
+      "order": 92,
+      "map_id": 24,
+      "position": [
+        18,
+        25
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.6
+    },
+    {
+      "order": 93,
+      "map_id": 24,
+      "position": [
+        22,
+        23
+      ],
+      "badge_count": 1,
+      "team_avg_level": 8.6
+    },
+    {
+      "order": 94,
+      "map_id": 13,
+      "position": [
+        13,
+        13
+      ],
+      "badge_count": 1,
+      "team_avg_level": 9.3
+    },
+    {
+      "order": 95,
+      "map_id": 24,
+      "position": [
+        30,
+        26
+      ],
+      "badge_count": 1,
+      "team_avg_level": 9.4
+    },
+    {
+      "order": 96,
+      "map_id": 22,
+      "position": [
+        24,
+        32
+      ],
+      "badge_count": 1,
+      "team_avg_level": 9.8
+    },
+    {
+      "order": 97,
+      "map_id": 24,
+      "position": [
+        54,
+        28
+      ],
+      "badge_count": 1,
+      "team_avg_level": 10.0
+    },
+    {
+      "order": 98,
+      "map_id": 232,
+      "position": [
+        14,
+        16
+      ],
+      "badge_count": 1,
+      "team_avg_level": 10.1
+    },
+    {
+      "order": 99,
+      "map_id": 232,
+      "position": [
+        17,
+        16
+      ],
+      "badge_count": 1,
+      "team_avg_level": 10.1
+    },
+    {
+      "order": 100,
+      "map_id": 232,
+      "position": [
+        33,
+        12
+      ],
+      "badge_count": 1,
+      "team_avg_level": 11.0
+    },
+    {
+      "order": 101,
+      "map_id": 232,
+      "position": [
+        42,
+        15
+      ],
+      "badge_count": 1,
+      "team_avg_level": 11.3
+    },
+    {
+      "order": 102,
+      "map_id": 232,
+      "position": [
+        56,
+        13
+      ],
+      "badge_count": 1,
+      "team_avg_level": 11.5
+    },
+    {
+      "order": 103,
+      "map_id": 232,
+      "position": [
+        59,
+        13
+      ],
+      "badge_count": 1,
+      "team_avg_level": 11.5
+    },
+    {
+      "order": 104,
+      "map_id": 232,
+      "position": [
+        62,
+        13
+      ],
+      "badge_count": 1,
+      "team_avg_level": 11.5
+    },
+    {
+      "order": 105,
+      "map_id": 232,
+      "position": [
+        78,
+        15
+      ],
+      "badge_count": 1,
+      "team_avg_level": 11.6
+    },
+    {
+      "order": 106,
+      "map_id": 232,
+      "position": [
+        78,
+        12
+      ],
+      "badge_count": 1,
+      "team_avg_level": 11.6
+    },
+    {
+      "order": 107,
+      "map_id": 232,
+      "position": [
+        78,
+        9
+      ],
+      "badge_count": 1,
+      "team_avg_level": 11.6
+    },
+    {
+      "order": 108,
+      "map_id": 172,
+      "position": [
+        20,
+        17
+      ],
+      "badge_count": 1,
+      "team_avg_level": 11.6
+    },
+    {
+      "order": 109,
+      "map_id": 172,
+      "position": [
+        19,
+        12
+      ],
+      "badge_count": 1,
+      "team_avg_level": 11.7
+    }
+  ],
+  "metadata": {
+    "total_targets": 109,
+    "maps_with_targets": [
+      11,
+      12,
+      13,
+      14,
+      17,
+      21,
+      22,
+      23,
+      24,
+      25,
+      31,
+      33,
+      35,
+      36,
+      43,
+      81,
+      91,
+      172,
+      232
+    ],
+    "analysis_window_after": 40,
+    "min_forward_progress": 0.5,
+    "dedup_radius": 2,
+    "generated_from_frames": 11004,
+    "badge_count_at_extraction": 1,
+    "team_avg_level_at_extraction": 11.7
+  }
+}
