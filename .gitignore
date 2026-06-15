@@ -1,0 +1,25 @@
+# ── Emulators & installers (large binaries — supply your own) ──────────────
+BizHawk*/
+mGBA*/
+*.exe
+
+# ── Stray runtime outputs at repo root (real data lives under jsons/) ──────
+/badge_*.json
+/battle_intro_log.json
+/input_cache.txt
+/connection1.lua
+/message.txt
+/taught_models_spare/
+
+# ── Python / Jupyter ───────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# ── OS / editor cruft ──────────────────────────────────────────────────────
+desktop.ini
+Thumbs.db
+.DS_Store
+.vscode/

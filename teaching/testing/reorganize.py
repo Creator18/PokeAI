@@ -37,7 +37,7 @@ from datetime import datetime
 
 # === RESOLVE BASE PATH ===
 SCRIPT_DIR = Path(__file__).resolve().parent
-COGAI_ROOT = SCRIPT_DIR.parent
+COGAI_ROOT = SCRIPT_DIR.parent.parent  # teaching/testing/ → cogai/
 
 _CANDIDATE_ROOTS = [
     COGAI_ROOT,

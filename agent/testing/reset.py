@@ -69,7 +69,7 @@ import json
 import shutil
 from pathlib import Path
 
-BASE_PATH = Path(__file__).resolve().parent.parent  # cogai/testing/ → cogai/
+BASE_PATH = Path(__file__).resolve().parents[2]  # agent/testing/ → cogai/
 BASE_PATH.mkdir(parents=True, exist_ok=True)
 
 # ============================================================================

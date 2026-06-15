@@ -37,7 +37,7 @@ import sys
 from pathlib import Path
 from datetime import datetime
 
-BASE_PATH = Path(__file__).resolve().parent.parent  # cogai/testing/ → cogai/
+BASE_PATH = Path(__file__).resolve().parents[2]  # agent/testing/ → cogai/
 
 # ============================================================================
 # NEW DIRECTORY STRUCTURE
